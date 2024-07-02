@@ -1,0 +1,77 @@
+{
+    "id": "metzmatan",
+    "title": "Metzmatan's Mark",
+    "description": "Official Metzmatan's Mark system for Foundry VTT.",
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": 12,
+        "verified": 12
+    },
+    "authors": [
+        {
+            "name": "Mxblah",
+            "url": "https://github.com/Mxblah/metzmatan",
+            "discord": "Mxblah"
+        }
+    ],
+    "esmodules": [
+        "metzmatan.mjs"
+    ],
+    "styles": [
+        "styles/system-styles.css"
+    ],
+    "packs": [
+        {
+            "name": "monsters",
+            "label": "Metzmatan's Monsters",
+            "type": "Actor",
+            "system": "metzmatan"
+        },
+        {
+            "name": "items",
+            "label": "Metzmatan's Items",
+            "type": "Item",
+            "system": "metzmatan"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "documentTypes": {
+        "Actor": {
+            "pc": {
+                "htmlFields": [
+                    "background.biography"
+                ]
+            },
+            "npc": {
+                "htmlFields": [
+                    "background.biography"
+                ]
+            },
+            "monster": {}
+        },
+        "Item": {
+            "weapon": {},
+            "armor": {},
+            "spell": {},
+            "trait": {},
+            "mutation": {}
+        }
+    },
+    "socket": false,
+    "initiative": "1d100",
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
+    "primaryTokenAttribute": "resources.hp",
+    "secondaryTokenAttribute": "resources.mp",
+    "url": "https://github.com/Mxblah/metzmatan",
+    "manifest": "https://github.com/Mxblah/metzmatan/blob/main/system.json",
+    "download": "todo-gh-releases"
+}
