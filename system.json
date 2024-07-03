@@ -18,7 +18,7 @@
         "metzmatan.mjs"
     ],
     "styles": [
-        "styles/system-styles.css"
+        "styles/metzmatan.css"
     ],
     "packs": [
         {
@@ -43,24 +43,24 @@
     ],
     "documentTypes": {
         "Actor": {
-            "pc": {
+            "PC": {
                 "htmlFields": [
                     "background.biography"
                 ]
             },
-            "npc": {
+            "NPC": {
                 "htmlFields": [
                     "background.biography"
                 ]
             },
-            "monster": {}
+            "Monster": {}
         },
         "Item": {
-            "weapon": {},
-            "armor": {},
-            "spell": {},
-            "trait": {},
-            "mutation": {}
+            "Weapon": {},
+            "Armor": {},
+            "Spell": {},
+            "Trait": {},
+            "Mutation": {}
         }
     },
     "socket": false,
