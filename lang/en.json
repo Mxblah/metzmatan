@@ -2,6 +2,7 @@
     "ATTRIBUTES.hpMin": "Minimum Hit Points",
     "ATTRIBUTES.hp": "Current Hit Points",
     "ATTRIBUTES.hpMax": "Maximum Hit Points",
+    "ATTRIBUTES.hpLevelBonus": "Additional HP from Level",
     "ATTRIBUTES.mpMin": "Minimum Magic Points",
     "ATTRIBUTES.mp": "Current Magic Points",
     "ATTRIBUTES.mpMax": "Maximum Magic Points",
@@ -9,6 +10,7 @@
     "ATTRIBUTES.ap": "Current Armor Points",
     "ATTRIBUTES.apMax": "Maximum Armor Points",
 
+    "ATTRIBUTES.level": "Character Level",
     "ATTRIBUTES.body": "Body",
     "ATTRIBUTES.mind": "Mind",
     "ATTRIBUTES.soul": "Soul",

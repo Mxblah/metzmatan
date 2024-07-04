@@ -1,0 +1,6 @@
+*.tmp
+*.log
+CURRENT
+LOCK
+LOG
+MANIFEST-*
