@@ -97,3 +97,9 @@
 .grid-2min1 {
     grid-template-columns: auto minmax(0, 1fr);
 }
+
+/* Image overrides */
+.profile-img {
+    min-height: 100px;
+    min-width: 100px;
+}
