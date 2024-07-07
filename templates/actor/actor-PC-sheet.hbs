@@ -1,0 +1,75 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+    {{!-- Header: basic info and  main attributes --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Character Name"></h1>
+
+            {{!-- HP, MP, and AP --}}
+            <div class="resources grid grid-3col">
+                <div class="resource flexrow flex-group-center">
+                    <label for="system.resources.hp.value" class="resource-label">Hit Points</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <input type="text" name="system.resources.hp.value" value="{{system.resources.hp.value}}" data-dtype="Number"/>
+                        <span> / </span>
+                        <input type="text" name="system.resources.hp.max" value="{{system.resources.hp.max}}" data-dtype="Number"/>
+                    </div>
+                </div>
+
+                <div class="resource flexrow flex-group-center">
+                    <label for="system.resources.mp.value" class="resource-label">Magic Points</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <input type="text" name="system.resources.mp.value" value="{{system.resources.mp.value}}" data-dtype="Number"/>
+                        <span> / </span>
+                        <input type="text" name="system.resources.mp.max" value="{{system.resources.mp.max}}" data-dtype="Number"/>
+                    </div>
+                </div>
+
+                <div class="resource flexrow flex-group-center">
+                    <label for="system.resources.ap.value" class="resource-label">Armor Points</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <input type="text" name="system.resources.ap.value" value="{{system.resources.ap.value}}" data-dtype="Number"/>
+                        <span> / </span>
+                        <input type="text" name="system.resources.ap.max" value="{{system.resources.ap.max}}" data-dtype="Number"/>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- Level, AB, and DB --}}
+            <div class="attributes grid grid-3col">
+                <div class="attribute flexrow flex-group-center">
+                    <label for="system.attributes.level" class="resource-label">Level</label>
+                    <input type="text" name="system.attributes.level" value="{{system.attributes.level}}" data-dtype="Number"/>
+                </div>
+
+                <div class="attribute flexrow flex-group-center">
+                    <label for="system.attributes.armorBonus" class="resource-label">Armor Bonus</label>
+                    <input type="text" name="system.attributes.armorBonus" value="{{system.attributes.armorBonus}}" data-dtype="Number"/>
+                </div>
+
+                <div class="attribute flexrow flex-group-center">
+                    <label for="system.attributes.dodgeBonus" class="resource-label">Dodge Bonus</label>
+                    <input type="text" name="system.attributes.dodgeBonus" value="{{system.attributes.dodgeBonus}}" data-dtype="Number"/>
+                </div>
+            </div>
+
+            {{!-- Body, Mind, and Soul --}}
+            <div class="attributes grid grid-3col">
+                <div class="attribute flexrow flex-group-center">
+                    <label for="system.attributes.body" class="resource-label">Body</label>
+                    <input type="text" name="system.attributes.body" value="{{system.attributes.body}}" data-dtype="Number"/>
+                </div>
+
+                <div class="attribute flexrow flex-group-center">
+                    <label for="system.attributes.mind" class="resource-label">Mind</label>
+                    <input type="text" name="system.attributes.mind" value="{{system.attributes.mind}}" data-dtype="Number"/>
+                </div>
+
+                <div class="attribute flexrow flex-group-center">
+                    <label for="system.attributes.soul" class="resource-label">Soul</label>
+                    <input type="text" name="system.attributes.soul" value="{{system.attributes.soul}}" data-dtype="Number"/>
+                </div>
+            </div>
+        </div>
+    </header>
+</form>

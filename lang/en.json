@@ -1,27 +1,37 @@
 {
-    "ATTRIBUTES.hpMin": "Minimum Hit Points",
-    "ATTRIBUTES.hp": "Current Hit Points",
-    "ATTRIBUTES.hpMax": "Maximum Hit Points",
-    "ATTRIBUTES.hpLevelBonus": "Additional HP from Level",
-    "ATTRIBUTES.mpMin": "Minimum Magic Points",
-    "ATTRIBUTES.mp": "Current Magic Points",
-    "ATTRIBUTES.mpMax": "Maximum Magic Points",
-    "ATTRIBUTES.apMin": "Minimum Armor Points",
-    "ATTRIBUTES.ap": "Current Armor Points",
-    "ATTRIBUTES.apMax": "Maximum Armor Points",
+    "ATTRIBUTES": {
+        "hpMin": "Minimum Hit Points",
+        "hp": "Current Hit Points",
+        "hpMax": "Maximum Hit Points",
+        "hpLevelBonus": "Additional HP from Level",
+        "mpMin": "Minimum Magic Points",
+        "mp": "Current Magic Points",
+        "mpMax": "Maximum Magic Points",
+        "apMin": "Minimum Armor Points",
+        "ap": "Current Armor Points",
+        "apMax": "Maximum Armor Points",
 
-    "ATTRIBUTES.level": "Character Level",
-    "ATTRIBUTES.body": "Body",
-    "ATTRIBUTES.mind": "Mind",
-    "ATTRIBUTES.soul": "Soul",
-    "ATTRIBUTES.armorBonus": "Armor Bonus",
-    "ATTRIBUTES.dodgeBonus": "Dodge Bonus",
+        "level": "Character Level",
+        "body": "Body",
+        "mind": "Mind",
+        "soul": "Soul",
+        "armorBonus": "Armor Bonus",
+        "dodgeBonus": "Dodge Bonus"
+    },
 
-    "SKILLS.weaponsMelee": "Weapons (Melee)",
-    "SKILLS.weaponsRanged": "Weapons (Ranged)",
-    "SKILLS.celestialMagic": "Celestial Magic",
-    "SKILLS.planetaryMagic": "Planetary Magic",
-    "SKILLS.perception": "Perception",
+    "SKILLS": {
+        "weaponsMelee": "Weapons (Melee)",
+        "weaponsRanged": "Weapons (Ranged)",
+        "celestialMagic": "Celestial Magic",
+        "planetaryMagic": "Planetary Magic",
+        "perception": "Perception"
+    },
 
-    "BACKGROUND.biography": "Character Biography"
+    "BACKGROUND": {
+        "biography": "Character Biography"
+    },
+
+    "SHEETS": {
+        "actorLabel": "Metzmatan's Mark Actor Sheet"
+    }
 }

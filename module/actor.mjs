@@ -21,4 +21,40 @@ export class MzMaActor extends Actor {
         // Handle DB based on formula
         this.system.attributes.dodgeBonus = Math.floor(body / 5 - 4)
     }
+
+    // Apply data for use in rolls
+    getRollData() {
+        const data = super.getRollData()
+
+        switch (this.type) {
+            case "PC":
+                this._getPCRollData(data)
+                break;
+            case "NPC":
+                this._getNPCRollData(data)
+                break;
+            default:
+                break;
+        }
+
+        // Shared data preparation //
+        // All characters have the core attributes, so copy them to the top level for roll usage
+        if (data.attributes) {
+            for (let [k, v] of Object.entries(data.attributes)) {
+                data[k] = foundry.utils.deepClone(v)
+            }
+        }
+
+        return data
+    }
+
+    _getPCRollData() {
+        // todo!
+        return
+    }
+
+    _getNPCRollData() {
+        // todo!
+        return
+    }
 }

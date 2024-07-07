@@ -1,3 +1,4 @@
+import { MzMaActorSheet } from "./module/actor-sheet.mjs"
 import { MzMaActor } from "./module/actor.mjs"
 import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character.mjs"
 
@@ -11,6 +12,13 @@ Hooks.once("init", () => {
 
     // Define Document types
     CONFIG.Actor.documentClass = MzMaActor
+
+    // Register sheet classes
+    Actors.unregisterSheet("core", ActorSheet)
+    Actors.registerSheet("metzmatan", MzMaActorSheet, {
+        makeDefault: true,
+        label: "SHEETS.actorLabel"
+    })
 
     // Set up trackables
     CONFIG.Actor.trackableAttributes = {
