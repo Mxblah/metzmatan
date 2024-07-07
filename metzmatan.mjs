@@ -31,4 +31,9 @@ Hooks.once("init", () => {
             value: ["attributes.body", "attributes.mind", "attributes.soul", "attributes.armorBonus", "attributes.dodgeBonus"]
         }
     }
+
+    // Preload handlebars templates
+    loadTemplates([
+        "systems/metzmatan/templates/actor/parts/actor-character-header.hbs"
+    ])
 })
