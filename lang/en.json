@@ -40,6 +40,8 @@
     },
 
     "SKILLS": {
+        "name": "Skill",
+        "total": "Total",
         "ranks": "Ranks",
         "weaponsMelee": "Weapons (Melee)",
         "weaponsRanged": "Weapons (Ranged)",
