@@ -2,7 +2,7 @@
     {{!-- Header: basic info and  main attributes --}}
     <header class="sheet-header align-top">
         <div class="header-fields">
-            <div class="grid grid-2col grid-2min1">
+            <div class="grid grid-2col grid-2min1 align-vertical-center">
                 <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
                 <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Character Name"></h1>
             </div>
@@ -11,28 +11,31 @@
             <div class="resources grid grid-3col">
                 <div class="resource flexrow flex-group-center">
                     <label for="system.resources.hp.value" class="resource-label">Hit Points</label>
-                    <div class="resource-content flexrow flex-center flex-between">
+                    <div class="resource-content flexrow flex-center flex-between align-vertical-center">
                         <input type="text" name="system.resources.hp.value" value="{{system.resources.hp.value}}" data-dtype="Number"/>
                         <span> / </span>
-                        <input type="text" name="system.resources.hp.max" value="{{system.resources.hp.max}}" data-dtype="Number"/>
+                        <span class="resource-max">{{numberFormat system.resources.hp.max decimals=0 sign=false}}</span>
+                        {{!-- <input type="text" name="system.resources.hp.max" value="{{system.resources.hp.max}}" data-dtype="Number"/> --}}
                     </div>
                 </div>
 
                 <div class="resource flexrow flex-group-center">
                     <label for="system.resources.mp.value" class="resource-label">Magic Points</label>
-                    <div class="resource-content flexrow flex-center flex-between">
+                    <div class="resource-content flexrow flex-center flex-between align-vertical-center">
                         <input type="text" name="system.resources.mp.value" value="{{system.resources.mp.value}}" data-dtype="Number"/>
                         <span> / </span>
-                        <input type="text" name="system.resources.mp.max" value="{{system.resources.mp.max}}" data-dtype="Number"/>
+                        <span class="resource-max">{{numberFormat system.resources.mp.max decimals=0 sign=false}}</span>
+                        {{!-- <input type="text" name="system.resources.mp.max" value="{{system.resources.mp.max}}" data-dtype="Number"/> --}}
                     </div>
                 </div>
 
                 <div class="resource flexrow flex-group-center">
                     <label for="system.resources.ap.value" class="resource-label">Armor Points</label>
-                    <div class="resource-content flexrow flex-center flex-between">
+                    <div class="resource-content flexrow flex-center flex-between align-vertical-center">
                         <input type="text" name="system.resources.ap.value" value="{{system.resources.ap.value}}" data-dtype="Number"/>
                         <span> / </span>
-                        <input type="text" name="system.resources.ap.max" value="{{system.resources.ap.max}}" data-dtype="Number"/>
+                        <span class="resource-max">{{numberFormat system.resources.ap.max decimals=0 sign=false}}</span>
+                        {{!-- <input type="text" name="system.resources.ap.max" value="{{system.resources.ap.max}}" data-dtype="Number"/> --}}
                     </div>
                 </div>
             </div>

@@ -34,6 +34,10 @@
     align-items: flex-start !important;
 }
 
+.align-vertical-center {
+  align-items: center;
+}
+
 .align-left {
   justify-content: flex-start;
   text-align: left;
