@@ -1,17 +1,36 @@
 {
+    "TYPES": {
+        "Actor": {
+            "pc": "Player Character",
+            "npc": "Non-Player Character",
+            "monster": "Monster"
+        },
+        "Item": {
+            "item": "Item",
+            "feature": "Feature",
+            "trait": "Trait",
+            "mutation": "Mutation",
+            "spell": "Spell"
+        }
+    },
+
+    "PLACEHOLDERS": {
+        "actorName": "Character Name"
+    },
+
     "ATTRIBUTES": {
         "hpMin": "Minimum Hit Points",
-        "hp": "Current Hit Points",
+        "hp": "Hit Points",
         "hpMax": "Maximum Hit Points",
         "hpLevelBonus": "Additional HP from Level",
         "mpMin": "Minimum Magic Points",
-        "mp": "Current Magic Points",
+        "mp": "Magic Points",
         "mpMax": "Maximum Magic Points",
         "apMin": "Minimum Armor Points",
-        "ap": "Current Armor Points",
+        "ap": "Armor Points",
         "apMax": "Maximum Armor Points",
 
-        "level": "Character Level",
+        "level": "Level",
         "body": "Body",
         "mind": "Mind",
         "soul": "Soul",

@@ -27,11 +27,11 @@ export class MzMaActor extends Actor {
         const data = super.getRollData()
 
         switch (this.type) {
-            case "PC":
-                this._getPCRollData(data)
+            case "pc":
+                this._getPcRollData(data)
                 break;
-            case "NPC":
-                this._getNPCRollData(data)
+            case "npc":
+                this._getNpcRollData(data)
                 break;
             default:
                 break;
@@ -48,12 +48,12 @@ export class MzMaActor extends Actor {
         return data
     }
 
-    _getPCRollData() {
+    _getPcRollData() {
         // todo!
         return
     }
 
-    _getNPCRollData() {
+    _getNpcRollData() {
         // todo!
         return
     }

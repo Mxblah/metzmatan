@@ -27,11 +27,11 @@ export class MzMaActorSheet extends ActorSheet {
 
         // Generate PC and NPC data, items, etc.
         switch (actorData.type) {
-            case "PC":
+            case "pc":
                 this._prepareItems(context)
-                this._preparePCData(context)
+                this._preparePcData(context)
                 break;
-            case "NPC":
+            case "npc":
                 this._prepareItems(context)
                 break;
             default:
@@ -49,7 +49,7 @@ export class MzMaActorSheet extends ActorSheet {
         return
     }
 
-    _preparePCData(context) {
+    _preparePcData(context) {
         // todo!
         return
     }

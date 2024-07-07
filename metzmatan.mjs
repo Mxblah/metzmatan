@@ -6,8 +6,8 @@ import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character
 Hooks.once("init", () => {
     // Set up data types
     CONFIG.Actor.dataModels = {
-        PC: PlayerCharacterDataModel,
-        NPC: CharacterDataModel
+        pc: PlayerCharacterDataModel,
+        npc: CharacterDataModel
     }
 
     // Define Document types
@@ -22,11 +22,11 @@ Hooks.once("init", () => {
 
     // Set up trackables
     CONFIG.Actor.trackableAttributes = {
-        PC: {
+        pc: {
             bar: ["resources.hp", "resources.mp", "resources.ap"],
             value: ["attributes.body", "attributes.mind", "attributes.soul", "attributes.armorBonus", "attributes.dodgeBonus"]
         },
-        NPC: {
+        npc: {
             bar: ["resources.hp", "resources.mp", "resources.ap"],
             value: ["attributes.body", "attributes.mind", "attributes.soul", "attributes.armorBonus", "attributes.dodgeBonus"]
         }
