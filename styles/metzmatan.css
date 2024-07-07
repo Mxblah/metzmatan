@@ -1,4 +1,4 @@
-/* flexcol / flexrow classes */
+/* flex classes */
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
@@ -31,8 +31,7 @@
 
 /* alignment classes */
 .align-top {
-    top: 0%;
-    position: relative;
+    align-items: flex-start !important;
 }
 
 .align-left {
@@ -51,7 +50,6 @@
 }
 
 /* grid classes */
-
 .grid,
 .grid-2col {
   display: grid;
@@ -94,4 +92,8 @@
 
 .grid-minimize {
     grid-template-columns: min-content;
+}
+
+.grid-2min1 {
+    grid-template-columns: auto minmax(0, 1fr);
 }

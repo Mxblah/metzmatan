@@ -1,9 +1,11 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
     {{!-- Header: basic info and  main attributes --}}
-    <header class="sheet-header">
-        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+    <header class="sheet-header align-top">
         <div class="header-fields">
-            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Character Name"></h1>
+            <div class="grid grid-2col grid-2min1">
+                <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+                <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Character Name"></h1>
+            </div>
 
             {{!-- HP, MP, and AP --}}
             <div class="resources grid grid-3col">
