@@ -15,7 +15,8 @@
     },
 
     "PLACEHOLDERS": {
-        "actorName": "Character Name"
+        "actorName": "Character Name",
+        "skills": "Skills"
     },
 
     "ATTRIBUTES": {
@@ -39,10 +40,14 @@
     },
 
     "SKILLS": {
+        "ranks": "Ranks",
         "weaponsMelee": "Weapons (Melee)",
         "weaponsRanged": "Weapons (Ranged)",
         "celestialMagic": "Celestial Magic",
         "planetaryMagic": "Planetary Magic",
+        "lucidity": "Lucidity",
+        "occult": "Occult",
+        "athletics": "Athletics",
         "perception": "Perception"
     },
 

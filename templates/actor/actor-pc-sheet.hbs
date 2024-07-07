@@ -1,4 +1,17 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
     {{!-- Header: basic info and  main attributes --}}
     {{> "systems/metzmatan/templates/actor/parts/actor-character-header.hbs"}}
+
+    {{!-- Navigation tab declaration --}}
+    <nav class="sheet-tabs tabs flexshrink" data-group="primary">
+        <a class="item" data-tab="skills">{{localize "PLACEHOLDERS.skills"}}</a>
+    </nav>
+
+    {{!-- Main body: contains tabs of various related info --}}
+    <section class="sheet-body">
+        {{!-- Skills tab --}}
+        <div class="tab skills" data-group="primary" data-tab="skills">
+            {{> "systems/metzmatan/templates/actor/parts/actor-skills.hbs"}}
+        </div>
+    </section>
 </form>

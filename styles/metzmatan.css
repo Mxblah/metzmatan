@@ -107,3 +107,10 @@
     min-height: 100px;
     min-width: 100px;
 }
+
+/* Skill tab styling */
+
+.skill-label {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}

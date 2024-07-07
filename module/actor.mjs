@@ -7,6 +7,7 @@ export class MzMaActor extends Actor {
         // Various useful shortcuts
         const { hp, mp } = this.system.resources
         const { level, body, mind, soul } = this.system.attributes
+        const { skills } = this.system
 
         // Resources //
         // Clamp and handle HP based on formula
@@ -20,6 +21,20 @@ export class MzMaActor extends Actor {
 
         // Handle DB based on formula
         this.system.attributes.dodgeBonus = Math.floor(body / 5 - 4)
+
+        // Skills //
+        for (let [key, skill] of Object.entries(skills)) {
+            // Determine the maximum value of the core attributes that influence this skill
+            var attribArray = []
+            skill.coreAttribs.split(",").forEach(attrib => {
+                var attribValue = eval(`${attrib}`) / 5
+                attribArray.push(attribValue)
+            })
+            var attribBonus = Math.max(...attribArray)
+
+            // Then add the base threshold to the ranks to get the full value
+            skill.value = Math.floor(attribBonus + skill.ranks)
+        }
     }
 
     // Apply data for use in rolls

@@ -34,6 +34,7 @@ Hooks.once("init", () => {
 
     // Preload handlebars templates
     loadTemplates([
-        "systems/metzmatan/templates/actor/parts/actor-character-header.hbs"
+        "systems/metzmatan/templates/actor/parts/actor-character-header.hbs",
+        "systems/metzmatan/templates/actor/parts/actor-skills.hbs"
     ])
 })

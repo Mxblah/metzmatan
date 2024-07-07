@@ -6,9 +6,9 @@ export class MzMaActorSheet extends ActorSheet {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ["metzmatan", "sheet", "actor"],
             template: "systems/metzmatan/templates/actor/actor-sheet.html", // shouldn't be used for anything; dynamically defined below
-            width: 600,
-            height: 600,
-            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "attributes" }]
+            width: 800,
+            height: 800,
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
         })
     }
 
@@ -40,6 +40,11 @@ export class MzMaActorSheet extends ActorSheet {
 
         // Add roll data for sheet-based rolls
         context.rollData = context.actor.getRollData()
+
+        // Localization for skills
+        for (let [key, skill] of Object.entries(context.system.skills)) {
+            skill.label = game.i18n.localize(`SKILLS.${key}`)
+        }
 
         return context
     }

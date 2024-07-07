@@ -1,0 +1,31 @@
+<div class="skill-labels grid grid-4col">
+    <div class="skill-label flexrow flex-group-center">
+        <u>Skill</u>
+        <u>Total</u>
+        <u>Ranks</u>
+    </div>
+    <div class="skill-label flexrow flex-group-center">
+        <u>Skill</u>
+        <u>Total</u>
+        <u>Ranks</u>
+    </div>
+    <div class="skill-label flexrow flex-group-center">
+        <u>Skill</u>
+        <u>Total</u>
+        <u>Ranks</u>
+    </div>
+    <div class="skill-label flexrow flex-group-center">
+        <u>Skill</u>
+        <u>Total</u>
+        <u>Ranks</u>
+    </div>
+</div>
+<div class="skills grid grid-4col">
+    {{#each system.skills as |skill key|}}
+        <div class="skill flexrow flex-group-center">
+            <label for="system.skills.{{key}}.value" class="resource-label">{{skill.label}}</label>
+            <span class="skill-value">{{numberFormat skill.value decimals=0 sign=false}}</span>
+            <input type="text" name="system.skills.{{key}}.ranks" value="{{skill.ranks}}" data-dtype="Number"/>
+        </div>
+    {{/each}}
+</div>

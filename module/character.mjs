@@ -32,11 +32,46 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
                 dodgeBonus: new NumberField({ required: true, integer: true, initial: 0, label: "ATTRIBUTES.dodgeBonus" })
             }),
             skills: new SchemaField({
-                weaponsMelee: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.weaponsMelee" }),
-                weaponsRanged: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.weaponsRanged" }),
-                celestialMagic: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.celestialMagic" }),
-                planetaryMagic: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.planetaryMagic" }),
-                perception: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.perception" })
+                weaponsMelee: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.weaponsMelee" }),
+                    coreAttribs: new StringField({ initial: "body" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                }),
+                weaponsRanged: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.weaponsRanged" }),
+                    coreAttribs: new StringField({ initial: "body" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                }),
+                celestialMagic: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.celestialMagic" }),
+                    coreAttribs: new StringField({ initial: "soul" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                }),
+                planetaryMagic: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.planetaryMagic" }),
+                    coreAttribs: new StringField({ initial: "soul" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                }),
+                lucidity: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.lucidity" }),
+                    coreAttribs: new StringField({ initial: "soul" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                }),
+                occult: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.occult" }),
+                    coreAttribs: new StringField({ initial: "soul" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                }),
+                athletics: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.athletics" }),
+                    coreAttribs: new StringField({ initial: "body" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                }),
+                perception: new SchemaField({
+                    value: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.perception" }),
+                    coreAttribs: new StringField({ initial: "body,mind" }),
+                    ranks: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "SKILLS.ranks" })
+                })
             })
         }
     }
