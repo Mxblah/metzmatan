@@ -1,6 +1,7 @@
 import { MzMaActorSheet } from "./module/actor-sheet.mjs"
 import { MzMaActor } from "./module/actor.mjs"
 import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character.mjs"
+import { ArmorDataModel, WeaponDataModel } from "./module/item-data.mjs"
 
 // Foundry initialization
 Hooks.once("init", () => {
@@ -8,6 +9,10 @@ Hooks.once("init", () => {
     CONFIG.Actor.dataModels = {
         pc: PlayerCharacterDataModel,
         npc: CharacterDataModel
+    }
+    CONFIG.Item.dataModels = {
+        armor: ArmorDataModel,
+        weapon: WeaponDataModel
     }
 
     // Define Document types
@@ -17,7 +22,7 @@ Hooks.once("init", () => {
     Actors.unregisterSheet("core", ActorSheet)
     Actors.registerSheet("metzmatan", MzMaActorSheet, {
         makeDefault: true,
-        label: "SHEETS.actorLabel"
+        label: "DOCUMENT.actorLabel"
     })
 
     // Set up trackables
@@ -34,7 +39,12 @@ Hooks.once("init", () => {
 
     // Preload handlebars templates
     loadTemplates([
+        // Actor sheet partials
         "systems/metzmatan/templates/actor/parts/actor-character-header.hbs",
-        "systems/metzmatan/templates/actor/parts/actor-skills.hbs"
+        "systems/metzmatan/templates/actor/parts/actor-features.hbs",
+        "systems/metzmatan/templates/actor/parts/actor-items.hbs",
+        "systems/metzmatan/templates/actor/parts/actor-misc-sheet.hbs",
+        "systems/metzmatan/templates/actor/parts/actor-skills.hbs",
+        "systems/metzmatan/templates/actor/parts/actor-spells.hbs"
     ])
 })

@@ -14,9 +14,13 @@
         }
     },
 
-    "PLACEHOLDERS": {
-        "actorName": "Character Name",
+    "DOCUMENT": {
+        "actorLabel": "Metzmatan's Mark Actor Sheet",
         "skills": "Skills"
+    },
+
+    "PLACEHOLDERS": {
+        "actorName": "Character Name"
     },
 
     "ATTRIBUTES": {
@@ -36,7 +40,9 @@
         "mind": "Mind",
         "soul": "Soul",
         "armorBonus": "Armor Bonus",
-        "dodgeBonus": "Dodge Bonus"
+        "dodgeBonus": "Dodge Bonus",
+        "damageResistance": "Damage Resistance",
+        "hardness": "Hardness"
     },
 
     "SKILLS": {
@@ -57,7 +63,20 @@
         "biography": "Character Biography"
     },
 
-    "SHEETS": {
-        "actorLabel": "Metzmatan's Mark Actor Sheet"
+    "ITEMS": {
+        "description": "Description",
+        "effects": "Effects",
+
+        "armor": {
+            "slot": "Armor Slot",
+            "isActive": "Active Armor?"
+        },
+
+        "weapon": {
+            "hands": "Hands",
+            "skill": "Weapon Skill",
+            "range": "Range",
+            "target": "Target"
+        }
     }
 }

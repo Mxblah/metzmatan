@@ -4,7 +4,7 @@
 
     {{!-- Navigation tab declaration --}}
     <nav class="sheet-tabs tabs flexshrink" data-group="primary">
-        <a class="item" data-tab="skills">{{localize "PLACEHOLDERS.skills"}}</a>
+        <a class="item" data-tab="skills">{{localize "DOCUMENT.skills"}}</a>
     </nav>
 
     {{!-- Main body: contains tabs of various related info --}}
@@ -13,5 +13,25 @@
         <div class="tab skills" data-group="primary" data-tab="skills">
             {{> "systems/metzmatan/templates/actor/parts/actor-skills.hbs"}}
         </div>
+
+        {{!-- Features tab --}}
+        {{!-- <div class="tab features" data-group="primary" data-tab="features">
+            {{> "systems/metzmatan/templates/actor/parts/actor-features.hbs"}}
+        </div> --}}
+
+        {{!-- Items (gear, equipment) tab --}}
+        {{!-- <div class="tab items" data-group="primary" data-tab="items">
+            {{> "systems/metzmatan/templates/actor/parts/actor-items.hbs"}}
+        </div> --}}
+
+        {{!-- Spells tab --}}
+        {{!-- <div class="tab spells" data-group="primary" data-tab="spells">
+            {{> "systems/metzmatan/templates/actor/parts/actor-spells.hbs"}}
+        </div> --}}
+
+        {{!-- Misc tab --}}
+        {{!-- <div class="tab misc-sheet" data-group="primary" data-tab="misc-sheet">
+            {{> "systems/metzmatan/templates/actor/parts/actor-misc-sheet.hbs"}}
+        </div> --}}
     </section>
 </form>
