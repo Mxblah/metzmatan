@@ -7,6 +7,9 @@
         },
         "Item": {
             "item": "Item",
+            "gear": "Gear",
+            "weapon": "Weapon",
+            "armor": "Armor",
             "feature": "Feature",
             "trait": "Trait",
             "mutation": "Mutation",
@@ -16,6 +19,7 @@
 
     "DOCUMENT": {
         "actorLabel": "Metzmatan's Mark Actor Sheet",
+        "itemLabel": "Metzmatan's Mark Item Sheet",
         "skills": "Skills"
     },
 
@@ -74,9 +78,18 @@
 
         "weapon": {
             "hands": "Hands",
+            "threshold": "Attack Threshold",
             "skill": "Weapon Skill",
             "range": "Range",
             "target": "Target"
+        }
+    },
+
+    "EFFECTS": {
+        "type": {
+            "status": "Status Effects",
+            "passive": "Passive Effects",
+            "inactive": "Inactive Effects"
         }
     }
 }

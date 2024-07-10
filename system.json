@@ -52,11 +52,12 @@
             "monster": {}
         },
         "Item": {
-            "Weapon": {},
-            "Armor": {},
-            "Spell": {},
-            "Trait": {},
-            "Mutation": {}
+            "weapon": {},
+            "armor": {},
+            "gear": {},
+            "spell": {},
+            "trait": {},
+            "mutation": {}
         }
     },
     "socket": false,

@@ -102,6 +102,14 @@
     grid-template-columns: auto minmax(0, 1fr);
 }
 
+/* Interactive elements */
+
+.rollable:hover, .rollable:focus {
+  color: #000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
 /* Image overrides */
 .profile-img {
     min-height: 100px;

@@ -40,6 +40,7 @@ export class WeaponDataModel extends ItemDataModel {
             attributes: new SchemaField({
                 hands: new NumberField({ integer: true, min: 0, max: 2, initial: 1, label: "ITEMS.weapon.hands" }),
                 attack: new SchemaField({
+                    thresholdOverride: new NumberField({ initial: null, nullable: true, label: "ITEMS.weapon.threshold" }), // instead of skill, can specify threshold directly
                     skill: new StringField({ initial: "weaponsMelee", label: "ITEMS.weapon.skill" }),
                     range: new StringField({ initial: "Melee", label: "ITEMS.weapon.range" }),
                     target: new StringField({ initial: "1 creature", label: "ITEMS.weapon.target" }),

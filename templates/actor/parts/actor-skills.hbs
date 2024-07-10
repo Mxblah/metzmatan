@@ -24,7 +24,7 @@
 <div class="skills grid grid-4col">
     {{#each system.skills as |skill key|}}
         <div class="skill flexrow flex-group-center">
-            <label for="system.skills.{{key}}.value" class="resource-label">{{skill.label}}</label>
+            <label for="system.skills.{{key}}.value" class="resource-label rollable" data-roll="@skills.{{key}}.value - d100" data-label="{{skill.label}}">{{skill.label}}</label>
             <span class="skill-value">{{numberFormat skill.value decimals=0 sign=false}}</span>
             <input type="text" name="system.skills.{{key}}.ranks" value="{{skill.ranks}}" data-dtype="Number"/>
         </div>
