@@ -32,8 +32,8 @@ export class MzMaActor extends Actor {
             })
             var attribBonus = Math.max(...attribArray)
 
-            // Then add the base threshold to the ranks to get the full value
-            skill.value = Math.floor(attribBonus + skill.ranks)
+            // Then add the base threshold to the ranks and bonus to get the full value
+            skill.value = Math.floor(attribBonus + skill.ranks + skill.bonus)
         }
     }
 
