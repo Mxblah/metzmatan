@@ -1,4 +1,5 @@
 import { prepareActiveEffectCategories } from "./helpers/effects.mjs"
+import { getDOS } from "./helpers/degree-of-success.mjs"
 
 // General Actor sheet
 export class MzMaActorSheet extends ActorSheet {
@@ -179,7 +180,7 @@ export class MzMaActorSheet extends ActorSheet {
         return await this.actor.createEmbeddedDocuments('Item', [itemData])
     }
 
-    _onRoll(event) {
+    async _onRoll(event) {
         event.preventDefault()
 
         const target = event.currentTarget
@@ -198,10 +199,14 @@ export class MzMaActorSheet extends ActorSheet {
             let label = data.label ? `${data.label}` : ''
             let roll = new Roll(data.roll, this.actor.getRollData())
 
+            // Evaluate the roll and retrieve degree of success, which will go into the chat message. This also evaluates the roll.
+            const content = await getDOS(roll)
+
             // Roll those dice (to chat)
             roll.toMessage({
                 speaker: ChatMessage.getSpeaker({ actor: this.actor }),
                 flavor: label,
+                content: content,
                 rollMode: game.settings.get('core', 'rollMode')
             })
             return roll
