@@ -200,13 +200,16 @@ export class MzMaActorSheet extends ActorSheet {
             let roll = new Roll(data.roll, this.actor.getRollData())
 
             // Evaluate the roll and retrieve degree of success, which will go into the chat message. This also evaluates the roll.
-            const content = await getDOS(roll)
+            const dosResult = await getDOS(roll)
+            var flavor = label
+            if (dosResult != "") {
+                flavor += `: ${dosResult}`
+            }
 
             // Roll those dice (to chat)
             roll.toMessage({
                 speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-                flavor: label,
-                content: content,
+                flavor: flavor,
                 rollMode: game.settings.get('core', 'rollMode')
             })
             return roll
