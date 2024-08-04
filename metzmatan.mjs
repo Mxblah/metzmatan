@@ -1,6 +1,6 @@
 import { MzMaActorSheet } from "./module/actor-sheet.mjs"
 import { MzMaActor } from "./module/actor.mjs"
-import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character.mjs"
+import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character-data.mjs"
 import { ArmorDataModel, WeaponDataModel } from "./module/item-data.mjs"
 
 // Foundry initialization
