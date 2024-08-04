@@ -3,7 +3,8 @@ const { HTMLField, NumberField, SchemaField, StringField, BooleanField } = found
 class ItemDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         return {
-            description: new HTMLField({ required: true, blank: true, label: "ITEMS.description" })
+            description: new HTMLField({ required: true, blank: true, label: "ITEMS.description" }),
+            effects: new StringField({ blank: true, initial: "", label: "ITEMS.effects" })
         }
     }
 }
@@ -22,11 +23,11 @@ export class ArmorDataModel extends ItemDataModel {
             }),
             attributes: new SchemaField({
                 isActive: new BooleanField({ initial: false, label: "ITEMS.armor.isActive" }),
+                isBroken: new BooleanField({ initial: false, label: "ITEMS.armor.isBroken" }),
                 slot: new StringField({ required: true, initial: "clothing", label: "ITEMS.armor.slot" }),
                 armorBonus: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "ATTRIBUTES.armorBonus" }),
                 damageResistance: new StringField({ blank: true, initial: "", label: "ATTRIBUTES.damageResistance" }),
                 hardness: new StringField({ blank: true, initial: "", label: "ATTRIBUTES.hardness" }),
-                effects: new StringField({ blank: true, initial: "", label: "ITEMS.effects" })
             })
         }
     }
@@ -40,15 +41,15 @@ export class WeaponDataModel extends ItemDataModel {
             attributes: new SchemaField({
                 hands: new NumberField({ integer: true, min: 0, max: 2, initial: 1, label: "ITEMS.weapon.hands" }),
                 attack: new SchemaField({
+                    formula: new StringField({ blank: true }), // prepared as derived data
                     thresholdOverride: new NumberField({ initial: null, nullable: true, label: "ITEMS.weapon.threshold" }), // instead of skill, can specify threshold directly
                     skill: new StringField({ initial: "weaponsMelee", label: "ITEMS.weapon.skill" }),
                     range: new StringField({ initial: "Melee", label: "ITEMS.weapon.range" }),
                     target: new StringField({ initial: "1 creature", label: "ITEMS.weapon.target" }),
-                    effects: new StringField({ blank: true, initial: "", label: "ITEMS.effects" }),
                     damage: new SchemaField({
                         diceNumber: new NumberField({ integer: true, min: 0, initial: 1 }), // should be 0 if diceSize is blank
-                        diceSize: new StringField({ blank: true, initial: "" }), // leave blank for no dice (in which case the bonus will be the damage)
-                        diceBonus: new StringField({ blank: true, initial: "" }), // leave blank for no bonus (most weapons have no bonus)
+                        diceSize: new StringField({ blank: true, initial: "" }), // leave blank for no dice (in which case the bonus will be the damage). ex: "d6", "d12"
+                        diceBonus: new StringField({ blank: true, initial: "" }), // leave blank for no bonus (most weapons have no bonus). ex: "+1", "-2"
                         formula: new StringField({ blank: true }) // prepared as derived data
                     })
                 })

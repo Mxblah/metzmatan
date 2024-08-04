@@ -1,5 +1,7 @@
 import { MzMaActorSheet } from "./module/actor-sheet.mjs"
+import { MzMaItemSheet } from "./module/item-sheet.mjs"
 import { MzMaActor } from "./module/actor.mjs"
+import { MzMaItem } from "./module/item.mjs"
 import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character-data.mjs"
 import { ArmorDataModel, WeaponDataModel } from "./module/item-data.mjs"
 
@@ -17,12 +19,18 @@ Hooks.once("init", () => {
 
     // Define Document types
     CONFIG.Actor.documentClass = MzMaActor
+    CONFIG.Item.documentClass = MzMaItem
 
     // Register sheet classes
     Actors.unregisterSheet("core", ActorSheet)
     Actors.registerSheet("metzmatan", MzMaActorSheet, {
         makeDefault: true,
         label: "DOCUMENT.actorLabel"
+    })
+    Items.unregisterSheet("core", ItemSheet)
+    Items.registerSheet("metzmatan", MzMaItemSheet, {
+        makeDefault: true,
+        label: "DOCUMENT.itemLabel"
     })
 
     // Set up trackables
@@ -45,6 +53,12 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/actor/parts/actor-items.hbs",
         "systems/metzmatan/templates/actor/parts/actor-misc-sheet.hbs",
         "systems/metzmatan/templates/actor/parts/actor-skills.hbs",
-        "systems/metzmatan/templates/actor/parts/actor-spells.hbs"
+        "systems/metzmatan/templates/actor/parts/actor-spells.hbs",
+
+        // Item sheet partials
+        "systems/metzmatan/templates/item/parts/item-header.hbs",
+        "systems/metzmatan/templates/item/parts/item-description.hbs",
+        "systems/metzmatan/templates/item/parts/item-effects.hbs",
+        "systems/metzmatan/templates/item/parts/item-armor-attributes.hbs"
     ])
 })

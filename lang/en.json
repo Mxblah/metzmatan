@@ -20,11 +20,23 @@
     "DOCUMENT": {
         "actorLabel": "Metzmatan's Mark Actor Sheet",
         "itemLabel": "Metzmatan's Mark Item Sheet",
-        "skills": "Skills"
+        "skills": "Skills",
+        "description": "Description",
+        "attributes": "Attributes",
+        "effects": "Effects",
+        "effect": "Effect",
+        "actions": {
+            "create": "Create {type}",
+            "new": "New {type}",
+            "edit": "Edit {type}",
+            "delete": "Delete {type}",
+            "toggle": "Toggle"
+        }
     },
 
     "PLACEHOLDERS": {
-        "actorName": "Character Name"
+        "actorName": "Character Name",
+        "itemName": "Item Name"
     },
 
     "ATTRIBUTES": {
@@ -96,7 +108,8 @@
 
         "armor": {
             "slot": "Armor Slot",
-            "isActive": "Active Armor?"
+            "isActive": "Armor Active?",
+            "isBroken": "Armor Broken?"
         },
 
         "weapon": {
@@ -113,6 +126,8 @@
             "status": "Status Effects",
             "passive": "Passive Effects",
             "inactive": "Inactive Effects"
-        }
+        },
+        "duration": "Effect Duration",
+        "source": "Effect Source"
     }
 }
