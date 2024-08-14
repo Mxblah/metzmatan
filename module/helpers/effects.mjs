@@ -24,6 +24,8 @@ export function prepareActiveEffectCategories(effects) {
         else if (effect.isTemporary) { categories.status.effects.push(effect) }
         else { categories.passive.effects.push(effect) }
     }
+
+    return categories
 }
 
 export function onManageActiveEffect(event, owner) {
@@ -42,7 +44,7 @@ export function onManageActiveEffect(event, owner) {
                     name: game.i18n.format('DOCUMENT.New', {
                         type: game.i18n.localize('DOCUMENT.ActiveEffect')
                     }),
-                    icon: 'icons/svg/aura.svg',
+                    img: 'icons/svg/aura.svg',
                     origin: owner.uuid,
                     'duration.rounds': li.dataset.effectType === 'status' ? 1 : undefined,
                     disabled: li.dataset.effectType === 'inactive'

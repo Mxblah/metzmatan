@@ -137,15 +137,29 @@
 }
 
 /* Effects tab styling */
+.effects {
+  text-align: center;
+  align-items: center;
+}
 .effects .item .effect-source,
 .effects .item .effect-duration,
 .effects .item .effect-controls {
-  text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
-  font-size: 12px;
 }
 .effects .item .effect-controls {
+  border: none;
+}
+.effects .item-name,
+.effects .effect-source,
+.effects .effect-duration,
+.effects .effect-controls {
+  align-items: center;
+}
+.effects .effect-list {
+  padding-left: 0;
+}
+.effects .item-image {
   border: none;
 }
 
