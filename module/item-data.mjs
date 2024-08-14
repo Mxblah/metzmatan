@@ -3,7 +3,7 @@ const { HTMLField, NumberField, SchemaField, StringField, BooleanField } = found
 class ItemDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         return {
-            description: new HTMLField({ required: true, blank: true, label: "ITEMS.description" }),
+            description: new HTMLField({ required: true, blank: true, initial: "", label: "ITEMS.description" }),
             effects: new StringField({ blank: true, initial: "", label: "ITEMS.effects" })
         }
     }

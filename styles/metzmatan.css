@@ -148,3 +148,10 @@
 .effects .item .effect-controls {
   border: none;
 }
+
+/* Editor styling */
+.description,
+.editor,
+.editor-content {
+  height: 100%;
+}

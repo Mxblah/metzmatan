@@ -19,7 +19,7 @@ export class MzMaItemSheet extends ItemSheet {
     }
 
     // Prepare data for item sheet use
-    getData() {
+    async getData() {
         const context = super.getData()
         const itemData = context.data
 
@@ -28,6 +28,16 @@ export class MzMaItemSheet extends ItemSheet {
         context.system = itemData.system
         context.flags = itemData.flags
         context.effects = prepareActiveEffectCategories(this.item.effects)
+
+        // Enrich HTML for buttons and such
+        context.enrichedDescription = await TextEditor.enrichHTML(
+            this.item.system.description, {
+                secrets: this.document.isOwner, // Only show secrets if we are an owner
+                rollData: context.rollData, // For inline rolls
+                relativeTo: this.item, // UUID helper
+                async: true
+            }
+        )
 
         return context
     }
