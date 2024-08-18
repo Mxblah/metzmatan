@@ -5,6 +5,7 @@
     {{!-- Navigation tab declaration --}}
     <nav class="sheet-tabs tabs flexshrink" data-group="primary">
         <a class="item" data-tab="skills">{{localize "DOCUMENT.skills"}}</a>
+        <a class="item" data-tab="items">{{localize "DOCUMENT.items"}}</a>
         <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
     </nav>
 
@@ -21,9 +22,9 @@
         </div> --}}
 
         {{!-- Items (gear, equipment) tab --}}
-        {{!-- <div class="tab items" data-group="primary" data-tab="items">
+        <div class="tab items" data-group="primary" data-tab="items">
             {{> "systems/metzmatan/templates/actor/parts/actor-items.hbs"}}
-        </div> --}}
+        </div>
 
         {{!-- Spells tab --}}
         {{!-- <div class="tab spells" data-group="primary" data-tab="spells">

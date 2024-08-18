@@ -20,6 +20,7 @@
     "DOCUMENT": {
         "actorLabel": "Metzmatan's Mark Actor Sheet",
         "itemLabel": "Metzmatan's Mark Item Sheet",
+        "items": "Items",
         "skills": "Skills",
         "description": "Description",
         "attributes": "Attributes",

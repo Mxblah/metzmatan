@@ -136,31 +136,38 @@
   min-width: 30%;
 }
 
-/* Effects tab styling */
-.effects {
+/* Effects and Items tab styling */
+.effects,
+.items-list {
   text-align: center;
   align-items: center;
 }
 .effects .item .effect-source,
 .effects .item .effect-duration,
-.effects .item .effect-controls {
+.effects .item .effect-controls,
+.items-list .item .item-controls {
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
 }
-.effects .item .effect-controls {
+.effects .item .effect-controls,
+.items-list .item .item-controls {
   border: none;
 }
 .effects .item-name,
 .effects .effect-source,
 .effects .effect-duration,
-.effects .effect-controls {
+.effects .effect-controls,
+.items-list .item-controls {
   align-items: center;
 }
-.effects .effect-list {
+.effects .effect-list,
+.items-list .item-list {
   padding-left: 0;
 }
-.effects .item-image {
+.effects .item-image,
+.items-list .item-image {
   border: none;
+  object-fit: contain;
 }
 
 /* Editor styling */

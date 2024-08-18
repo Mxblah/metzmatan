@@ -28,10 +28,14 @@ export class MzMaActor extends Actor {
             // Determine the maximum value of the core attributes that influence this skill
             var attribArray = []
             skill.coreAttribs.split(",").forEach(attrib => {
-                var attribValue = eval(`${attrib}`) / 5
+                var attribValue = eval(`${attrib}`)
                 attribArray.push(attribValue)
             })
-            var attribBonus = Math.max(...attribArray)
+            var maxAttribValue = Math.max(...attribArray)
+            var attribBonus = maxAttribValue / 5
+
+            // Clamp Ranks to be bound by the higher core attribute, or 50, whichever is higher. Or 100, which is the absolute max
+            skill.ranks = Math.min(skill.ranks, 100, Math.max(maxAttribValue, 50))
 
             // Then add the base threshold to the ranks and bonus to get the full value
             skill.value = Math.floor(attribBonus + skill.ranks + skill.bonus)

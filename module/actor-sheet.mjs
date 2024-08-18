@@ -1,4 +1,4 @@
-import { prepareActiveEffectCategories } from "./helpers/effects.mjs"
+import { onManageActiveEffect, prepareActiveEffectCategories } from "./helpers/effects.mjs"
 import { getDOS } from "./helpers/degree-of-success.mjs"
 
 // General Actor sheet
@@ -44,9 +44,6 @@ export class MzMaActorSheet extends ActorSheet {
         // Add roll data for sheet-based rolls
         context.rollData = context.actor.getRollData()
 
-        // Organize owned items (Foundry-items) into various containers
-        this._prepareItems(context)
-
         // Handle active effects
         context.effects = prepareActiveEffectCategories(this.actor.allApplicableEffects())
 
@@ -86,7 +83,7 @@ export class MzMaActorSheet extends ActorSheet {
         // "Edit active effect" event
         html.on('click', '.effect-control', event =>{
             const row = event.currentTarget.closest('li')
-            const owner = row.dataset.parentId === this.actor.id ? this.actor : this.actor.items.get(row.dataset.parentId)
+            const owner = row.dataset.parentId === this.actor.id || row.dataset.parentId == null ? this.actor : this.actor.items.get(row.dataset.parentId)
             onManageActiveEffect(event, owner)
         })
 
@@ -145,12 +142,40 @@ export class MzMaActorSheet extends ActorSheet {
         }
 
         // Put the containers into the context and return
-        context.armor = armor
-        context.weapons = weapons
-        context.gear = gear
-        context.traits = traits
-        context.mutations = mutations
-        context.spells = spells
+        context.items = {
+            armor: {
+                type: 'armor',
+                label: game.i18n.localize('TYPES.Item.armor'),
+                items: armor
+            },
+            weapons: {
+                type: 'weapon',
+                label: game.i18n.localize('TYPES.Item.weapon'),
+                items: weapons
+            },
+            gear: {
+                type: 'gear',
+                label: game.i18n.localize('TYPES.Item.gear'),
+                items: gear
+            }
+        }
+        context.features = {
+            traits: {
+                type: 'trait',
+                label: game.i18n.localize('TYPES.Item.trait'),
+                items: traits
+            },
+            mutations: {
+                type: 'mutation',
+                label: game.i18n.localize('TYPES.Item.mutation'),
+                items: mutations
+            }
+        }
+        context.spells = {
+            type: 'spell',
+            label: game.i18n.localize('TYPES.Item.spell'),
+            items: spells
+        }
     }
 
     _preparePcData(context) {
@@ -165,7 +190,7 @@ export class MzMaActorSheet extends ActorSheet {
         // Gather data / defaults needed to do the create
         const target = event.currentTarget
         const type = target.dataset.type
-        const data = duplicate(target.dataset)
+        const data = foundry.utils.duplicate(target.dataset)
         const name = `New ${type.capitalize()}`
         const itemData = {
             name: name,
