@@ -47,12 +47,12 @@
 
             <div class="attribute flexrow flex-group-center">
                 <label for="system.attributes.armorBonus" class="resource-label">{{localize "ATTRIBUTES.armorBonus"}}</label>
-                <input type="text" name="system.attributes.armorBonus" value="{{system.attributes.armorBonus}}" data-dtype="Number"/>
+                <span class="resource-value">{{numberFormat system.attributes.armorBonus decimals=0 sign=false}}</span>
             </div>
 
             <div class="attribute flexrow flex-group-center">
                 <label for="system.attributes.dodgeBonus" class="resource-label">{{localize "ATTRIBUTES.dodgeBonus"}}</label>
-                <input type="text" name="system.attributes.dodgeBonus" value="{{system.attributes.dodgeBonus}}" data-dtype="Number"/>
+                <span class="resource-value">{{numberFormat system.attributes.dodgeBonus decimals=0 sign=false}}</span>
             </div>
         </div>
 

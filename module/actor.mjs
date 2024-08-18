@@ -21,7 +21,7 @@ export class MzMaActor extends Actor {
         mp.value = Math.clamp(mp.value, mp.min, mp.max)
 
         // Handle DB based on formula
-        this.system.attributes.dodgeBonus = Math.floor(body / 5 - 4)
+        this.system.attributes.dodgeBonus = Math.floor(body / 5 - 4) + this.system.attributes.dodgeBonusBonus
 
         // Skills //
         for (let [key, skill] of Object.entries(skills)) {

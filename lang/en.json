@@ -57,6 +57,7 @@
         "soul": "Soul",
         "armorBonus": "Armor Bonus",
         "dodgeBonus": "Dodge Bonus",
+        "dodgeBonusBonus": "Dodge Bonus from Features and Items",
         "damageResistance": "Damage Resistance",
         "hardness": "Hardness"
     },
