@@ -64,3 +64,98 @@ export function onManageActiveEffect(event, owner) {
             throw `Invalid action ${target.dataset.action}`
     }
 }
+
+export function parseBonus(document, bonusString) {
+    // Parses a bonus string against the passed-in document and returns an integer bonus instead
+    if (bonusString === "" || null == bonusString) {
+        // Short-circuit; nothing to do
+        return 0
+    }
+    var calculatedBonus = 0
+    const bonusArray = bonusString.split("@")
+
+    // Parse each individual term
+    for (let term of bonusArray) {
+        if (term === "" || null == term) { continue }
+        console.debug(`Parsing ${term}`)
+
+        var lastToken = null
+        var lastOperator = null
+        for (let token of term.split(" ")) {
+            if (term === "" || null == term) { continue }
+            console.debug(`Parsing ${token}`)
+            var currentToken = null
+            var currentOperator = null
+
+            if (['+','-','/','*'].includes(token)) {
+                // Token is an operator
+                console.debug(`${token} is an operator`)
+                currentOperator = token
+            } else if (token.match(/^-?\d+$/g)) {
+                // Token is a number
+                console.debug(`${token} is a number`)
+                currentToken = token
+            } else {
+                // Otherwise, token is assumed to be a property reference, so get it from the document
+                console.debug(`${token} is a reference`)
+                currentToken = _getNestedProperty(document, token.split("."))
+                if (currentToken == undefined) {
+                    console.warn(`Found unparseable reference string when attempting to parse bonus string: '${bonusString}'\nInvalid key string '${token}'\nThis bonus will not be applied`)
+                    return 0
+                }
+            }
+
+            // If we have a last token and a last operator and a current token, do some math to combine
+            if (null != lastToken && null != lastOperator && null != currentToken) {
+                console.debug(`Operating: ${lastToken} ${lastOperator} ${currentToken}`)
+                switch (lastOperator) {
+                    case "*":
+                        lastToken = lastToken * currentToken
+                        break
+                    case "/":
+                        lastToken = lastToken / currentToken
+                        break
+                    case "+":
+                        lastToken = lastToken + currentToken
+                        break
+                    case "-":
+                        lastToken = lastToken - currentToken
+                        break
+                }
+                lastOperator = null
+            } else if (null != currentOperator) {
+                // We have a current operator, but not enough numbers to use it, so store it for later
+                console.debug(`Storing ${currentOperator} for later`)
+                lastOperator = currentOperator
+            } else {
+                // We must have a current token, but not enough operators or numbers to use it, so store it for later
+                console.debug(`Storing ${currentToken} for later`)
+                lastToken = currentToken
+            }
+        }
+
+        // After that, we should have a final lastToken that has had all the math done to it
+        console.debug(`Incrementing by ${lastToken}`)
+        calculatedBonus += lastToken
+    }
+
+    console.debug(`Final calculated bonus: ${calculatedBonus}`)
+    return calculatedBonus
+}
+
+// Recursive helper function to get nested properties of an object
+function _getNestedProperty(document, propertyArray) {
+    console.debug(`Searching ${document} for ${propertyArray[0]}`)
+    if (document == undefined || document == null) {
+        // Sanity check
+        return undefined
+    }
+
+    // Get the current property, then either return if that's the last one or continue to the next if it isn't
+    if (propertyArray.length <= 1) {
+        console.debug(`Found ${document[propertyArray[0]]}`)
+        return document[propertyArray[0]]
+    } else {
+        return _getNestedProperty(document[propertyArray[0]], propertyArray.slice(1))
+    }
+}

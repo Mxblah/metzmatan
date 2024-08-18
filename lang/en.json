@@ -74,6 +74,7 @@
         "total": "Total",
         "ranks": "Ranks",
         "bonus": "Bonus",
+        "parsedBonus": "Parsed Bonus (for dynamic Active Effects)",
         "weaponsMelee": "Weapons (Melee)",
         "weaponsRanged": "Weapons (Ranged)",
         "celestialMagic": "Celestial Magic",

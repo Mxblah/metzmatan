@@ -1,3 +1,5 @@
+import { parseBonus } from "./helpers/effects.mjs"
+
 // Common class for all system actors
 export class MzMaActor extends Actor {
     // Update derived information from stats
@@ -39,11 +41,12 @@ export class MzMaActor extends Actor {
         this.system.attributes.dodgeBonus = Math.floor(body / 5 - 4) + this.system.attributes.dodgeBonusBonus
 
         // Skills //
+        const actor = this
         for (let [key, skill] of Object.entries(skills)) {
             // Determine the maximum value of the core attributes that influence this skill
             var attribArray = []
             skill.coreAttribs.split(",").forEach(attrib => {
-                var attribValue = eval(`${attrib}`)
+                var attribValue = actor['system']['attributes'][attrib]
                 attribArray.push(attribValue)
             })
             var maxAttribValue = Math.max(...attribArray)
@@ -53,7 +56,8 @@ export class MzMaActor extends Actor {
             skill.ranks = Math.min(skill.ranks, 100, Math.max(maxAttribValue, 50))
 
             // Then add the base threshold to the ranks and bonus to get the full value
-            skill.value = Math.floor(attribBonus + skill.ranks + skill.bonus)
+            var parsedBonusAsInt = parseBonus(actor, skill.parsedBonus)
+            skill.value = Math.floor(attribBonus + skill.ranks + skill.directBonus + parsedBonusAsInt)
         }
     }
 
