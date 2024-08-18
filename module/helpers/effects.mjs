@@ -77,37 +77,37 @@ export function parseBonus(document, bonusString) {
     // Parse each individual term
     for (let term of bonusArray) {
         if (term === "" || null == term) { continue }
-        console.debug(`Parsing ${term}`)
+        // console.debug(`Parsing ${term}`)
 
-        var lastToken = null
+        var lastToken = 0
         var lastOperator = null
         for (let token of term.split(" ")) {
             if (term === "" || null == term) { continue }
-            console.debug(`Parsing ${token}`)
+            // console.debug(`Parsing ${token}`)
             var currentToken = null
             var currentOperator = null
 
             if (['+','-','/','*'].includes(token)) {
                 // Token is an operator
-                console.debug(`${token} is an operator`)
+                // console.debug(`${token} is an operator`)
                 currentOperator = token
             } else if (token.match(/^-?\d+$/g)) {
                 // Token is a number
-                console.debug(`${token} is a number`)
-                currentToken = token
+                // console.debug(`${token} is a number`)
+                currentToken = Number(token)
             } else {
                 // Otherwise, token is assumed to be a property reference, so get it from the document
-                console.debug(`${token} is a reference`)
+                // console.debug(`${token} is a reference`)
                 currentToken = _getNestedProperty(document, token.split("."))
                 if (currentToken == undefined) {
-                    console.warn(`Found unparseable reference string when attempting to parse bonus string: '${bonusString}'\nInvalid key string '${token}'\nThis bonus will not be applied`)
+                    console.warn(`Found unparseable reference string when attempting to parse bonus string: '${bonusString}'\nInvalid key string '${token}'\nThis bonus will not be applied.`)
                     return 0
                 }
             }
 
             // If we have a last token and a last operator and a current token, do some math to combine
-            if (null != lastToken && null != lastOperator && null != currentToken) {
-                console.debug(`Operating: ${lastToken} ${lastOperator} ${currentToken}`)
+            if (null != lastOperator && null != currentToken) {
+                // console.debug(`Operating: ${lastToken} ${lastOperator} ${currentToken}`)
                 switch (lastOperator) {
                     case "*":
                         lastToken = lastToken * currentToken
@@ -125,27 +125,32 @@ export function parseBonus(document, bonusString) {
                 lastOperator = null
             } else if (null != currentOperator) {
                 // We have a current operator, but not enough numbers to use it, so store it for later
-                console.debug(`Storing ${currentOperator} for later`)
+                // console.debug(`Storing ${currentOperator} for later`)
                 lastOperator = currentOperator
             } else {
                 // We must have a current token, but not enough operators or numbers to use it, so store it for later
-                console.debug(`Storing ${currentToken} for later`)
+                // console.debug(`Storing ${currentToken} for later`)
                 lastToken = currentToken
             }
         }
 
         // After that, we should have a final lastToken that has had all the math done to it
-        console.debug(`Incrementing by ${lastToken}`)
-        calculatedBonus += lastToken
+        // console.debug(`Incrementing by ${lastToken} (${Math.floor(lastToken)})`)
+        if (typeof lastToken != 'number') {
+            // Final sanity check
+            console.warn(`Returned non-numerical value when attempting to parse bonus string: '${bonusString}'\nThis bonus will not be applied.`)
+            return 0
+        }
+        calculatedBonus += Math.floor(lastToken)
     }
 
-    console.debug(`Final calculated bonus: ${calculatedBonus}`)
+    // console.debug(`Final calculated bonus: ${calculatedBonus}`)
     return calculatedBonus
 }
 
 // Recursive helper function to get nested properties of an object
 function _getNestedProperty(document, propertyArray) {
-    console.debug(`Searching ${document} for ${propertyArray[0]}`)
+    // console.debug(`Searching ${document} for ${propertyArray[0]}`)
     if (document == undefined || document == null) {
         // Sanity check
         return undefined
@@ -153,7 +158,7 @@ function _getNestedProperty(document, propertyArray) {
 
     // Get the current property, then either return if that's the last one or continue to the next if it isn't
     if (propertyArray.length <= 1) {
-        console.debug(`Found ${document[propertyArray[0]]}`)
+        // console.debug(`Found ${document[propertyArray[0]]}`)
         return document[propertyArray[0]]
     } else {
         return _getNestedProperty(document[propertyArray[0]], propertyArray.slice(1))
