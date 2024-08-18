@@ -7,8 +7,8 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
         return {
             resources: new SchemaField({
                 hp: new SchemaField({
-                    min: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "ATTRIBUTES.hpMin" }),
-                    value: new NumberField({ required: true, integer: true, min: 0, initial: 5, label: "ATTRIBUTES.hp" }),
+                    min: new NumberField({ required: true, integer: true, initial: -5, label: "ATTRIBUTES.hpMin" }),
+                    value: new NumberField({ required: true, integer: true, initial: 5, label: "ATTRIBUTES.hp" }),
                     max: new NumberField({ required: true, integer: true, min: 0, initial: 5, label: "ATTRIBUTES.hpMax" }),
                     levelBonus: new NumberField({ required: true, integer: true, min: 0, initial: 0, label: "ATTRIBUTES.hpLevelBonus" })
                 }),

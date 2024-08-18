@@ -13,7 +13,8 @@ export class MzMaActor extends Actor {
         // Clamp and handle HP based on formula
         hp.levelBonus = Math.clamp(hp.levelBonus, Math.floor(level / 4) + 1, (Math.floor(level / 4) + 1) * 6)
         hp.max = Math.floor(body / 5 + hp.levelBonus)
-        hp.value = Math.clamp(hp.value, hp.min, hp.max)
+        hp.min = -hp.max
+        hp.value =  Math.clamp(hp.value, hp.min, hp.max)
 
         // Clamp and handle MP based on formula
         mp.max = Math.floor((mind + soul) / 5 - 4)
