@@ -33,6 +33,9 @@ Hooks.once("init", () => {
         label: "DOCUMENT.itemLabel"
     })
 
+    // Use modern AE transfer behavior (not copied to actor, but applies directly from within the item)
+    CONFIG.ActiveEffect.legacyTransferral = false
+
     // Set up trackables
     CONFIG.Actor.trackableAttributes = {
         pc: {
