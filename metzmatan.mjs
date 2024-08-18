@@ -58,7 +58,9 @@ Hooks.once("init", () => {
         // Item sheet partials
         "systems/metzmatan/templates/item/parts/item-header.hbs",
         "systems/metzmatan/templates/item/parts/item-description.hbs",
-        "systems/metzmatan/templates/item/parts/item-effects.hbs",
-        "systems/metzmatan/templates/item/parts/item-armor-attributes.hbs"
+        "systems/metzmatan/templates/item/parts/item-armor-attributes.hbs",
+
+        // Generic partials
+        "systems/metzmatan/templates/generic/parts/effects.hbs"
     ])
 })

@@ -5,6 +5,7 @@
     {{!-- Navigation tab declaration --}}
     <nav class="sheet-tabs tabs flexshrink" data-group="primary">
         <a class="item" data-tab="skills">{{localize "DOCUMENT.skills"}}</a>
+        <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
     </nav>
 
     {{!-- Main body: contains tabs of various related info --}}
@@ -28,6 +29,11 @@
         {{!-- <div class="tab spells" data-group="primary" data-tab="spells">
             {{> "systems/metzmatan/templates/actor/parts/actor-spells.hbs"}}
         </div> --}}
+
+        {{!-- Effects tab --}}
+        <div class="tab effects" data-group="primary" data-tab="effects">
+            {{> "systems/metzmatan/templates/generic/parts/effects.hbs"}}
+        </div>
 
         {{!-- Misc tab --}}
         {{!-- <div class="tab misc-sheet" data-group="primary" data-tab="misc-sheet">
