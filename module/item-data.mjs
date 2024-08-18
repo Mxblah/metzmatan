@@ -9,6 +9,27 @@ class ItemDataModel extends foundry.abstract.TypeDataModel {
     }
 }
 
+class FeatureDataModel extends ItemDataModel {
+    static defineSchema() {
+        return {
+            ...super.defineSchema(),
+
+            magicClass: new StringField({ blank: true, initial: "Planetary", label: "ATTRIBUTES.magicClass" }),
+            realm: new StringField({ blank: true, initial: "Core", label: "ATTRIBUTES.realm" }),
+            prerequisites: new StringField({ blank: true, initial: "", label: "DOCUMENT.prerequisites" })
+        }
+    }
+}
+
+export class TraitDataModel extends FeatureDataModel {
+    static defineSchema() {
+        return {
+            ...super.defineSchema()
+            // No additional fields needed for Traits
+        }
+    }
+}
+
 export class ArmorDataModel extends ItemDataModel {
     static defineSchema() {
         return {

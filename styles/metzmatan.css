@@ -176,3 +176,8 @@
 .editor-content {
   height: 100%;
 }
+
+/* Feature styling */
+.realm-label {
+  font-size: 1.25em;
+}

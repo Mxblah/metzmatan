@@ -22,10 +22,12 @@
         "itemLabel": "Metzmatan's Mark Item Sheet",
         "items": "Items",
         "skills": "Skills",
+        "features": "Features",
         "description": "Description",
         "attributes": "Attributes",
         "effects": "Effects",
         "effect": "Effect",
+        "prerequisites": "Prerequisites",
         "actions": {
             "create": "Create {type}",
             "new": "New {type}",
@@ -37,7 +39,8 @@
 
     "PLACEHOLDERS": {
         "actorName": "Character Name",
-        "itemName": "Item Name"
+        "itemName": "Item Name",
+        "prerequisites": "Feature Prerequisites"
     },
 
     "ATTRIBUTES": {
@@ -60,7 +63,10 @@
         "dodgeBonus": "Dodge Bonus",
         "dodgeBonusBonus": "Dodge Bonus from Features and Items",
         "damageResistance": "Damage Resistance",
-        "hardness": "Hardness"
+        "hardness": "Hardness",
+
+        "realm": "Magic Realm",
+        "magicClass": "Magic Class"
     },
 
     "SKILLS": {

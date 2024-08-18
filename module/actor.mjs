@@ -20,7 +20,7 @@ export class MzMaActor extends Actor {
         mp.max = Math.floor((mind + soul) / 5 - 4)
         mp.value = Math.clamp(mp.value, mp.min, mp.max)
 
-        // Clamp AP and handle based on formula (todo: later, probably handle this via AEs instead of direct reference)
+        // Clamp AP and handle based on formula (todo: later, probably handle this via AEs instead of direct reference, like AB is handled)
         var apMaxToAdd = 0
         var apValueToAdd = 0
         const allArmorItems = this.items.filter((item) => item.type === 'armor')
