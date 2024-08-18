@@ -5,7 +5,7 @@ export class MzMaActor extends Actor {
         super.prepareDerivedData()
 
         // Various useful shortcuts
-        const { hp, mp } = this.system.resources
+        const { hp, mp, ap } = this.system.resources
         const { level, body, mind, soul } = this.system.attributes
         const { skills } = this.system
 
@@ -19,6 +19,21 @@ export class MzMaActor extends Actor {
         // Clamp and handle MP based on formula
         mp.max = Math.floor((mind + soul) / 5 - 4)
         mp.value = Math.clamp(mp.value, mp.min, mp.max)
+
+        // Clamp AP and handle based on formula (todo: later, probably handle this via AEs instead of direct reference)
+        var apMaxToAdd = 0
+        var apValueToAdd = 0
+        const allArmorItems = this.items.filter((item) => item.type === 'armor')
+        for (let [key, item] of Object.entries(allArmorItems)) {
+            if (!item.system.attributes.isBroken && item.system.attributes.isActive) {
+                // Armor is not broken and is active, so add its values to the actor's AP
+                apMaxToAdd += item.system.resources.ap.max
+                apValueToAdd += item.system.resources.ap.value
+            }
+        }
+
+        ap.max = apMaxToAdd
+        ap.value = Math.clamp(apValueToAdd, ap.min, ap.max)
 
         // Handle DB based on formula
         this.system.attributes.dodgeBonus = Math.floor(body / 5 - 4) + this.system.attributes.dodgeBonusBonus
