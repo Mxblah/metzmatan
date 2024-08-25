@@ -1,6 +1,7 @@
 const { HTMLField, NumberField, SchemaField, StringField, BooleanField } = foundry.data.fields
 
-class ItemDataModel extends foundry.abstract.TypeDataModel {
+// Works for generic Gear
+export class ItemDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         return {
             description: new HTMLField({ required: true, blank: true, initial: "", label: "ITEMS.description" }),
@@ -42,6 +43,7 @@ export class ActiveFeatureDataModel extends FeatureDataModel {
     }
 }
 
+// Armor gets its own bespoke class
 export class ArmorDataModel extends ItemDataModel {
     static defineSchema() {
         return {
@@ -66,6 +68,7 @@ export class ArmorDataModel extends ItemDataModel {
     }
 }
 
+// So do weapons
 export class WeaponDataModel extends ItemDataModel {
     static defineSchema() {
         return {
