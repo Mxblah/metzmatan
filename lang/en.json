@@ -41,7 +41,9 @@
     "PLACEHOLDERS": {
         "actorName": "Character Name",
         "itemName": "Item Name",
-        "prerequisites": "Feature Prerequisites"
+        "prerequisites": "Feature Prerequisites",
+        "featureClass": "Feature Class",
+        "realm": "Feature Realm"
     },
 
     "ATTRIBUTES": {
@@ -75,6 +77,7 @@
             "duration": "Ability Duration",
             "range": "Range",
             "target": "Target",
+            "mp": "MP Cost",
             "cooldown": "Recharge time"
         }
     },

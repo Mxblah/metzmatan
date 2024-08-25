@@ -9,7 +9,8 @@ class ItemDataModel extends foundry.abstract.TypeDataModel {
     }
 }
 
-class FeatureDataModel extends ItemDataModel {
+// Works for Traits
+export class FeatureDataModel extends ItemDataModel {
     static defineSchema() {
         return {
             ...super.defineSchema(),
@@ -21,16 +22,8 @@ class FeatureDataModel extends ItemDataModel {
     }
 }
 
-export class TraitDataModel extends FeatureDataModel {
-    static defineSchema() {
-        return {
-            ...super.defineSchema()
-            // No additional fields needed for Traits
-        }
-    }
-}
-
-export class MutationDataModel extends FeatureDataModel {
+// Works for both Spells and Mutations
+export class ActiveFeatureDataModel extends FeatureDataModel {
     static defineSchema() {
         return {
             ...super.defineSchema(),
@@ -41,7 +34,8 @@ export class MutationDataModel extends FeatureDataModel {
                 duration: new StringField({ required: true, initial: "Instant", label: "ATTRIBUTES.abilities.duration" }),
                 range: new StringField({ required: true, initial: "Self", label: "ATTRIBUTES.abilities.range" }),
                 target: new StringField({ required: true, initial: "Self", label: "ATTRIBUTES.abilities.target" }),
-                cooldown: new StringField({ required: true, initial: "1 per 10 minutes", label: "ATTRIBUTES.abilities.cooldown" }),
+                mp: new StringField({ required: true, initial: "0", label: "ATTRIBUTES.abilities.mp" }),
+                cooldown: new StringField({ required: true, initial: "Instant", label: "ATTRIBUTES.abilities.cooldown" }),
                 description: new HTMLField({ required: true, blank: true, initial: "", label: "ITEMS.description" })
             })
         }

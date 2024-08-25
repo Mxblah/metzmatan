@@ -21,6 +21,10 @@
   flex: 0;
 }
 
+.flex30 {
+  flex: 0.30;
+}
+
 .flex-between {
   justify-content: space-between;
 }
@@ -100,6 +104,14 @@
 
 .grid-2min1 {
     grid-template-columns: auto minmax(0, 1fr);
+}
+
+.grid-3070 {
+    grid-template-columns: 30% calc(70% - 10px);
+}
+
+.grid-2575 {
+  grid-template-columns: 25% calc(75% - 10px);
 }
 
 /* Interactive elements */

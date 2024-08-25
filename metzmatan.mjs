@@ -3,7 +3,7 @@ import { MzMaItemSheet } from "./module/item-sheet.mjs"
 import { MzMaActor } from "./module/actor.mjs"
 import { MzMaItem } from "./module/item.mjs"
 import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character-data.mjs"
-import { ArmorDataModel, MutationDataModel, TraitDataModel, WeaponDataModel } from "./module/item-data.mjs"
+import { ActiveFeatureDataModel, ArmorDataModel, FeatureDataModel, WeaponDataModel } from "./module/item-data.mjs"
 
 // Foundry initialization
 Hooks.once("init", () => {
@@ -15,8 +15,8 @@ Hooks.once("init", () => {
     CONFIG.Item.dataModels = {
         armor: ArmorDataModel,
         weapon: WeaponDataModel,
-        trait: TraitDataModel,
-        mutation: MutationDataModel
+        trait: FeatureDataModel,
+        mutation: ActiveFeatureDataModel
     }
 
     // Define Document types
