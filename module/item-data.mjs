@@ -30,6 +30,24 @@ export class TraitDataModel extends FeatureDataModel {
     }
 }
 
+export class MutationDataModel extends FeatureDataModel {
+    static defineSchema() {
+        return {
+            ...super.defineSchema(),
+
+            ability: new SchemaField({
+                type: new StringField({ required: true, initial: "Active", label: "ATTRIBUTES.abilities.type" }),
+                actions: new StringField({ required: true, initial: "1 Main", label: "ATTRIBUTES.abilities.actions" }),
+                duration: new StringField({ required: true, initial: "Instant", label: "ATTRIBUTES.abilities.duration" }),
+                range: new StringField({ required: true, initial: "Self", label: "ATTRIBUTES.abilities.range" }),
+                target: new StringField({ required: true, initial: "Self", label: "ATTRIBUTES.abilities.target" }),
+                cooldown: new StringField({ required: true, initial: "1 per 10 minutes", label: "ATTRIBUTES.abilities.cooldown" }),
+                description: new HTMLField({ required: true, blank: true, initial: "", label: "ITEMS.description" })
+            })
+        }
+    }
+}
+
 export class ArmorDataModel extends ItemDataModel {
     static defineSchema() {
         return {

@@ -38,6 +38,16 @@ export class MzMaItemSheet extends ItemSheet {
                 async: true
             }
         )
+        // And do it again for the ability description, if it has one
+        if (['mutation', 'spell'].includes(this.item.type))
+        context.enrichedAbilityDescription = await TextEditor.enrichHTML(
+            this.item.system.ability.description, {
+                secrets: this.document.isOwner, // Only show secrets if we are an owner
+                rollData: context.rollData, // For inline rolls
+                relativeTo: this.item, // UUID helper
+                async: true
+            }
+        )
 
         return context
     }

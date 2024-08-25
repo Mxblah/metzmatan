@@ -27,6 +27,7 @@
         "attributes": "Attributes",
         "effects": "Effects",
         "effect": "Effect",
+        "ability": "Ability",
         "prerequisites": "Prerequisites",
         "actions": {
             "create": "Create {type}",
@@ -66,7 +67,16 @@
         "hardness": "Hardness",
 
         "realm": "Magic Realm",
-        "magicClass": "Magic Class"
+        "magicClass": "Magic Class",
+
+        "abilities": {
+            "type": "Ability Type",
+            "actions": "Required Actions",
+            "duration": "Ability Duration",
+            "range": "Range",
+            "target": "Target",
+            "cooldown": "Recharge time"
+        }
     },
 
     "SKILLS": {

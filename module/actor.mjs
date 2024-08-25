@@ -10,6 +10,7 @@ export class MzMaActor extends Actor {
         const { hp, mp, ap } = this.system.resources
         const { level, body, mind, soul } = this.system.attributes
         const { skills } = this.system
+        const actor = this
 
         // Resources //
         // Clamp and handle HP based on formula
@@ -37,11 +38,7 @@ export class MzMaActor extends Actor {
         ap.max = apMaxToAdd
         ap.value = Math.clamp(apValueToAdd, ap.min, ap.max)
 
-        // Handle DB based on formula
-        this.system.attributes.dodgeBonus = Math.floor(body / 5 - 4) + this.system.attributes.dodgeBonusBonus
-
         // Skills //
-        const actor = this
         for (let [key, skill] of Object.entries(skills)) {
             // Determine the maximum value of the core attributes that influence this skill
             var attribArray = []
@@ -59,6 +56,10 @@ export class MzMaActor extends Actor {
             var parsedBonusAsInt = parseBonus(actor, skill.parsedBonus)
             skill.value = Math.floor(attribBonus + skill.ranks + skill.directBonus + parsedBonusAsInt)
         }
+
+        // Handle DB based on formula
+        var dbpbAsInt = parseBonus(actor, this.system.attributes.dodgeBonusParsedBonus)
+        this.system.attributes.dodgeBonus = Math.floor(Math.floor(body / 5 - 4) + this.system.attributes.dodgeBonusBonus + dbpbAsInt)
     }
 
     // Apply data for use in rolls

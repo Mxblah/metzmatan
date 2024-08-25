@@ -31,7 +31,8 @@ export class CharacterDataModel extends foundry.abstract.TypeDataModel {
                 armorBonus: new NumberField({ required: true, integer: true, initial: 0, label: "ATTRIBUTES.armorBonus" }),
                 dodgeBonus: new NumberField({ required: true, integer: true, initial: 0, label: "ATTRIBUTES.dodgeBonus" }),
                 // There *is* a better name for this attribute, but I find this funny.
-                dodgeBonusBonus: new NumberField({ required: true, integer: true, initial: 0, label: "ATTRIBUTES.dodgeBonusBonus" })
+                dodgeBonusBonus: new NumberField({ required: true, integer: true, initial: 0, label: "ATTRIBUTES.dodgeBonusBonus" }),
+                dodgeBonusParsedBonus: new StringField({ required: true, initial: "", label: "ATTRIBUTES.dodgeBonusBonus" })
             }),
             skills: new SchemaField({
                 weaponsMelee: new SchemaField({

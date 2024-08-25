@@ -57,7 +57,7 @@
             "gear": { "htmlFields": ["description"] },
             "spell": { "htmlFields": ["description"] },
             "trait": { "htmlFields": ["description"] },
-            "mutation": { "htmlFields": ["description"] }
+            "mutation": { "htmlFields": ["description", "ability.description"] }
         }
     },
     "socket": false,
