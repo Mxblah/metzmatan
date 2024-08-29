@@ -1,4 +1,5 @@
 import { getDOS } from "./helpers/degree-of-success.mjs"
+import { parseBonus } from "./helpers/effects.mjs"
 
 // Common class for all system Foundry-Items
 export class MzMaItem extends Item {
@@ -88,32 +89,37 @@ export class MzMaItem extends Item {
     }
 
     _prepareWeaponDerivedData() {
-        // Generate the weapon formulae based on the item's attributes
-        const { attack } = this.system.attributes
-        const { damage } = this.system.attributes.attack
+        const { attack, damage } = this.system
 
-        var attackFormula = ''
-        if (null != attack.thresholdOverride) {
+        // Get the skill friendly name for display purposes
+        attack.skillLabel = game.i18n.localize(`SKILLS.${attack.skill}`)
+
+        // Generate the attack formula based on the item's (and owner's) attributes
+        var attackFormula = '(No parent actor)'
+        if (null != attack.thresholdOverride && 0 != attack.thresholdOverride) {
             attackFormula = `${attack.thresholdOverride} - 1d100`
         } else if (this.parent) {
             // We have an actor parent, so we can use its skills
-            attackFormula = `${this.parent.system.skills[`${attack.skill}`].value} - 1d100`
+            // I would use parseBonus, or just reference this.parent directly, but as skill values are derived data, we often get null back when querying them here
+            // Yes, this limitation is incredibly annoying, so instead we just pass a parseable string on to the actor to deal with
+            attackFormula = `@system.skills.${attack.skill}.value - 1d100`
         }
         // (If we have neither a threshold nor a parent, it doesn't make sense to roll anything)
         attack.formula = attackFormula
 
+        // Damage too
         var damageFormula = ''
         if (damage.diceSize != "") {
             damageFormula += `${damage.diceNumber}${damage.diceSize}`
         }
-        if (damage.diceBonus != "") {
+        if (damage.parsedDiceBonus != "") {
+            // Similarly to attacks above, I'd love to parse this here, but we can't rely on actor data being consistently derived from an item
             if (damageFormula != '') {
-                damageFormula += damage.diceBonus
+                damageFormula += ` + ${damage.parsedDiceBonus}`
             } else {
-                damageFormula += ` ${damage.diceBonus}`
+                damageFormula += ` ${damage.parsedDiceBonus}`
             }
         }
-
         damage.formula = damageFormula
     }
 

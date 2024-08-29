@@ -1,4 +1,4 @@
-import { onManageActiveEffect, prepareActiveEffectCategories } from "./helpers/effects.mjs"
+import { onManageActiveEffect, parseBonus, prepareActiveEffectCategories } from "./helpers/effects.mjs"
 import { getDOS } from "./helpers/degree-of-success.mjs"
 
 // General Actor sheet
@@ -150,6 +150,7 @@ export class MzMaActorSheet extends ActorSheet {
             },
             weapons: {
                 type: 'weapon',
+                hasWeaponRollables: true,
                 label: game.i18n.localize('TYPES.Item.weapon'),
                 items: weapons
             },
@@ -220,12 +221,23 @@ export class MzMaActorSheet extends ActorSheet {
 
         // Direct formula rollables
         if (data.roll) {
+            // Parse the roll if we're told to (yes it's a string; html doesn't do booleans)
+            var parsedRollData = data.roll
+            if (data.parse === 'true') {
+                // This is sort of dumb, but the explanation is that we use @system. when parsing bonuses and for dynamic AEs, but Rolls automatically add the system. for attribute keys
+                // So we just remove it here, if it's present
+                parsedRollData = data.roll.replace(/@system\./, '@')
+            }
+
             // Get the text and roll info
             let label = data.label ? `${data.label}` : ''
-            let roll = new Roll(data.roll, this.actor.getRollData())
+            let roll = new Roll(parsedRollData, this.actor.getRollData())
 
-            // Evaluate the roll and retrieve degree of success, which will go into the chat message. This also evaluates the roll.
-            const dosResult = await getDOS(roll)
+            // Evaluate the roll and retrieve degree of success (for d100-based rolls), which will go into the chat message. This also evaluates the roll.
+            var dosResult = ''
+            if (data.roll.match(/\d+d100/)) {
+                dosResult = await getDOS(roll)
+            }
             var flavor = label
             if (dosResult != "") {
                 flavor += `: ${dosResult}`

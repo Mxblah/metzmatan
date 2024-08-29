@@ -69,6 +69,7 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/item/parts/item-feature-ability.hbs",
         "systems/metzmatan/templates/item/parts/item-description.hbs",
         "systems/metzmatan/templates/item/parts/item-armor-attributes.hbs",
+        "systems/metzmatan/templates/item/parts/item-weapon-attributes.hbs",
 
         // Generic partials
         "systems/metzmatan/templates/generic/parts/effects.hbs"

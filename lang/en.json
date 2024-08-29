@@ -43,7 +43,10 @@
         "itemName": "Item Name",
         "prerequisites": "Feature Prerequisites",
         "featureClass": "Feature Class",
-        "realm": "Feature Realm"
+        "realm": "Feature Realm",
+        "noOverride": "(Normal)",
+        "noBonus": "(No bonus)",
+        "diceSizeExample": "d6, d8, etc."
     },
 
     "ATTRIBUTES": {
@@ -135,11 +138,19 @@
         },
 
         "weapon": {
+            "rollAttack": "Roll attack!",
+            "rollDamage": "Roll damage!",
+            "attackFormula": "Attack Formula",
+            "damageFormula": "Damage Formula",
             "hands": "Hands",
             "threshold": "Attack Threshold",
             "skill": "Weapon Skill",
             "range": "Range",
-            "target": "Target"
+            "target": "Target",
+            "diceNumber": "Damage Dice Number",
+            "diceSize": "Damage Die Size",
+            "diceBonus": "Damage Bonus",
+            "damageType": "Damage Type"
         }
     },
 

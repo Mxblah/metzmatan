@@ -14,9 +14,15 @@
         <li class="item flexrow" data-item-id="{{item._id}}" data-parent-id="{{item.parent._id}}">
             <div class="item-name flexrow">
                 <img class="item-image" src="{{item.img}}" height="32" width="32" />
-                <h4>{{item.name}}</h4>
+                <h4 class="align-vertical-center align-center">{{item.name}}</h4>
             </div>
-            {{!-- todo: later, add conditionals here that display based on item type --}}
+            {{!-- Extra buttons based on the item type --}}
+            {{#if section.hasWeaponRollables}}
+            <h4 class="align-vertical-center align-center item-controls flexrow">
+                <a class="rollable" data-parse="true" data-roll="{{ item.system.attack.formula }}" data-label="{{ item.name }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollAttack' }}</a>
+                <a class="rollable" data-parse="true" data-roll="{{ item.system.damage.formula }}" data-label="{{ item.system.damage.type }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollDamage' }}</a>
+            </h4>
+            {{/if}}
             <h4 class="item-controls align-vertical-center align-center item-controls flexrow">
                 <a class="item-control item-edit" data-action="edit" title="{{localize 'DOCUMENT.actions.edit' type=""}}{{localize 'TYPES.Item.item' }}">
                     <i class="fas fa-edit"></i>

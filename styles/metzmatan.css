@@ -111,7 +111,15 @@
 }
 
 .grid-2575 {
-  grid-template-columns: 25% calc(75% - 10px);
+    grid-template-columns: 25% calc(75% - 10px);
+}
+
+.grid-3-255025 {
+    grid-template-columns: 25% auto 25%;
+}
+
+.grid-3-252550 {
+  grid-template-columns: 25% 25% auto;
 }
 
 /* Interactive elements */
@@ -192,4 +200,13 @@
 /* Feature styling */
 .realm-label {
   font-size: 1.25em;
+}
+
+/* Text styling */
+.text-grey {
+  color: grey;
+}
+
+.text-darkblue {
+  color: darkblue;
 }
