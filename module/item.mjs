@@ -102,15 +102,14 @@ export class MzMaItem extends Item {
             // We have an actor parent, so we can use its skills
             // I would use parseBonus, or just reference this.parent directly, but as skill values are derived data, we often get null back when querying them here
             // Yes, this limitation is incredibly annoying, so instead we just pass a parseable string on to the actor to deal with
-            attackFormula = `@system.skills.${attack.skill}.value - 1d100`
+            attackFormula = `@skills.${attack.skill}.value - 1d100`
         }
         // (If we have neither a threshold nor a parent, it doesn't make sense to roll anything)
         attack.formula = attackFormula
 
         // Damage too
         var damageFormula = ''
-        if (damage.diceSize != "") {
-            damage.diceFormula = `${damage.diceNumber}${damage.diceSize}`
+        if (damage.diceFormula != "") {
             damageFormula += damage.diceFormula
         }
         if (damage.parsedDiceBonus != "") {

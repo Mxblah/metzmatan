@@ -46,7 +46,7 @@
         "realm": "Feature Realm",
         "noOverride": "(Normal)",
         "noBonus": "(No bonus)",
-        "diceSizeExample": "d6, d8, etc."
+        "diceSizeExample": "1d6, 3d8, etc."
     },
 
     "ATTRIBUTES": {
@@ -147,8 +147,7 @@
             "skill": "Weapon Skill",
             "range": "Range",
             "target": "Target",
-            "diceNumber": "Damage Dice Number",
-            "diceSize": "Damage Die Size",
+            "damageDice": "Damage Dice",
             "diceBonus": "Damage Bonus",
             "damageType": "Damage Type"
         }
