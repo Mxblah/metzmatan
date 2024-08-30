@@ -43,7 +43,7 @@
             <span class="resource-label">{{ system.attack.formula }}</span>
         </div>
         <div class="attribute flexrow flex-group-center">
-            <label for="system.damage.formula" class="resource-label flex30 {{!-- rollable --}}" data-roll="{{ system.damage.formula }}" data-label="{{name}}">{{ localize 'ITEMS.weapon.damageFormula' }}</label>
+            <label for="system.damage.formula" class="resource-label flex30 {{!-- rollable --}}" data-roll="{{ system.damage.formula }}" data-diceFormula="{{ system.damage.diceFormula }}" data-parsedBonus="{{ system.damage.parsedDiceBonus }}" data-label="{{name}}">{{ localize 'ITEMS.weapon.damageFormula' }}</label>
             <span class="resource-label">{{ system.damage.formula }}</span>
         </div>
     </div>

@@ -39,7 +39,6 @@ export class MzMaActor extends Actor {
         ap.value = Math.clamp(apValueToAdd, ap.min, ap.max)
 
         // Skills //
-        console.debug(`${this._id} is processing skill derived data`)
         for (let [key, skill] of Object.entries(skills)) {
             // Determine the maximum value of the core attributes that influence this skill
             var attribArray = []
@@ -57,7 +56,6 @@ export class MzMaActor extends Actor {
             var parsedBonusAsInt = parseBonus(actor, skill.parsedBonus)
             skill.value = Math.floor(attribBonus + skill.ranks + skill.directBonus + parsedBonusAsInt)
         }
-        console.debug(`${this._id} is done processing skill derived data. weaponsMelee is ${skills['weaponsMelee'].value}`)
 
         // Handle DB based on formula
         var dbpbAsInt = parseBonus(actor, this.system.attributes.dodgeBonusParsedBonus)

@@ -87,9 +87,10 @@ export class WeaponDataModel extends ItemDataModel {
             }),
             damage: new SchemaField({
                 formula: new StringField({ blank: true }), // prepared as derived data
+                diceFormula: new StringField({ blank: true }), // prepared as derived data
                 diceNumber: new NumberField({ integer: true, min: 0, initial: 1 }), // should be 0 if diceSize is blank
                 diceSize: new StringField({ blank: true, initial: "" }), // leave blank for no dice (in which case the bonus will be the damage). ex: "d6", "d12"
-                parsedDiceBonus: new StringField({ blank: true, initial: "" }), // leave blank for no bonus (most weapons have no bonus). ex: "+1", "-2"
+                parsedDiceBonus: new StringField({ blank: true, initial: "" }), // leave blank for no bonus (most weapons have no bonus). ex: "1", "-2", "@system.attributes.body / 5"
                 type: new StringField({ initial: "slashing", label: "ITEMS.weapon.damageType" })
             })
         }

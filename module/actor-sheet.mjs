@@ -221,12 +221,18 @@ export class MzMaActorSheet extends ActorSheet {
 
         // Direct formula rollables
         if (data.roll) {
-            // Parse the roll if we're told to (yes it's a string; html doesn't do booleans)
             var parsedRollData = data.roll
-            if (data.parse === 'true') {
-                // This is sort of dumb, but the explanation is that we use @system. when parsing bonuses and for dynamic AEs, but Rolls automatically add the system. for attribute keys
-                // So we just remove it here, if it's present
-                parsedRollData = data.roll.replace(/@system\./, '@')
+            if (null != data.diceFormula && null != data.parsedBonus) {
+                // Construct the roll from the dice and bonus, instead of the roll directly
+                const processedBonus = parseBonus(this.actor, data.parsedBonus)
+                parsedRollData = `${data.diceFormula} + ${processedBonus}`
+            } else {
+                // Normal roll; just check for the system parse and process normally
+                if (data.removeSystem === 'true') {
+                    // This is sort of dumb, but the explanation is that we use @system. when parsing bonuses and for dynamic AEs, but Rolls automatically add the system. for attribute keys
+                    // So we just remove it here, if it's present
+                    parsedRollData = data.roll.replace(/@system\./, '@')
+                }
             }
 
             // Get the text and roll info
@@ -235,7 +241,7 @@ export class MzMaActorSheet extends ActorSheet {
 
             // Evaluate the roll and retrieve degree of success (for d100-based rolls), which will go into the chat message. This also evaluates the roll.
             var dosResult = ''
-            if (data.roll.match(/\d+d100/)) {
+            if (parsedRollData.match(/d100/)) {
                 dosResult = await getDOS(roll)
             }
             var flavor = label

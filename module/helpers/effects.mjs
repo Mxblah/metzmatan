@@ -98,6 +98,10 @@ export function parseBonus(document, bonusString) {
             } else {
                 // Otherwise, token is assumed to be a property reference, so get it from the document
                 // console.debug(`${token} is a reference`)
+                if (! token.match(/^system\./)) {
+                    token = `system.${token}`
+                    // console.debug(`Expanded token to ${token}`)
+                }
                 currentToken = _getNestedProperty(document, token.split("."))
                 if (currentToken == undefined) {
                     console.warn(`Found unparseable reference string when attempting to parse bonus string: '${bonusString}'\nInvalid key string '${token}'\nThis bonus will not be applied.`)

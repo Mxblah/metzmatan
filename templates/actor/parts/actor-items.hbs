@@ -19,8 +19,8 @@
             {{!-- Extra buttons based on the item type --}}
             {{#if section.hasWeaponRollables}}
             <h4 class="align-vertical-center align-center item-controls flexrow">
-                <a class="rollable" data-parse="true" data-roll="{{ item.system.attack.formula }}" data-label="{{ item.name }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollAttack' }}</a>
-                <a class="rollable" data-parse="true" data-roll="{{ item.system.damage.formula }}" data-label="{{ item.system.damage.type }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollDamage' }}</a>
+                <a class="rollable" data-remove-system="true" data-roll="{{ item.system.attack.formula }}" data-label="{{ item.name }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollAttack' }}</a>
+                <a class="rollable" data-remove-system="true" data-roll="{{ system.damage.formula }}" data-dice-formula="{{ system.damage.diceFormula }}" data-parsed-bonus="{{ system.damage.parsedDiceBonus }}" data-label="{{ item.system.damage.type }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollDamage' }}</a>
             </h4>
             {{/if}}
             <h4 class="item-controls align-vertical-center align-center item-controls flexrow">

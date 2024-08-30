@@ -110,7 +110,8 @@ export class MzMaItem extends Item {
         // Damage too
         var damageFormula = ''
         if (damage.diceSize != "") {
-            damageFormula += `${damage.diceNumber}${damage.diceSize}`
+            damage.diceFormula = `${damage.diceNumber}${damage.diceSize}`
+            damageFormula += damage.diceFormula
         }
         if (damage.parsedDiceBonus != "") {
             // Similarly to attacks above, I'd love to parse this here, but we can't rely on actor data being consistently derived from an item
