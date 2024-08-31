@@ -6,6 +6,7 @@
     <nav class="sheet-tabs tabs flexshrink" data-group="primary">
         <a class="item" data-tab="description">{{localize "DOCUMENT.description"}}</a>
         <a class="item" data-tab="ability">{{localize "DOCUMENT.ability"}}</a>
+        <a class="item" data-tab="attack">{{localize "DOCUMENT.attack"}}</a>
         <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
     </nav>
 
@@ -18,6 +19,10 @@
         {{!-- Ability tab --}}
         <div class="tab ability description" data-group="primary" data-tab="ability">
             {{> "systems/metzmatan/templates/item/parts/item-feature-ability.hbs"}}
+        </div>
+        {{!-- Attack tab --}}
+        <div class="tab attack" data-group="primary" data-tab="attack">
+            {{> "systems/metzmatan/templates/item/parts/item-feature-attack.hbs"}}
         </div>
         {{!-- Effects tab --}}
         <div class="tab effects" data-group="primary" data-tab="effects">

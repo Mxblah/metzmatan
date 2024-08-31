@@ -38,6 +38,18 @@ export class ActiveFeatureDataModel extends FeatureDataModel {
                 mp: new StringField({ required: true, initial: "0", label: "ATTRIBUTES.abilities.mp" }),
                 cooldown: new StringField({ required: true, initial: "Instant", label: "ATTRIBUTES.abilities.cooldown" }),
                 description: new HTMLField({ required: true, blank: true, initial: "", label: "ITEMS.description" })
+            }),
+            attack: new SchemaField({
+                formula: new StringField({ blank: true }), // prepared as derived data
+                thresholdOverride: new NumberField({ initial: null, nullable: true, label: "ITEMS.weapon.threshold" }), // instead of skill, can specify threshold directly
+                skill: new StringField({ initial: "celestialMagic", label: "ITEMS.weapon.skill" }),
+                skillLabel: new StringField({ blank: true }), // prepared as derived data
+            }),
+            damage: new SchemaField({
+                formula: new StringField({ blank: true }), // prepared as derived data
+                diceFormula: new StringField({ blank: true, initial: "" }), // leave blank for no dice (in which case the bonus will be the damage). ex: "d6", "d12"
+                parsedDiceBonus: new StringField({ blank: true, initial: "" }), // leave blank for no bonus (most weapons have no bonus). ex: "1", "-2", "@system.attributes.body / 5"
+                type: new StringField({ initial: "fire", label: "ITEMS.weapon.damageType" })
             })
         }
     }

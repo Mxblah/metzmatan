@@ -1,9 +1,9 @@
 <div class="ability-fields">
-    {{!-- Hands, Skill, Override --}}
+    {{!-- Type, Skill, Override --}}
     <div class="attributes grid grid-3col grid-3-255025">
         <div class="attribute flexrow flex-group-center">
-            <label for="system.attributes.hands" class="resource-label">{{localize "ITEMS.weapon.hands"}}</label>
-            <input type="text" name="system.attributes.hands" value="{{system.attributes.hands}}" data-dtype="Number"/>
+            <label for="system.damage.type" class="resource-label">{{localize "ITEMS.weapon.damageType"}}</label>
+            <input type="text" name="system.damage.type" value="{{system.damage.type}}" placeholder="{{localize 'PLACEHOLDERS.noType'}}"/>
         </div>
 
         <div class="attribute flexrow flex-group-center">
@@ -15,24 +15,6 @@
         <div class="attribute flexrow flex-group-center">
             <label for="system.attack.thresholdOverride" class="resource-label">{{localize "ITEMS.weapon.threshold"}}</label>
             <input type="text" name="system.attack.thresholdOverride" value="{{system.attack.thresholdOverride}}" data-dtype="Number" placeholder="{{ localize 'PLACEHOLDERS.noOverride' }}"/>
-        </div>
-    </div>
-
-    {{!-- Range, Target, Type --}}
-    <div class="attributes grid grid-3col grid-3-255025">
-        <div class="attribute flexrow flex-group-center">
-            <label for="system.attack.range" class="resource-label">{{localize "ITEMS.weapon.range"}}</label>
-            <input type="text" name="system.attack.range" value="{{system.attack.range}}" placeholder="{{localize 'ITEMS.weapon.range'}}"/>
-        </div>
-
-        <div class="attribute flexrow flex-group-center">
-            <label for="system.attack.target" class="resource-label flex30">{{localize "ITEMS.weapon.target"}}</label>
-            <input type="text" name="system.attack.target" value="{{system.attack.target}}" placeholder="{{localize 'ITEMS.weapon.target'}}"/>
-        </div>
-
-        <div class="attribute flexrow flex-group-center">
-            <label for="system.damage.type" class="resource-label">{{localize "ITEMS.weapon.damageType"}}</label>
-            <input type="text" name="system.damage.type" value="{{system.damage.type}}" placeholder="{{localize 'PLACEHOLDERS.noType'}}"/>
         </div>
     </div>
 

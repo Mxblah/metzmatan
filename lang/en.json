@@ -28,6 +28,8 @@
         "effects": "Effects",
         "effect": "Effect",
         "ability": "Ability",
+        "attack": "Attack",
+        "spells": "Spells",
         "prerequisites": "Prerequisites",
         "actions": {
             "create": "Create {type}",
@@ -46,6 +48,7 @@
         "realm": "Feature Realm",
         "noOverride": "(Normal)",
         "noBonus": "(No bonus)",
+        "noType": "(Untyped)",
         "diceSizeExample": "1d6, 3d8, etc."
     },
 

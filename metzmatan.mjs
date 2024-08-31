@@ -67,6 +67,7 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/item/parts/item-header.hbs",
         "systems/metzmatan/templates/item/parts/item-feature-header.hbs",
         "systems/metzmatan/templates/item/parts/item-feature-ability.hbs",
+        "systems/metzmatan/templates/item/parts/item-feature-attack.hbs",
         "systems/metzmatan/templates/item/parts/item-description.hbs",
         "systems/metzmatan/templates/item/parts/item-armor-attributes.hbs",
         "systems/metzmatan/templates/item/parts/item-weapon-attributes.hbs",

@@ -173,9 +173,11 @@ export class MzMaActorSheet extends ActorSheet {
             }
         }
         context.spells = {
-            type: 'spell',
-            label: game.i18n.localize('TYPES.Item.spell'),
-            items: spells
+            spells: {
+                type: 'spell',
+                label: game.i18n.localize('TYPES.Item.spell'),
+                items: spells
+            }
         }
     }
 

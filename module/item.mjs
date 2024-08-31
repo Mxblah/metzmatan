@@ -12,10 +12,14 @@ export class MzMaItem extends Item {
                 this._prepareArmorDerivedData()
                 break
             case 'weapon':
-                this._prepareWeaponDerivedData()
+                this._prepareAttackDerivedData()
+                break
+            case 'mutation':
+                this._prepareAttackDerivedData()
                 break
             case 'spell':
                 this._prepareSpellDerivedData()
+                this._prepareAttackDerivedData()
                 break
             default:
                 break
@@ -88,7 +92,8 @@ export class MzMaItem extends Item {
         }
     }
 
-    _prepareWeaponDerivedData() {
+    // Shared between all item types that have attacks (weapons, mutations, and spells)
+    _prepareAttackDerivedData() {
         const { attack, damage } = this.system
 
         // Get the skill friendly name for display purposes

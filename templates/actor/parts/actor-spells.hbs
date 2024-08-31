@@ -1,0 +1,36 @@
+<ol class="items-list">
+    {{#each spells as |section id|}}
+    <li class="items-header flexrow" data-item-type="{{section.type}}">
+        <h3 class="item-name flexrow">{{localize section.label}}</h3>
+        <div class="item-controls item-controls align-vertical-center align-center flexrow">
+            <a class="item-control item-create" data-action="create" title="{{localize 'DOCUMENT.actions.create' type=''}}{{localize 'TYPES.Item.spell'}}" data-type="{{section.type}}">
+                <i class="fas fa-plus"></i> {{localize "DOCUMENT.actions.new" type=""}}{{localize 'TYPES.Item.spell'}}
+            </a>
+        </div>
+    </li>
+
+    <ol class="item-list">
+        {{#each section.items as |spell id|}}
+        <li class="item flexrow" data-item-id="{{spell._id}}" data-parent-id="{{spell.parent._id}}">
+            <div class="item-name flexrow">
+                <img class="item-image" src="{{spell.img}}" height="32" width="32" />
+                <h4 class="align-vertical-center align-center">{{spell.name}}</h4>
+            </div>
+            {{!-- Extra buttons based on the item type --}}
+            <h4 class="align-vertical-center align-center item-controls flexrow">
+                <a class="rollable" data-remove-system="true" data-roll="{{ spell.system.attack.formula }}" data-label="{{ spell.name }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollAttack' }}</a>
+                <a class="rollable" data-remove-system="true" data-roll="{{ spell.system.damage.formula }}" data-dice-formula="{{ spell.system.damage.diceFormula }}" data-parsed-bonus="{{ spell.system.damage.parsedDiceBonus }}" data-label="{{ spell.system.damage.type }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollDamage' }}</a>
+            </h4>
+            <h4 class="item-controls align-vertical-center align-center item-controls flexrow">
+                <a class="item-control item-edit" data-action="edit" title="{{localize 'DOCUMENT.actions.edit' type=""}}{{localize 'TYPES.Item.spell' }}">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <a class="item-control item-delete" data-action="delete" title="{{localize 'DOCUMENT.actions.delete' type=""}}{{localize 'TYPES.Item.spell' }}">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </h4>
+        </li>
+        {{/each}}
+    </ol>
+    {{/each}}
+</ol>
