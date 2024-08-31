@@ -59,7 +59,7 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/actor/parts/actor-character-header.hbs",
         "systems/metzmatan/templates/actor/parts/actor-features.hbs",
         "systems/metzmatan/templates/actor/parts/actor-items.hbs",
-        "systems/metzmatan/templates/actor/parts/actor-misc-sheet.hbs",
+        "systems/metzmatan/templates/actor/parts/actor-biography.hbs",
         "systems/metzmatan/templates/actor/parts/actor-skills.hbs",
         "systems/metzmatan/templates/actor/parts/actor-spells.hbs",
 

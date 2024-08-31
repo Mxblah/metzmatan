@@ -21,7 +21,7 @@ export class MzMaActorSheet extends ActorSheet {
     }
 
     // Data preparation for sheet use
-    getData() {
+    async getData() {
         // Get base sheet, actor, and system data in a convenient form
         const context = super.getData()
         const actorData = context.data
@@ -181,9 +181,18 @@ export class MzMaActorSheet extends ActorSheet {
         }
     }
 
-    _preparePcData(context) {
-        // todo!
-        return
+    async _preparePcData(context) {
+        // Enrich HTML for buttons and such
+        context.enrichedBiography = await TextEditor.enrichHTML(
+            this.actor.system.background.biography, {
+                secrets: this.document.isOwner, // Only show secrets if we are an owner
+                rollData: context.rollData, // For inline rolls
+                relativeTo: this.actor, // UUID helper
+                async: true
+            }
+        )
+
+        return context
     }
 
     // Create a new Foundry-item for the actor

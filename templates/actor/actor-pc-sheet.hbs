@@ -8,6 +8,7 @@
         <a class="item" data-tab="features">{{localize "DOCUMENT.features"}}</a>
         <a class="item" data-tab="spells">{{localize "DOCUMENT.spells"}}</a>
         <a class="item" data-tab="items">{{localize "DOCUMENT.items"}}</a>
+        <a class="item" data-tab="biography">{{localize "DOCUMENT.biography"}}</a>
         <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
     </nav>
 
@@ -38,9 +39,9 @@
             {{> "systems/metzmatan/templates/generic/parts/effects.hbs"}}
         </div>
 
-        {{!-- Misc tab --}}
-        {{!-- <div class="tab misc-sheet" data-group="primary" data-tab="misc-sheet">
-            {{> "systems/metzmatan/templates/actor/parts/actor-misc-sheet.hbs"}}
-        </div> --}}
+        {{!-- Bio tab --}}
+        <div class="tab biography description" data-group="primary" data-tab="biography">
+            {{> "systems/metzmatan/templates/actor/parts/actor-biography.hbs"}}
+        </div>
     </section>
 </form>
