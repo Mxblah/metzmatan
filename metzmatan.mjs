@@ -61,14 +61,14 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/actor/parts/actor-items.hbs",
         "systems/metzmatan/templates/actor/parts/actor-skills.hbs",
         "systems/metzmatan/templates/actor/parts/actor-spells.hbs",
+        "systems/metzmatan/templates/actor/parts/actor-actions.hbs",
 
         // Item sheet partials
         "systems/metzmatan/templates/item/parts/item-header.hbs",
         "systems/metzmatan/templates/item/parts/item-feature-header.hbs",
         "systems/metzmatan/templates/item/parts/item-feature-ability.hbs",
-        "systems/metzmatan/templates/item/parts/item-feature-attack.hbs",
+        "systems/metzmatan/templates/item/parts/item-active-attack.hbs",
         "systems/metzmatan/templates/item/parts/item-armor-attributes.hbs",
-        "systems/metzmatan/templates/item/parts/item-weapon-attributes.hbs",
 
         // Generic partials
         "systems/metzmatan/templates/generic/parts/description.hbs",

@@ -4,44 +4,32 @@
 
     {{!-- Navigation tab declaration --}}
     <nav class="sheet-tabs tabs flexshrink" data-group="primary">
+        <a class="item" data-tab="initial">{{localize "DOCUMENT.actions.tabName"}}</a>
         <a class="item" data-tab="skills">{{localize "DOCUMENT.skills"}}</a>
-        <a class="item" data-tab="features">{{localize "DOCUMENT.features"}}</a>
-        <a class="item" data-tab="spells">{{localize "DOCUMENT.spells"}}</a>
-        <a class="item" data-tab="items">{{localize "DOCUMENT.items"}}</a>
         <a class="item" data-tab="description">{{localize "DOCUMENT.description"}}</a>
         <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
     </nav>
 
     {{!-- Main body: contains tabs of various related info --}}
     <section class="sheet-body">
+        {{!-- Actions tab --}}
+        <div class="tab actions" data-group="primary" data-tab="initial">
+            {{> "systems/metzmatan/templates/actor/parts/actor-actions.hbs"}}
+        </div>
+
         {{!-- Skills tab --}}
         <div class="tab skills" data-group="primary" data-tab="skills">
             {{> "systems/metzmatan/templates/actor/parts/actor-skills.hbs"}}
         </div>
 
-        {{!-- Features tab --}}
-        <div class="tab features" data-group="primary" data-tab="features">
-            {{> "systems/metzmatan/templates/actor/parts/actor-features.hbs"}}
-        </div>
-
-        {{!-- Items (gear, equipment) tab --}}
-        <div class="tab items" data-group="primary" data-tab="items">
-            {{> "systems/metzmatan/templates/actor/parts/actor-items.hbs"}}
-        </div>
-
-        {{!-- Spells tab --}}
-        <div class="tab spells" data-group="primary" data-tab="spells">
-            {{> "systems/metzmatan/templates/actor/parts/actor-spells.hbs"}}
+        {{!-- Description tab --}}
+        <div class="tab description" data-group="primary" data-tab="description">
+            {{> "systems/metzmatan/templates/generic/parts/description.hbs"}}
         </div>
 
         {{!-- Effects tab --}}
         <div class="tab effects" data-group="primary" data-tab="effects">
             {{> "systems/metzmatan/templates/generic/parts/effects.hbs"}}
-        </div>
-
-        {{!-- Description tab --}}
-        <div class="tab description" data-group="primary" data-tab="description">
-            {{> "systems/metzmatan/templates/generic/parts/description.hbs"}}
         </div>
     </section>
 </form>

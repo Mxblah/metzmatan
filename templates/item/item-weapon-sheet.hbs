@@ -5,7 +5,7 @@
     {{!-- Navigation tab declaration --}}
     <nav class="sheet-tabs tabs flexshrink" data-group="primary">
         <a class="item" data-tab="description">{{localize "DOCUMENT.description"}}</a>
-        <a class="item" data-tab="attributes">{{localize "DOCUMENT.attributes"}}</a>
+        <a class="item" data-tab="attack">{{localize "DOCUMENT.attack"}}</a>
         <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
     </nav>
 
@@ -16,8 +16,8 @@
             {{> "systems/metzmatan/templates/generic/parts/description.hbs"}}
         </div>
         {{!-- Attributes tab --}}
-        <div class="tab attributes" data-group="primary" data-tab="attributes">
-            {{> "systems/metzmatan/templates/item/parts/item-weapon-attributes.hbs"}}
+        <div class="tab attack" data-group="primary" data-tab="attack">
+            {{> "systems/metzmatan/templates/item/parts/item-active-attack.hbs"}}
         </div>
         {{!-- Effects tab --}}
         <div class="tab effects" data-group="primary" data-tab="effects">

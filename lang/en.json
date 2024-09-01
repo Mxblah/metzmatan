@@ -29,10 +29,15 @@
         "effects": "Effects",
         "effect": "Effect",
         "ability": "Ability",
+        "abilities": "Abilities",
         "attack": "Attack",
         "spells": "Spells",
+        "primary": "Primary Actions",
+        "secondary": "Secondary Actions",
+        "passive": "Innate Effects",
         "prerequisites": "Prerequisites",
         "actions": {
+            "tabName": "Actions",
             "create": "Create {type}",
             "new": "New {type}",
             "edit": "Edit {type}",
@@ -50,6 +55,8 @@
         "noOverride": "(Normal)",
         "noBonus": "(No bonus)",
         "noType": "(Untyped)",
+        "overridden": "(Overridden)",
+        "invalid": "(Invalid)",
         "diceSizeExample": "1d6, 3d8, etc."
     },
 
@@ -69,6 +76,7 @@
         "body": "Body",
         "mind": "Mind",
         "soul": "Soul",
+        "armor": "Armor",
         "armorBonus": "Armor Bonus",
         "dodgeBonus": "Dodge Bonus",
         "dodgeBonusBonus": "Dodge Bonus from Features and Items",
@@ -85,7 +93,8 @@
             "range": "Range",
             "target": "Target",
             "mp": "MP Cost",
-            "cooldown": "Recharge time"
+            "cooldown": "Recharge time",
+            "defense": "Targeted Defense"
         }
     },
 

@@ -11,7 +11,7 @@ export class MzMaActorSheet extends ActorSheet {
             template: "systems/metzmatan/templates/actor/actor-sheet.html", // shouldn't be used for anything; dynamically defined below
             width: 800,
             height: 800,
-            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: 'initial' }]
         })
     }
 
@@ -39,7 +39,6 @@ export class MzMaActorSheet extends ActorSheet {
                 this._prepareNpcData(context)
                 break;
             case "monster":
-                this._prepareItems(context)
                 this._prepareMonsterData(context)
                 break;
             default:
@@ -165,7 +164,7 @@ export class MzMaActorSheet extends ActorSheet {
             },
             weapons: {
                 type: 'weapon',
-                hasWeaponRollables: true,
+                hasAttackRollables: true,
                 label: game.i18n.localize('TYPES.Item.weapon'),
                 items: weapons
             },
@@ -190,6 +189,7 @@ export class MzMaActorSheet extends ActorSheet {
         context.spells = {
             spells: {
                 type: 'spell',
+                hasAttackRollables: true,
                 label: game.i18n.localize('TYPES.Item.spell'),
                 items: spells
             }
@@ -210,7 +210,70 @@ export class MzMaActorSheet extends ActorSheet {
     }
 
     async _prepareMonsterData(context) {
-        // todo! nothing yet!
+        // Declare all the container types
+        const primary = []
+        const secondary = []
+        const passive = []
+        const spells = []
+        const misc = []
+
+        // Sort all the stuff into containers based on type
+        for (let item of context.items) {
+            item.img = item.img || DEFAULT_TOKEN
+
+            switch (item.type) {
+                case 'weapon':
+                    primary.push(item)
+                    break;
+                case 'armor':
+                    passive.push(item)
+                    break;
+                case 'trait':
+                    passive.push(item)
+                    break;
+                case 'mutation':
+                    // No-action mutations are always secondary / triggered effects. Otherwise, they're primary
+                    if (item.system.ability.actions === "") {
+                        secondary.push(item)
+                    } else {
+                        primary.push(item)
+                    }
+                    break;
+                case 'spell':
+                    spells.push(item)
+                    break;
+                default:
+                    // Maybe it's stuff the monster is carrying for some reason?
+                    misc.push(item)
+                    break;
+            }
+        }
+
+        // Put the containers into the context and return
+        context.actions = {
+            primary: {
+                type: 'weapon',
+                hasAttackRollables: true,
+                label: game.i18n.localize('DOCUMENT.primary'),
+                items: primary
+            },
+            secondary: {
+                type: 'mutation',
+                hasAttackRollables: true,
+                label: game.i18n.localize('DOCUMENT.secondary'),
+                items: secondary
+            },
+            passive: {
+                type: 'trait',
+                label: game.i18n.localize('DOCUMENT.passive'),
+                items: passive
+            },
+            spells: {
+                type: 'spell',
+                label: game.i18n.localize('TYPES.Item.spell'),
+                items: spells
+            }
+        }
 
         return context
     }

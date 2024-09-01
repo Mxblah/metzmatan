@@ -97,7 +97,20 @@ export class MzMaItem extends Item {
         const { attack, damage } = this.system
 
         // Get the skill friendly name for display purposes
-        attack.skillLabel = game.i18n.localize(`SKILLS.${attack.skill}`)
+        if (null != attack.thresholdOverride) {
+            // Doesn't matter if there's a threshold overriding it
+            attack.skillLabel = game.i18n.localize('PLACEHOLDERS.overridden')
+        } else {
+            attack.skillLabel = game.i18n.localize(`SKILLS.${attack.skill}`)
+        }
+
+        // And defense friendly name
+        // todo: store this enum somewhere more sensible later
+        if (['body', 'mind', 'soul', 'armor'].includes(attack.defense)) {
+            attack.defenseLabel = game.i18n.localize(`ATTRIBUTES.${attack.defense}`)
+        } else {
+            attack.defenseLabel = game.i18n.localize(`PLACEHOLDERS.invalid`)
+        }
 
         // Generate the attack formula based on the item's (and owner's) attributes
         var attackFormula = '(No parent actor)'
