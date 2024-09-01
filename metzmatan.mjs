@@ -2,7 +2,7 @@ import { MzMaActorSheet } from "./module/actor-sheet.mjs"
 import { MzMaItemSheet } from "./module/item-sheet.mjs"
 import { MzMaActor } from "./module/actor.mjs"
 import { MzMaItem } from "./module/item.mjs"
-import { CharacterDataModel, PlayerCharacterDataModel } from "./module/character-data.mjs"
+import { PlayerCharacterDataModel, MonsterDataModel } from "./module/character-data.mjs"
 import { ActiveFeatureDataModel, ArmorDataModel, FeatureDataModel, ItemDataModel, WeaponDataModel } from "./module/item-data.mjs"
 
 // Foundry initialization
@@ -10,8 +10,8 @@ Hooks.once("init", () => {
     // Set up data types
     CONFIG.Actor.dataModels = {
         pc: PlayerCharacterDataModel,
-        npc: CharacterDataModel,
-        monster: CharacterDataModel
+        npc: PlayerCharacterDataModel, // For now, NPCs are the same as PCs. Later, that might change.
+        monster: MonsterDataModel
     }
     CONFIG.Item.dataModels = {
         armor: ArmorDataModel,
@@ -59,7 +59,6 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/actor/parts/actor-character-header.hbs",
         "systems/metzmatan/templates/actor/parts/actor-features.hbs",
         "systems/metzmatan/templates/actor/parts/actor-items.hbs",
-        "systems/metzmatan/templates/actor/parts/actor-biography.hbs",
         "systems/metzmatan/templates/actor/parts/actor-skills.hbs",
         "systems/metzmatan/templates/actor/parts/actor-spells.hbs",
 
@@ -68,11 +67,11 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/item/parts/item-feature-header.hbs",
         "systems/metzmatan/templates/item/parts/item-feature-ability.hbs",
         "systems/metzmatan/templates/item/parts/item-feature-attack.hbs",
-        "systems/metzmatan/templates/item/parts/item-description.hbs",
         "systems/metzmatan/templates/item/parts/item-armor-attributes.hbs",
         "systems/metzmatan/templates/item/parts/item-weapon-attributes.hbs",
 
         // Generic partials
+        "systems/metzmatan/templates/generic/parts/description.hbs",
         "systems/metzmatan/templates/generic/parts/effects.hbs"
     ])
 })

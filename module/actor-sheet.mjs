@@ -36,6 +36,11 @@ export class MzMaActorSheet extends ActorSheet {
                 break;
             case "npc":
                 this._prepareItems(context)
+                this._prepareNpcData(context)
+                break;
+            case "monster":
+                this._prepareItems(context)
+                this._prepareMonsterData(context)
                 break;
             default:
                 break;
@@ -51,6 +56,16 @@ export class MzMaActorSheet extends ActorSheet {
         for (let [key, skill] of Object.entries(context.system.skills)) {
             skill.label = game.i18n.localize(`SKILLS.${key}`)
         }
+
+        // All actors get a description to enrich, though they're used slightly differently
+        context.enrichedDescription = await TextEditor.enrichHTML(
+            this.actor.system.description, {
+                secrets: this.document.isOwner, // Only show secrets if we are an owner
+                rollData: context.rollData, // For inline rolls
+                relativeTo: this.actor, // UUID helper
+                async: true
+            }
+        )
 
         return context
     }
@@ -182,15 +197,20 @@ export class MzMaActorSheet extends ActorSheet {
     }
 
     async _preparePcData(context) {
-        // Enrich HTML for buttons and such
-        context.enrichedBiography = await TextEditor.enrichHTML(
-            this.actor.system.background.biography, {
-                secrets: this.document.isOwner, // Only show secrets if we are an owner
-                rollData: context.rollData, // For inline rolls
-                relativeTo: this.actor, // UUID helper
-                async: true
-            }
-        )
+        // todo! nothing yet!
+
+        return context
+    }
+
+    async _prepareNpcData(context) {
+        // For now, NPCs are just PCs. Later, this may change
+        this._preparePcData(context)
+
+        return context
+    }
+
+    async _prepareMonsterData(context) {
+        // todo! nothing yet!
 
         return context
     }

@@ -1,10 +1,11 @@
 const { HTMLField, NumberField, SchemaField, StringField } = foundry.data.fields
 
 // Main Actor character model, for player characters and NPCs
-export class CharacterDataModel extends foundry.abstract.TypeDataModel {
+class CharacterDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         // Resource, attribute, and skill definitions
         return {
+            description: new HTMLField({ required: true, blank: true, label: "DOCUMENT.description" }),
             resources: new SchemaField({
                 hp: new SchemaField({
                     min: new NumberField({ required: true, integer: true, initial: -5, label: "ATTRIBUTES.hpMin" }),
@@ -257,8 +258,19 @@ export class PlayerCharacterDataModel extends CharacterDataModel {
             ...super.defineSchema(),
 
             background: new SchemaField({
-                biography: new HTMLField({ required: true, blank: true, label: "BACKGROUND.biography" })
+                // todo: nothing here yet, but maybe soon!
             })
+        }
+    }
+}
+
+// Monsters need some extra stuff that PCs don't
+export class MonsterDataModel extends CharacterDataModel {
+    static defineSchema() {
+        return {
+            ...super.defineSchema()
+
+            // todo: except they don't yet. maybe soon!
         }
     }
 }
