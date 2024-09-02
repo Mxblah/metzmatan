@@ -35,11 +35,29 @@
             </div>
         </div>
 
-        {{!-- Level, AB, and DB --}}
+        {{!-- Level, XP, and Size --}}
         <div class="attributes grid grid-3col">
             <div class="attribute flexrow flex-group-center">
                 <label for="system.attributes.level" class="resource-label">{{localize "ATTRIBUTES.level"}}</label>
                 <input type="text" name="system.attributes.level" value="{{system.attributes.level}}" data-dtype="Number"/>
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.xp" class="resource-label">{{localize "ATTRIBUTES.xp"}}</label>
+                <input type="text" name="system.attributes.xp" value="{{system.attributes.xp}}" data-dtype="Number"/>
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.size" class="resource-label">{{localize "ATTRIBUTES.size"}}</label>
+                <input type="text" name="system.attributes.size" value="{{system.attributes.size}}" data-dtype="Number"/>
+            </div>
+        </div>
+
+        {{!-- Speed, AB, and DB --}}
+        <div class="attributes grid grid-3col">
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.speed" class="resource-label">{{localize "ATTRIBUTES.speed"}}</label>
+                <span class="resource-value">{{numberFormat system.attributes.speed decimals=0 sign=false}}</span>
             </div>
 
             <div class="attribute flexrow flex-group-center">
