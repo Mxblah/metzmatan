@@ -12,7 +12,11 @@
                 <div class="resource-content flexrow flex-center flex-between align-vertical-center">
                     <input type="text" name="system.resources.hp.value" value="{{system.resources.hp.value}}" data-dtype="Number"/>
                     <span> / </span>
+                    {{#if flags.hasEditableMaxHP}}
+                    <input type="text" name="system.resources.hp.directBonus" value="{{system.resources.hp.max}}" data-dtype="Number"/>
+                    {{else}}
                     <span class="resource-max">{{numberFormat system.resources.hp.max decimals=0 sign=false}}</span>
+                    {{/if}}
                 </div>
             </div>
 
@@ -21,7 +25,11 @@
                 <div class="resource-content flexrow flex-center flex-between align-vertical-center">
                     <input type="text" name="system.resources.mp.value" value="{{system.resources.mp.value}}" data-dtype="Number"/>
                     <span> / </span>
+                    {{#if flags.hasEditableMaxHP}}
+                    <input type="text" name="system.resources.mp.directBonus" value="{{system.resources.mp.max}}" data-dtype="Number"/>
+                    {{else}}
                     <span class="resource-max">{{numberFormat system.resources.mp.max decimals=0 sign=false}}</span>
+                    {{/if}}
                 </div>
             </div>
 
@@ -53,21 +61,29 @@
             </div>
         </div>
 
-        {{!-- Speed, AB, and DB --}}
+        {{!-- Speed, DB, and AB --}}
         <div class="attributes grid grid-3col">
             <div class="attribute flexrow flex-group-center">
                 <label for="system.attributes.speed" class="resource-label">{{localize "ATTRIBUTES.speed"}}</label>
+                {{#if flags.hasEditableSpeed}}
+                <input type="text" name="system.attributes.speedBonus" value="{{system.attributes.speed}}" data-dtype="Number"/>
+                {{else}}
                 <span class="resource-value">{{numberFormat system.attributes.speed decimals=0 sign=false}}</span>
+                {{/if}}
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.dodgeBonus" class="resource-label">{{localize "ATTRIBUTES.dodgeBonus"}}</label>
+                {{#if flags.hasEditableDB}}
+                <input type="text" name="system.attributes.dodgeBonusBonus" value="{{system.attributes.dodgeBonus}}" data-dtype="Number"/>
+                {{else}}
+                <span class="resource-value">{{numberFormat system.attributes.dodgeBonus decimals=0 sign=false}}</span>
+                {{/if}}
             </div>
 
             <div class="attribute flexrow flex-group-center">
                 <label for="system.attributes.armorBonus" class="resource-label">{{localize "ATTRIBUTES.armorBonus"}}</label>
                 <span class="resource-value">{{numberFormat system.attributes.armorBonus decimals=0 sign=false}}</span>
-            </div>
-
-            <div class="attribute flexrow flex-group-center">
-                <label for="system.attributes.dodgeBonus" class="resource-label">{{localize "ATTRIBUTES.dodgeBonus"}}</label>
-                <span class="resource-value">{{numberFormat system.attributes.dodgeBonus decimals=0 sign=false}}</span>
             </div>
         </div>
 

@@ -10,7 +10,7 @@ Useful reading if you plan on implementing macros or modules for this system. Al
 
 This system implements dynamic Active Effects for Items and Actors by extending Effect value parsing outside of core Foundry's Active Effects handler. This allows you to use actor data and math for effect values instead of only static numbers. Most AE handling code lives in `module/helpers/effects.mjs`.
 
-Currently, dynamic Active Effects are supported on Actor skills and Dodge Bonus, with Weapon damage bonus also supporting the same format (though not through the Active Effect handler). Further support will be added as the system develops.
+Currently, dynamic Active Effects are supported on Actor HP, MP, speed, skills, and Dodge Bonus, with Attacks' damage bonus also supporting the same format (though not through the Active Effect handler). Further support will be added as the system develops.
 
 In order to make use of dynamic Active Effects, first ensure that the targeted Attribute Key for the effect is one that is parsed and not a direct key. The attribute key must include `parsed` in its name for this to be true (it will usually be called `parsedBonus`). Check the data models for more information, or search the module for any code calling `parseBonus()` to be extra sure. If you are only adding a static Active Effect, use an attribute key with `direct` in its name instead (usually `directBonus`).
 

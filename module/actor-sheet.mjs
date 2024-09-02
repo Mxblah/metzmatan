@@ -210,6 +210,12 @@ export class MzMaActorSheet extends ActorSheet {
     }
 
     async _prepareMonsterData(context) {
+        // Attribute flags to enable direct edit access on the sheet (otherwise is handled via formula)
+        context.flags.hasEditableMaxHP = true
+        context.flags.hasEditableMaxMP = true
+        context.flags.hasEditableSpeed = true
+        context.flags.hasEditableDB = true
+
         // Declare all the container types
         const primary = []
         const secondary = []
