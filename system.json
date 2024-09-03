@@ -63,7 +63,7 @@
         "units": "ft"
     },
     "primaryTokenAttribute": "resources.hp",
-    "secondaryTokenAttribute": "resources.mp",
+    "secondaryTokenAttribute": "resources.ap",
     "url": "https://github.com/Mxblah/metzmatan",
     "manifest": "https://github.com/Mxblah/metzmatan/blob/main/system.json",
     "download": "todo-gh-releases"

@@ -1,5 +1,6 @@
 import { onManageActiveEffect, parseBonus, prepareActiveEffectCategories } from "./helpers/effects.mjs"
 import { getDOS } from "./helpers/degree-of-success.mjs"
+import { getTargetDefense } from "./helpers/combat-helpers.mjs"
 
 // General Actor sheet
 export class MzMaActorSheet extends ActorSheet {
@@ -335,6 +336,19 @@ export class MzMaActorSheet extends ActorSheet {
                 }
             }
 
+            // For attacks, check to see if we're targeting anything and subtract the appropriate defense if applicable
+            var defenseMap = {}
+            if (data.rollType === 'attack' && null != data.defense) {
+                defenseMap = await getTargetDefense(parsedRollData, data.defense)
+                // console.debug(defenseMap)
+
+                // Apply the dodge defense directly, since it affects the DT
+                // (But check the other defense separately (later) for the PT in getDOS)
+                if (null != defenseMap) {
+                    parsedRollData += `- ${defenseMap.dodgeValue}`
+                }
+            }
+
             // Get the text and roll info
             let label = data.label ? `${data.label}` : ''
             let roll = new Roll(parsedRollData, this.actor.getRollData())
@@ -342,7 +356,13 @@ export class MzMaActorSheet extends ActorSheet {
             // Evaluate the roll and retrieve degree of success (for d100-based rolls), which will go into the chat message. This also evaluates the roll.
             var dosResult = ''
             if (parsedRollData.match(/d100/)) {
-                dosResult = await getDOS(roll)
+                if (null != defenseMap && null != defenseMap.defenseValue) {
+                    // We have a target defense, so we need to calculate the PT and such
+                    dosResult = await getDOS(roll, defenseMap.defenseValue)
+                } else {
+                    // We don't, so just check for crits
+                    dosResult = await getDOS(roll)
+                }
             }
             var flavor = label
             if (dosResult != "") {

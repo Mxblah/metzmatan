@@ -18,7 +18,7 @@
             </div>
             {{!-- Extra buttons based on the item type --}}
             <h4 class="align-vertical-center align-center item-controls flexrow">
-                <a class="rollable" data-remove-system="true" data-roll="{{ spell.system.attack.formula }}" data-label="{{ spell.name }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollAttack' }}</a>
+                <a class="rollable" data-remove-system="true" data-roll-type="attack" data-defense="{{ spell.system.attack.defense }}" data-roll="{{ spell.system.attack.formula }}" data-label="{{ spell.name }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollAttack' }}</a>
                 <a class="rollable" data-remove-system="true" data-roll="{{ spell.system.damage.formula }}" data-dice-formula="{{ spell.system.damage.diceFormula }}" data-parsed-bonus="{{ spell.system.damage.parsedDiceBonus }}" data-label="{{ spell.system.damage.type }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollDamage' }}</a>
             </h4>
             <h4 class="item-controls align-vertical-center align-center item-controls flexrow">
