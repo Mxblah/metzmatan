@@ -174,5 +174,50 @@
         "duration": "Effect Duration",
         "source": "Effect Source",
         "rounds": "Rounds"
+    },
+
+    "DAMAGE": {
+        "types": {
+            "ongoing": {
+                "name": "Ongoing",
+                "icon": "fas fa-arrows-rotate"
+            },
+            "bludgeoning": {
+                "name": "Bludgeoning",
+                "icon": "fas fa-hammer"
+            },
+            "piercing": {
+                "name": "Piercing",
+                "icon": "far fa-sword"
+            },
+            "slashing": {
+                "name": "Slashing",
+                "icon": "far fa-axe"
+            },
+            "bleed": {
+                "name": "Bleed",
+                "icon": "fas fa-droplet"
+            },
+            "cold": {
+                "name": "Cold",
+                "icon": "far fa-snowflake"
+            },
+            "corrosive": {
+                "name": "Corrosive",
+                "icon": "fas fa-vial"
+            },
+            "electricity": {
+                "name": "Electricity",
+                "icon": "fas fa-bolt"
+            },
+            "fire": {
+                "name": "Fire",
+                "icon": "far fa-fire"
+            },
+            "sonic": {
+                "name": "Sonic",
+                "icon": "far fa-waveform-lines"
+            }
+        }
     }
 }

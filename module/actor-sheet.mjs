@@ -1,6 +1,6 @@
 import { onManageActiveEffect, parseBonus, prepareActiveEffectCategories } from "./helpers/effects.mjs"
 import { getDOS } from "./helpers/degree-of-success.mjs"
-import { getTargetDefense } from "./helpers/combat-helpers.mjs"
+import { getTargetDefense, renderRollToChat } from "./helpers/combat-helpers.mjs"
 
 // General Actor sheet
 export class MzMaActorSheet extends ActorSheet {
@@ -353,6 +353,11 @@ export class MzMaActorSheet extends ActorSheet {
             let label = data.label ? `${data.label}` : ''
             let roll = new Roll(parsedRollData, this.actor.getRollData())
 
+            // Append target name to label if applicable
+            if (null != defenseMap && null != defenseMap.targetName) {
+                label = label === '' ? `Target: ${defenseMap.targetName}` : `${label} (Target: ${defenseMap.targetName})`
+            }
+
             // Evaluate the roll and retrieve degree of success (for d100-based rolls), which will go into the chat message. This also evaluates the roll.
             var dosResult = ''
             if (parsedRollData.match(/d100/)) {
@@ -364,17 +369,20 @@ export class MzMaActorSheet extends ActorSheet {
                     dosResult = await getDOS(roll)
                 }
             }
-            var flavor = label
-            if (dosResult != "") {
-                flavor += `: ${dosResult}`
-            }
 
-            // Roll those dice (to chat)
-            roll.toMessage({
+            // Generate the ChatMessageData object and the roll's HTML, but don't send it to chat just yet
+            var chatData = await roll.toMessage({
                 speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-                flavor: flavor,
+                flavor: label,
                 rollMode: game.settings.get('core', 'rollMode')
+            },
+            {
+                create: false
             })
+            var rollHTML = await roll.render()
+
+            // Instead, send it to the helper function that puts it nicely together
+            renderRollToChat(chatData, rollHTML, dosResult, data)
             return roll
         }
     }

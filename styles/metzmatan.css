@@ -203,10 +203,65 @@
 }
 
 /* Text styling */
+.text-darkblue {
+  color: darkblue;
+}
+
 .text-grey {
   color: grey;
 }
 
-.text-darkblue {
+/* Chat message styling */
+.roll-pierce {
+  color: darkgreen;
+}
+.roll-deflect {
   color: darkblue;
+}
+.roll-miss {
+  color: darkred;
+}
+
+.damage-roll {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.damage-bludgeoning,
+.damage-piercing,
+.damage-slashing {
+  background-color: rgb(0, 0, 0, 0.125);
+  border-color: black;
+  color: black
+}
+.damage-bleed {
+  background-color: rgb(255, 69, 0, 0.125);
+  border-color: darkred;
+  color: rgb(170, 0, 0);
+}
+.damage-cold {
+  background-color: rgb(0, 255, 255, 0.125);
+  border-color: darkblue;
+  color: rgb(50, 50, 255);
+}
+.damage-corrosive {
+  background-color: rgb(0, 100, 0, 0.125);
+  border-color: green;
+  color: darkgreen;
+}
+.damage-electricity {
+  background-color: rgba(210, 200, 88, 0.125);
+  border-color: gold;
+  color: rgb(161, 121, 19);
+}
+.damage-fire {
+  background-color: rgb(139, 0, 0, 0.125);
+  border-color: red;
+  color: darkred;
+}
+.damage-sonic {
+  background-color: rgb(64, 224, 208, 0.125);
+  border-color: blue;
+  color: rgb(44, 155, 146);
 }

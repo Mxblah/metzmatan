@@ -7,6 +7,8 @@ import { ActiveFeatureDataModel, ArmorDataModel, FeatureDataModel, ItemDataModel
 
 // Foundry initialization
 Hooks.once("init", () => {
+    console.log("Initializing Metzmatan's Mark game system")
+
     // Set up data types
     CONFIG.Actor.dataModels = {
         pc: PlayerCharacterDataModel,
