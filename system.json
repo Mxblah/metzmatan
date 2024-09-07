@@ -57,7 +57,7 @@
         }
     },
     "socket": false,
-    "initiative": "1d100",
+    "initiative": "@skills.perception.value - 1d100",
     "grid": {
         "distance": 5,
         "units": "ft"
