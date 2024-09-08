@@ -340,7 +340,7 @@ export class MzMaActorSheet extends ActorSheet {
             // For attacks, check to see if we're targeting anything and subtract the appropriate defense if applicable
             var defenseMap = {}
             if (data.rollType === 'attack' && null != data.defense) {
-                defenseMap = await getTargetDefense(parsedRollData, data.defense)
+                defenseMap = await getTargetDefense(data.defense)
                 // console.debug(defenseMap)
 
                 // Apply the dodge defense directly, since it affects the DT

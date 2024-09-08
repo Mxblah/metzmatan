@@ -207,6 +207,10 @@
   color: darkblue;
 }
 
+.text-darkred {
+  color: darkred;
+}
+
 .text-grey {
   color: grey;
 }
@@ -220,6 +224,10 @@
 }
 .roll-miss {
   color: darkred;
+}
+
+.apply-damage-container {
+  margin-top: 5px;
 }
 
 .damage-roll {

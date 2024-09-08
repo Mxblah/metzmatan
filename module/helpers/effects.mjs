@@ -104,7 +104,9 @@ export function parseBonus(document, bonusString) {
                 }
                 currentToken = _getNestedProperty(document, token.split("."))
                 if (currentToken == undefined) {
-                    console.warn(`Found unparseable reference string when attempting to parse bonus string: '${bonusString}'\nInvalid key string '${token}'\nThis bonus will not be applied.`)
+                    const message = `Found unparseable reference string when attempting to parse bonus string: '${bonusString}'\nInvalid key string '${token}'\nThis bonus will not be applied.`
+                    ui.notifications.warn(message)
+                    console.warn(message)
                     return 0
                 }
             }
@@ -142,7 +144,9 @@ export function parseBonus(document, bonusString) {
         // console.debug(`Incrementing by ${lastToken} (${Math.floor(lastToken)})`)
         if (typeof lastToken != 'number') {
             // Final sanity check
-            console.warn(`Returned non-numerical value when attempting to parse bonus string: '${bonusString}'\nThis bonus will not be applied.`)
+            const message = `Returned non-numerical value when attempting to parse bonus string: '${bonusString}'\nThis bonus will not be applied.`
+            ui.notifications.warn(message)
+            console.warn(message)
             return 0
         }
         calculatedBonus += Math.floor(lastToken)

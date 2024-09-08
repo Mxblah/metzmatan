@@ -1,6 +1,6 @@
 import { parseBonus } from "./effects.mjs"
 
-export async function getTargetDefense(rollData, defense) {
+export async function getTargetDefense(defense) {
     // First, get all targeted tokens
     const allTargetData = game.user.targets
     var targetedDocuments = []
@@ -39,6 +39,24 @@ export async function getTargetDefense(rollData, defense) {
     }
 }
 
+export async function getSelectedToken() {
+    // First, get all selected tokens
+    const allSelectedTokens = canvas.tokens.controlled
+    var selectedDocuments = []
+    for (let entry of allSelectedTokens.values()) {
+        selectedDocuments.push(entry.document)
+    }
+
+    // If we don't have exactly one, it's unknown what we should return, so just say that
+    if (selectedDocuments.length != 1) {
+        ui.notifications.warn(`Found ${selectedDocuments.length} selected tokens; please select exactly one token.`)
+        return null
+    }
+
+    // Now we know we have exactly one, so return it
+    return selectedDocuments[0].actor
+}
+
 export async function newDamageRoll(actorUUID, itemID) {
     // Get the data we need to work with
     // console.debug(actorUUID)
@@ -69,12 +87,8 @@ export async function newDamageRoll(actorUUID, itemID) {
 }
 
 export async function renderRollToChat(chatData, rollHTML, dosResult, data) {
-    // Debug
     // console.debug('Rendering new roll with the following objects:')
-    // console.debug(chatData)
-    // console.debug(rollHTML)
-    // console.debug(dosResult)
-    // console.debug(data)
+    // console.debug([chatData, rollHTML, dosResult, data])
 
     // Start by putting the roll into the content field as a base
     if (data.rollType === 'damage' && null != data.damageType && data.damageType != "") {
@@ -93,6 +107,10 @@ export async function renderRollToChat(chatData, rollHTML, dosResult, data) {
     // Add damage roll buttons if this is an attack roll
     if (data.rollType === 'attack') {
         chatData.content = await addRollDamageButtonsToRoll(chatData.content, dosResult, data)
+    }
+    // Or damage apply buttons if this is a damage roll
+    if (data.rollType === 'damage') {
+        chatData.content = await addApplyDamageButtonsToRoll(chatData.content, dosResult, data)
     }
 
     // Finally, create the chat message
@@ -122,6 +140,40 @@ async function addRollDamageButtonsToRoll(rollHTML, dosResult, data) {
     // Construct the damage button, including its formula data (in the ID) and hit result classes
     let damageButton = `<button class="roll-damage" type="button" data-roll-type="damage" data-hit-result="${dosResult.hitResult}" data-crit-result="${dosResult.critResult}" data-parent-uuid="${data.parentUuid}" data-identifier="${data.identifier}" data-damage-formula="${data.damageFormula}" data-damage-bonus="${data.damageBonus}" data-damage-type="${data.damageType}"><i class="fas fa-dice-d10"></i> ${game.i18n.localize('ITEMS.weapon.rollDamage')}</button>`
     rollObject.body.insertAdjacentHTML('beforeend', damageButton)
+
+    // Return the modified object
+    // console.debug(rollObject.body.innerHTML)
+    return rollObject.body.innerHTML
+}
+
+async function addApplyDamageButtonsToRoll(rollHTML, dosResult, data) {
+    // Parse the HTML into a JS object and get the total damage to apply
+    let rollObject = new DOMParser().parseFromString(rollHTML, 'text/html')
+    // console.debug(rollObject)
+    const diceTotal = rollObject.getElementsByClassName('dice-total')[0]
+    const totalDamage = Number(diceTotal.innerText)
+    // console.debug(totalDamage)
+
+    // We do actually need a dosResult for the buttons to render properly, so let's just empty-string it out if we don't have one
+    if (null == dosResult) {
+        dosResult = {
+            hitResult: '',
+            critResult: ''
+        }
+    }
+
+    // Construct the damage apply button, including its formula data (in the ID) and hit result classes
+    let buttons = ''
+    for (let result of ['pierce', 'deflect']) {
+        let hitMarker = ''
+        if (dosResult.hitResult === result) {
+            // Indicates what the user "should" click, but they are still allowed to hit the other button if they want
+            hitMarker = ' <i class="text-darkred fas fa-bullseye-arrow"></i>'
+        }
+
+        buttons += `<button class="apply-damage" type="button" data-hit-result="${result}" data-crit-result="${dosResult.critResult}" data-total-damage="${totalDamage}" data-damage-type="${data.damageType}"><i class="fas fa-dice-d10"></i> ${game.i18n.localize(`ROLLS.results.${result}`)}${hitMarker}</button>`
+    }
+    rollObject.body.insertAdjacentHTML('beforeend', `<div class="flexrow apply-damage-container">${buttons}</div>`)
 
     // Return the modified object
     // console.debug(rollObject.body.innerHTML)
