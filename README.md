@@ -4,7 +4,7 @@ Official Metzmatan's Mark system for Foundry VTT.
 
 ## Tips
 
-Combat in Metzmatan's Mark makes heavy use of Foundry's Targeting feature to properly apply combatant defenses to attack rolls. Ensure you have the exactly one enemy targeted when making an attack in order to calculate the pierce/deflect/miss degree of success automatically! Modules that add hotkeys for targeting can help a lot with this; as of Foundry 12, [Easy Target](https://foundryvtt.com/packages/easy-target/) in Standard mode is a great module for this purpose.
+Combat in Metzmatan's Mark makes heavy use of Foundry's Targeting feature to properly apply combatant defenses to attack rolls. Ensure you have exactly one enemy targeted when making an attack in order to calculate the pierce/deflect/miss degree of success automatically! Modules that add hotkeys for targeting can help a lot with this; as of Foundry 12, [Easy Target](https://foundryvtt.com/packages/easy-target/) in Standard mode is a great module for this purpose.
 
 ## System Usage and Reference
 

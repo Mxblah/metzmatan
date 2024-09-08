@@ -77,13 +77,13 @@ export function parseBonus(document, bonusString) {
     // Parse each individual term
     for (let term of bonusArray) {
         if (term === "" || null == term) { continue }
-        // console.debug(`Parsing ${term}`)
+        // console.debug(`Parsing '${term}'`)
 
         var lastToken = 0
         var lastOperator = null
         for (let token of term.split(" ")) {
-            if (term === "" || null == term) { continue }
-            // console.debug(`Parsing ${token}`)
+            if (token === "" || null == token) { continue }
+            // console.debug(`Parsing '${token}'`)
             var currentToken = null
             var currentOperator = null
 

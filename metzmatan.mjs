@@ -4,12 +4,14 @@ import { MzMaActor } from "./module/actor.mjs"
 import { MzMaItem } from "./module/item.mjs"
 import { PlayerCharacterDataModel, MonsterDataModel } from "./module/character-data.mjs"
 import { ActiveFeatureDataModel, ArmorDataModel, FeatureDataModel, ItemDataModel, WeaponDataModel } from "./module/item-data.mjs"
+import { addChatListeners } from "./module/helpers/chat-helpers.mjs"
 
 // Foundry initialization
 Hooks.once("init", () => {
-    console.log("Initializing the Metzmatan's Mark game system")
+    console.log("[metzmatan] Initializing the Metzmatan's Mark game system")
 
     // Set up data types
+    console.log("[metzmatan] Registering types, classes, and global configuration")
     CONFIG.Actor.dataModels = {
         pc: PlayerCharacterDataModel,
         npc: PlayerCharacterDataModel, // For now, NPCs are the same as PCs. Later, that might change.
@@ -56,6 +58,7 @@ Hooks.once("init", () => {
     }
 
     // Preload handlebars templates
+    console.log("[metzmatan] Preloading sheet templates")
     loadTemplates([
         // Actor sheet partials
         "systems/metzmatan/templates/actor/parts/actor-character-header.hbs",
@@ -76,4 +79,11 @@ Hooks.once("init", () => {
         "systems/metzmatan/templates/generic/parts/description.hbs",
         "systems/metzmatan/templates/generic/parts/effects.hbs"
     ])
+
+    console.log("[metzmatan] Initialization complete!")
+})
+
+// Handle Chat listeners
+Hooks.on("renderChatLog", (app, html, data) => {
+    addChatListeners(html)
 })

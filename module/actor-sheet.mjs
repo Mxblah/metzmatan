@@ -359,11 +359,11 @@ export class MzMaActorSheet extends ActorSheet {
             }
 
             // Evaluate the roll and retrieve degree of success (for d100-based rolls), which will go into the chat message. This also evaluates the roll.
-            var dosResult = ''
+            var dosResult = {}
             if (parsedRollData.match(/d100/)) {
                 if (null != defenseMap && null != defenseMap.defenseValue) {
                     // We have a target defense, so we need to calculate the PT and such
-                    dosResult = await getDOS(roll, defenseMap.defenseValue)
+                    dosResult = await getDOS(roll, defenseMap)
                 } else {
                     // We don't, so just check for crits
                     dosResult = await getDOS(roll)

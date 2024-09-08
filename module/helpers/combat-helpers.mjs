@@ -46,16 +46,22 @@ export async function renderRollToChat(chatData, rollHTML, dosResult, clickData)
     // console.debug(clickData)
 
     // Start by putting the roll into the content field as a base
-    if (null != clickData.damageType && clickData.damageType != "") {
-        // Add damage type to roll HTML if applicable
+    if (clickData.rollType === 'damage' && null != clickData.damageType && clickData.damageType != "") {
+        // Add damage type to roll HTML if this is a damage roll
         chatData.content = await addDamageTypeToRoll(rollHTML, clickData.damageType)
     } else {
         // Normal roll
         chatData.content = rollHTML
     }
-    if (dosResult != "") {
-        // Add degree of success if applicable
-        chatData.content += dosResult
+
+    // Add degree of success if applicable
+    if (dosResult.content != "") {
+        chatData.content += dosResult.content
+    }
+
+    // Add damage roll buttons if this is an attack roll
+    if (clickData.rollType === 'attack') {
+        chatData.content = await addRollDamageButtonsToRoll(chatData.content, dosResult, clickData)
     }
 
     // Finally, create the chat message
@@ -71,6 +77,20 @@ async function addDamageTypeToRoll(rollHTML, damageType) {
     let damageHTML = `<p class="damage-roll damage-${damageType} align-center"><i class="${game.i18n.localize(`DAMAGE.types.${damageType}.icon`)}"></i> ${game.i18n.localize(`DAMAGE.types.${damageType}.name`)}</p>`
     let resultHTML = rollObject.getElementsByClassName('dice-result')
     resultHTML[0].insertAdjacentHTML('afterbegin', damageHTML)
+
+    // Return the modified object
+    // console.debug(rollObject.body.innerHTML)
+    return rollObject.body.innerHTML
+}
+
+async function addRollDamageButtonsToRoll(rollHTML, dosResult, data) {
+    // Parse the HTML into a JS object
+    let rollObject = new DOMParser().parseFromString(rollHTML, 'text/html')
+    // console.debug(rollObject)
+
+    // Construct the damage button, including its formula data (in the ID) and hit result classes
+    let damageButton = `<button class="roll-damage" type="button" data-hit-result="${dosResult.hitResult}" data-crit-result="${dosResult.critResult}" data-identifier="${data.identifier}"><i class="fas fa-dice-d10"></i> ${game.i18n.localize('ITEMS.weapon.rollDamage')}</button>`
+    rollObject.body.insertAdjacentHTML('beforeend', damageButton)
 
     // Return the modified object
     // console.debug(rollObject.body.innerHTML)
