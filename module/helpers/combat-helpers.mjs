@@ -41,8 +41,8 @@ export async function getTargetDefense(rollData, defense) {
 
 export async function newDamageRoll(actorUUID, itemID) {
     // Get the data we need to work with
-    console.debug(actorUUID)
-    console.debug(itemID)
+    // console.debug(actorUUID)
+    // console.debug(itemID)
     const actor = await fromUuid(actorUUID)
     const item = await actor.items.get(itemID)
 

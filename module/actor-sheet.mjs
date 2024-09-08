@@ -68,7 +68,6 @@ export class MzMaActorSheet extends ActorSheet {
             }
         )
 
-        console.debug(context)
         return context
     }
 
