@@ -28,6 +28,7 @@ export class MzMaActorSheet extends ActorSheet {
         const actorData = context.data
         context.system = actorData.system
         context.flags = actorData.flags
+        context.flags.parentUuid = this.actor.uuid
 
         // Generate PC and NPC data, items, etc.
         switch (actorData.type) {
@@ -67,6 +68,7 @@ export class MzMaActorSheet extends ActorSheet {
             }
         )
 
+        console.debug(context)
         return context
     }
 
@@ -323,10 +325,10 @@ export class MzMaActorSheet extends ActorSheet {
         // Direct formula rollables
         if (data.roll) {
             var parsedRollData = data.roll
-            if (null != data.diceFormula && null != data.parsedBonus) {
-                // Construct the roll from the dice and bonus, instead of the roll directly
-                const processedBonus = parseBonus(this.actor, data.parsedBonus)
-                parsedRollData = `${data.diceFormula} + ${processedBonus}`
+            if (data.rollType === 'damage' && null != data.damageFormula && null != data.damageBonus) {
+                // Damage roll, so construct the roll from the dice and bonus, instead of the roll directly
+                const processedBonus = parseBonus(this.actor, data.damageBonus)
+                parsedRollData = `${data.damageFormula} + ${processedBonus}`
             } else {
                 // Normal roll; just check for the system parse and process normally
                 if (data.removeSystem === 'true') {

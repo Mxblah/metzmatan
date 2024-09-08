@@ -1,3 +1,5 @@
+import { parseBonus } from "./effects.mjs"
+
 export async function getTargetDefense(rollData, defense) {
     // First, get all targeted tokens
     const allTargetData = game.user.targets
@@ -37,31 +39,60 @@ export async function getTargetDefense(rollData, defense) {
     }
 }
 
-export async function renderRollToChat(chatData, rollHTML, dosResult, clickData) {
+export async function newDamageRoll(actorUUID, itemID) {
+    // Get the data we need to work with
+    console.debug(actorUUID)
+    console.debug(itemID)
+    const actor = await fromUuid(actorUUID)
+    const item = await actor.items.get(itemID)
+
+    // Find the damage formula and resolve it
+    const processedBonus = parseBonus(actor, item.system.damage.parsedDiceBonus)
+    const parsedRollData = `${item.system.damage.diceFormula} + ${processedBonus}`
+    const roll = new Roll(parsedRollData, actor.getRollData())
+
+    // Generate the ChatMessageData object and the roll's HTML, but don't send it to chat just yet; instead, return the data for further processing
+    const chatData = await roll.toMessage({
+        speaker: ChatMessage.getSpeaker({ actor: actor }),
+        flavor: item.name,
+        rollMode: game.settings.get('core', 'rollMode')
+    },
+    {
+        create: false
+    })
+    const rollHTML = await roll.render()
+
+    return {
+        chatData: chatData,
+        rollHTML: rollHTML
+    }
+}
+
+export async function renderRollToChat(chatData, rollHTML, dosResult, data) {
     // Debug
     // console.debug('Rendering new roll with the following objects:')
     // console.debug(chatData)
     // console.debug(rollHTML)
     // console.debug(dosResult)
-    // console.debug(clickData)
+    // console.debug(data)
 
     // Start by putting the roll into the content field as a base
-    if (clickData.rollType === 'damage' && null != clickData.damageType && clickData.damageType != "") {
+    if (data.rollType === 'damage' && null != data.damageType && data.damageType != "") {
         // Add damage type to roll HTML if this is a damage roll
-        chatData.content = await addDamageTypeToRoll(rollHTML, clickData.damageType)
+        chatData.content = await addDamageTypeToRoll(rollHTML, data.damageType)
     } else {
         // Normal roll
         chatData.content = rollHTML
     }
 
     // Add degree of success if applicable
-    if (dosResult.content != "") {
+    if (null != dosResult && null != dosResult.content && dosResult.content != "") {
         chatData.content += dosResult.content
     }
 
     // Add damage roll buttons if this is an attack roll
-    if (clickData.rollType === 'attack') {
-        chatData.content = await addRollDamageButtonsToRoll(chatData.content, dosResult, clickData)
+    if (data.rollType === 'attack') {
+        chatData.content = await addRollDamageButtonsToRoll(chatData.content, dosResult, data)
     }
 
     // Finally, create the chat message
@@ -89,7 +120,7 @@ async function addRollDamageButtonsToRoll(rollHTML, dosResult, data) {
     // console.debug(rollObject)
 
     // Construct the damage button, including its formula data (in the ID) and hit result classes
-    let damageButton = `<button class="roll-damage" type="button" data-hit-result="${dosResult.hitResult}" data-crit-result="${dosResult.critResult}" data-identifier="${data.identifier}"><i class="fas fa-dice-d10"></i> ${game.i18n.localize('ITEMS.weapon.rollDamage')}</button>`
+    let damageButton = `<button class="roll-damage" type="button" data-roll-type="damage" data-hit-result="${dosResult.hitResult}" data-crit-result="${dosResult.critResult}" data-parent-uuid="${data.parentUuid}" data-identifier="${data.identifier}" data-damage-formula="${data.damageFormula}" data-damage-bonus="${data.damageBonus}" data-damage-type="${data.damageType}"><i class="fas fa-dice-d10"></i> ${game.i18n.localize('ITEMS.weapon.rollDamage')}</button>`
     rollObject.body.insertAdjacentHTML('beforeend', damageButton)
 
     // Return the modified object

@@ -11,6 +11,7 @@ export async function getDOS(roll, defenseMap) {
     var critResult = ""
     var messageClass = ""
     var thresholdToParse = ''
+    if (null == defenseMap) { defenseMap = {} } // avoid undefined exceptions later; we still handle null values properly
 
     // Determine if brutal and calculate the threshold by adding up all the bonuses to see if > 100 or < 0
     const allNonDieTerms = roll.terms.filter((term) => term._faces == null)
@@ -25,7 +26,7 @@ export async function getDOS(roll, defenseMap) {
 
     // Set PT to DT, unless we have a secondary defense value, in which case subtract it
     var pierceThreshold = deflectThreshold
-    if (null != defenseMap && null != defenseMap.defenseValue) {
+    if (null != defenseMap.defenseValue) {
         pierceThreshold = deflectThreshold - defenseMap.defenseValue
     }
     // console.debug(`Calculated thresholds: DT=${deflectThreshold}, PT=${pierceThreshold}`)
@@ -33,24 +34,19 @@ export async function getDOS(roll, defenseMap) {
     // We need the die result to determine if we pierced or deflected or missed
     const d100Result = roll.terms.find((term) => term._faces === 100).results[0].result
     if (d100Result <= pierceThreshold) {
-        hitResult = 'Pierce'
-        messageClass = 'roll-pierce'
+        hitResult = 'pierce'
     } else if (d100Result <= deflectThreshold) {
         // Only possible to hit this if PT != DT, so it's okay to assume defenseValue exists
-        hitResult = `Deflect (${defenseMap.defenseValue})`
-        messageClass = 'roll-deflect'
+        hitResult = 'deflect'
     } else {
-        hitResult = 'Miss'
-        messageClass = 'roll-miss'
+        hitResult = 'miss'
     }
 
     // Determine crit result regardless of attack result
     if (pierceThreshold > 100) {
-        critResult = "Brutal hit!"
-        messageClass = 'roll-pierce'
+        critResult = "brutal-hit"
     } else if (deflectThreshold <= 0) {
-        critResult = "Brutal fumble!"
-        messageClass = 'roll-miss'
+        critResult = "brutal-fumble"
     } else {
         // If not, find the d100 and get its result
         const firstDigit = Math.floor(d100Result / 10) % 10 // Extra % 10 so 100 -> 0
@@ -59,30 +55,39 @@ export async function getDOS(roll, defenseMap) {
         // Then determine if regular critical
         if (firstDigit === secondDigit || d100Result === 1) {
             if (d100Result <= pierceThreshold) {
-                critResult = "Critical hit!"
-                messageClass = 'roll-pierce'
+                critResult = "critical-hit"
             } else if (d100Result > deflectThreshold) {
-                critResult = "Fumble!"
-                messageClass = 'roll-miss'
+                critResult = "critical-fumble"
             }
         }
     }
 
     let toReturn = {
-        hitResult: hitResult.toLowerCase().split(' ')[0],
-        critResult: critResult.toLowerCase().replace('!', '').replace(' ', '-'),
-        content: ''
+        hitResult: hitResult,
+        critResult: critResult,
+        content: await getDOSContentFromResult(hitResult, critResult, defenseMap.defenseValue)
     }
-    const startingTag = `<p class="${messageClass}">`
+
+    return toReturn
+}
+
+export async function getDOSContentFromResult(hitResult, critResult, defenseValue) {
+    // Little helper function to prepare HTML content from the raw results
+    const startingTag = `<p class="roll-${hitResult}">`
     const endingTag = '</p>'
+    let prettyHitResult = game.i18n.localize(`ROLLS.results.${hitResult}`)
+    if (hitResult === 'deflect' && null != defenseValue) {
+        prettyHitResult += ` (${defenseValue})`
+    }
+    const prettyCritResult = game.i18n.localize(`ROLLS.crits.${critResult}`)
+
     if (hitResult === "") {
-        toReturn.content = `${startingTag}<b>${critResult}</b>${endingTag}`
+        return `${startingTag}<b>${prettyCritResult}</b>${endingTag}`
     } else {
         if (critResult === "") {
-            toReturn.content = `${startingTag}${hitResult}${endingTag}`
+            return `${startingTag}${prettyHitResult}${endingTag}`
         } else {
-            toReturn.content = `${startingTag}<b>${hitResult} - ${critResult}</b>${endingTag}`
+            return `${startingTag}<b>${prettyHitResult} - ${prettyCritResult}</b>${endingTag}`
         }
     }
-    return toReturn
 }

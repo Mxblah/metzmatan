@@ -60,6 +60,20 @@
         "diceSizeExample": "1d6, 3d8, etc."
     },
 
+    "ROLLS": {
+        "results": {
+            "pierce": "Pierce",
+            "deflect": "Deflect",
+            "miss": "Miss"
+        },
+        "crits": {
+            "brutal-hit": "Brutal hit!",
+            "brutal-fumble": "Brutal fumble!",
+            "critical-hit": "Critical hit!",
+            "critical-fumble": "Fumble!"
+        }
+    },
+
     "ATTRIBUTES": {
         "hpMin": "Minimum Hit Points",
         "hp": "Hit Points",
