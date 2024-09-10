@@ -179,3 +179,20 @@ async function addApplyDamageButtonsToRoll(rollHTML, dosResult, data) {
     // console.debug(rollObject.body.innerHTML)
     return rollObject.body.innerHTML
 }
+
+// Gets all the actor's active armor items, and sort them by priority
+// Items earlier in the array are higher priority, so take damage first. They can be considered "outside" of later armor layers.
+export async function getAllActiveArmorItems(actor) {
+    // todo: later, move this enum somewhere else
+    const armorPriorityOrder = ['overshield', 'item', 'clothing', 'undershield', 'natural']
+    let allArmorItems = actor.items.filter((item) => item.type === 'armor' && !item.system.attributes.isBroken && item.system.attributes.isActive)
+    allArmorItems.sort(function(a, b) {
+        const aIndex = armorPriorityOrder.indexOf(a.system.attributes.slot)
+        const bIndex = armorPriorityOrder.indexOf(b.system.attributes.slot)
+        // Items with no or invalid slots have an index of -1, so are always the earliest item in the array and thus highest priority to take damage
+        // console.debug(`${a.name} has index ${aIndex} / ${b.name} has index ${bIndex}`)
+        return aIndex - bIndex
+    })
+
+    return allArmorItems
+}
