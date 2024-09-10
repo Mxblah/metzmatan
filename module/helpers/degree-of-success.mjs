@@ -73,7 +73,7 @@ export async function getDOS(roll, defenseMap) {
 
 export async function getDOSContentFromResult(hitResult, critResult, defenseValue) {
     // Little helper function to prepare HTML content from the raw results
-    const startingTag = `<p class="roll-${hitResult}">`
+    const startingTag = `<p class="hit-roll roll-${hitResult} align-center">`
     const endingTag = '</p>'
     let prettyHitResult = game.i18n.localize(`ROLLS.results.${hitResult}`)
     if (hitResult === 'deflect' && null != defenseValue) {
