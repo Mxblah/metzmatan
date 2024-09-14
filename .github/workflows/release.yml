@@ -57,7 +57,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: ${{ env.ZIP_NAME }}
-          body: "# Metzmatan's Mark ${{ env.TAG_NAME }}\n* Manifest URL: \n${{ env.MANIFEST_URL }}* System download URL: ${{ env.RELEASE_URL }}"
+          body: "# Metzmatan's Mark ${{ env.TAG_NAME }}\n* Manifest URL: ${{ env.MANIFEST_URL }}\n* System download URL: ${{ env.RELEASE_URL }}"
           draft: true # do not automatically REALLY release this
           append_body: true
           generate_release_notes: true
