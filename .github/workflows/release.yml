@@ -1,5 +1,12 @@
 name: Build release artifacts
 
+permissions:
+  actions: read
+  contents: write # needed to generate the release
+  pull-requests: read
+  security-events: read
+  statuses: write # needed to add the commit status
+
 on:
   # Run when any normal semver tag is added (for releases)
   push:
@@ -49,7 +56,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: ${{ env.ZIP_NAME }}
-          body: "# Metzmatan's Mark v$TAG\nSystem zip URL: $RELEASE_URL"
+          body: "# Metzmatan's Mark v${{ env.TAG }}\nSystem download URL: ${{ env.RELEASE_URL }}"
           draft: true # do not automatically REALLY release this
           append_body: true
           generate_release_notes: true
