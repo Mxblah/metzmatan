@@ -1,4 +1,6 @@
-# Metzmatan's Mark 0.0.1
+# Metzmatan's Mark 0.1.0
+
+[![Build release artifacts](https://github.com/Mxblah/metzmatan/actions/workflows/release.yml/badge.svg)](https://github.com/Mxblah/metzmatan/actions/workflows/release.yml)
 
 Official Metzmatan's Mark system for Foundry VTT.
 
@@ -35,3 +37,11 @@ Examples:
 * `@skills.perception.value / 5 / 2` (Though depending on targeted attribute key, the skill value may not be populated and thus may return `null` (0))
 
 If multiple dynamic Active Effects apply to the same parsed attribute key, they will always be added together. If you want your dynamic Active Effect to be subtracted, make it negative. Any other operator is unsupported.
+
+## Licensing
+
+This repo contains content licensed under different terms.
+
+The system's name, rules, setting, lore, characters, magic, monsters, and any similar creative assets, particularly those under the `packs/*` directory, are distributed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. (See `/packs/LICENSE`)
+
+The code, software, and other assets without indicated terms are distributed under the MIT license. (See `/LICENSE`)

@@ -3,7 +3,7 @@ import path from "node:path"
 import { compilePack } from "@foundryvtt/foundryvtt-cli"
 
 // Get pack folders
-const packFolders = fs.readdirSync('packs', { withFileTypes: true })
+const packFolders = fs.readdirSync('packs', { withFileTypes: true }).filter(item => item.isDirectory())
 
 // Process each one
 for (let i = 0; i < packFolders.length; i++) {
