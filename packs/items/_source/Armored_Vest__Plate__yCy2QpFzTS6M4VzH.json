@@ -1,0 +1,44 @@
+{
+  "folder": "rsJIP732KnIBEtdb",
+  "name": "Armored Vest (Plate)",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-sculpted-grey.webp",
+  "system": {
+    "description": "<p>A resilient metal plate in a harness, strapped to the Body to protect vital points.</p>",
+    "effects": "",
+    "resources": {
+      "ap": {
+        "min": 0,
+        "value": 20,
+        "max": 20
+      }
+    },
+    "attributes": {
+      "isActive": false,
+      "isBroken": false,
+      "slot": "clothing",
+      "armorBonus": 25,
+      "damageResistance": "3/p, 1/s",
+      "hardness": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "mN9FcG0y0rOGIcyn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.0.1",
+    "createdTime": 1726270664053,
+    "modifiedTime": 1726270664053,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_id": "yCy2QpFzTS6M4VzH",
+  "sort": 0,
+  "_key": "!items!yCy2QpFzTS6M4VzH"
+}

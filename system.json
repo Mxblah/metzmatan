@@ -2,7 +2,7 @@
     "id": "metzmatan",
     "title": "Metzmatan's Mark",
     "description": "Official Metzmatan's Mark system for Foundry VTT.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "compatibility": {
         "minimum": 12,
         "verified": "12.331"
@@ -24,12 +24,28 @@
         {
             "name": "monsters",
             "label": "Metzmatan's Monsters",
+            "path": "packs/monsters",
             "type": "Actor",
             "system": "metzmatan"
         },
         {
             "name": "items",
             "label": "Metzmatan's Items",
+            "path": "packs/items",
+            "type": "Item",
+            "system": "metzmatan"
+        },
+        {
+            "name": "features",
+            "label": "Metzmatan's Features",
+            "path": "packs/features",
+            "type": "Item",
+            "system": "metzmatan"
+        },
+        {
+            "name": "spells",
+            "label": "Metzmatan's Spells",
+            "path": "packs/spells",
             "type": "Item",
             "system": "metzmatan"
         }
@@ -66,5 +82,5 @@
     "secondaryTokenAttribute": "resources.ap",
     "url": "https://github.com/Mxblah/metzmatan",
     "manifest": "https://github.com/Mxblah/metzmatan/blob/main/system.json",
-    "download": "todo-gh-releases"
+    "download": "https://github.com/Mxblah/metzmatan/releases/download/v0.0.2/metzmatan-v0.0.2.zip"
 }

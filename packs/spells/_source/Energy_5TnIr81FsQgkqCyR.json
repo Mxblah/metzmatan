@@ -1,0 +1,22 @@
+{
+  "name": "Energy",
+  "sorting": "a",
+  "folder": "xZ8wPzQLm3p7xhGy",
+  "type": "Item",
+  "_id": "5TnIr81FsQgkqCyR",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.0.1",
+    "createdTime": 1726270334466,
+    "modifiedTime": 1726270348133,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_key": "!folders!5TnIr81FsQgkqCyR"
+}

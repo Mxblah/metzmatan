@@ -20,9 +20,11 @@
 - [X] Target name in targeted rolls
 - [X] Initiative
 - [X] Add total armor to attack chat html for clarity
-- [ ] (bonus) a really basic compendium pack
+- [X] (bonus) a really basic compendium pack
 - [X] (bonus) roll damage buttons in chat cards
 - [X] (bonus) apply damage buttons in chat cards
+- [ ] decide on a license(s)
+- [ ] Release workflow
 
 ## 0.2.0 hopefuls
 
@@ -30,22 +32,23 @@
 - [ ] Damage type handling with [type] syntax
 - [ ] Untyped and unknown damage types
 - [ ] Attack description to chat for attacks
+- [ ] Description to chat for Items (inc. spells, etc.)
 - [ ] armor isActive toggle from the actor Items section
 - [ ] armor automatically enforces only one active item per slot
 - [ ] armor default tab is attributes
 - [ ] "Refill all armor" button
-- [ ] organize item lists on sheet into grids for consistency
-- [ ] Sort items in lists on sheet (alphabetically?)
 - [ ] Spell MP cost when cast
 - [ ] Spell scaling with MP spent (choose MP to use)
-- [ ] Description to chat for Items (inc. spells, etc.)
 - [.] Inline rollables for spells, mutations, etc.
 - [ ] Hardness, weakness, etc. for armor and innately
 - [ ] Recovery checks for Dying
 - [ ] Add custom status effects to CONFIG.statusEffects
+- [ ] Build / release process for compendia
 
 ## 0.3.0 hopefuls
 
+- [ ] organize item lists on sheet into grids for consistency
+- [ ] Sort items in lists on sheet (alphabetically?)
 - [ ] crits actually do things besides have extra text
 - [ ] secondary attacks cannot crit
 - [ ] Speed types, senses

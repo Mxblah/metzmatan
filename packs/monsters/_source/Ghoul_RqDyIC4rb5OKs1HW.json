@@ -1,0 +1,777 @@
+{
+  "folder": "RwFbHuXEK3mOvaVW",
+  "name": "Ghoul",
+  "type": "monster",
+  "_id": "RqDyIC4rb5OKs1HW",
+  "img": "icons/creatures/magical/humanoid-silhouette-dashing-blue.webp",
+  "system": {
+    "description": "<p><em>Fast, strong ambush predators, ghouls are drawn to the scent of blood, though they hate the smell of burning florals, particularly nettles. They are smart enough to target weaker members of a group, carrying them off to devour in private. Ghouls resemble lanky humans with long, sharp fingers and teeth and clammy, pale skin. They are typically around seven feet tall.</em></p>",
+    "resources": {
+      "hp": {
+        "min": -5,
+        "value": 46,
+        "max": 5,
+        "levelBonus": 0,
+        "directBonus": 46,
+        "parsedBonus": ""
+      },
+      "mp": {
+        "min": 0,
+        "value": 0,
+        "max": 4,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "ap": {
+        "min": 0,
+        "value": 0,
+        "max": 0
+      }
+    },
+    "attributes": {
+      "level": 4,
+      "xp": 0,
+      "body": 48,
+      "mind": 30,
+      "soul": 22,
+      "size": 1.5,
+      "speed": 25,
+      "speedBonus": 40,
+      "speedParsedBonus": "",
+      "armorBonus": 0,
+      "dodgeBonus": 0,
+      "dodgeBonusBonus": 8,
+      "dodgeBonusParsedBonus": ""
+    },
+    "skills": {
+      "weaponsMelee": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "weaponsRanged": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "celestialMagic": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "planetaryMagic": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "lucidity": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "occult": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "acrobatics": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 51,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "athletics": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 66,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "charm": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "crafting": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "deception": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "disguise": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "electronics": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "engineering": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "history": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "insight": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "intimidation": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "lifeSciences": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "mechanics": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "medicine": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "navigation": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "perception": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 46,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "piloting": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "physicalSciences": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "social": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "stealth": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "swim": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "survival": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "thievery": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "tracking": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 54,
+        "directBonus": 0,
+        "parsedBonus": ""
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Ghoul",
+    "displayName": 40,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": true,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/creatures/magical/humanoid-silhouette-dashing-blue.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "resources.hp"
+    },
+    "bar2": {
+      "attribute": "resources.ap"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "rsJIP732KnIBEtdb",
+      "name": "Ghoul Skin",
+      "type": "armor",
+      "_id": "m12J6JqUTmnncUNp",
+      "img": "icons/equipment/chest/breastplate-leather-brown-belted.webp",
+      "system": {
+        "description": "<p><em>A ghoul's skin is tough and leathery, almost like natural armor.</em></p>",
+        "effects": "",
+        "resources": {
+          "ap": {
+            "min": 0,
+            "value": 8,
+            "max": 8
+          }
+        },
+        "attributes": {
+          "isActive": true,
+          "isBroken": false,
+          "slot": "natural",
+          "armorBonus": 24,
+          "damageResistance": "",
+          "hardness": "4 piercing"
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Item.a5x9c2MWD6fIr0F3",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.m12J6JqUTmnncUNp"
+    },
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "_id": "6HvaYwwXmfZy2VlH",
+      "img": "icons/creatures/claws/claw-talons-glowing-orange.webp",
+      "system": {
+        "description": "<p><strong>Claw</strong> | 1 M | Melee / 1-2 creatures | 76 / 2d6 s, Sweep, plus <em>Quick Grab</em> on a pierce</p>",
+        "effects": "",
+        "ability": {
+          "actions": "1 Main",
+          "hands": 1,
+          "range": "Melee",
+          "target": "1 or 2 creatures"
+        },
+        "attack": {
+          "thresholdOverride": 76,
+          "skill": "weaponsMelee",
+          "defense": "armor"
+        },
+        "damage": {
+          "diceFormula": "2d6",
+          "parsedDiceBonus": "",
+          "type": "slashing"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.6HvaYwwXmfZy2VlH"
+    },
+    {
+      "name": "Frenzied Bite",
+      "type": "weapon",
+      "_id": "XCguhTibeDVsngBA",
+      "img": "icons/magic/death/mouth-bite-fangs-vampire.webp",
+      "system": {
+        "description": "<p><strong>Frenzied Bite</strong> | 1 M | Melee / 1 creature | 72 / 1d8 p, plus 1d4 ongoing bleed</p>",
+        "effects": "",
+        "ability": {
+          "actions": "1 Main",
+          "hands": 0,
+          "range": "Melee",
+          "target": "1 creature"
+        },
+        "attack": {
+          "thresholdOverride": 72,
+          "skill": "weaponsMelee",
+          "defense": "armor"
+        },
+        "damage": {
+          "diceFormula": "1d8",
+          "parsedDiceBonus": "",
+          "type": "piercing"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.XCguhTibeDVsngBA"
+    },
+    {
+      "name": "Devour",
+      "type": "weapon",
+      "_id": "8eMwyHs6fr6CJJMG",
+      "img": "icons/consumables/food/dried-meat-jerky-fish-red.webp",
+      "system": {
+        "description": "<p><strong>Devour</strong> | 1 M | Melee / 1 Grabbed creature | 72 / 2d8 p, plus 1d6 ongoing bleed. The ghoul recovers AP equal to half the damage dealt</p>",
+        "effects": "",
+        "ability": {
+          "actions": "1 Main",
+          "hands": 1,
+          "range": "Melee",
+          "target": "1 grabbed creature"
+        },
+        "attack": {
+          "thresholdOverride": 72,
+          "skill": "weaponsMelee",
+          "defense": "armor"
+        },
+        "damage": {
+          "diceFormula": "2d8",
+          "parsedDiceBonus": "",
+          "type": "piercing"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.8eMwyHs6fr6CJJMG"
+    },
+    {
+      "name": "Quick Grab",
+      "type": "mutation",
+      "_id": "ieeqG98ljFoS6jux",
+      "img": "icons/skills/melee/unarmed-punch-fist.webp",
+      "system": {
+        "description": "<p><strong>Quick Grab</strong> | * | The ghoul may immediately attempt to Grapple the primary target. It must still Sustain the grab on future turns as normal.</p>",
+        "effects": "",
+        "magicClass": "",
+        "realm": "",
+        "prerequisites": "",
+        "ability": {
+          "type": "Active",
+          "actions": "",
+          "duration": "Instant",
+          "hands": 1,
+          "range": "Melee",
+          "target": "1 creature",
+          "mp": "0",
+          "cooldown": "Instant",
+          "description": ""
+        },
+        "attack": {
+          "thresholdOverride": null,
+          "skill": "athletics",
+          "defense": "armor"
+        },
+        "damage": {
+          "diceFormula": "",
+          "parsedDiceBonus": "",
+          "type": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.ieeqG98ljFoS6jux"
+    },
+    {
+      "name": "Ghoulish Climb",
+      "type": "trait",
+      "_id": "s2wxsYsqoZ5TyMTI",
+      "img": "icons/skills/movement/arrow-upward-white.webp",
+      "system": {
+        "description": "<p><strong>Ghoulish Climb</strong> | The ghoul’s Climb speed also applies to ceilings.</p>",
+        "effects": "",
+        "magicClass": "",
+        "realm": "",
+        "prerequisites": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.s2wxsYsqoZ5TyMTI"
+    },
+    {
+      "name": "Keen Nose",
+      "type": "trait",
+      "_id": "GI0SMuhFxNRhhuXA",
+      "img": "icons/skills/targeting/crosshair-bars-yellow.webp",
+      "system": {
+        "description": "<p><strong>Keen Nose</strong> | The ghoul gains a +20 bonus to Perception and Tracking checks relating to scent.</p>",
+        "effects": "",
+        "magicClass": "",
+        "realm": "",
+        "prerequisites": ""
+      },
+      "effects": [
+        {
+          "name": "Keen Nose",
+          "img": "icons/svg/aura.svg",
+          "origin": "Actor.RqDyIC4rb5OKs1HW.Item.GI0SMuhFxNRhhuXA",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "0WehVZxkYhLxW70z",
+          "type": "base",
+          "system": {},
+          "changes": [
+            {
+              "key": "system.skills.perception.directBonus",
+              "mode": 2,
+              "value": "20",
+              "priority": null
+            },
+            {
+              "key": "system.skills.tracking.directBonus",
+              "mode": 2,
+              "value": "20",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "metzmatan",
+            "systemVersion": "0.0.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "_key": "!actors.items.effects!RqDyIC4rb5OKs1HW.GI0SMuhFxNRhhuXA.0WehVZxkYhLxW70z"
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.GI0SMuhFxNRhhuXA"
+    },
+    {
+      "name": "Repelled by Nettles",
+      "type": "trait",
+      "_id": "S3SDI9vkUX2voTnq",
+      "img": "icons/skills/toxins/bottle-open-vapors-pink.webp",
+      "system": {
+        "description": "<p><strong>Repelled by Nettles</strong> | The ghoul is Sickened 1 while it can smell burning nettles. It is also Off-guard while within 20 ft of the source.</p>",
+        "effects": "",
+        "magicClass": "",
+        "realm": "",
+        "prerequisites": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.S3SDI9vkUX2voTnq"
+    },
+    {
+      "name": "Quick Carry",
+      "type": "trait",
+      "_id": "1bT98qnow3qAuOs9",
+      "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+      "system": {
+        "description": "<p><strong>Quick Carry</strong> | The ghoul may move up to its full speed on a pierce when carrying a creature of size category 1 or less that it has Grabbed, or half its speed on a deflect or miss (but not a fumble).</p>",
+        "effects": "",
+        "magicClass": "",
+        "realm": "",
+        "prerequisites": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!RqDyIC4rb5OKs1HW.1bT98qnow3qAuOs9"
+    }
+  ],
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "mN9FcG0y0rOGIcyn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Actor.RqDyIC4rb5OKs1HW",
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.0.1",
+    "createdTime": 1726270754227,
+    "modifiedTime": 1726270754227,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_key": "!actors!RqDyIC4rb5OKs1HW"
+}

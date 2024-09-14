@@ -1,7 +1,10 @@
-*.tmp
+*.ldb
 *.log
 *.old
+*.tmp
 CURRENT
 LOCK
 LOG
-MANIFEST-*
+MANIFEST*
+
+node_modules

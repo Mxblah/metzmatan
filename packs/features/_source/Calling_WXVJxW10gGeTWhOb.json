@@ -1,0 +1,22 @@
+{
+  "name": "Calling",
+  "sorting": "a",
+  "folder": "XoS71bXt5qZcn5Iw",
+  "type": "Item",
+  "_id": "WXVJxW10gGeTWhOb",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.0.1",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!WXVJxW10gGeTWhOb"
+}

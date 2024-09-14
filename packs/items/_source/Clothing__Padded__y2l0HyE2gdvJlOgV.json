@@ -1,0 +1,44 @@
+{
+  "name": "Clothing (Padded)",
+  "type": "armor",
+  "img": "icons/equipment/chest/vest-leather-brown.webp",
+  "system": {
+    "description": "<p>Ordinary clothing with additional padding to resist some blows.</p>",
+    "effects": "",
+    "resources": {
+      "ap": {
+        "min": 0,
+        "value": 10,
+        "max": 10
+      }
+    },
+    "attributes": {
+      "isActive": false,
+      "isBroken": false,
+      "slot": "clothing",
+      "armorBonus": 15,
+      "damageResistance": "",
+      "hardness": ""
+    }
+  },
+  "effects": [],
+  "folder": "rsJIP732KnIBEtdb",
+  "ownership": {
+    "default": 3,
+    "mN9FcG0y0rOGIcyn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.0.1",
+    "createdTime": 1726270563926,
+    "modifiedTime": 1726270563926,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_id": "y2l0HyE2gdvJlOgV",
+  "sort": 0,
+  "_key": "!items!y2l0HyE2gdvJlOgV"
+}

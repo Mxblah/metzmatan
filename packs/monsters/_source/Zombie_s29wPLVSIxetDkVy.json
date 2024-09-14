@@ -1,0 +1,510 @@
+{
+  "name": "Zombie",
+  "type": "monster",
+  "_id": "s29wPLVSIxetDkVy",
+  "img": "icons/creatures/magical/humanoid-silhouette-green.webp",
+  "system": {
+    "description": "<p><em>Bloated corpses returned to unlife by unholy magic.</em></p>",
+    "resources": {
+      "hp": {
+        "min": -5,
+        "value": 16,
+        "max": 5,
+        "levelBonus": 0,
+        "directBonus": 16,
+        "parsedBonus": ""
+      },
+      "mp": {
+        "min": 0,
+        "value": 0,
+        "max": 4,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "ap": {
+        "min": 0,
+        "value": 0,
+        "max": 0
+      }
+    },
+    "attributes": {
+      "level": 1,
+      "body": 20,
+      "mind": 5,
+      "soul": 15,
+      "armorBonus": 0,
+      "dodgeBonus": 0,
+      "dodgeBonusBonus": -10,
+      "dodgeBonusParsedBonus": "",
+      "size": 1,
+      "speedBonus": 20,
+      "xp": 0,
+      "speed": 25,
+      "speedParsedBonus": ""
+    },
+    "skills": {
+      "weaponsMelee": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "weaponsRanged": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "celestialMagic": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "planetaryMagic": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "lucidity": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "occult": {
+        "value": 0,
+        "coreAttribs": "soul",
+        "ranks": 26,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "acrobatics": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "athletics": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 41,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "charm": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "crafting": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "deception": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "disguise": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "electronics": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "engineering": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "history": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "insight": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "intimidation": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "lifeSciences": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "mechanics": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "medicine": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "navigation": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "perception": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "piloting": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "physicalSciences": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "social": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "stealth": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "swim": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "survival": {
+        "value": 0,
+        "coreAttribs": "body,mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "thievery": {
+        "value": 0,
+        "coreAttribs": "body",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      },
+      "tracking": {
+        "value": 0,
+        "coreAttribs": "mind",
+        "ranks": 0,
+        "directBonus": 0,
+        "parsedBonus": ""
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Zombie",
+    "displayName": 40,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": true,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/creatures/magical/humanoid-silhouette-green.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "resources.hp"
+    },
+    "bar2": {
+      "attribute": "resources.ap"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Claw",
+      "type": "weapon",
+      "_id": "oFdFJMBV4uLLRBkJ",
+      "img": "icons/magic/unholy/hand-claw-fog-green.webp",
+      "system": {
+        "description": "",
+        "effects": "",
+        "ability": {
+          "actions": "1 Main",
+          "hands": 1,
+          "range": "Melee",
+          "target": "1 creature"
+        },
+        "attack": {
+          "thresholdOverride": 60,
+          "skill": "weaponsMelee",
+          "defense": "armor"
+        },
+        "damage": {
+          "diceFormula": "1d6",
+          "parsedDiceBonus": "",
+          "type": "slashing"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!s29wPLVSIxetDkVy.oFdFJMBV4uLLRBkJ"
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "_id": "6jSMptyZSJuadwF2",
+      "img": "icons/magic/unholy/strike-beam-blood-small-red-green.webp",
+      "system": {
+        "description": "<p>Triggers <em>Zombie Bite</em> on a hit.</p>",
+        "effects": "",
+        "ability": {
+          "actions": "1 Main",
+          "hands": 0,
+          "range": "Melee",
+          "target": "1 creature"
+        },
+        "attack": {
+          "thresholdOverride": 55,
+          "skill": "weaponsMelee",
+          "defense": "armor"
+        },
+        "damage": {
+          "diceFormula": "1d8",
+          "parsedDiceBonus": "",
+          "type": "piercing"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!s29wPLVSIxetDkVy.6jSMptyZSJuadwF2"
+    },
+    {
+      "name": "Zombie Bite",
+      "type": "mutation",
+      "_id": "ysWBvu9XxLqQuEgq",
+      "img": "icons/magic/nature/plant-undersea-glow-green.webp",
+      "system": {
+        "description": "",
+        "effects": "",
+        "magicClass": "",
+        "realm": "",
+        "prerequisites": "",
+        "ability": {
+          "type": "Active",
+          "actions": "",
+          "duration": "Instant",
+          "hands": 0,
+          "range": "Melee",
+          "target": "1 creature",
+          "mp": "0",
+          "cooldown": "Instant",
+          "description": "<p>Pierce: Target gains Sickened 2</p>"
+        },
+        "attack": {
+          "thresholdOverride": 55,
+          "skill": "celestialMagic",
+          "defense": "body"
+        },
+        "damage": {
+          "diceFormula": "",
+          "parsedDiceBonus": "",
+          "type": ""
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "mN9FcG0y0rOGIcyn": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!s29wPLVSIxetDkVy.ysWBvu9XxLqQuEgq"
+    }
+  ],
+  "effects": [],
+  "folder": "bbL2mDNvnIyISdxX",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "mN9FcG0y0rOGIcyn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Actor.s29wPLVSIxetDkVy",
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.0.1",
+    "createdTime": 1726270752691,
+    "modifiedTime": 1726270752691,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_key": "!actors!s29wPLVSIxetDkVy"
+}
