@@ -2,7 +2,7 @@
     "id": "metzmatan",
     "title": "Metzmatan's Mark",
     "description": "Official Metzmatan's Mark system for Foundry VTT.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "compatibility": {
         "minimum": 12,
         "verified": "12.331"
@@ -81,6 +81,6 @@
     "primaryTokenAttribute": "resources.hp",
     "secondaryTokenAttribute": "resources.ap",
     "url": "https://github.com/Mxblah/metzmatan",
-    "manifest": "https://github.com/Mxblah/metzmatan/blob/main/system.json",
-    "download": "https://github.com/Mxblah/metzmatan/releases/download/v0.1.0/metzmatan-v0.1.0.zip"
+    "manifest": "https://raw.githubusercontent.com/Mxblah/metzmatan/main/system.json",
+    "download": "https://github.com/Mxblah/metzmatan/releases/download/v0.1.1/metzmatan-v0.1.1.zip"
 }

@@ -29,6 +29,7 @@ jobs:
           TAG=${GITHUB_REF/refs\/tags\//}
           echo "TAG_NAME=$TAG" >> $GITHUB_ENV
           echo "ZIP_NAME=metzmatan-$TAG.zip" >> $GITHUB_ENV
+          echo "MANIFEST_URL=https://raw.githubusercontent.com/Mxblah/metzmatan/main/system.json" >> $GITHUB_ENV
           echo "RELEASE_URL=https://github.com/Mxblah/metzmatan/releases/download/$TAG/metzmatan-$TAG.zip" >> $GITHUB_ENV
 
       # Prereqs: nodejs
@@ -56,7 +57,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: ${{ env.ZIP_NAME }}
-          body: "# Metzmatan's Mark v${{ env.TAG_NAME }}\nSystem download URL: ${{ env.RELEASE_URL }}"
+          body: "# Metzmatan's Mark ${{ env.TAG_NAME }}\n* Manifest URL: ${{ env.MANIFEST_URL }}\n* System download URL: ${{ env.RELEASE_URL }}"
           draft: true # do not automatically REALLY release this
           append_body: true
           generate_release_notes: true
