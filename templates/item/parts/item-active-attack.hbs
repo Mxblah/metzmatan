@@ -1,0 +1,79 @@
+<div class="ability-fields">
+    {{!-- Type, Skill, Override --}}
+    <div class="attributes grid grid-3col grid-3-255025">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.actions" class="resource-label">{{localize "ATTRIBUTES.abilities.actions"}}</label>
+            <input type="text" name="system.ability.actions" value="{{system.ability.actions}}" placeholder="{{localize 'ATTRIBUTES.abilities.actions'}}"/>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.attack.skill" class="resource-label">{{localize "ITEMS.weapon.skill"}}</label>
+            <span class="resource-label text-darkblue">{{ system.attack.skillLabel }}</span>
+            <input type="text" name="system.attack.skill" value="{{system.attack.skill}}" placeholder="{{localize 'ITEMS.weapon.skill'}}"/>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.attack.thresholdOverride" class="resource-label">{{localize "ITEMS.weapon.threshold"}}</label>
+            <input type="text" name="system.attack.thresholdOverride" value="{{system.attack.thresholdOverride}}" data-dtype="Number" placeholder="{{ localize 'PLACEHOLDERS.noOverride' }}"/>
+        </div>
+    </div>
+
+    {{!-- Range, Target, Type --}}
+    <div class="attributes grid grid-3col grid-3-255025">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.range" class="resource-label">{{localize "ITEMS.weapon.range"}}</label>
+            <input type="text" name="system.ability.range" value="{{system.ability.range}}" placeholder="{{localize 'ITEMS.weapon.range'}}"/>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.target" class="resource-label flex30">{{localize "ITEMS.weapon.target"}}</label>
+            <input type="text" name="system.ability.target" value="{{system.ability.target}}" placeholder="{{localize 'ITEMS.weapon.target'}}"/>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.damage.type" class="resource-label">{{localize "ITEMS.weapon.damageType"}}</label>
+            <input type="text" name="system.damage.type" value="{{system.damage.type}}" placeholder="{{localize 'PLACEHOLDERS.noType'}}"/>
+        </div>
+    </div>
+
+    {{!-- Hands, Defense, and an empty spot for later --}}
+    <div class="attributes grid grid-3col grid-3-255025">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.hands" class="resource-label">{{localize "ITEMS.weapon.hands"}}</label>
+            <input type="text" name="system.ability.hands" value="{{system.ability.hands}}" data-dtype="Number"/>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.attack.defense" class="resource-label">{{localize "ATTRIBUTES.abilities.defense"}}</label>
+            <span class="resource-label text-darkblue">{{ system.attack.defenseLabel }}</span>
+            <input type="text" name="system.attack.defense" value="{{system.attack.defense}}" placeholder="{{localize 'ATTRIBUTES.abilities.defense'}}"/>
+        </div>
+
+        {{!-- (this grid tile intentionally left blank) --}}
+    </div>
+
+    {{!-- Attack and Damage formulae, and rollables (not rollables yet - todo!) --}}
+    <div class="attributes grid grid-2col">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.attack.formula" class="resource-label {{!-- rollable --}}" data-roll="{{ system.attack.formula }}" data-label="{{name}}">{{ localize 'ITEMS.weapon.attackFormula' }}</label>
+            <span class="resource-label">{{ system.attack.formula }}</span>
+        </div>
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.damage.formula" class="resource-label flex30 {{!-- rollable --}}" data-roll="{{ system.damage.formula }}" data-diceFormula="{{ system.damage.diceFormula }}" data-parsedBonus="{{ system.damage.parsedDiceBonus }}" data-label="{{name}}">{{ localize 'ITEMS.weapon.damageFormula' }}</label>
+            <span class="resource-label">{{ system.damage.formula }}</span>
+        </div>
+    </div>
+
+    {{!-- Damage formula controllers --}}
+    <div class="attributes grid grid-2col">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.damage.diceFormula" class="resource-label">{{localize "ITEMS.weapon.damageDice"}}</label>
+            <input type="text" name="system.damage.diceFormula" value="{{system.damage.diceFormula}}" placeholder="{{localize 'PLACEHOLDERS.diceSizeExample'}}"/>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.damage.parsedDiceBonus" class="resource-label">{{localize "ITEMS.weapon.diceBonus"}}</label>
+            <input type="text" name="system.damage.parsedDiceBonus" value="{{system.damage.parsedDiceBonus}}" placeholder="{{ localize 'PLACEHOLDERS.noBonus' }}"/>
+        </div>
+    </div>
+</div>

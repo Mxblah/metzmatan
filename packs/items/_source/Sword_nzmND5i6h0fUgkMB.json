@@ -1,0 +1,45 @@
+{
+  "folder": "sor9n2DBqjRIfCuY",
+  "name": "Sword",
+  "type": "weapon",
+  "_id": "nzmND5i6h0fUgkMB",
+  "img": "icons/weapons/swords/shortsword-guard-brass.webp",
+  "system": {
+    "description": "<p>It's a sword.</p>",
+    "effects": "",
+    "attack": {
+      "skill": "weaponsMelee",
+      "thresholdOverride": null,
+      "defense": "armor"
+    },
+    "damage": {
+      "parsedDiceBonus": "@attributes.body / 20",
+      "diceFormula": "1d6",
+      "type": "slashing"
+    },
+    "ability": {
+      "actions": "1 Main",
+      "hands": 1,
+      "range": "Melee",
+      "target": "1 creature"
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "mN9FcG0y0rOGIcyn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.1.0",
+    "createdTime": 1726270453045,
+    "modifiedTime": 1726270453045,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_key": "!items!nzmND5i6h0fUgkMB"
+}

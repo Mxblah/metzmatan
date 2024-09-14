@@ -1,0 +1,22 @@
+{
+  "name": "Aberrations",
+  "sorting": "a",
+  "folder": null,
+  "type": "Actor",
+  "_id": "RwFbHuXEK3mOvaVW",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.1.0",
+    "createdTime": 1726270754198,
+    "modifiedTime": 1726270754274,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_key": "!folders!RwFbHuXEK3mOvaVW"
+}

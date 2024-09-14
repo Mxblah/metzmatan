@@ -1,0 +1,22 @@
+<form class="{{cssClass}} {{item.type}} flexcol" autocomplete="off">
+    {{!-- Header: basic info and  main attributes --}}
+    {{> "systems/metzmatan/templates/item/parts/item-header.hbs"}}
+
+    {{!-- Navigation tab declaration --}}
+    <nav class="sheet-tabs tabs flexshrink" data-group="primary">
+        <a class="item" data-tab="description">{{localize "DOCUMENT.description"}}</a>
+        <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
+    </nav>
+
+    {{!-- Main body: contains tabs of various related info --}}
+    <section class="sheet-body">
+        {{!-- Description tab --}}
+        <div class="tab description" data-group="primary" data-tab="description">
+            {{> "systems/metzmatan/templates/generic/parts/description.hbs"}}
+        </div>
+        {{!-- Effects tab --}}
+        <div class="tab effects" data-group="primary" data-tab="effects">
+            {{> "systems/metzmatan/templates/generic/parts/effects.hbs"}}
+        </div>
+    </section>
+</form>

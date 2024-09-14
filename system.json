@@ -1,0 +1,86 @@
+{
+    "id": "metzmatan",
+    "title": "Metzmatan's Mark",
+    "description": "Official Metzmatan's Mark system for Foundry VTT.",
+    "version": "0.1.0",
+    "compatibility": {
+        "minimum": 12,
+        "verified": "12.331"
+    },
+    "authors": [
+        {
+            "name": "Mxblah",
+            "url": "https://github.com/Mxblah/metzmatan",
+            "discord": "Mxblah"
+        }
+    ],
+    "esmodules": [
+        "metzmatan.mjs"
+    ],
+    "styles": [
+        "styles/metzmatan.css"
+    ],
+    "packs": [
+        {
+            "name": "monsters",
+            "label": "Metzmatan's Monsters",
+            "path": "packs/monsters",
+            "type": "Actor",
+            "system": "metzmatan"
+        },
+        {
+            "name": "items",
+            "label": "Metzmatan's Items",
+            "path": "packs/items",
+            "type": "Item",
+            "system": "metzmatan"
+        },
+        {
+            "name": "features",
+            "label": "Metzmatan's Features",
+            "path": "packs/features",
+            "type": "Item",
+            "system": "metzmatan"
+        },
+        {
+            "name": "spells",
+            "label": "Metzmatan's Spells",
+            "path": "packs/spells",
+            "type": "Item",
+            "system": "metzmatan"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "documentTypes": {
+        "Actor": {
+            "pc": { "htmlFields": ["description"] },
+            "npc": { "htmlFields": ["description"] },
+            "monster": { "htmlFields": ["description"] }
+        },
+        "Item": {
+            "weapon": { "htmlFields": ["description"] },
+            "armor": { "htmlFields": ["description"] },
+            "gear": { "htmlFields": ["description"] },
+            "spell": { "htmlFields": ["description"] },
+            "trait": { "htmlFields": ["description"] },
+            "mutation": { "htmlFields": ["description", "ability.description"] }
+        }
+    },
+    "socket": false,
+    "initiative": "@skills.perception.value - 1d100",
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
+    "primaryTokenAttribute": "resources.hp",
+    "secondaryTokenAttribute": "resources.ap",
+    "url": "https://github.com/Mxblah/metzmatan",
+    "manifest": "https://github.com/Mxblah/metzmatan/blob/main/system.json",
+    "download": "https://github.com/Mxblah/metzmatan/releases/download/v0.1.0/metzmatan-v0.1.0.zip"
+}

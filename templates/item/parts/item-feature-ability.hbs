@@ -1,0 +1,47 @@
+<div class="ability-fields">
+    {{!-- Type, Action cost, and Duration --}}
+    <div class="attributes grid grid-3col">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.type" class="resource-label">{{localize "ATTRIBUTES.abilities.type"}}</label>
+            <input type="text" name="system.ability.type" value="{{system.ability.type}}" placeholder="{{localize 'ATTRIBUTES.abilities.type'}}"/>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.actions" class="resource-label">{{localize "ATTRIBUTES.abilities.actions"}}</label>
+            <span class="resource-label">{{ system.ability.actions }}</span>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.duration" class="resource-label">{{localize "ATTRIBUTES.abilities.duration"}}</label>
+            <input type="text" name="system.ability.duration" value="{{system.ability.duration}}" placeholder="{{localize 'ATTRIBUTES.abilities.duration'}}"/>
+        </div>
+    </div>
+
+    {{!-- Range, Target, and Cooldown --}}
+    <div class="attributes grid grid-2col grid-2575">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.range" class="resource-label">{{localize "ATTRIBUTES.abilities.range"}}</label>
+            <span class="resource-label">{{ system.ability.range }}</span>
+        </div>
+
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.target" class="resource-label flex30">{{localize "ATTRIBUTES.abilities.target"}}</label>
+            <span class="resource-label">{{ system.ability.target }}</span>
+        </div>
+    </div>
+    <div class="attributes grid grid-2col grid-2575">
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.mp" class="resource-label">{{localize "ATTRIBUTES.abilities.mp"}}</label>
+            <input type="text" name="system.ability.mp" value="{{system.ability.mp}}" placeholder="{{localize 'ATTRIBUTES.abilities.mp'}}"/>
+        </div>
+        <div class="attribute flexrow flex-group-center">
+            <label for="system.ability.cooldown" class="resource-label flex30">{{localize "ATTRIBUTES.abilities.cooldown"}}</label>
+            <input type="text" name="system.ability.cooldown" value="{{system.ability.cooldown}}" placeholder="{{localize 'ATTRIBUTES.abilities.cooldown'}}"/>
+        </div>
+    </div>
+</div>
+{{!-- Description --}}
+<h3 class="item-name">{{localize "DOCUMENT.description"}}</h3>
+<div class="description">
+    {{editor enrichedAbilityDescription target='system.ability.description' engine='prosemirror' button=true editable=editable}}
+</div>

@@ -1,0 +1,23 @@
+<header class="sheet-header align-top flexshrink">
+    <div class="header-fields">
+        <div class="grid grid-2col grid-2min1 align-vertical-center">
+            <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'PLACEHOLDERS.itemName'}}"></h1>
+        </div>
+        <div class="attributes grid grid-2col">
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.magicClass" class="resource-label">{{localize "ATTRIBUTES.magicClass"}}</label>
+                <input type="text" name="system.magicClass" value="{{system.magicClass}}" placeholder="{{localize 'PLACEHOLDERS.featureClass'}}"/>
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.realm" class="resource-label">{{localize "ATTRIBUTES.realm"}}</label>
+                <input type="text" name="system.realm" value="{{system.realm}}" placeholder="{{localize 'PLACEHOLDERS.realm'}}"/>
+            </div>
+        </div>
+        <div class="grid grid-2col grid-2min1 align-vertical-center">
+            <label for="system.prerequisites" class="resource-label">{{localize "DOCUMENT.prerequisites"}}</label>
+            <input type="text" name="system.prerequisites" value="{{system.prerequisites}}" placeholder="{{localize 'PLACEHOLDERS.prerequisites'}}"/>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,62 @@
+name: Build release artifacts
+
+permissions:
+  actions: read
+  contents: write # needed to generate the release
+  pull-requests: read
+  security-events: read
+  statuses: write # needed to add the commit status
+
+on:
+  # Run when any normal semver tag is added (for releases)
+  push:
+    tags:
+      - 'v*.*.*'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out source
+      - uses: actions/checkout@v4
+
+      # Set up release vars in the environment
+      - name: Get release environment
+        run: |
+          TAG=${GITHUB_REF/refs\/tags\//}
+          echo "TAG_NAME=$TAG" >> $GITHUB_ENV
+          echo "ZIP_NAME=metzmatan-$TAG.zip" >> $GITHUB_ENV
+          echo "RELEASE_URL=https://github.com/Mxblah/metzmatan/releases/download/$TAG/metzmatan-$TAG.zip" >> $GITHUB_ENV
+
+      # Prereqs: nodejs
+      - name: Configure nodejs
+        uses: actions/setup-node@v4
+        with:
+          # I don't care what version of node it uses, but if it breaks for some reason, this is what has been verified
+          # node-version: 18
+          cache: 'npm'
+
+      # node dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Build all compendium packs
+      - name: Build compendium packs
+        run: npm run build:pack
+
+      # Build the release zip
+      - name: Create release zip
+        run: zip ${{ env.ZIP_NAME }} -r * --exclude "packs/*/_source/*" --exclude "scripts/*" --exclude "node_modules/*" --exclude ".github/*" --exclude "package*" --exclude "todo.md"
+
+      # Perform the actual release
+      - name: Release new version
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP_NAME }}
+          body: "# Metzmatan's Mark v${{ env.TAG_NAME }}\nSystem download URL: ${{ env.RELEASE_URL }}"
+          draft: true # do not automatically REALLY release this
+          append_body: true
+          generate_release_notes: true

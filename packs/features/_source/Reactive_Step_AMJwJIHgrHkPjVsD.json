@@ -1,0 +1,97 @@
+{
+  "name": "Reactive Step",
+  "type": "mutation",
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "system": {
+    "description": "<p>Your keen eye allows you to dodge and reposition immediately when an enemy comes within reach. Add half of your Perception/5 to your DB as a Trait bonus. You gain the <em>Reactive Step</em> mutation ability.</p>",
+    "effects": "",
+    "magicClass": "Planetary",
+    "realm": "Mobility",
+    "prerequisites": "Perception 50",
+    "ability": {
+      "type": "Active",
+      "actions": "1 Reaction",
+      "duration": "Instant",
+      "range": "Self",
+      "target": "Any creature entering a square adjacent to you",
+      "cooldown": "1 per 10 minutes",
+      "description": "<p>You nimbly duck away when an enemy approaches. Move up to your speed. This movement does not trigger reactions.</p>",
+      "hands": 1,
+      "mp": "0"
+    },
+    "damage": {
+      "type": "",
+      "diceFormula": "",
+      "parsedDiceBonus": ""
+    },
+    "attack": {
+      "skill": "",
+      "thresholdOverride": null,
+      "defense": "armor"
+    }
+  },
+  "effects": [
+    {
+      "name": "Reactive Step DB Bonus",
+      "img": "icons/svg/aura.svg",
+      "origin": "Item.enR4gAP2YlJpmd8n",
+      "duration": {
+        "rounds": null,
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "x5mfw3nbn8X4Lk3k",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.dodgeBonusParsedBonus",
+          "mode": 2,
+          "value": "@system.skills.perception.value / 5 / 2",
+          "priority": null
+        }
+      ],
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "metzmatan",
+        "systemVersion": "0.1.0",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!AMJwJIHgrHkPjVsD.x5mfw3nbn8X4Lk3k"
+    }
+  ],
+  "folder": "g8ymhI5Ev5cFSXnO",
+  "ownership": {
+    "default": 0,
+    "mN9FcG0y0rOGIcyn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.1.0",
+    "createdTime": 1726270433012,
+    "modifiedTime": 1726270433012,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_id": "AMJwJIHgrHkPjVsD",
+  "sort": 0,
+  "_key": "!items!AMJwJIHgrHkPjVsD"
+}

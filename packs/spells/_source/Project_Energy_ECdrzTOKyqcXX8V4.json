@@ -1,0 +1,53 @@
+{
+  "name": "Project Energy",
+  "type": "spell",
+  "_id": "ECdrzTOKyqcXX8V4",
+  "img": "icons/magic/fire/projectile-fireball-embers-yellow.webp",
+  "system": {
+    "description": "",
+    "effects": "",
+    "magicClass": "Celestial",
+    "realm": "Energy",
+    "prerequisites": "1 Energy",
+    "ability": {
+      "type": "Spell",
+      "actions": "1 Main",
+      "duration": "Instant",
+      "range": "30/90",
+      "target": "1 target",
+      "mp": "2-3",
+      "cooldown": "Instant",
+      "description": "<p>Fire a blast of energy at a distant foe. Make a spell attack against the target, dealing [[/r 2d8[energy]]] Energy damage.</p><p>If you spend 3 MP and the primary attack does not miss, additionally make a secondary spell Body attack [[/r @skills.celestialMagic.value - 1d100]], dealing [[/r 1d6[energy]]] ongoing Energy damage on a pierce or [[/r 1d6[energy]]] non-ongoing damage on a deflect. On a critical hit, this damage increases to [[/r 1d6[energy]]].</p>",
+      "hands": 1
+    },
+    "damage": {
+      "type": "energy",
+      "diceFormula": "2d8",
+      "parsedDiceBonus": ""
+    },
+    "attack": {
+      "thresholdOverride": null,
+      "defense": "armor",
+      "skill": "celestialMagic"
+    }
+  },
+  "effects": [],
+  "folder": "5TnIr81FsQgkqCyR",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "mN9FcG0y0rOGIcyn": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.1.0",
+    "createdTime": 1726270334499,
+    "modifiedTime": 1726270334499,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_key": "!items!ECdrzTOKyqcXX8V4"
+}

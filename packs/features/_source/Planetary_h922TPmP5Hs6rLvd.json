@@ -1,0 +1,22 @@
+{
+  "name": "Planetary",
+  "sorting": "a",
+  "folder": "x0NJAKiIjx1QIz0K",
+  "type": "Item",
+  "_id": "h922TPmP5Hs6rLvd",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "metzmatan",
+    "systemVersion": "0.1.0",
+    "createdTime": 1726270403313,
+    "modifiedTime": 1726270405165,
+    "lastModifiedBy": "mN9FcG0y0rOGIcyn"
+  },
+  "_key": "!folders!h922TPmP5Hs6rLvd"
+}

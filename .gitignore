@@ -1,0 +1,10 @@
+*.ldb
+*.log
+*.old
+*.tmp
+CURRENT
+LOCK
+LOG
+MANIFEST*
+
+node_modules

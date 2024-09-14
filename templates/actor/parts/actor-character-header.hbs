@@ -1,0 +1,108 @@
+<header class="sheet-header align-top flexshrink">
+    <div class="header-fields">
+        <div class="grid grid-2col grid-2min1 align-vertical-center">
+            <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'PLACEHOLDERS.actorName'}}"></h1>
+        </div>
+
+        {{!-- HP, MP, and AP --}}
+        <div class="resources grid grid-3col">
+            <div class="resource flexrow flex-group-center">
+                <label for="system.resources.hp.value" class="resource-label">{{localize "ATTRIBUTES.hp"}}</label>
+                <div class="resource-content flexrow flex-center flex-between align-vertical-center">
+                    <input type="text" name="system.resources.hp.value" value="{{system.resources.hp.value}}" data-dtype="Number"/>
+                    <span> / </span>
+                    {{#if flags.hasEditableMaxHP}}
+                    <input type="text" name="system.resources.hp.directBonus" value="{{system.resources.hp.max}}" data-dtype="Number"/>
+                    {{else}}
+                    <span class="resource-max">{{numberFormat system.resources.hp.max decimals=0 sign=false}}</span>
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="resource flexrow flex-group-center">
+                <label for="system.resources.mp.value" class="resource-label">{{localize "ATTRIBUTES.mp"}}</label>
+                <div class="resource-content flexrow flex-center flex-between align-vertical-center">
+                    <input type="text" name="system.resources.mp.value" value="{{system.resources.mp.value}}" data-dtype="Number"/>
+                    <span> / </span>
+                    {{#if flags.hasEditableMaxHP}}
+                    <input type="text" name="system.resources.mp.directBonus" value="{{system.resources.mp.max}}" data-dtype="Number"/>
+                    {{else}}
+                    <span class="resource-max">{{numberFormat system.resources.mp.max decimals=0 sign=false}}</span>
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="resource flexrow flex-group-center">
+                <label for="system.resources.ap.value" class="resource-label">{{localize "ATTRIBUTES.ap"}}</label>
+                <div class="resource-content flexrow flex-center flex-between align-vertical-center">
+                    <span class="resource-value"> {{numberFormat system.resources.ap.value decimals=0 sign=false}}</span>
+                    <span> / </span>
+                    <span class="resource-max">{{numberFormat system.resources.ap.max decimals=0 sign=false}}</span>
+                </div>
+            </div>
+        </div>
+
+        {{!-- Level, XP, and Size --}}
+        <div class="attributes grid grid-3col">
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.level" class="resource-label">{{localize "ATTRIBUTES.level"}}</label>
+                <input type="text" name="system.attributes.level" value="{{system.attributes.level}}" data-dtype="Number"/>
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.xp" class="resource-label">{{localize "ATTRIBUTES.xp"}}</label>
+                <input type="text" name="system.attributes.xp" value="{{system.attributes.xp}}" data-dtype="Number"/>
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.size" class="resource-label">{{localize "ATTRIBUTES.size"}}</label>
+                <input type="text" name="system.attributes.size" value="{{system.attributes.size}}" data-dtype="Number"/>
+            </div>
+        </div>
+
+        {{!-- Speed, DB, and AB --}}
+        <div class="attributes grid grid-3col">
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.speed" class="resource-label">{{localize "ATTRIBUTES.speed"}}</label>
+                {{#if flags.hasEditableSpeed}}
+                <input type="text" name="system.attributes.speedBonus" value="{{system.attributes.speed}}" data-dtype="Number"/>
+                {{else}}
+                <span class="resource-value">{{numberFormat system.attributes.speed decimals=0 sign=false}}</span>
+                {{/if}}
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.dodgeBonus" class="resource-label">{{localize "ATTRIBUTES.dodgeBonus"}}</label>
+                {{#if flags.hasEditableDB}}
+                <input type="text" name="system.attributes.dodgeBonusBonus" value="{{system.attributes.dodgeBonus}}" data-dtype="Number"/>
+                {{else}}
+                <span class="resource-value">{{numberFormat system.attributes.dodgeBonus decimals=0 sign=false}}</span>
+                {{/if}}
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.armorBonus" class="resource-label">{{localize "ATTRIBUTES.armorBonus"}}</label>
+                <span class="resource-value">{{numberFormat system.attributes.armorBonus decimals=0 sign=false}}</span>
+            </div>
+        </div>
+
+        {{!-- Body, Mind, and Soul --}}
+        <div class="attributes grid grid-3col">
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.body" class="resource-label">{{localize "ATTRIBUTES.body"}}</label>
+                <input type="text" name="system.attributes.body" value="{{system.attributes.body}}" data-dtype="Number"/>
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.mind" class="resource-label">{{localize "ATTRIBUTES.mind"}}</label>
+                <input type="text" name="system.attributes.mind" value="{{system.attributes.mind}}" data-dtype="Number"/>
+            </div>
+
+            <div class="attribute flexrow flex-group-center">
+                <label for="system.attributes.soul" class="resource-label">{{localize "ATTRIBUTES.soul"}}</label>
+                <input type="text" name="system.attributes.soul" value="{{system.attributes.soul}}" data-dtype="Number"/>
+            </div>
+        </div>
+    </div>
+</header>

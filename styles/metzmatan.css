@@ -1,0 +1,282 @@
+/* flex classes */
+.flex-group-center,
+.flex-group-left,
+.flex-group-right {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-group-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-group-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.flexshrink {
+  flex: 0;
+}
+
+.flex30 {
+  flex: 0.30;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flexlarge {
+  flex: 2;
+}
+
+/* alignment classes */
+.align-top {
+    align-items: flex-start !important;
+}
+
+.align-vertical-center {
+  align-items: center;
+}
+
+.align-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.align-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.align-center {
+  justify-content: center;
+  text-align: center;
+}
+
+/* grid classes */
+.grid,
+.grid-2col {
+  display: grid;
+  grid-column: span 2/span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.grid-3col {
+  grid-column: span 3/span 3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4col {
+  grid-column: span 4/span 4;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-5col {
+  grid-column: span 5/span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-6col {
+  grid-column: span 6/span 6;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-7col {
+  grid-column: span 7/span 7;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-8col {
+  grid-column: span 8/span 8;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-minimize {
+    grid-template-columns: min-content;
+}
+
+.grid-2min1 {
+    grid-template-columns: auto minmax(0, 1fr);
+}
+
+.grid-3070 {
+    grid-template-columns: 30% calc(70% - 10px);
+}
+
+.grid-2575 {
+    grid-template-columns: 25% calc(75% - 10px);
+}
+
+.grid-3-255025 {
+    grid-template-columns: 25% auto 25%;
+}
+
+.grid-3-252550 {
+  grid-template-columns: 25% 25% auto;
+}
+
+/* Interactive elements */
+
+.rollable:hover, .rollable:focus {
+  color: #000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
+/* Image overrides */
+.profile-img {
+    min-height: 100px;
+    min-width: 100px;
+}
+
+/* Skill tab styling */
+
+.skill-label {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.skill-caption {
+  width: 40%;
+  min-width: 40%;
+}
+.skill-value {
+  width: 30%;
+  min-width: 30%;
+}
+.skill-input {
+  width: 30%;
+  min-width: 30%;
+}
+
+/* Effects and Items tab styling */
+.effects,
+.items-list {
+  text-align: center;
+  align-items: center;
+}
+.effects .item .effect-source,
+.effects .item .effect-duration,
+.effects .item .effect-controls,
+.items-list .item .item-controls {
+  border-left: 1px solid #c9c7b8;
+  border-right: 1px solid #c9c7b8;
+}
+.effects .item .effect-controls,
+.items-list .item .item-controls {
+  border: none;
+}
+.effects .item-name,
+.effects .effect-source,
+.effects .effect-duration,
+.effects .effect-controls,
+.items-list .item-controls {
+  align-items: center;
+}
+.effects .effect-list,
+.items-list .item-list {
+  padding-left: 0;
+}
+.effects .item-image,
+.items-list .item-image {
+  border: none;
+  object-fit: contain;
+}
+
+/* Editor styling */
+.description,
+.editor,
+.editor-content {
+  height: 100%;
+}
+
+/* Feature styling */
+.realm-label {
+  font-size: 1.25em;
+}
+
+/* Text styling */
+.text-darkblue {
+  color: darkblue;
+}
+
+.text-darkred {
+  color: darkred;
+}
+
+.text-grey {
+  color: grey;
+}
+
+/* Chat message styling */
+.roll-pierce {
+  background-color: rgb(0, 200, 50, 0.125);
+  border-color: green;
+  color: darkgreen;
+}
+.roll-deflect {
+  background-color: rgb(64, 96, 192, 0.125);
+  border-color: blue;
+  color: darkblue;
+}
+.roll-miss {
+  background-color: rgb(240, 128, 128, 0.125);
+  border-color: darkred;
+  color: darkred;
+}
+
+.apply-damage-container {
+  margin-top: 5px;
+}
+
+.hit-roll,
+.damage-roll {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.damage-bludgeoning,
+.damage-piercing,
+.damage-slashing {
+  background-color: rgb(0, 0, 0, 0.125);
+  border-color: black;
+  color: black
+}
+.damage-bleed {
+  background-color: rgb(255, 69, 0, 0.125);
+  border-color: darkred;
+  color: rgb(170, 0, 0);
+}
+.damage-cold {
+  background-color: rgb(0, 255, 255, 0.125);
+  border-color: darkblue;
+  color: rgb(50, 50, 255);
+}
+.damage-corrosive {
+  background-color: rgb(0, 100, 0, 0.125);
+  border-color: green;
+  color: darkgreen;
+}
+.damage-electricity {
+  background-color: rgba(210, 200, 88, 0.125);
+  border-color: gold;
+  color: rgb(161, 121, 19);
+}
+.damage-fire {
+  background-color: rgb(139, 0, 0, 0.125);
+  border-color: red;
+  color: darkred;
+}
+.damage-sonic {
+  background-color: rgb(64, 224, 208, 0.125);
+  border-color: blue;
+  color: rgb(44, 155, 146);
+}

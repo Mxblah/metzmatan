@@ -1,0 +1,237 @@
+{
+    "TYPES": {
+        "Actor": {
+            "pc": "Player Character",
+            "npc": "Non-Player Character",
+            "monster": "Monster"
+        },
+        "Item": {
+            "item": "Item",
+            "gear": "Gear",
+            "weapon": "Weapon",
+            "armor": "Armor",
+            "feature": "Feature",
+            "trait": "Trait",
+            "mutation": "Mutation",
+            "spell": "Spell"
+        }
+    },
+
+    "DOCUMENT": {
+        "actorLabel": "Metzmatan's Mark Actor Sheet",
+        "itemLabel": "Metzmatan's Mark Item Sheet",
+        "items": "Items",
+        "skills": "Skills",
+        "features": "Features",
+        "description": "Description",
+        "biography": "Biography",
+        "attributes": "Attributes",
+        "effects": "Effects",
+        "effect": "Effect",
+        "ability": "Ability",
+        "abilities": "Abilities",
+        "attack": "Attack",
+        "spells": "Spells",
+        "primary": "Primary Actions",
+        "secondary": "Secondary Actions",
+        "passive": "Innate Effects",
+        "prerequisites": "Prerequisites",
+        "actions": {
+            "tabName": "Actions",
+            "create": "Create {type}",
+            "new": "New {type}",
+            "edit": "Edit {type}",
+            "delete": "Delete {type}",
+            "toggle": "Toggle"
+        }
+    },
+
+    "PLACEHOLDERS": {
+        "actorName": "Character Name",
+        "itemName": "Item Name",
+        "prerequisites": "Feature Prerequisites",
+        "featureClass": "Feature Class",
+        "realm": "Feature Realm",
+        "noOverride": "(Normal)",
+        "noBonus": "(No bonus)",
+        "noType": "(Untyped)",
+        "overridden": "(Overridden)",
+        "invalid": "(Invalid)",
+        "diceSizeExample": "1d6, 3d8, etc."
+    },
+
+    "ROLLS": {
+        "results": {
+            "pierce": "Pierce",
+            "deflect": "Deflect",
+            "miss": "Miss"
+        },
+        "crits": {
+            "brutal-hit": "Brutal hit!",
+            "brutal-fumble": "Brutal fumble!",
+            "critical-hit": "Critical hit!",
+            "critical-fumble": "Fumble!"
+        }
+    },
+
+    "ATTRIBUTES": {
+        "hpMin": "Minimum Hit Points",
+        "hp": "Hit Points",
+        "hpMax": "Maximum Hit Points",
+        "hpLevelBonus": "Additional HP from Level",
+        "mpMin": "Minimum Magic Points",
+        "mp": "Magic Points",
+        "mpMax": "Maximum Magic Points",
+        "apMin": "Minimum Armor Points",
+        "ap": "Armor Points",
+        "apMax": "Maximum Armor Points",
+
+        "level": "Level",
+        "xp": "Experience",
+        "body": "Body",
+        "mind": "Mind",
+        "soul": "Soul",
+        "size": "Size",
+        "speed": "Speed",
+        "armor": "Armor",
+        "armorBonus": "Armor Bonus",
+        "dodgeBonus": "Dodge Bonus",
+        "dodgeBonusBonus": "Dodge Bonus from Features and Items",
+        "damageResistance": "Damage Resistance",
+        "hardness": "Hardness",
+
+        "realm": "Magic Realm",
+        "magicClass": "Magic Class",
+
+        "abilities": {
+            "type": "Ability Type",
+            "actions": "Required Actions",
+            "duration": "Ability Duration",
+            "range": "Range",
+            "target": "Target",
+            "mp": "MP Cost",
+            "cooldown": "Recharge time",
+            "defense": "Targeted Defense"
+        }
+    },
+
+    "SKILLS": {
+        "name": "Skill",
+        "total": "Total",
+        "ranks": "Ranks",
+        "bonus": "Bonus",
+        "parsedBonus": "Parsed Bonus",
+        "weaponsMelee": "Weapons (Melee)",
+        "weaponsRanged": "Weapons (Ranged)",
+        "celestialMagic": "Celestial Magic",
+        "planetaryMagic": "Planetary Magic",
+        "lucidity": "Lucidity",
+        "occult": "Occult",
+        "acrobatics": "Acrobatics",
+        "athletics": "Athletics",
+        "charm": "Charm",
+        "crafting": "Crafting",
+        "deception": "Deception",
+        "disguise": "Disguise",
+        "electronics": "Electronics",
+        "engineering": "Engineering",
+        "history": "History",
+        "insight": "Insight",
+        "intimidation": "Intimidation",
+        "lifeSciences": "Life Sciences",
+        "mechanics": "Mechanics",
+        "medicine": "Medicine",
+        "navigation": "Navigation",
+        "perception": "Perception",
+        "piloting": "Piloting",
+        "physicalSciences": "Physical Sciences",
+        "social": "Social",
+        "stealth": "Stealth",
+        "swim": "Swim",
+        "survival": "Survival",
+        "thievery": "Thievery",
+        "tracking": "Tracking"
+    },
+
+    "ITEMS": {
+        "description": "Description",
+        "effects": "Effects",
+
+        "armor": {
+            "slot": "Armor Slot",
+            "isActive": "Armor Active?",
+            "isBroken": "Armor Broken?"
+        },
+
+        "weapon": {
+            "rollAttack": "Roll attack!",
+            "rollDamage": "Roll damage!",
+            "attackFormula": "Attack Formula",
+            "damageFormula": "Damage Formula",
+            "hands": "Hands",
+            "threshold": "Attack Threshold",
+            "skill": "Weapon Skill",
+            "range": "Range",
+            "target": "Target",
+            "damageDice": "Damage Dice",
+            "diceBonus": "Damage Bonus",
+            "damageType": "Damage Type"
+        }
+    },
+
+    "EFFECTS": {
+        "type": {
+            "status": "Status Effects",
+            "passive": "Passive Effects",
+            "inactive": "Inactive Effects"
+        },
+        "duration": "Effect Duration",
+        "source": "Effect Source",
+        "rounds": "Rounds"
+    },
+
+    "DAMAGE": {
+        "types": {
+            "ongoing": {
+                "name": "Ongoing",
+                "icon": "fas fa-arrows-rotate"
+            },
+            "bludgeoning": {
+                "name": "Bludgeoning",
+                "icon": "fas fa-hammer"
+            },
+            "piercing": {
+                "name": "Piercing",
+                "icon": "far fa-sword"
+            },
+            "slashing": {
+                "name": "Slashing",
+                "icon": "far fa-axe"
+            },
+            "bleed": {
+                "name": "Bleed",
+                "icon": "fas fa-droplet"
+            },
+            "cold": {
+                "name": "Cold",
+                "icon": "far fa-snowflake"
+            },
+            "corrosive": {
+                "name": "Corrosive",
+                "icon": "fas fa-vial"
+            },
+            "electricity": {
+                "name": "Electricity",
+                "icon": "fas fa-bolt"
+            },
+            "fire": {
+                "name": "Fire",
+                "icon": "far fa-fire"
+            },
+            "sonic": {
+                "name": "Sonic",
+                "icon": "far fa-waveform-lines"
+            }
+        }
+    }
+}

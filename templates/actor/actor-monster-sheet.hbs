@@ -1,0 +1,35 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+    {{!-- Header: basic info and  main attributes --}}
+    {{> "systems/metzmatan/templates/actor/parts/actor-character-header.hbs"}}
+
+    {{!-- Navigation tab declaration --}}
+    <nav class="sheet-tabs tabs flexshrink" data-group="primary">
+        <a class="item" data-tab="initial">{{localize "DOCUMENT.actions.tabName"}}</a>
+        <a class="item" data-tab="skills">{{localize "DOCUMENT.skills"}}</a>
+        <a class="item" data-tab="description">{{localize "DOCUMENT.description"}}</a>
+        <a class="item" data-tab="effects">{{localize "DOCUMENT.effects"}}</a>
+    </nav>
+
+    {{!-- Main body: contains tabs of various related info --}}
+    <section class="sheet-body">
+        {{!-- Actions tab --}}
+        <div class="tab actions" data-group="primary" data-tab="initial">
+            {{> "systems/metzmatan/templates/actor/parts/actor-actions.hbs"}}
+        </div>
+
+        {{!-- Skills tab --}}
+        <div class="tab skills" data-group="primary" data-tab="skills">
+            {{> "systems/metzmatan/templates/actor/parts/actor-skills.hbs"}}
+        </div>
+
+        {{!-- Description tab --}}
+        <div class="tab description" data-group="primary" data-tab="description">
+            {{> "systems/metzmatan/templates/generic/parts/description.hbs"}}
+        </div>
+
+        {{!-- Effects tab --}}
+        <div class="tab effects" data-group="primary" data-tab="effects">
+            {{> "systems/metzmatan/templates/generic/parts/effects.hbs"}}
+        </div>
+    </section>
+</form>
