@@ -4,6 +4,9 @@
 
 ### 0.2.0 hopefuls
 
+- [ ] Update release workflow to include a static manifest URL for that specific version
+- [ ] Update release workflow to trigger on push to main and create the tag + do the full release automatically by parsing system.json
+- [ ] Use Foundry Package Release API for releases
 - [ ] Use IDs instead of direct data to handle attack/damage
 - [ ] Damage type handling with [type] syntax
 - [ ] Untyped and unknown damage types
@@ -19,7 +22,7 @@
 - [ ] Hardness, weakness, etc. for armor and innately
 - [ ] Recovery checks for Dying
 - [ ] Add custom status effects to CONFIG.statusEffects
-- [ ] Build / release process for compendia
+- [ ] Improve the Build / release process for compendia (reduce churn, auto-clean, standardize / remove unneeded fields?)
 
 ### 0.3.0 hopefuls
 
