@@ -183,6 +183,11 @@ async function addApplyDamageButtonsToRoll(rollHTML, dosResult, data) {
 // Gets all the actor's active armor items, and sort them by priority
 // Items earlier in the array are higher priority, so take damage first. They can be considered "outside" of later armor layers.
 export async function getAllActiveArmorItems(actor) {
+    // Short-circuit; nothing to do
+    if (null == actor) {
+        return null
+    }
+
     // todo: later, move this enum somewhere else
     const armorPriorityOrder = ['overshield', 'item', 'clothing', 'undershield', 'natural']
     let allArmorItems = actor.items.filter((item) => item.type === 'armor' && !item.system.attributes.isBroken && item.system.attributes.isActive)
@@ -204,16 +209,18 @@ export async function toggleArmorActiveState(actor, item) {
 
     // If anything in that slot is currently active, disable it (including this armor itself, toggling it off)
     let haveAlreadyToggled = false
-    for (const activeArmor of allActiveArmor) {
-        // console.debug(activeArmor)
-        if (activeArmor.system.attributes.slot === item.system.attributes.slot) {
-            // It's in that slot, so toggle it off
-            // console.debug(`Toggling ${activeArmor.name} to ${!activeArmor.system.attributes.isActive}`)
-            activeArmor.update({'system.attributes.isActive': !activeArmor.system.attributes.isActive})
+    if (null != allActiveArmor) {
+        for (const activeArmor of allActiveArmor) {
+            // console.debug(activeArmor)
+            if (activeArmor.system.attributes.slot === item.system.attributes.slot) {
+                // It's in that slot, so toggle it off
+                // console.debug(`Toggling ${activeArmor.name} to ${!activeArmor.system.attributes.isActive}`)
+                activeArmor.update({'system.attributes.isActive': !activeArmor.system.attributes.isActive})
 
-            // We toggled ourself off, so don't toggle back on at the end
-            if (activeArmor._id === item._id) {
-                haveAlreadyToggled = true
+                // We toggled ourself off, so don't toggle back on at the end
+                if (activeArmor._id === item._id) {
+                    haveAlreadyToggled = true
+                }
             }
         }
     }

@@ -1,4 +1,5 @@
 import { onManageActiveEffect, prepareActiveEffectCategories } from "./helpers/effects.mjs"
+import { toggleArmorActiveState } from "./helpers/combat-helpers.mjs"
 
 // General Item class sheet
 export class MzMaItemSheet extends ItemSheet {
@@ -64,6 +65,31 @@ export class MzMaItemSheet extends ItemSheet {
             onManageActiveEffect(event, this.item)
         )
 
+        // Toggleables
+        html.on('click', '.toggleable', this._onToggle.bind(this))
+
         // There's nothing to really roll directly from the Item card, so no rollable handlers here
+    }
+
+    async _onToggle(event) {
+        event.preventDefault()
+
+        const target = event.currentTarget
+        const data = target.dataset
+        let actor = null
+        if (null != this.item.parent) {
+            actor = this.item.parent
+        }
+
+        // Pass the relevant data to the appropriate handler
+        switch (data.action) {
+            case 'armorActive':
+                // It's okay for actor to be null; that'll just toggle the item normally
+                toggleArmorActiveState(actor, this.item)
+                break
+            default:
+                // No recognized action defined, so do nothing
+                break
+        }
     }
 }
