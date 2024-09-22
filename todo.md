@@ -12,9 +12,8 @@
 - [ ] Untyped and unknown damage types
 - [ ] Attack description to chat for attacks
 - [ ] Description to chat for Items (inc. spells, etc.)
-- [ ] armor isActive toggle from the actor Items section
-- [ ] armor automatically enforces only one active item per slot
-- [ ] armor default tab is attributes
+- [X] armor isActive toggle from the actor Items section
+- [X] armor automatically enforces only one active item per slot
 - [ ] "Refill all armor" button
 - [ ] Spell MP cost when cast
 - [ ] Spell scaling with MP spent (choose MP to use)
@@ -23,6 +22,8 @@
 - [ ] Recovery checks for Dying
 - [ ] Add custom status effects to CONFIG.statusEffects
 - [ ] Improve the Build / release process for compendia (reduce churn, auto-clean, standardize / remove unneeded fields?)
+- [ ] Build / release process for compendia
+- [ ] Update Foundry description and README with more info on the system
 
 ### 0.3.0 hopefuls
 

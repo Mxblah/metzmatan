@@ -1,6 +1,6 @@
 import { onManageActiveEffect, parseBonus, prepareActiveEffectCategories } from "./helpers/effects.mjs"
 import { getDOS } from "./helpers/degree-of-success.mjs"
-import { getTargetDefense, renderRollToChat } from "./helpers/combat-helpers.mjs"
+import { getTargetDefense, renderRollToChat, toggleArmorActiveState } from "./helpers/combat-helpers.mjs"
 
 // General Actor sheet
 export class MzMaActorSheet extends ActorSheet {
@@ -106,6 +106,9 @@ export class MzMaActorSheet extends ActorSheet {
         // Rollables
         html.on('click', '.rollable', this._onRoll.bind(this))
 
+        // Toggleables
+        html.on('click', '.toggleable', this._onToggle.bind(this))
+
         // Draggables (i.e. macros)
         if (this.actor.isOwner) {
             let handler = (event) => this._onDragStart(event)
@@ -161,6 +164,7 @@ export class MzMaActorSheet extends ActorSheet {
         context.items = {
             armor: {
                 type: 'armor',
+                hasArmorRollables: true,
                 label: game.i18n.localize('TYPES.Item.armor'),
                 items: armor
             },
@@ -385,6 +389,28 @@ export class MzMaActorSheet extends ActorSheet {
             // Instead, send it to the helper function that puts it nicely together
             renderRollToChat(chatData, rollHTML, dosResult, data)
             return roll
+        }
+    }
+
+    async _onToggle(event) {
+        event.preventDefault()
+
+        const target = event.currentTarget
+        const data = target.dataset
+        let item = null
+        if (null != data.identifier) {
+            item = this.actor.items.get(data.identifier)
+        }
+
+        // Pass the relevant data to the appropriate handler
+        switch (data.action) {
+            case 'armorActive':
+                toggleArmorActiveState(this.actor, item)
+                break
+
+            default:
+                // No recognized action defined, so do nothing
+                break
         }
     }
 }

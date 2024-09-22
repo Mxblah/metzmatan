@@ -25,7 +25,7 @@
 {{!-- isActive, isBroken --}}
 <div class="attributes grid grid-3col">
     <div class="attribute flexrow flex-group-center">
-        <label for="system.attributes.isActive" class="resource-label">{{localize "ITEMS.armor.isActive"}}</label>
+        <label for="system.attributes.isActive" class="resource-label">{{localize "ITEMS.armor.isActive"}} {{ localize "PLACEHOLDERS.override" }}</label>
         <input type="checkbox" name="system.attributes.isActive" {{checked system.attributes.isActive}} data-dtype="Boolean" />
     </div>
 
