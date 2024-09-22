@@ -14,7 +14,7 @@
 - [ ] Description to chat for Items (inc. spells, etc.)
 - [X] armor isActive toggle from the actor Items section
 - [X] armor automatically enforces only one active item per slot
-- [ ] "Refill all armor" button
+- [X] "Refill all armor" button
 - [ ] Spell MP cost when cast
 - [ ] Spell scaling with MP spent (choose MP to use)
 - [.] Inline rollables for spells, mutations, etc.

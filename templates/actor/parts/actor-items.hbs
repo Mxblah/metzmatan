@@ -3,6 +3,11 @@
     <li class="items-header flexrow" data-item-type="{{section.type}}">
         <h3 class="item-name flexrow">{{localize section.label}}</h3>
         <div class="item-controls item-controls align-vertical-center align-center flexrow">
+            {{#if section.hasArmorRollables}}
+            <a class="item-control toggleable" data-action="repairAllArmor" title="{{localize 'DOCUMENT.specialtyActions.repairAllArmor'}}">
+                <i class="fas fa-screwdriver-wrench"></i> {{localize 'DOCUMENT.specialtyActions.repairAllArmor'}}
+            </a>
+            {{/if}}
             <a class="item-control item-create" data-action="create" title="{{localize 'DOCUMENT.actions.create' type=''}}{{localize 'TYPES.Item.item'}}" data-type="{{section.type}}">
                 <i class="fas fa-plus"></i> {{localize "DOCUMENT.actions.new" type=""}}{{localize 'TYPES.Item.item'}}
             </a>

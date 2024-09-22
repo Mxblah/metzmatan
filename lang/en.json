@@ -43,6 +43,9 @@
             "edit": "Edit {type}",
             "delete": "Delete {type}",
             "toggle": "Toggle"
+        },
+        "specialtyActions": {
+            "repairAllArmor": "Repair All Armor"
         }
     },
 

@@ -407,7 +407,13 @@ export class MzMaActorSheet extends ActorSheet {
             case 'armorActive':
                 toggleArmorActiveState(this.actor, item)
                 break
-
+            case 'repairAllArmor':
+                const allArmorItems = this.actor.items.filter((item) => item.type === 'armor')
+                for (const item of allArmorItems) {
+                    item.update({'system.resources.ap.value': item.system.resources.ap.max})
+                }
+                ui.notifications.info(`Repaired ${allArmorItems.length} items`)
+                break
             default:
                 // No recognized action defined, so do nothing
                 break
