@@ -1,4 +1,4 @@
-# Metzmatan's Mark 0.1.1
+# Metzmatan's Mark 0.1.2
 
 [![Build release artifacts](https://github.com/Mxblah/metzmatan/actions/workflows/release.yml/badge.svg)](https://github.com/Mxblah/metzmatan/actions/workflows/release.yml)
 
