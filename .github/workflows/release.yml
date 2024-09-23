@@ -64,6 +64,6 @@ jobs:
       - name: Release new version (Foundry)
         env:
           FOUNDRY_API_KEY: ${{ secrets.FOUNDRY_API_KEY }}
-          FOUNDRY_PUBLISH_MODE: 'DRYRUN' # not quite ready for full automated releases yet
+          FOUNDRY_PUBLISH_MODE: 'PUBLISH' # set to anything else to disable automatic releases
           GH_TAG: ${{ env.TAG_NAME }}
         run: npm run publish

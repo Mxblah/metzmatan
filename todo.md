@@ -22,11 +22,12 @@
 - [ ] Recovery checks for Dying
 - [ ] Add custom status effects to CONFIG.statusEffects
 - [ ] Improve the Build / release process for compendia (reduce churn, auto-clean, standardize / remove unneeded fields?)
-- [ ] Build / release process for compendia
+- [ ] More compendium entries
 - [ ] Update Foundry description and README with more info on the system
 
 ### 0.3.0 hopefuls
 
+- [ ] Generate the rulebook PDF automatically, or at least automatically add it to the release download
 - [ ] Automatic release notes build to handle changelog, readme, etc. versioning and such automatically
 - [ ] organize item lists on sheet into grids for consistency
 - [ ] Sort items in lists on sheet (alphabetically?)
