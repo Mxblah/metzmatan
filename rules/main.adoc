@@ -1,0 +1,40 @@
+= Metzmatan's Mark
+:doctype: book
+:toc:
+:toclevels: 3
+
+[.text-center]
+_A d100-based TTRPG system by Shaun Burriss_
+
+[.text-center]
+_Version 0.1.2_
+
+== Core Systems
+
+include::core-systems/rounding.adoc[]
+
+include::core-systems/the-noble-d100.adoc[]
+
+include::core-systems/combat.adoc[]
+
+include::core-systems/skill-challenges.adoc[]
+
+include::core-systems/opposed-checks.adoc[]
+
+== Character Creation
+
+== Backgrounds
+
+== Combat
+
+== Skills
+
+== Equipment
+
+== Magic
+
+== Statuses
+
+== Additional Tables
+
+== Bestiary

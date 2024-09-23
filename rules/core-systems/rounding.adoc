@@ -1,0 +1,3 @@
+=== Rounding
+
+Many systems in this game require division (particularly the “fifth value” system) and may produce decimal numbers. Always round down when dealing with decimals, unless otherwise instructed.

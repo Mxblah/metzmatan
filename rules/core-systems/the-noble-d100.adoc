@@ -1,0 +1,15 @@
+=== The Noble d100
+
+If it is uncertain whether an action will succeed, whether it be a combat attack, skill challenge, or something else, the situation can be resolved in the following manner. Almost all checks, tests, or rolls in the system resolve in a similar fashion:
+
+. Before getting the dice out, first decide if the action requires a roll. If it is an action that could be performed by the character with reasonable certainty, particularly if there is no stress or time limit involved, or if there is no fail state, there is likely no need to roll. Simply perform the action and move on.
+.. Similarly, if the action is impossible, there is also no need to roll.
+. Determine the threshold
+.. Determine which skill, ability, or stat is most relevant to the task at hand and use its value as the starting threshold.
+... For attacks, this would be the weapon or magic skill relating to the implement in use. For skill challenges, this would be the skill being tested. For unusual scenarios, the GM decides.
+.. Add any applicable bonuses to the threshold, increasing it.
+.. Subtract any applicable penalties from the threshold, reducing it.
+. Roll a d100
+.. If the result is less than or equal to the threshold, the character succeeds. If the result is greater than the threshold, the character fails.
+. Arbitrate results
+.. Often, a degree of success or failure is determined by the specific check. For instance, a combat check may result in a pierce, a deflect, a brutal hit, or a critical hit depending on the specific values.
