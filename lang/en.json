@@ -43,6 +43,9 @@
             "edit": "Edit {type}",
             "delete": "Delete {type}",
             "toggle": "Toggle"
+        },
+        "specialtyActions": {
+            "repairAllArmor": "Repair All Armor"
         }
     },
 
@@ -55,6 +58,7 @@
         "noOverride": "(Normal)",
         "noBonus": "(No bonus)",
         "noType": "(Untyped)",
+        "override": "(Override)",
         "overridden": "(Overridden)",
         "invalid": "(Invalid)",
         "diceSizeExample": "1d6, 3d8, etc."

@@ -29,8 +29,6 @@ jobs:
           TAG=${GITHUB_REF/refs\/tags\//}
           echo "TAG_NAME=$TAG" >> $GITHUB_ENV
           echo "ZIP_NAME=metzmatan-$TAG.zip" >> $GITHUB_ENV
-          echo "MANIFEST_URL=https://raw.githubusercontent.com/Mxblah/metzmatan/main/system.json" >> $GITHUB_ENV
-          echo "RELEASE_URL=https://github.com/Mxblah/metzmatan/releases/download/$TAG/metzmatan-$TAG.zip" >> $GITHUB_ENV
 
       # Prereqs: nodejs
       - name: Configure nodejs
@@ -52,12 +50,20 @@ jobs:
       - name: Create release zip
         run: zip ${{ env.ZIP_NAME }} -r * --exclude "packs/*/_source/*" --exclude "scripts/*" --exclude "node_modules/*" --exclude ".github/*" --exclude "package*" --exclude "todo.md"
 
-      # Perform the actual release
-      - name: Release new version
+      # Perform the actual GH release
+      - name: Release new version (GitHub)
         uses: softprops/action-gh-release@v2
         with:
           files: ${{ env.ZIP_NAME }}
-          body: "# Metzmatan's Mark ${{ env.TAG_NAME }}\n* Manifest URL: ${{ env.MANIFEST_URL }}\n* System download URL: ${{ env.RELEASE_URL }}"
-          draft: true # do not automatically REALLY release this
+          body_path: CHANGELOG
+          draft: false # set to true for dry-run/testing
           append_body: true
           generate_release_notes: true
+
+      # Perform the actual Foundry release
+      - name: Release new version (Foundry)
+        env:
+          FOUNDRY_API_KEY: ${{ secrets.FOUNDRY_API_KEY }}
+          FOUNDRY_PUBLISH_MODE: 'DRYRUN' # not quite ready for full automated releases yet
+          GH_TAG: ${{ env.TAG_NAME }}
+        run: npm run publish

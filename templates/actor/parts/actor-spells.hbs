@@ -11,24 +11,24 @@
 
     <ol class="item-list">
         {{#each section.items as |spell id|}}
-        <li class="item flexrow" data-item-id="{{spell._id}}" data-parent-id="{{spell.parent._id}}">
-            <div class="item-name flexrow">
+        <li class="item align-vertical-center flexrow" data-item-id="{{spell._id}}" data-parent-id="{{spell.parent._id}}">
+            <div class="item-name align-vertical-center flexrow">
                 <img class="item-image" src="{{spell.img}}" height="32" width="32" />
-                <h4 class="align-vertical-center align-center">{{spell.name}}</h4>
+                <p class="align-vertical-center align-center">{{spell.name}}</p>
             </div>
             {{!-- Extra buttons based on the item type --}}
-            <h4 class="align-vertical-center align-center item-controls flexrow">
+            <p class="align-vertical-center align-center item-controls flexrow">
                 <a class="rollable" data-remove-system="true" data-roll-type="attack" data-defense="{{ spell.system.attack.defense }}" data-roll="{{ spell.system.attack.formula }}" data-label="{{ spell.name }}" data-parent-uuid="{{ @root.flags.parentUuid }}" data-identifier="{{ spell._id }}" data-damage-formula="{{ spell.system.damage.diceFormula }}" data-damage-bonus="{{ spell.system.damage.parsedDiceBonus }}" data-damage-type="{{ spell.system.damage.type }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollAttack' }}</a>
                 <a class="rollable" data-remove-system="true" data-roll-type="damage" data-roll="{{ spell.system.damage.formula }}" data-damage-formula="{{ spell.system.damage.diceFormula }}" data-damage-bonus="{{ spell.system.damage.parsedDiceBonus }}" data-damage-type="{{ spell.system.damage.type }}" data-label="{{ spell.name }}"><i class="fas fa-dice-d10"></i> {{ localize 'ITEMS.weapon.rollDamage' }}</a>
-            </h4>
-            <h4 class="item-controls align-vertical-center align-center item-controls flexrow">
+            </p>
+            <p class="item-controls align-vertical-center align-center item-controls flexrow">
                 <a class="item-control item-edit" data-action="edit" title="{{localize 'DOCUMENT.actions.edit' type=""}}{{localize 'TYPES.Item.spell' }}">
                     <i class="fas fa-edit"></i>
                 </a>
                 <a class="item-control item-delete" data-action="delete" title="{{localize 'DOCUMENT.actions.delete' type=""}}{{localize 'TYPES.Item.spell' }}">
                     <i class="fas fa-trash"></i>
                 </a>
-            </h4>
+            </p>
         </li>
         {{/each}}
     </ol>

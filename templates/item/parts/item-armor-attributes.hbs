@@ -26,7 +26,7 @@
 <div class="attributes grid grid-3col">
     <div class="attribute flexrow flex-group-center">
         <label for="system.attributes.isActive" class="resource-label">{{localize "ITEMS.armor.isActive"}}</label>
-        <input type="checkbox" name="system.attributes.isActive" {{checked system.attributes.isActive}} data-dtype="Boolean" />
+        <input type="checkbox" class="toggleable" name="system.attributes.isActive" {{checked system.attributes.isActive}} data-dtype="Boolean" data-action="armorActive" />
     </div>
 
     <div class="attribute flexrow flex-group-center">

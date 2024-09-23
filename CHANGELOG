@@ -1,0 +1,15 @@
+# Metzmatan's Mark v0.1.2
+
+- Manifest URL (this specific version): <https://raw.githubusercontent.com/Mxblah/metzmatan/v0.1.2/system.json>
+- System download URL: <https://github.com/Mxblah/metzmatan/releases/download/v0.1.2/metzmatan-v0.1.2.zip>
+
+## Changes in version 0.1.2
+
+### New Features
+
+- Add "Repair All Armor" button to Actor sheets
+- Enforce only one active armor item per slot when toggling isActive
+
+### Technical
+
+- Enhance release process automation

@@ -11,20 +11,20 @@
 
     <ol class="item-list">
         {{#each section.items as |item id|}}
-        <li class="item flexrow" data-item-id="{{item._id}}" data-parent-id="{{item.parent._id}}">
-            <div class="item-name flexrow">
+        <li class="item align-vertical-center flexrow" data-item-id="{{item._id}}" data-parent-id="{{item.parent._id}}">
+            <div class="item-name align-vertical-center flexrow">
                 <img class="item-image" src="{{item.img}}" height="32" width="32" />
-                <h4>{{item.name}}</h4>
+                <p>{{item.name}}</p>
             </div>
             {{!-- todo: later, add conditionals here that display based on item type --}}
-            <h4 class="item-controls align-vertical-center align-center item-controls flexrow">
+            <p class="item-controls align-vertical-center align-center item-controls flexrow">
                 <a class="item-control item-edit" data-action="edit" title="{{localize 'DOCUMENT.actions.edit' type=""}}{{localize 'TYPES.Item.feature' }}">
                     <i class="fas fa-edit"></i>
                 </a>
                 <a class="item-control item-delete" data-action="delete" title="{{localize 'DOCUMENT.actions.delete' type=""}}{{localize 'TYPES.Item.feature' }}">
                     <i class="fas fa-trash"></i>
                 </a>
-            </h4>
+            </p>
         </li>
         {{/each}}
     </ol>

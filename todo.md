@@ -4,25 +4,30 @@
 
 ### 0.2.0 hopefuls
 
+- [X] Update release workflow to include a static manifest URL for that specific version
+- [ ] Update release workflow to trigger on push to main and create the tag + do the full release automatically by parsing system.json
+- [X] Use Foundry Package Release API for releases
 - [ ] Use IDs instead of direct data to handle attack/damage
 - [ ] Damage type handling with [type] syntax
 - [ ] Untyped and unknown damage types
 - [ ] Attack description to chat for attacks
 - [ ] Description to chat for Items (inc. spells, etc.)
-- [ ] armor isActive toggle from the actor Items section
-- [ ] armor automatically enforces only one active item per slot
-- [ ] armor default tab is attributes
-- [ ] "Refill all armor" button
+- [X] armor isActive toggle from the actor Items section
+- [X] armor automatically enforces only one active item per slot
+- [X] "Refill all armor" button
 - [ ] Spell MP cost when cast
 - [ ] Spell scaling with MP spent (choose MP to use)
 - [.] Inline rollables for spells, mutations, etc.
 - [ ] Hardness, weakness, etc. for armor and innately
 - [ ] Recovery checks for Dying
 - [ ] Add custom status effects to CONFIG.statusEffects
+- [ ] Improve the Build / release process for compendia (reduce churn, auto-clean, standardize / remove unneeded fields?)
 - [ ] Build / release process for compendia
+- [ ] Update Foundry description and README with more info on the system
 
 ### 0.3.0 hopefuls
 
+- [ ] Automatic release notes build to handle changelog, readme, etc. versioning and such automatically
 - [ ] organize item lists on sheet into grids for consistency
 - [ ] Sort items in lists on sheet (alphabetically?)
 - [ ] crits actually do things besides have extra text
