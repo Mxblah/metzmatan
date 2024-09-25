@@ -7,4 +7,5 @@
 
 ### Technical
 
-- Add automatic rulebook generation to release process
+- Convert rulebook to asciidoc
+- Add automatic rulebook pdf generation to release process

@@ -1,0 +1,16 @@
+Choose one background for your character, which grants +20% to six chosen skills. You may instead choose to create your own background by choosing six skills to gain additional training in. The only restrictions are that a maximum of only one Weapons skill may be chosen, and neither Magic skill may be trained from a background.
+
+[cols="1,1,1,1,1,1,1"]
+|===
+| Background 6+^|Skill bonuses (all +20%)
+
+| Athlete|Athletics|Acrobatics or Swim 4+|(choose 4 of (Weapons (1h. melee) or Weapons (2h. melee)), Life Sciences, Medicine, Piloting, Social, Stealth)
+
+| Mail Carrier|Navigation|Perception|Social 3+|(choose 3 of Crafting, Electronics, History, Insight, or Mechanics)
+
+| Police Officer|Weapons (1h. ranged)|Athletics|Electronics or Social|Medicine|Perception|Piloting (car)
+
+| Student|Insight|Perception|Social 3+|(choose 3 of Occult, Engineering, History, Life Sciences, Physical Sciences)
+
+| todo: 6+^|more backgrounds coming later!
+|===

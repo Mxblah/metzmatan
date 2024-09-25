@@ -47,9 +47,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3'
-          bundler-cache: false # Should automatically installs deps, but does not seem to work?
+          # Setting this to true should automatically install deps, but it seems to break 'require'?
+          bundler-cache: false
 
-      # ruby dependencies
+      # ruby dependencies (I should figure out how to fix bundler-cache later)
       - name: Install dependencies
         run: bundle install
 
@@ -73,7 +74,7 @@ jobs:
             ${{ env.ZIP_NAME }}
             rules/*.pdf
           body_path: CHANGELOG
-          draft: true # set to true for dry-run/testing
+          draft: false # set to true for dry-run/testing
           append_body: true
           generate_release_notes: true
 
@@ -81,6 +82,6 @@ jobs:
       - name: Release new version (Foundry)
         env:
           FOUNDRY_API_KEY: ${{ secrets.FOUNDRY_API_KEY }}
-          FOUNDRY_PUBLISH_MODE: 'DRYRUN' # set to anything other than 'PUBLISH' to disable automatic releases
+          FOUNDRY_PUBLISH_MODE: 'PUBLISH' # set to anything other than 'PUBLISH' to disable automatic releases
           GH_TAG: ${{ env.TAG_NAME }}
         run: npm run publish

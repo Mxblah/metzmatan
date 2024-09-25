@@ -7,6 +7,7 @@
 - [X] Update release workflow to include a static manifest URL for that specific version
 - [ ] Update release workflow to trigger on push to main and create the tag + do the full release automatically by parsing system.json
 - [X] Use Foundry Package Release API for releases
+- [X] Generate the rulebook PDF automatically, or at least automatically add it to the release download
 - [ ] Use IDs instead of direct data to handle attack/damage
 - [ ] Damage type handling with [type] syntax
 - [ ] Untyped and unknown damage types
@@ -27,7 +28,6 @@
 
 ### 0.3.0 hopefuls
 
-- [ ] Generate the rulebook PDF automatically, or at least automatically add it to the release download
 - [ ] Automatic release notes build to handle changelog, readme, etc. versioning and such automatically
 - [ ] organize item lists on sheet into grids for consistency
 - [ ] Sort items in lists on sheet (alphabetically?)

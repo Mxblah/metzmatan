@@ -27,6 +27,8 @@ include::advancement/leveling-up.adoc[]
 
 == Backgrounds
 
+include::backgrounds/backgrounds.adoc[]
+
 == Combat
 
 == Skills
