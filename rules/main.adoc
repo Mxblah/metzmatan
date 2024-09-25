@@ -1,13 +1,9 @@
 = Metzmatan's Mark
+A d100-based TTRPG system by Shaun Burriss
 :doctype: book
+:revnumber: v0.1.2
 :toc:
 :toclevels: 3
-
-[.text-center]
-_A d100-based TTRPG system by Shaun Burriss_
-
-[.text-center]
-_Version 0.1.2_
 
 == Core Systems
 
@@ -21,7 +17,13 @@ include::core-systems/skill-challenges.adoc[]
 
 include::core-systems/opposed-checks.adoc[]
 
-== Character Creation
+== Advancement
+
+include::advancement/character-creation.adoc[]
+
+include::advancement/levels.adoc[]
+
+include::advancement/leveling-up.adoc[]
 
 == Backgrounds
 

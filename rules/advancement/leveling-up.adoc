@@ -1,0 +1,37 @@
+=== Leveling Up
+
+When you accrue enough experience to level up (or when you reach a milestone), you will gain a level the next time you complete a full rest. After you complete the level-up process described below, your XP resets to 0. todo: XP is not yet implemented
+
+==== Core attributes
+
+When you gain a level, you gain 10 attribute ranks that may be used to increase your core attributes: Body, Mind, and Soul. It takes one rank to improve one core attribute by one point and you may allocate them however you wish, subject to two restrictions:
+
+. You may improve an attribute by at most 5 points per level, or by 3 points per level for improvements beyond 100.
+. Improvements to an attribute beyond 100 require 2 ranks per 1 point.
+
+You must spend all ten ranks immediately upon leveling up; you may not “bank” attribute ranks for later levels.
+
+==== Skills
+
+After increasing your core attributes, you gain 50 skill ranks that may be used to increase your skills. You may allocate these ranks however you wish, subject to these restrictions:
+
+. You may improve a skill by at most 10 ranks per level.
+. You may not allocate more than 100 ranks to a skill.
+. You may not allocate more ranks to a skill than its associated core attribute, or 50, whichever is higher.
+.. For instance, if your Body is 48, you may improve Athletics (based on Body) up to 50. However, if you increase Body to 53 on your next level up, you may then improve Body-based skills (such as Athletics) to 53.
+
+As with core attribute ranks, you may not “bank” skill ranks for later levels; you must spend them all immediately upon leveling up.
+
+==== Spells, Traits, and Mutations
+
+Gain one trait or mutation from any non-core realm for which you meet the prerequisites.
+
+Additionally, learn two spells from any realm for which you meet the prerequisites. You may also replace one known spell with another spell for which you meet the prerequisites, as long as this does not cause other features to no longer meet their prerequisites.
+
+Finally, gain any traits or mutations in the core realms for which you now meet the prerequisites.
+
+==== Derived stats
+
+After increasing your core attributes and skills, and gaining any new traits or mutations, remember to increase your derived stats (HP, MP, DB, and Speed) as appropriate.
+
+Additionally, every 4th level (4, 8, 12, 16, and 20), roll 1d6 and add the result to your maximum and current HP.
