@@ -47,7 +47,11 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3'
-          bundler-cache: true # automatically installs deps
+          bundler-cache: false # Should automatically installs deps, but does not seem to work?
+
+      # ruby dependencies
+      - name: Install dependencies
+        run: bundle install
 
       # Build all compendium packs
       - name: Build compendium packs
