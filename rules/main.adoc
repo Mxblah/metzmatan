@@ -1,7 +1,7 @@
 = Metzmatan's Mark
 A d100-based TTRPG system by Shaun Burriss
 :doctype: book
-:revnumber: v0.1.2
+:revnumber: v0.1.3
 :toc:
 :toclevels: 3
 
