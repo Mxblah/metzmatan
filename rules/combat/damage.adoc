@@ -1,0 +1,58 @@
+=== Damage, Death, and Dying
+
+==== Damage Types
+
+All damage has a type, which determines how it is affected by DR, Immunity, Weakness, and Hardness. “Physical damage” is a common type category and includes Bludgeoning, Piercing, and Slashing.
+
+==== Ongoing Damage
+
+Taking ongoing damage of a specific type means the character will take the listed damage at the end of each of their turns until the damage is removed. Only one instance of ongoing damage per damage type may be applied to a character at once. If a new instance would be applied, it overrides the old value if it deals more damage or is of a greater duration, and is ignored otherwise.
+
+Unless otherwise specified, ongoing damage ends after 1 minute.
+
+While afflicted with ongoing damage, a character rolls one recovery check per type of ongoing damage at the end of their turns, just after applying the damage. The recovery check is typically a flat check against a threshold of 20 + B/5, but it may instead add M/5 or S/5 against certain types of damage or if the effect that applied the damage specified a different type of check. Typically, ongoing mental damage adds M/5, while ongoing void damage adds S/5.
+
+==== Death and Dying
+
+If a character is reduced to 0 HP or below, they are knocked Unconscious. If they were reduced to 0 HP by any damage other than specifically non-lethal damage, they are also Dying.
+
+While Dying, a character makes a flat 50% check at the start of each of their turns with a bonus equal to their B/5 and a penalty equal to 10 * their level of Wounded. On a Critical success, the character's HP becomes 0 and they are no longer Dying. On a success, nothing happens. On a failure, the character takes damage equal to their HP/5 (minimum 1) - this damage cannot be blocked or reduced in any way. On a Fumble, the character dies.
+
+A Dying character with no levels of Wounded dies when their HP reaches a negative value equal to their maximum HP, while a character with Wounded 1 dies at negative half their maximum HP, and a character with Wounded 2 dies at 0 HP.
+
+A character with less than 0 HP that receives healing immediately has their HP set to zero before applying the restored HP. A character who is healed to 0 HP or higher is no longer Dying.
+
+Whenever a character loses the Dying status for any reason, their Wounded status increases by 1.
+
+==== Massive Damage
+
+If a character takes more damage at once than their maximum HP value, they immediately die.
+
+==== Improvised and Environmental Damage
+
+Spells, weapons, and abilities have their damage listed in the description. However, sometimes a character may take damage from a source without a clear number listed. In these cases, refer to this table for guidance:
+
+[cols="20,15,65"]
+|===
+| Source|Damage|Examples
+
+| Weak attacks|0-1|punching, kicking, slapping
+
+| Strong attacks|1d6-1d12|trained martial arts, clubs, chairs
+
+| Weak environmental|1d6-2d6|spilled brazier, dart trap, broken glass
+
+| Moderate environmental|2d6-4d6|falling sandbag / bucket, small explosion, hit by a scooter, strong fire (per round)
+
+| Strong environmental|4d6-8d8|grenade explosion, hit by a car, skewered by spike, lightning strike
+
+| Extreme environmental|8d8-20d10|hit by a speeding semi, crushed by a falling ceiling, powerful explosion
+
+| Instant death|-|reduced to paste by impact, vaporized by explosion, crushed by implosion
+|===
+
+==== Falling Damage
+
+When you fall more than 10 ft, take 1d6 bludgeoning damage per 10 ft fallen, up to a maximum of 150d6 at 1500 ft.
+
+(If you do not have this many dice, you can take the average of 3.5 damage per 10 ft fallen.)

@@ -8,9 +8,8 @@
 - [ ] Update release workflow to trigger on push to main and create the tag + do the full release automatically by parsing system.json
 - [X] Use Foundry Package Release API for releases
 - [X] Generate the rulebook PDF automatically, or at least automatically add it to the release download
+- [ ] Automatic release notes build to handle changelog, readme, etc. versioning and such automatically
 - [ ] Use IDs instead of direct data to handle attack/damage
-- [ ] Damage type handling with [type] syntax
-- [ ] Untyped and unknown damage types
 - [ ] Attack description to chat for attacks
 - [ ] Description to chat for Items (inc. spells, etc.)
 - [X] armor isActive toggle from the actor Items section
@@ -24,11 +23,12 @@
 - [ ] Add custom status effects to CONFIG.statusEffects
 - [ ] Improve the Build / release process for compendia (reduce churn, auto-clean, standardize / remove unneeded fields?)
 - [ ] More compendium entries
-- [ ] Update Foundry description and README with more info on the system
 
 ### 0.3.0 hopefuls
 
-- [ ] Automatic release notes build to handle changelog, readme, etc. versioning and such automatically
+- [ ] Update Foundry description and README with more info on the system
+- [ ] Damage type handling with [type] syntax
+- [ ] Untyped and unknown damage types
 - [ ] organize item lists on sheet into grids for consistency
 - [ ] Sort items in lists on sheet (alphabetically?)
 - [ ] crits actually do things besides have extra text

@@ -31,6 +31,24 @@ include::backgrounds/backgrounds.adoc[]
 
 == Combat
 
+include::combat/combat-flow.adoc[]
+
+include::combat/making-an-attack.adoc[]
+
+include::combat/other-defenses.adoc[]
+
+include::combat/criticals-fumbles.adoc[]
+
+include::combat/combat-maneuvers.adoc[]
+
+include::combat/movement.adoc[]
+
+include::combat/size.adoc[]
+
+include::combat/damage.adoc[]
+
+include::combat/resting-recovery.adoc[]
+
 == Skills
 
 == Equipment

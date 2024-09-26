@@ -1,0 +1,23 @@
+=== Combat Maneuvers
+
+Combat maneuvers are similar to attacks, but generally do not use the weapon skills and generally do not do damage. Instead, they often inflict statuses, force targets to move, or otherwise manipulate the target or environment in some way.
+
+All combat maneuvers cost a Main Action to use. Some maneuvers allow the character to Sustain them using a Utility Action, with varying effects.
+
+All characters have access to the following combat maneuvers:
+
+. *Push.* Make an Athletics attack. On a success, Push the target one square directly away from you. On a Critical hit, Push the target up to two squares instead. This is forced movement. On a Fumble, you fall prone.
+.. You may instead Pull the target one square towards you, moving back one square simultaneously. Your movement does not trigger reactions from the target, but does trigger reactions from any other character as normal.
+.. You cannot Push (or Pull) a target more than 1 size category larger than you.
+. *Trip.* Make an Athletics attack. On a success, the target falls prone. On a Critical hit, the target also takes half your B/5 in bludgeoning damage. On a Fumble, you fall prone.
+.. You cannot Trip a target more than 2 size categories larger than you.
+. *Grapple.* Make an Athletics attack. On a success, you Grab the target. You must Sustain this action with a Utility action on each of your turns or the effect ends.
+.. You cannot Grapple a target more than 1 size category larger than you.
+.. If you move while grappling, you may pull the target along with you by making a secondary Athletics attack against them. You may move up to half your speed on a pierce or a quarter on a deflect. If you miss, you may either make no movement and waste the action or release the grapple and move normally. You only make one of these checks per target per turn; the result is effective for all movement you make that turn.
+. *Jump.* You may Jump vertically up to a distance of half your Athletics/5 and horizontally up to a distance of your Athletics/5, or twice your Athletics/5 with a running start.
+.. You may not jump higher vertically without a spell or similar ability.
+.. To jump further horizontally, roll an Athletics check and subtract the distance you wish to jump from the threshold.
+. *Maneuver.* Any combat maneuver beyond the ones listed here (such as swinging on a chandelier, knocking over a brazier, wrapping a foe in a sheet, etc.) may be attempted and resolved per GM discretion. For some guidance, refer to the steps below:
+.. *Determine skills.* Typically, a combat maneuver will use Athletics, but any skill is fair game depending on the action being performed.
+.. *Determine type of check.* Typically, a combat maneuver will be an Attack or standard skill check, but it may target a different defense or be an opposed check, depending on the action being performed.
+.. *Resolve the maneuver.* If it deals damage, refer to the <<Improvised Damage>> table for guidance. If it inflicts a status, refer to the <<Status Glossary>>. Otherwise, resolve the action as makes sense.

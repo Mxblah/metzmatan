@@ -42,6 +42,6 @@ If multiple dynamic Active Effects apply to the same parsed attribute key, they 
 
 This repo contains content licensed under different terms.
 
-The system's name, rules, setting, lore, characters, magic, monsters, and any similar creative assets, particularly those under the `packs/*` directory, are distributed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. (See `/packs/LICENSE`)
+The system's name, rules, setting, lore, characters, magic, monsters, and any similar creative assets, particularly those under the `rules/*` and `packs/*` directories, are distributed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. (See `/rules/LICENSE`)
 
 The code, software, and other assets without indicated terms are distributed under the MIT license. (See `/LICENSE`)
