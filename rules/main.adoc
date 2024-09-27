@@ -51,6 +51,12 @@ include::combat/resting-recovery.adoc[]
 
 == Skills
 
+include::skills/intro.adoc[]
+
+include::skills/values.adoc[]
+
+include::skills/descriptions.adoc[]
+
 == Equipment
 
 == Magic
