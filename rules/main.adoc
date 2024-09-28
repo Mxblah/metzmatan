@@ -59,6 +59,12 @@ include::skills/descriptions.adoc[]
 
 == Equipment
 
+include::equipment/intro.adoc[]
+
+include::equipment/armor.adoc[]
+
+include::equipment/weaponry.adoc[]
+
 == Magic
 
 == Statuses
