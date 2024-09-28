@@ -67,6 +67,16 @@ include::equipment/weaponry.adoc[]
 
 == Magic
 
+include::magic/intro.adoc[]
+
+include::magic/mp.adoc[]
+
+include::magic/realms.adoc[]
+
+include::magic/description-how-to.adoc[]
+
+include::magic/realm-includes.adoc[]
+
 == Statuses
 
 == Additional Tables

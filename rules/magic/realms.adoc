@@ -1,0 +1,7 @@
+=== Realms of Magic
+
+Both Planetary and Celestial magic can be divided into numerous "realms," which can be generally considered a collection of traits, mutations, and spells all related to a single theme. When you level up, you may choose to take traits, mutations, or spells (collectively "features") in a new or an existing realm, assuming you meet all the relevant prerequisites. There is no requirement that you take every feature in a realm before moving to a different realm, and you can always come back to "finish" a realm later if desired.
+
+Planetary and Celestial magic each also contain a "core" realm, which contains basic features foundational to that type of magic. You do not choose features in the core realms when leveling up; instead, you automatically gain them when you meet the prerequisites.
+
+Some features in the core realms can be negative, representing a delve too deep into dangerous magic. This is simply the price that must be paid to obtain such unnatural power.
