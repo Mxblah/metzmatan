@@ -2,7 +2,7 @@
 
 . First, determine your character's core attributes: Body (B), Mind (M), and Soul (S).
 .. Roll 3d10+10 for each, recording the number in order.
-.. Also during this step, divide each core attribute by 5 and round down to get the “fifth value” for that attribute.
+.. Also during this step, divide each core attribute by 5 and round down to get the "fifth value" for that attribute.
 ... For instance, a Body score of 24 would have a fifth value of 4, denoted as B/5 = 4.
 . Apply starting bonuses to your core attributes
 .. Add 10 to one core attribute of your choice and 5 to another.

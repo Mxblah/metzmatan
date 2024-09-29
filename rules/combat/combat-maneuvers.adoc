@@ -13,7 +13,7 @@ All characters have access to the following combat maneuvers:
 .. You cannot Trip a target more than 2 size categories larger than you.
 . *Grapple.* Make an Athletics attack. On a success, you Grab the target. You must Sustain this action with a Utility action on each of your turns or the effect ends.
 .. You cannot Grapple a target more than 1 size category larger than you.
-.. If you move while grappling, you may pull the target along with you by making a secondary Athletics attack against them. You may move up to half your speed on a pierce or a quarter on a deflect. If you miss, you may either make no movement and waste the action or release the grapple and move normally. You only make one of these checks per target per turn; the result is effective for all movement you make that turn.
+.. If you move while grappling, you may pull the target along with you by making an Athletics attack against them. You may move up to half your speed on a pierce or a quarter on a deflect. If you miss, you may either make no movement and waste the action or release the grapple and move normally. You only make one of these checks per target per turn; the result is effective for all movement you make that turn.
 . *Jump.* You may Jump vertically up to a distance of half your Athletics/5 and horizontally up to a distance of your Athletics/5, or twice your Athletics/5 with a running start.
 .. You may not jump higher vertically without a spell or similar ability.
 .. To jump further horizontally, roll an Athletics check and subtract the distance you wish to jump from the threshold.

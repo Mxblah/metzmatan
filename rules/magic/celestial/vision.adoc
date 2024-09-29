@@ -1,0 +1,104 @@
+==== Vision
+:hardbreaks-option:
+
+The Vision realm is concerned with sight, in all its forms. The realm originated with oracles and soothsayers, and has now matured to become a powerful tool for gathering information and unveiling secrets. Skilled Vision practitioners can divine the future, read the past of objects and people, and comprehend the present well beyond the surface level. Vision has the potential to glimpse secrets of the universe beyond any other Celestial realm, if the stars can be convinced into showing them.
+
+===== Temporal Haze
+
+_Mutation - Occult 30, Perception 40_
+
+One of your eyes undergoes a transformation, losing all pigmentation in the iris and gaining the ability to see slightly into alternate layers of reality. Choose which eye is transformed into your "oracular eye" and gain the _Hazesight_ mutation ability.
+
+[.underline]#Hazesight#
+
+_Active - 1 U / 10 minutes
+Self / Self
+2 / hour_
+
+Blue haze clouds the vision in your oracular eye before clearing and revealing hidden details of the world. You can read any human language and see in total darkness, though this darkvision is monochrome and low-detail; while in darkness, you are unable to make out fine details such as words in a book.
+
+_Present Haze_
+By focusing on an object or creature for 1 Main Action, you can cause the haze to surround it briefly before revealing an alternate version of it. This may be something useless, such as a different kind of flower in a pot, but it could be something useful, such as a corpse being replaced by its living version. These alternate versions are illusions only visible to you and cannot affect the world in any way. You cannot see the original while focusing on its alternate.
+
+By focusing on an alternate version with a second Main Action, you can use your other senses on it in addition to sight (meaning you can no longer sense the original at all), and the alternate version can sense you as well. This allows you to hold brief conversations or other interactions if desired, though to any outside observers (including the original creature, if applicable), you will be interacting with the original object or creature.
+
+Some objects or creatures may not have alternate versions, or may refuse to show themselves in various circumstances. Alternate versions of living, conscious creatures are often vague and unhelpful, usually acting out the surface-level thoughts of their original. The GM has significant latitude in determining which alternate versions exist and how they may respond to you.
+_End of Haze_
+
+If a creature is aware that you are using this ability on them (they need not know exactly what it does; just that you are casting some sort of magic), they can choose to resist. If they do, make a secondary Mind spell attack, performing the ability as normal on a pierce. On a deflect, nothing happens. On a miss, you may not use Hazesight on that target again for the next 10 minutes.
+
+You may temporarily suppress this ability by covering your oracular eye, but you may not end it early. If you do not focus on at least one object or creature per minute during the ability's duration, you are Stupefied 1 with a painful headache until you do.
+
+===== Past Haze
+
+_Trait - 1 Vision, "Temporal Haze" / Occult 40, Perception 50_
+
+Your oracular eye has mutated further. Your Hazesight ability gains an additional option: instead of revealing alternate versions of objects and creatures in the present, you can view them in the past. When you use Hazesight, you may replace the _Haze_ paragraphs with the following text instead:
+
+By focusing on an object or creature for 1 Main Action, you can cause the haze to surround it briefly before revealing a past version of it. This manifests as a brief illusory scene, no more than 30 seconds, that plays out in your head from the target's perspective. You cannot sense the real world while this scene plays, and cannot end it early.
+
+For an object, the scene will be the most recent relatively important event that happened to it. For instance, a gun may remember being used to shoot someone, or a blanket may remember comfortably tucking someone in at night.
+
+For a creature, the scene will be the past event currently most forefront in its Mind. For instance, a student may remember their last lecture or exam, while a soldier may remember their mission briefing.
+
+Some targets may be too difficult to read (particularly if you don't know anything about them or if they have strong willpower), or may have no particularly important past event to reveal. The GM has significant latitude in determining which past events are available.
+
+===== Future Haze
+
+_Trait - 2 Vision, "Past Haze" / Occult 50, Perception 60_
+
+Your oracular eye can now even see dimly into the future. Blue haze dances around the edges of your vision at all times now, even when not using Hazesight. You gain an additional use of Hazesight (now 3 / hour). You constantly sense vague future intentions from creatures around you. Add half of your Perception/5 to your DB as a Trait bonus.
+
+Your Hazesight ability gains an additional option: instead of revealing alternate versions of objects and creatures in the past or present, you can instead view them in the future. When you use Hazesight, you may replace the _Haze_ paragraphs with the following text instead:
+
+By focusing on an object or creature for 1 Main Action, you can cause the haze to surround it briefly before revealing a future version of it. This manifests as a ghostly imprint of the target 1-3 seconds in the future, performing the most likely action it will take in that time. If you take action based on this information, or if the situation changes in an unexpected manner, the prediction may change or be inaccurate.
+
+For a creature, this ghostly imprint extends to all objects it is wearing or carrying, though not objects that leave its person. For instance, you would be able to see an enemy picking up a gun and firing it at you in the imprint, but you would not be able to see the bullet or its effect on the wall should it miss.
+
+For an object, the ghostly imprint works in much the same way, though most objects will generally not move on their own.
+
+===== Reactive Haze
+
+_Mutation - 3 Vision, "Future Haze" / Perception 70_
+
+You have grown accustomed to using your oracular eye to predict others' movements. You gain the _Haze Dodge_ mutation ability.
+
+[.underline]#Haze Dodge#
+
+_Active - 1 R / instant
+Sight / any creature or object making a physical attack against you
+3 / day_
+
+Predicting an incoming attack, you dodge out of the way at precisely the right time. Hazesight must currently be active in its "Future Haze" configuration and you must be able to see the target. Gain +50 DB against the triggering attack.
+
+After the attack is resolved, Hazesight immediately ends and you are Stupefied 1 until your next short rest. If you already have Stupefied, increase its level by 1 and extend its duration until your next full rest.
+
+===== Oracle
+
+_Spell - 3 Vision, "Future Haze" / Occult 60
+4+ MP
+10 minutes / instant
+Self / Self_
+
+By meditating for several minutes, you can extend your foresight further into the future. Choose one course of action that you intend to take within the next day. A brief vision plays in your head - several seconds at most - of a likely event to occur if you take that course of action. The vision is from your own perspective and contains all of your senses.
+
+The shown event is usually important to the chosen action, but may be vague, confusing, or misleading. For instance, you might choose the action of "infiltrating the temple tomorrow afternoon." You might see a snippet of being chased through the corridors, picking up a precious artifact, or looking at jail bars after being captured.
+
+The vision is likely based on the current situation, but is not guaranteed - particularly if you act on the information or the situation changes significantly.
+
+You may spend additional MP, 3 at a time, to either increase the vision's duration by several seconds or see an additional scene.
+
+===== Clairvoyance
+
+_Spell - 1 Vision / Celestial Magic 50, Perception 65
+3+ MP
+1 minute / X + 1 hours
+Self / Self_
+
+A ghostly duplicate of your eye emerges from your real one, allowing you to see from afar. You create an actual-size duplicate of your oracular eye in the space in front of you. This sensor can fly, is tangible, and is invisible aside from a tiny black dot for the pupil. You can move the sensor up to your speed with a Utility Action. You can switch your vision from your actual eyes to the sensor, or vice versa, with a Main Action.
+
+The sensor can pass through gaps as small as an eyeball, but cannot phase through solid objects. It is difficult to spot, with a +20 bonus to Stealth checks to hide, but can be targeted and destroyed. The sensor has 1 HP, 0 AB / AP, and uses your DB and other defenses. If the sensor is destroyed, the spell ends and you are Blinded in your oracular eye until your next long rest. You may end the spell early at any time with a single Utility action.
+
+You may anchor the eye to a moving object or creature within 10 ft of it that you can see through the eye (for instance, a car, a person, or an airplane) in order to have it automatically move along with the object. You may still move the sensor relative to the object as normal.
+
+You may use _Hazesight_ and other Vision mutations through the sensor, but you may not cast spells through it.

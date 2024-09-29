@@ -1,3 +1,58 @@
 === Planetary Magic
+:hardbreaks-option:
 
 ==== Core
+
+Planetary magic is the magic of dreams. It makes use of ichor - a golden liquid said to be the blood of gods and demons - but to truly advance in the art requires a bonded metzmatan and a patron demon. The metzmatan is a symbol on your hand that connects you to your patron and allows you to wield magic more spontaneously than the cumbersome Rites employed by more mundane practitioners of the art. With your skin marked so, you are branded a priest of your patron and become their hands in the physical world.
+
+The core realm contains traits and mutations linked to your metzmatan and your patron's abilities, as well as spells relating to foundational dreamweaving.
+
+===== Metzmatan
+
+_Mutation - 1 Planetary_
+
+The palm of one hand is marked with a metzmatan - a permanent symbol that links you to your patron. Your metzmatan is the source of your powers, though it is far more potent in dreams and in reality tends to resemble a high-quality tattoo unless you are actively making use of its abilities. You gain the _Detect Dreamwalkers_ mutation ability:
+
+[.underline]#Detect Dreamwalkers#
+
+_Active - 1 U / instant
+Aura 1 mile / any humans
+1 / 10 minutes_
+
+Your metzmatan shifts, forming lines that direct you to the location of any other dreamwalkers in the same dream. You know the precise direction, though not the distance, to any humans within range.
+
+You must be dreaming to use this ability.
+
+===== Patron
+
+_Trait - 1 Planetary_
+
+You are linked by your metzmatan to your patron: a demon that can appear to you in dreams. Your patron grants you power through your metzmatan and has some influence over how your magic takes shape. Choose a patron from the <<Gods and Demons>> appendix (todo: coming soon!), or work with the GM to create a custom patron in the same format as the patrons in the appendix.
+
+Your patron may occasionally provide you with news, requests, or other information, though often at a price. Demons' motives are inscrutable and they should never be trusted fully; it's extraordinarily rare for a patron to truly have the best interests of their priests at heart. If you advance your patron's goals, they may assist you in other ways. As you advance in Planetary magic, your connection to your patron will deepen and you will gain additional abilities relating to them.
+
+===== Augury
+
+_Mutation - 8 Planetary_
+
+Your patron shares tidbits of information that can help you carry out your goals, instead of only theirs. You gain the _Patron Augury_ mutation ability:
+
+[.underline]#Patron Augury#
+
+_Active - 1 minute / instant
+Self / Self
+1 / week_
+
+Your metzmatan glows fitfully as you consult with your patron in a brief, dreamlike trance. You may ask your patron one simple question about your current situation, which they will answer truthfully to the best of their knowledge. Your patron is a powerful demon, but is not omniscient, and they are not required to answer questions pertaining to themself, other higher beings, or that are not directly related to your current situation (though they may if they desire). Answers may be brief or cryptic, but not misleading or inaccurate.
+
+If your Lucidity skill is at least 60, you may use this ability 2 / week. If your Lucidity skill is at least 100, you may use this ability 1 / day.
+
+===== Dream Hunts
+
+_Trait - Planetary 13_
+
+Your patron will periodically hunt you in your dreams, drawing strength from the emotions you experience during each nightmare. Whenever you go to sleep, roll a Lucidity check. On any Critical Hit or Fumble, you are hunted during that rest.
+
+If you rolled a Critical Hit, you awaken energized, regaining 1d4 HP and losing Drained equal to your S/5.
+
+If you rolled a Fumble, you awaken exhausted, increasing Exhausted by 1 and not losing any Drained from the rest.

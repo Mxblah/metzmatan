@@ -1,0 +1,27 @@
+==== Calling
+:hardbreaks-option:
+
+Calling, also known as summoning, is the process of bringing forth matter, energy, and creatures from other levels of reality. Traditionally, this means bringing creatures from dreams into the real world, but the realm has expanded over the years to become more flexible. Experienced Calling practitioners can summon creatures from other dimensions, banish or control such creatures already present, and channel energy through temporary rifts for various purposes.
+
+===== Eye for the Unnatural
+
+_Trait - exactly 0 Celestial_
+
+You have an uncanny knack for spotting supernatural entities. Aberrations, lacre-blooded creatures, demons, and other unnatural creatures feel "off" to you, and you can automatically tell that something isn't quite right nearby even if they are disguised or invisible. Additionally, add your S/5 to Perception checks to detect or identify such creatures. You may choose to disable this trait for specific creatures you know well, such as any lacre-blooded friends you may have.
+
+If you gain any Celestial feature, you lose all benefits of this trait. Instead, you sense _yourself_ as slightly wrong in the same way. This sensation cannot be disabled.
+
+===== Banishment
+
+_Spell - 4 Calling / Lucidity 40, Occult 60
+8+ MP
+1 M / 1 minute
+Blast 20 / 1 creature not on its original level of reality_
+
+Make a Soul spell attack against the target. On a pierce, it disappears and is banished back to its original level of reality for the duration. On a deflect, it is banished for 1 round and the spell ends.
+
+You must Sustain the Spell each round in order to maintain the banishment. If you Sustain the Spell for its full duration, the banishment becomes permanent and the spell ends. Otherwise, the target reappears in the last space it occupied.
+
+If the target is half your level or less (the GM will know this information), you may add additional targets within range of the same type for 1 MP each.
+
+If a target is higher level than you, you take a -20 penalty to the threshold.

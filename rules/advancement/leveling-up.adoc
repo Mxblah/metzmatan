@@ -9,7 +9,7 @@ When you gain a level, you gain 10 attribute ranks that may be used to increase 
 . You may improve an attribute by at most 5 points per level, or by 3 points per level for improvements beyond 100.
 . Improvements to an attribute beyond 100 require 2 ranks per 1 point.
 
-You must spend all ten ranks immediately upon leveling up; you may not “bank” attribute ranks for later levels.
+You must spend all ten ranks immediately upon leveling up; you may not "bank" attribute ranks for later levels.
 
 ==== Skills
 
@@ -20,7 +20,7 @@ After increasing your core attributes, you gain 50 skill ranks that may be used 
 . You may not allocate more ranks to a skill than its associated core attribute, or 50, whichever is higher.
 .. For instance, if your Body is 48, you may improve Athletics (based on Body) up to 50. However, if you increase Body to 53 on your next level up, you may then improve Body-based skills (such as Athletics) to 53.
 
-As with core attribute ranks, you may not “bank” skill ranks for later levels; you must spend them all immediately upon leveling up.
+As with core attribute ranks, you may not "bank" skill ranks for later levels; you must spend them all immediately upon leveling up.
 
 ==== Spells, Traits, and Mutations
 

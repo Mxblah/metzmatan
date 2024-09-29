@@ -1,0 +1,106 @@
+==== Nightmares
+:hardbreaks-option:
+
+Nightmares are a common occurrence for those who delve deeply into dreams, so it was only natural that metzmatan-marked priests would learn to harness their energy in reality. The Nightmares realm grants practitioners the ability to create illusions, drive fear, and directly harm others in reality, a relative rarity in Planetary magic. As such, it is a realm that many find concerning or even disturbing - but Nightmares practitioners may prefer that.
+
+===== Static Image
+
+_Mutation - Deception 35_
+
+You have learned to create illusions by interweaving dreams into the air. You gain the _Static Image_ mutation ability.
+
+[.underline]#Static Image#
+
+_Active - 2 U / 10 minutes
+100 / 1 location you can see
+2 / hour_
+
+An image of your choice appears at the target location. The image must fit entirely within a 5 ft cube centered on the location. The image looks real, but is intangible and interacts with no other senses. You may Sustain the Spell to animate the illusion within the 5 ft cube (allowing continuous movement if you Sustain the Spell every turn), but you cannot move any part of it out of the cube.
+
+A creature may examine the illusion if they have reason to believe it to be fake; if they do, they roll a contested Perception check vs your Deception (if the illusion is of a creature) or your Lucidity (if the illusion is of an object). If they win the contest, the illusion becomes hazily transparent to them; either way, they may not attempt the contest again for the ability's duration.
+
+If your Planetary Magic skill is at least 60, this ability may be used 3 / hour instead of 2 / hour.
+
+If your Planetary Magic skill is at least 80, your illusion may fill a 10 ft cube.
+
+===== Lacerate
+
+_Spell
+1+ MP
+1 M / instant
+Melee / 1 creature_
+
+Cause gaping wounds to open with a brush of your hand. Make a spell attack against the target, dealing Xd8 slashing damage.
+
+On a critical hit, additionally inflict X/3 d4 (minimum 1d4) ongoing bleed damage.
+
+===== Darken
+
+_Spell - Lucidity 30
+1+ MP
+2 U / 10 minutes
+100 / Burst 5+5*X_
+
+Drain the light from an area within range. All small nonmagical light sources within the area are extinguished (for instance, candles, lanterns, flashlights), while all large sources are suppressed (for instance, building lights, floodlights, bonfires). Extinguished sources cannot be restarted until the spell ends, even if they leave the area, while suppressed sources immediately begin working again when they leave the area or when the spell ends. Any sources that enter or re-enter the area are subject to the same effects.
+
+Any magical light sources are extinguished, unless the effect that created them spent more MP than this casting of Darken. In that case, make a Mind spell attack against the caster or effect that created the light (treating sources without an obvious caster or Mind value as having 20 + 10 * their level Mind). A deflect dims the light source to half its intensity, a pierce suppresses it, and a Critical Hit extinguishes it. A Brutal Hit permanently destroys the light source. Once a light source has been attacked in this way, it is immune to further effects from this casting of Darken.
+
+No light may enter or leave the area from any source, making the edge of the area resemble a shadowy barrier of total obscurity.
+
+You may Sustain the Spell and expend 1 MP to move the area to another point within range. This does not increase the spell's duration.
+
+===== Terrify
+
+_Spell - Intimidation 40
+2+ MP
+1 M / Sustained
+50/100 / 1 creature_
+
+To the target, your features shift into a reflection of their fears. Make a Mind attack against the target. On a pierce, the target is Frightened X+1. On a deflect, the target is Frightened 1. In both cases, you are the source of the target's fear.
+
+You may Sustain the Spell and expend 1 MP. If you do so and the target can sense you, their Frightened status does not decrease at the end of their next turn.
+
+===== Excise Senses
+
+_Spell - 2 Nightmares / Planetary Magic 60, Lucidity 40
+3+ MP
+1 M / 1 minute
+20 / 1 creature_
+
+With a cruel gesture, you rip a sense from the target's Body, perhaps permanently. Choose one sense (for instance, sight, hearing, scent, touch, or taste) and make a Body spell attack against the target. On a deflect, the target loses that sense until the end of their next turn and the spell ends. On a pierce, the target loses that sense until the spell ends, but may attempt a Body recovery check at the end of each of their turns. On a success, the lost sense is returned and the spell ends. On a failure, they gain a cumulative +10 bonus to future rolls against this instance of Excise Senses.
+
+On a Critical Hit, the target takes a -10 penalty to their recovery checks. On a Brutal Hit, the target permanently loses that sense as the sense organ visibly atrophies.
+
+During the spell's duration, you may spend a Main action to perform a melee Body spell attack against the target. If you pierce, the target takes a stacking -10 penalty to their recovery checks _and_ Body defense against this instance of Excise Senses. If you Critically Hit, the target permanently loses the sense as if you rolled a Brutal Hit on the initial attack.
+
+You may spend additional MP to target one additional sense per 3 MP spent. Any lost senses count as the Blinded status (or Blinded 10 for permanent duration) for the purpose of effects that cure statuses.
+
+===== Paralyze
+
+_Spell - 3 Nightmares / Lucidity 40
+4+ MP
+1 M / 1 minute
+50 / 1 creature_
+
+The target's muscles lock up at your command, freezing them in place for the duration. Make a Body spell attack against the target. On a pierce, the target is Paralyzed for the duration. On a deflect, the target is Stunned 1.
+
+A Paralyzed target may attempt a Body recovery check at the end of each of their turns; on a success, the Paralyzed status is removed. On a failure, they gain a cumulative +10 bonus to future rolls against this instance of Paralyze.
+
+If you spend 8 MP, you may target a Burst 5 within range instead of a single creature, using the same attack roll against all targets. If you spend more MP, the size of the burst increases by 5 with each additional 3 MP spent.
+
+===== Shape Memories
+
+_Spell - 4 Nightmares / Planetary Magic 70, Lucidity 55
+6+ MP
+1 M / X - 1 minutes
+Melee / 1 creature_
+
+You delve into a creature's Mind and reshape their memories. Make a Mind spell attack against the target. On a pierce, both you and the target are Paralyzed and Blinded for the duration. If either of you are attacked or moved apart from each other, the spell is interrupted.
+
+You may edit or delete a contiguous portion of the target's memories with a duration up to than the spell's duration. You must have a reasonably correct idea of what the memories you wish to edit are and when they took place; this spell does not allow you to read the target's Mind. For instance, you would be able to edit the target's memory of their 11th birthday party to remove a traumatic run-in with a clown, but you would not be able to do so if you knew nothing about the party whatsoever, or if your information about the clown was false.
+
+The target's Mind will attempt to make sense of the edited memories and connect them to other events in ways that reasonably make sense. If this is impossible or you insert contradictory information, the target may figure out their memories are fake. Recovery of the original memories is still possible with certain Rites or restoration magic, but it is not possible through simple willpower. If your edits make sense, the target will generally believe the fake memories are real unless given reason to think otherwise. The altered memories are permanent unless restored by magic.
+
+When the spell ends (even if interrupted), the target forgets that you cast this spell; their memory of the duration is foggy and unclear.
+
+If your Planetary Magic skill is at least 90, the duration is instead 2X minutes.

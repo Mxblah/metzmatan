@@ -1,0 +1,63 @@
+==== Dissolution
+:hardbreaks-option:
+
+Dissolution is the realm of entropy and rot. As empty space eventually devours warmth and life, so too does Dissolution break apart the building blocks of our world. Practitioners of this realm may demolish locks and walls, inflict foes with horrid wasting diseases, or rip temporary holes in reality. Dissolution is often maligned among the Celestial realms as one that brings only destruction, but experienced practitioners claim that oftentimes, the only way to build something new is to destroy the old.
+
+===== Wither
+
+_Spell - Occult 30
+3+ MP
+1 M / instant
+Melee / 1 creature_
+
+Inject the target with a slug of lacre from your blood, causing their flesh to wither away. Make a spell attack against the target, dealing Xd10 void damage. The target is Sickened 1 on a pierce or deflect. On a Fumble, you take X/3 d4 bleed damage.
+
+On a Critical Hit, the target is Sickened X/2 (minimum 2).
+
+===== Dissolve Armor
+
+_Spell - Occult 40
+3+ MP
+1 M / instant
+Melee / 1 creature or object_
+
+A noxious, corrosive substance coats your hands and dissolves protective material on contact. The target gains +X*5 AB against this attack, unless their AB is 0. Make a spell attack against the target, dealing X+1 d10 corrosive damage. If you pierce, deal half damage.
+
+You may Critically Hit on a deflect for this spell. If you do, the target's armor takes 2d8 ongoing corrosive damage in addition to the normal effects of a Critical Hit.
+
+Armor broken by this spell is destroyed (or its spell is ended, if it is provided by a spell) and cannot be repaired except by magic.
+
+===== Virulence
+
+_Spell - 1 Dissolution, Occult 40
+4 MP
+1 M / instant
+Cone 30 / any creatures_
+
+Bring your hands to your mouth and exhale a cloud of toxic dust. Make a spell attack against all targets in the area. On a pierce, deal 3d6 ongoing poison damage and make a secondary attack against the target. On a deflect, deal 1d6 poison damage and the target is Sickened 1.
+
+For any pierced targets, make a secondary Body spell attack. On a pierce, they are Fatigued 1; on a deflect, they are Sickened 2.
+
+===== Unlock
+
+_Spell - 1 Dissolution / Thievery 50
+2+ MP
+1 M / instant
+Melee / 1 locked object_
+
+With a touch, you cause a locked object to spring open. If the lock is nonmagical and can reasonably be considered ordinary, you unlock it. Otherwise, you gain a +10 * X bonus to the next Thievery check you make to unlock the lock within the next 10 minutes, and your tools gain Hardness X against any damage dealt by the check.
+
+===== Suppress Matter
+
+_Spell - 2 Dissolution / Occult 60
+3+ MP
+1 minute / X * 10 minutes
+Line 5 * X / all unattended objects_
+
+By dropping an area into an alternate layer of reality, you can temporarily remove matter from this one. Target all unattended objects, including floors, walls, etc. in a cylinder with diameter X around the targeting Line. This matter is suppressed for the duration, disappearing into the void and unable to interact with normal reality. You may target attended objects if the attending creature is willing.
+
+The missing matter still acts as if it is present, supporting weight and avoiding collapse as normal, and returns to its original position when the spell ends. Objects that were worn or carried by a creature when they were suppressed instead reappear in their original positions relative to the creature when the spell ends.
+
+If matter reappears in a space that is already occupied by a creature, the creature is shunted out of the area by the shortest path, taking 1d6 bludgeoning damage per 5 ft moved. If matter reappears in a space already occupied by an object, the two merge if possible, or the less-sturdy object is destroyed if not.
+
+Matter that is magical or already affected by any spell or protective Rite is unaffected by this spell.

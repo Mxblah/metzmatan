@@ -1,0 +1,55 @@
+=== How to Read Feature Descriptions
+
+Features read similarly, but have differences in their descriptions based on their specifics. The common information between all features is listed here:
+
+. *Name.* All features have a name.
+. *Type.* "Trait," "Mutation," or "Spell."
+. *Prerequisites.*
+.. A feature may have specific feature prerequisites, meaning you must take a specific feature. This reads like "Heal", quotes included, indicating you must take the _Heal_ spell specifically.
+.. A feature may have general feature prerequisites, meaning you must take a certain number of a certain kind of feature. This may read like "2 Growth," indicating you need to take 2 Growth features, like "1 Energy spell," indicating you need to take one spell specifically from Energy, or even like "3 Celestial," indicating you need to take any three features from any Celestial realm. Rarely, a feature may even indicate something like "2 any," indicating even features from the other type of magic count towards its prerequisites.
+... Features in either core realm do not count towards any prerequisites.
+.. A feature may have skill or attribute prerequisites, meaning you must have the relevant skills or attributes in order to take the feature. For instance, "60 Planetary Magic" indicates you must have a total skill of at least 60 in Planetary Magic, while "70 Soul / 70 Planetary Magic" indicates a requirement of 70 for each referenced stat.
+. *Description.* All features contain a description, though the specifics vary based on the type.
+
+==== Trait Descriptions
+Traits are permanent effects that reflect your magical advancement. They are usually invisible to others unless they know what to look for or have special senses, and are distinct from mutations in that they only have passive effects. A trait's description explains its passive effect and any conditions it may have. Trait descriptions look like this:
+
+===== Trait Name
+
+[%hardbreaks]
+_Trait - <feature prerequisites> / <skill or attribute prerequisites>_
+Description of effect
+
+==== Mutation Descriptions
+Mutations are permanent effects that alter your Body, Mind, or Soul. They are usually visible to others, though potentially in a subtle way, and are distinct from traits in that they have active effects. A mutation's description will explain how to activate it, how often you may do so, and what effect the activation has. Most mutations also have passive effects, noted above the active effect. Mutation descriptions look like this:
+
+===== Mutation Name
+[%hardbreaks]
+_Mutation - <feature prerequisites> / <skill or attribute prerequisites>_
+Description of passive effect
+[.underline]#Active effect name#
+_Active - <action cost> / <duration>
+<range> / <target>
+<cooldown>_
+Description, triggers, restrictions, and other details
+
+. Action costs are listed as M, U, or R, for Main, Utility, or Reaction.
+. A duration can be "instant" if the effect does not linger, or otherwise listed a timespan in minutes or longer.
+. Range and target use the same format as detailed in the Weaponry section.
+. Cooldown states a number of uses per timespan. A "day" is defined as "until your next full rest," not "24 hours."
+
+==== Spell Descriptions
+Spells are temporary effects that you can create by spending MP to impose your will on the world. They are almost always obvious to others, as they require you to perform actions or gestures to cast, and are always active effects. Some may create temporary or permanent changes to the environment or other creatures, while others may instantly alter the situation. Some spells may have side effects. Spell descriptions look like this:
+
+===== Spell Name
+_Spell - <feature prerequisites> / <skill or attribute prerequisites>
+<MP cost>
+<cast time> / <duration>
+<range> / <target>_
+Description
+
+. The MP cost may be paid in MP or HP, or a combination of both (see <<Casting from Hit Points>> above). Some spells allow you to spend different amounts of MP to produce different effects, such as "1-3 MP" (you may spend between 1 and 3 MP) or "2+ MP" (you may spend 2 or more MP).
+. Cast time may be listed in actions (M, U, or R as with mutations) or in a timespan for longer spells. If you are interrupted while casting a spell, you still expend the MP but do not produce any effects from the description. Duration is listed as a timespan or "instant."
+. Range and target use the same format as detailed in the <<Weaponry>> section.
+. Spell descriptions may include varied effects depending on the MP spent to cast the spell. If the spell includes such effects, it may use an uppercase X as shorthand for the amount of MP spent. This may affect damage, healing, secondary effects, range, or essentially any part of the spell.
+.. For instance, if a spell deals Xd8 damage, it deals 1d8 damage for each MP spent casting the spell.
