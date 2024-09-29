@@ -1,0 +1,16 @@
+=== Status Application and Duration
+
+Statuses are ongoing conditions that impart some effect on a character. Most statuses can be stacked, causing more severe effects with higher levels. Some statuses are single-level only, which is noted in their description.
+
+When a status is applied to a character, it will be denoted with one of the listed phrases:
+
+. *Character "is" Status:* The character gains the status at the indicated level. If they already have the status at a lower or equal level, the existing status is overwritten by the new status. If they already have the status at a higher level, the new status has no effect.
+. *Character "gains" Status:* The character gains the status at the indicated level. If they already have the status at any level, the new status has no effect.
+. *Character "increases" Status:* The character gains the status at the indicated level. If they already have the status at any level, the status level is increased by the indicated level.
+
+When a status is removed from a character, it will be denoted with one of the listed phrases:
+
+. *Character "loses" Status:* The status is entirely removed.
+. *Character "reduces" Status:* The character loses the indicated number of levels of the status. If the status level is reduced to 0 or below, the status is entirely removed.
+
+Statuses last until removed, either by decaying at the end of a character's turn or after a rest (noted in the status description), or at a rate defined in the effect that applied the status. Some statuses are permanent. If there is no indication of a status's duration, the default is to be reduced by one every time the character completes a full rest.

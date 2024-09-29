@@ -1,0 +1,28 @@
+=== Status Glossary
+
+. *Blinded.* You cannot see. You automatically fail any checks relating to vision. All characters are Hidden to you. You take a -25 penalty to all attacks and a -15 penalty to DB, unless you have other precise senses.
+. *Clumsy.* You struggle with precise motions. You take a penalty to all attacks and checks requiring precision equal to 5 * the level of Clumsy.
+. *Dissociated.* Your Soul is fatigued. You take take a penalty to all checks based on Soul equal to 5 * the level of Dissociated.
+. *Drained.* Your life force is weakened. Your maximum HP is reduced by the level of Drained. If this effect would cause you to have 0 or fewer maximum HP, you immediately die. Drained is reduced by your B/5 or S/5, whichever is higher, after completing a full rest.
+. *Dying.* You are slipping closer to death. You are Unconscious and cannot wake up until you have at least 1 HP. See <<Death and Dying>> for more rules on Dying.
+. *Exhausted.* You are terribly tired. You take a penalty to all checks based on Body equal to 5 * the level of Exhausted.
+. *Fatigued.* You haven't been sleeping. You are Exhausted, Stupefied, and Dissociated with levels equal to the level of Fatigued.
+. *Frightened.* You are terrified of something. Frightened always includes a source. You cannot willingly move closer to the source and, if you are within 10 * the level of Frightened feet of the source, must immediately move away from the source if possible. Frightened decays by 1 at the end of your turn if you are at least 20 * the level of Frightened feet away from the source, or if you cannot sense the source.
+. *Grabbed.* You are being grappled. You are Immobilized and cannot make ranged attacks against any target other than your grappler. You may attempt to escape as a Main Action with an opposed Athletics or Acrobatics check against the grappler's Athletics. On a success, you lose Grabbed.
+. *Hidden.* Others do not know where you are. You cannot be directly targeted (though you can still be targeted as part of an area effect). You have a +10 bonus to attacks against characters you are Hidden from.
+. *Immobilized.* You cannot move. You cannot leave your current square with any Move actions except by teleportation or similar. You take a -10 penalty to your DB.
+. *Invisible.* You cannot be seen. You are Hidden from all characters, unless they have other precise senses.
+. *Off-guard.* You are unable to defend effectively. You suffer a penalty to DB equal to 10 * the level of Off-guard.
+. *Paralyzed.* You are frozen in place. Your DB becomes 0 (unless it was already lower). You cannot move or take any actions that require use of your Body.
+. *Petrified.* You have been turned to stone or a similar material. You cannot move, take any actions, or sense anything. You are Unconscious and Paralyzed. Your HP, MP, and statuses do not change due to time, you cannot rest, you do not take ongoing damage, and you have Hardness 10/physical. If you are reduced to 0 HP, your statue form breaks and you immediately die.
+. *Prone.* You are lying on the ground. You suffer a -15 penalty to DB and cannot Move except to Crawl or Stand Up.
+. *Quickened.* You have extra actions. You gain additional Main Actions at the start of your turn equal to the level of Quickened.
+. *Sickened.* You feel ill and struggle to focus. You suffer a penalty to all checks that require concentration (such as spellcasting) equal to 5 * the status level. Sickened decreases by 1 at the end of your turn.
+. *Stunned.* You've lost the chance to act! You gain fewer Main Actions at the start of your turn equal to the value of Stunned. If you are Stunned 2 or more, you also lose Utility Actions at a rate of 2 Utility Actions = 1 Main Action. Stunned is then reduced by the number of Main Action equivalents lost.
+.. For instance, if you have Stunned 3, you lose your Main Action and both Utility Actions at the start of your turn, then reduce your level of Stunned to 1. Next turn, you lose your Main Action, lose Stunned, and can take the rest of your turn normally.
+. *Slowed.* You can't move quickly. All of your speeds are reduced by 5 ft * the status level.
+. *Stupefied.* Your Mind is foggy and it's difficult to think. You take a penalty to all checks based on Mind equal to 5 * the level of Stupefied.
+. *Unconscious.* You are asleep or otherwise knocked out. You are Blinded and Prone. Your DB is reduced to 0, unless it was already lower. You cannot act.
+. *Wounded.* You are seriously injured after a close brush with death. You die at negative half your maximum HP for Wounded 1, 0 HP for Wounded 2, half your maximum HP for Wounded 3, or immediately for Wounded 4.
+.. Wounded is reduced by 1 whenever you complete a full rest at full HP. If you are Drained, Wounded cannot be reduced by resting.
+... If you are Drained or not at full HP at the start of a full rest, but are no longer Drained and are at full HP upon completing the rest, you still reduce Wounded by 1.

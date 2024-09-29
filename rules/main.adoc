@@ -79,6 +79,8 @@ include::magic/realm-includes.adoc[]
 
 == Statuses
 
-== Additional Tables
+include::statuses/intro.adoc[]
+
+include::statuses/glossary.adoc[]
 
 == Bestiary

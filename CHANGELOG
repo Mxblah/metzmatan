@@ -5,7 +5,14 @@
 
 ## Changes in version 0.1.3
 
+### Rule Changes
+
+- Removed Critical Hit and Fumble tables, instead using simpler damage increase rules.
+- Standardized and clarified many phrases.
+- Added short Skill descriptions.
+- Many, many smaller tweaks all across the rulebook.
+
 ### Technical
 
-- Convert rulebook to asciidoc
-- Add automatic rulebook pdf generation to release process
+- Converted rulebook to asciidoc
+- Added automatic rulebook pdf generation to release process
