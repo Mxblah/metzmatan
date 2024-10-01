@@ -13,14 +13,14 @@
 . *Immobilized.* You cannot move. You cannot leave your current square with any Move actions except by teleportation or similar. You take a -10 penalty to your DB.
 . *Invisible.* You cannot be seen. You are Hidden from all characters, unless they have other precise senses.
 . *Off-guard.* You are unable to defend effectively. You suffer a penalty to DB equal to 10 * the level of Off-guard.
-. *Paralyzed.* You are frozen in place. Your DB becomes 0 (unless it was already lower). You cannot move or take any actions that require use of your Body.
-. *Petrified.* You have been turned to stone or a similar material. You cannot move, take any actions, or sense anything. You are Unconscious and Paralyzed. Your HP, MP, and statuses do not change due to time, you cannot rest, you do not take ongoing damage, and you have Hardness 10/physical. If you are reduced to 0 HP, your statue form breaks and you immediately die.
+. *Paralyzed.* You are frozen in place. Your DB becomes 0 (unless it was already lower). You are Immobilized and cannot take any actions that require use of your Body. Any Melee attack that pierces against you is a Critical Hit.
+. *Petrified.* You have been turned to stone or a similar material. You cannot move, take any actions, or sense anything. You are Unconscious and Paralyzed. Your HP, MP, and statuses do not change due to time, you cannot rest, you do not take ongoing damage, you are immune to Critical Hits (but not Brutal Hits), and you have Hardness 10/physical. If you are reduced to 0 HP, your statue form breaks and you immediately die.
 . *Prone.* You are lying on the ground. You suffer a -15 penalty to DB and cannot Move except to Crawl or Stand Up.
 . *Quickened.* You have extra actions. You gain additional Main Actions at the start of your turn equal to the level of Quickened.
 . *Sickened.* You feel ill and struggle to focus. You suffer a penalty to all checks that require concentration (such as spellcasting) equal to 5 * the status level. Sickened decreases by 1 at the end of your turn.
+. *Slowed.* You can't move quickly. All of your speeds are reduced by 5 ft * the status level.
 . *Stunned.* You've lost the chance to act! You gain fewer Main Actions at the start of your turn equal to the value of Stunned. If you are Stunned 2 or more, you also lose Utility Actions at a rate of 2 Utility Actions = 1 Main Action. Stunned is then reduced by the number of Main Action equivalents lost.
 .. For instance, if you have Stunned 3, you lose your Main Action and both Utility Actions at the start of your turn, then reduce your level of Stunned to 1. Next turn, you lose your Main Action, lose Stunned, and can take the rest of your turn normally.
-. *Slowed.* You can't move quickly. All of your speeds are reduced by 5 ft * the status level.
 . *Stupefied.* Your Mind is foggy and it's difficult to think. You take a penalty to all checks based on Mind equal to 5 * the level of Stupefied.
 . *Unconscious.* You are asleep or otherwise knocked out. You are Blinded and Prone. Your DB is reduced to 0, unless it was already lower. You cannot act.
 . *Wounded.* You are seriously injured after a close brush with death. You die at negative half your maximum HP for Wounded 1, 0 HP for Wounded 2, half your maximum HP for Wounded 3, or immediately for Wounded 4.

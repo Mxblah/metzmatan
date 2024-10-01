@@ -20,7 +20,7 @@ If a character is reduced to 0 HP or below, they are knocked Unconscious. If the
 
 While Dying, a character makes a flat 50% check at the start of each of their turns with a bonus equal to their B/5 and a penalty equal to 10 * their level of Wounded. On a Critical success, the character's HP becomes 0 and they are no longer Dying. On a success, nothing happens. On a failure, the character takes untyped damage equal to their HP/5 (minimum 1) - this damage cannot be reduced or prevented in any way. On a Fumble, the character dies.
 
-A Dying character with no levels of Wounded dies when their HP reaches a negative value equal to their maximum HP, while a character with Wounded 1 dies at negative half their maximum HP, and a character with Wounded 2 dies at 0 HP.
+A character with no levels of Wounded dies when their HP reaches a negative value equal to their maximum HP, while a character with Wounded 1 dies at negative half their maximum HP, and a character with Wounded 2 dies at 0 HP.
 
 A character with less than 0 HP that receives healing immediately has their HP set to zero before applying the restored HP. A character who is healed to 0 HP or higher is no longer Dying.
 

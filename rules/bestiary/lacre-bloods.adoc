@@ -1,0 +1,25 @@
+==== Lacre-Bloods ("Silvers")
+:hardbreaks-option:
+
+Lacre-blooded creatures (or "silvers," due to the color) are those that, as the name implies, have lacre for blood. Lacre-blooded humans are not included in this category, but any other creature or object infused by or created from lacre is. There are some silvers who were born or created that way, typically formed in outer space or on other planets, and these alien creatures are usually extremely dangerous. But the majority of silvers found on Earth were originally ordinary creatures or objects who have been infected by lacre, gaining a new form. Lacre-blooded creatures are animated by celestial magic and need not follow ordinary physical laws, so their forms are often alien.
+
+===== Lacre Beast
+
+17 | _Lacre-blood_
+280 HP / 0 AP / 9 AB / 0 DB
+162 B / 19 M / 75 S
+Size 4 / Speed 30
+DR 10/b, 4/p,s, Hardness 5 all
+Occult 50, Athletics 138, Intimidation 85, Perception 67
+_Lacre beasts are formless masses of flesh and muscle that are formed when a lacre-blooded human dies under certain special circumstances. The lacre in their Body revolts, takes over, and reanimates their corpse as a Mindless killing machine. A lacre beast's only goal is to cause as much destruction as possible until it is slain._
+
+- *Slam* | 1 M | Melee 15 / up to 4 creatures | 106 / 4d10 b
+- *Ensnare* | 1 M | Melee 15 / 1 creature | 114 / 2d12 p, Puncture 4, plus _Improved Grab_ on a pierce.
+- *Consume* | 1 M | Melee / 1 Grabbed creature | 99 / 4d10 p + 4d10 void, Lethal, Puncture 8. If the target is reduced to 0 HP by this attack, they are consumed by the lacre beast and immediately killed.
+- *Demolish* | 1 M | Aura 30 / all creatures and objects | 106 Body / 4d12 b, plus Stunned 1 and pushed 20 ft on a pierce. Pierces automatically count as Brutal Hits against unattended objects. The lacre beast cannot use _Demolish_ again for 1d4 rounds.
+
+- *Improved Grab* | * | The lacre beast may immediately attempt to Grapple the primary target. It does not need to Sustain the grab on future turns.
+
+- *Mindless Fury* | The lacre beast is immune to effects that attempt to control its actions.
+- *Lacre Regeneration* | The lacre beast regains 20 HP at the end of each of its turns.
+- *Unkillable* | The lacre beast is immune to the Dying status, as well as Wounded 2 or higher.

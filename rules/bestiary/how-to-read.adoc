@@ -1,0 +1,36 @@
+=== How to Read Stat Blocks
+:hardbreaks-option:
+
+The following example stat block describes every possible field a monster may have. Most monsters are less complicated and only possess a subset of the listed fields.
+
+===== Monster Name
+<level> | _<monster categories>_
+HP / MP / AP / AB / DB
+Body / Mind / Soul
+<size> / <speed> / <special senses>
+<innate DR, Hardness, or Weakness>
+<any defined skills>
+_<flavor text / description>_
+
+- *Active effect / attack* | <action cost> | <range> / <target> | attack threshold / damage and other effects
+- *Triggered effect* | * | attack threshold / damage and other effects
+- *Passive effect* | description and effects
+- *Spell list* | <spells known and any modifiers to them>
+
+//-
+
+. *Name.* The monster's name. Monsters with their names in "quotes" are unique, named individuals, while others are more generic.
+. *Level.* The monster's level may be used to calculate XP and provide a rough gauge of a threat level. Generally, a monster of a certain level should be roughly an even match for a player character of the same level.
+. *Categories.* Some effects specify certain types of creatures that they affect. These categories are used to classify monsters for this purpose.
+. *Derived attributes.* Not all monsters have MP or AP, but all monsters have HP, AB, and DB. If a monster has AB and no AP, the armor is assumed to be natural and unbreakable. Effects that deal damage to AP instead deal no damage.
+. *B/M/S.* The monster's Body, Mind, and Soul are used for defense values against attacks that target these attributes, as well as for base skill thresholds. If a monster makes a skill check with a skill that is not listed in the stat block, use the base threshold for the fifth value of the associated attribute here.
+. *Size, Speed, and Senses.* The monster's size category, movement speed (and any additional movement speeds, if applicable), and any special senses. If additional information is needed, it will be displayed as a passive effect. Some common special senses are listed here:
+.. *Low-light vision.* The monster can see in very dim environments (such as at night) as if it were bright light.
+.. *Darkvision.* The monster can see in total darkness (such as in caves) as if it were dimly illuminated. Darkvision also implies Low-light vision.
+. *Innate DR, Hardness, and Weakness.* The monster will take more or less damage from the listed damage types. Instances marked with a (\*) continue to be effective even if the monster's AP is reduced to 0, while instances without a (*) are tied to the monster's armor.
+. *Defined skills.* Skill values listed here may be used directly. It is assumed the monster is untrained in any skills not listed.
+. *Flavor text.* Lore or general information about the monster. Players might know this information with successful knowledge skill checks.
+. *Active effect.* A monster may have multiple active effects or attacks. The action cost, range, target, attack threshold, damage, and other effects are all listed. If the attack threshold is only a number, the attack targets armor. Otherwise, it will list the defense it targets.
+. *Triggered effect.* A monster may have multiple triggered effects. They cannot be used directly, but are instead invoked by an active effect and thus share its action cost and range / target. The attack threshold, damage, and other effects are listed and share the same format as an active effect. Triggered effects are not necessarily secondary attacks; the attack threshold will specify "secondary" if it is a secondary attack.
+. *Passive effect.* A monster may have multiple passive effects. They may truly be passive, or they may include a trigger condition (such as a creature entering a certain range) that invokes a triggered effect.
+. *Spell list.* If the monster knows any spells, they are listed here. Refer to the Magic chapter for spell descriptions and rules.
