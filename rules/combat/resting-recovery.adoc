@@ -1,0 +1,19 @@
+=== Resting and Recovery
+
+==== Full Rests
+
+A full rest is a good night's sleep. A character must sleep for roughly eight hours, with no more than minor interruptions, in order to benefit from a full rest. For instance, getting up in the middle of the night to go to the bathroom is fine, but getting up to fight against an assassin is not. If a character is sufficiently interrupted during a full rest for a brief period of time, they may resume their rest after the interruption is resolved; they do not need to start over. If a character is sufficiently interrupted for more than 1 hour, the rest is lost and they must start over.
+
+A full rest provides the following benefits:
+
+. Restore 1 HP, or 1d4 HP if you are being tended at a hospital or similar place of healing.
+. Restore all MP.
+. Reduce most statuses without a listed duration by 1.
+
+If a character has not completed a full rest within the last day, they increase their Fatigued status by 1 per day this persists. If a character Fatigued by this effect rests for an entire day (they need not sleep the entire day, but must perform no more than light exertion), all levels of Fatigued are removed instead of only one.
+
+==== Short Rests
+
+A short rest is a brief break. A character must sit down, engage in no strenuous activity, and otherwise take it easy for at least 10 minutes in order to benefit from a short rest. Multiple short rests may be taken sequentially; for instance, in order to restore more MP than a single rest provides.
+
+By default, a short rest only provides one benefit: restoring MP (see <<Restoring MP>>). However, other actions may only be taken during a short rest; such actions specify this in their descriptions and typically involve recovering various other resources.

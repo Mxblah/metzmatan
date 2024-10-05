@@ -1,0 +1,3 @@
+Skills determine the starting threshold for various types of actions a character can perform. Skill checks may be called for by specific actions (such as attacking usually requiring a Weapons check or initiative requiring a Perception check), but may also be called for by the GM when attempting a task that does not have a specific description.
+
+For instance, attempting to decipher ancient ritualistic writing might call for an Occult check, operating a crane could call for Mechanics or Electronics, and determining the effect of a peculiar herb could call for Medicine, Life Sciences, or even Survival. There are scenarios when multiple skills may allow a clever character to approach the situation in different ways; scenarios are rarely locked into any singular skill.

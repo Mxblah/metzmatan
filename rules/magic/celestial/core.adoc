@@ -1,0 +1,14 @@
+=== Celestial Magic
+:hardbreaks-option:
+
+==== Core
+
+Celestial magic is the magic of the cosmos. It revolves around lacre, the silver liquid that is said to be the blood of the stars themselves. Practitioners of Celestial magic are almost always humans that have been infected by lacre, replacing portions (or all) of their blood with it. Advancing in the art typically involves a gradual transition to a pure lacre-blood as your power (and corruption) grows.
+
+The core realm contains traits and mutations related to the increasingly dramatic changes that lacre blood makes to your Body and Mind, as well as spells that allow a limited measure of control over the substance.
+
+===== Hybrid Blood
+
+_Trait - 1 Celestial_
+
+Portions of your blood are replaced by the silvery liquid known as lacre. You are considered lacre-blooded for the purpose of effects that rely on that descriptor. When you bleed, the blood contains visible threads of silver liquid. You recover HP equal to your level when completing a full rest; this replaces the 1 HP you would otherwise recover, though you still recover the bonus 1d4 HP for resting in a hospital.

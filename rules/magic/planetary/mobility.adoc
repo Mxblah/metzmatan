@@ -1,0 +1,95 @@
+==== Mobility
+:hardbreaks-option:
+
+The Mobility realm focuses on the freedom of dreams and applying that concept to movement. Skill Mobility practitioners are able to reposition themselves and those around them at will, create gateways to other places or even levels of reality, and undo even powerful locks or seals. Mobility also offers strong benefits in dreamwalking, the art of moving from your dreams to those of others.
+
+===== Dreamwalker's Charm
+
+_Mutation_
+
+You are able to call others into your dreams with a small, handheld charm. You gain the _Create Dreamwalker's Charm_ mutation ability:
+
+[.underline]#Create Dreamwalker's Charm#
+
+_Active - 1 minute / Permanent
+Melee / 1 human
+-_
+
+You create a small charm out of paper, wood, or a similar lightweight craft material. This charm is linked to you and the first other human to touch it after you complete it (the target). If the charm is touching the target's skin while they sleep, and if you are also asleep, the target will immediately become lucid and be transported into your dream. The charm then burns harmlessly to ash and is destroyed.
+
+You may have a number of active charms equal to your Lucidity/5. Any charms created past that number will burn to ash as soon as you complete them. You may destroy any active charm by crafting a new one and writing the name of the desired target on it before completing it. Both charms will then burn to ash.
+
+===== Reactive Step
+
+_Mutation - Perception 50_
+
+Your keen eye allows you to dodge and reposition immediately when an enemy comes within reach. Add half of your Perception/5 to your DB as a Trait bonus. You gain the _Reactive Step_ mutation ability.
+
+[.underline]#Reactive Step#
+
+_Active - 1 R / instant
+Self / any creature entering a square adjacent to you
+1 / 10 minutes_
+
+You nimbly duck away when an enemy approaches. Move up to your speed. This movement does not trigger reactions.
+
+===== Bolster Speed
+
+_Spell
+2+ MP
+1 U / 1 minute
+Melee / X-1 humans_
+
+Subtle shifts around the target's limbs enhance their ability to move quickly. The target's speed is increased by 10 for the duration. You must Sustain the Spell on each of your turns during the duration; if you do not, the spell ends and the target is Slowed 1 for 1 round.
+
+If your Lucidity is at least 60, the speed bonus is 15 instead. If it is at least 80, the speed bonus is 20.
+
+===== Water Walk
+
+_Spell - Lucidity 40
+2+ MP
+1 U / 1 hour
+Melee / X-1 humans_
+
+Water grows solid and rubbery beneath your target's feet, supporting their weight. The target treats water and water-based liquids (such as honey or blood, but not acetone or gasoline) like solid ground for the duration. The target may suppress this effect on themself by Sustaining the Spell. If they do this, they may reactivate the effect by Sustaining the Spell a second time.
+
+If the target is currently in a liquid or reactivates the effect while submerged, the target will quickly rise to the liquid's surface and emerge.
+
+While standing on a moving liquid, such as a river, wavy lake, or ocean, the target takes a -10 penalty to DB and might be carried by the motion.
+
+===== Swap
+
+_Spell - 3 Mobility / Perception 40
+1+ MP
+1 U / instant
+100 ft / 2 creatures or objects_
+
+At your quick gesture, two targets instantaneously swap positions. Make a spell attack against both targets (a target may choose to automatically allow the attack to pierce if they desire). If both targets are pierced, each target teleports to the position of the other, keeping any momentum they previously had. Otherwise, the spell is interrupted.
+
+Both targets must be within range, though they may be any distance from each other. Both targets must be the same size category, and they must both be objects or both be creatures.
+
+You may spend additional MP to increase the maximum size you can target. 1 MP is sufficient for creatures and objects of size category 1. Every additional MP increases the maximum size category by 1.
+
+===== Fly
+
+_Spell - 4 Mobility / Acrobatics 50, Planetary Magic 60
+2+ MP
+1 U / X rounds
+Self / Self_
+
+You rise into the air on currents of wind guided by dreams. Gain a fly speed equal to your speed or 5 * your Acrobatics fifth value, whichever is higher, for X rounds, and you may immediately move 10 ft as part of this action. You cannot carry significantly more than your normal load (for instance, a person) while flying.
+
+If your Planetary Magic skill is at least 90, the duration of this spell is extended to X minutes, instead of X rounds.
+
+===== Translocate
+
+_Spell - 5 Mobility / Lucidity 60, Planetary Magic 80
+4+ MP
+2 U / instant
+X * 100 / 1 specific location_
+
+With your mastery of Mobility magic, you can simply vanish and appear elsewhere in the blink of an eye. Teleport to the target. You do not need to be able to see or have an unobstructed path to the target, but you must know its exact location if you do not. If you do not know its exact location, you can still teleport a specific distance and angle from your current location.
+
+If you cannot see the target and are estimating the distance and angle, roll a Mind check. On a success, you appear within a few feet of the target. On a failure, determine the RF. You appear RF% of the distance traveled away from the target in a random direction determined by the GM.
+
+If you attempt to teleport into a wall or other solid obstruction, you take 4d6 bludgeoning damage and the spell is interrupted.

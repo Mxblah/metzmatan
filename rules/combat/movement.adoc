@@ -1,0 +1,7 @@
+=== Movement
+
+Characters typically move with a Utility Action - often the Move action.
+
+==== Forced Movement
+
+Forced movement is inflicted on a character by another. In general, forced movement does not trigger reactions, and does allow forcing the target into dangerous situations, such as into an environmental hazard or off a cliff. The target may make an Acrobatics check to avoid entering such a hazard, falling prone in the square just before the hazard on a success.

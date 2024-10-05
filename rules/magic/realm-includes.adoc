@@ -1,0 +1,27 @@
+// Just a sub-doc to capture all the include statements for the various realms
+
+// Planetary Magic
+include::planetary/core.adoc[]
+
+include::planetary/protection.adoc[]
+
+include::planetary/mobility.adoc[]
+
+include::planetary/manipulation.adoc[]
+
+include::planetary/nightmares.adoc[]
+
+include::planetary/calling.adoc[]
+
+// Celestial Magic
+include::celestial/core.adoc[]
+
+include::celestial/growth.adoc[]
+
+include::celestial/energy.adoc[]
+
+include::celestial/vision.adoc[]
+
+include::celestial/dissolution.adoc[]
+
+include::celestial/rhythm.adoc[]

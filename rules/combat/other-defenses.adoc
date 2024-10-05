@@ -1,0 +1,8 @@
+=== Other Defenses
+
+Some attacks - particularly Spells - do not target Armor and instead target a character's Body, Mind, or Soul directly. Seeing the phrase "Make a <Body/Mind/Soul> attack" indicates one of these scenarios. To make such an attack, follow the normal procedure for Armor attacks, with a few differences:
+
+. Instead of subtracting the target's Armor Bonus from the attack threshold, subtract the target's Body, Mind, or Soul value, as appropriate. This will give the PT as usual, with the DT calculated normally.
+. If the attack deflects, treat it as a miss unless the attack text has a special effect on a deflect.
+. Secondary attacks cannot Critically Hit or Fumble. Instead, if a secondary attack lists an effect on a Critical Hit or Fumble, apply this effect if the _primary_ attack did so. If a secondary attack does not have an associated primary attack, it simply cannot Critically Hit or Fumble and is otherwise treated normally.
+.. For instance, the spell _Project Energy_ has a primary attack against Armor, then a secondary attack against Body, which states to increase its damage on a Critical Hit. If the primary attack against Armor rolled a Critical Hit, the secondary attack against Body would have its damage increased. It does not matter if the secondary attack rolled an 01 as secondary attacks cannot Critically Hit.

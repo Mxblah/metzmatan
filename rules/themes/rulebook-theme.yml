@@ -1,0 +1,14 @@
+extends: default
+
+title-page:
+  text-align: center
+  title:
+    font-color: #000000
+    text-transform: smallcaps
+
+footer:
+  columns: =100%
+  recto: &shared_footer
+    center:
+      content: '{page-number}'
+  verso: *shared_footer

@@ -1,0 +1,45 @@
+==== Rhythm
+:hardbreaks-option:
+
+The universe dances to the beat of a hidden cosmic melody, and the Rhythm realm matches the faint echoes of its distant power. Practitioners of this realm often have impeccable timing, able to coordinate their movements perfectly with any task at hand. The cosmic music that fuels Rhythm has its origins in the stars, as with much of Celestial magic, resonating from little crystal hearts that occasionally fall to the planets below. These hearts are drawn to those practicing Rhythm above all others, though for what inscrutable purpose is still unclear.
+
+===== Sudden Apparition
+
+_Mutation - 3 Rhythm / Acrobatics 50_
+
+You can synchronize yourself with the people you know well and bring yourself to their sides at a moment's notice. You gain the _Sudden Apparition_ mutation ability.
+
+[.underline]#Sudden Apparition#
+
+_Active - 1 U / instant
+50 / any human you know well
+1 / 10 minutes_
+
+Your form blurs and you vanish to appear beside an ally. Teleport to a square within range and adjacent to the target. You must know the target's location with reasonable precision and must be able to trace an unobstructed path to them that is no longer than twice the maximum range of this ability.
+
+If your Acrobatics is higher than 50, this ability's range is equal to your Acrobatics value.
+
+===== Reactive Strike
+
+_Mutation - any Weapons 50, Perception 40_
+
+Your keen eye allows you to take advantage of the moment an enemy attempts to reposition. You gain the _Reactive Strike_ mutation ability.
+
+[.underline]#Reactive Strike#
+
+_Active - 1 R / instant
+Melee / 1 creature within range that leaves a square during a movement action, makes a ranged attack, or casts a spell with a range other than Self, Melee, Blast, Cone, or Aura
+-_
+
+You quickly strike as your foe leaves an opening. Make a melee weapon attack against the target.
+
+===== Quicken
+
+_Spell - 3 Rhythm, Celestial Magic 55
+4 MP
+1 M / 1 minute
+Melee / 1 creature_
+
+With a touch, the target speeds up. The target gains Quickened 1 for the duration, though they cannot use the extra action to activate, cast, sustain, or otherwise utilize spells or mutation abilities. Taking actions that are affected by such features is fine (for instance, making an attack bolstered by the _Natural Weapons_ Growth spell), but directly using such features (for instance, focusing on a creature with the _Hazesight_ Vision mutation ability) is not.
+
+You must Sustain the Spell every turn after you cast it. If you do not, the spell is interrupted at the end of your turn. When the spell ends for any reason, the target is Stunned 1.

@@ -1,0 +1,73 @@
+=== The Combat Flow
+
+Combat is structured into consecutive Rounds, during which each participating character gets a Turn. During a character's turn, they can perform Actions.
+
+==== Initiative
+
+The order of each participant's turn within a round is determined by an initiative roll, which is rolled at the start of combat or when an individual participant enters combat, if they enter later.
+
+An initiative roll is typically a Perception skill check, though it may be a different skill depending on the situation (for instance, it may be Stealth for some participants if they were attempting to surprise their opponents). However, instead of a binary success/failure, determine a RF as in the rules for opposed checks. Characters with higher RF go before characters with lower RF. Use the opposed checks rules for tie resolution if necessary.
+
+==== A Character's Turn
+
+. Start turn.
+. If Dying, resolve Body check.
+. Regain one Main Action, two Utility Actions, and one Reaction.
+. Spend Main and Utility Actions however desired.
+.. A Main Action may be converted into a Utility Action, if desired.
+.. Two Utility Actions may be converted into one Main Action, if desired.
+. Apply ongoing damage and roll a recovery check, if applicable.
+. Reduce ongoing statuses by 1, if applicable.
+. End turn.
+
+==== Main Actions
+
+Main Actions are used for nearly all attacks, as well as many other powerful options. All characters have access to the following basic Main Actions:
+
+. *Attack.* Make an Attack roll with a weapon you are currently wielding against a target within range.
+. *Cast a Spell.* Cast any spell in your list with a Main Action cost by expending the required MP and making any checks listed in the spell's description.
+. *Activate an Item.* Trigger a worn or held item's active effect with a Main Action cost.
+. *Disengage.* Focus on extricating yourself from combat. Gain +10 to your DB until the end of your turn. Move 1 square without triggering reactions.
+. *Perform a Combat Maneuver.* Most combat maneuvers resolve very similarly to Attacks, though they usually do not deal damage and instead inflict a status effect on the target.
+
+==== Utility Actions
+
+Utility Actions are used for nearly all movement and mobility options, as well as many other versatile options. All characters have access to the following basic Utility Actions:
+
+. *Move.* Move a distance up to your speed.
+. *Stand Up.* Stand up from prone.
+. *Swim.* Move a distance up to your Swim speed if you have one. Otherwise, make a Swim check and move based on the result.
+. *Climb.* Move a distance up to your Climb speed if you have one. Otherwise, make an Athletics check and move based on the result.
+. *Jump.* Make an Athletics check and move based on the result.
+. *Crawl.* (must be prone) Move up to 1 square, or 2 if your speed is 6 or higher.
+. *Take Cover.* Gain temporary DB based on the type of cover. This bonus lasts only until you move or the cover is broken or otherwise negated, and does not stack.
+
++
+[cols="15,15,70"]
+|===
+| Type|DB|Examples
+
+| Lesser|5|Dense fog, thick curtain, chair, low table
+
+| Normal|10|Overturned table, sturdy pillar, peeking around a corner
+
+| Greater|20|Sturdy wall, heavy barricade, peeking through a slit
+|===
+
+. *Sustain a Combat Maneuver.* Maintain a maneuver, performing the indicated effect in its description.
+. *Sustain a Spell.* Maintain a spell, performing the indicated effect in its description.
+. *Cast a Spell.* Cast any spell in your list with a Utility Action cost by expending the required MP and making any checks listed in the spell's description.
+. *Hide.* Make an opposed Stealth / Perception check against any character(s) searching for you. On a success, become Hidden. You cannot Hide without cover or some other obstruction between you and the searcher(s).
+. *Interact.* Flip a switch, open a door, retrieve an item from a backpack, consume a potion, inject a syringe, apply an insta-bandage, or otherwise perform an action on the environment in some way.
+. *Help.* Make a check to assist another character who intends to attempt a similar check on their turn, adding your skill's fifth value to their threshold on a success. Your chosen skill must be relevant to their check. This bonus only lasts until the end of the chosen character's turn.
+. *Treat Ongoing Damage.* Choose one instance of ongoing damage on you or a character within reach. Roll a Medicine check (or a different skill if attempting to treat ongoing damage in a different way). If successful, add 10 to the threshold for the next recovery check against that damage. On a Critical success, add 20.
+.. For particularly effective non-generic treatment (such as splashing a water bottle on fire damage, dousing a target suffering from corrosive damage in a neutralizer, etc.), double the bonus.
+.. For extremely effective non-generic treatment (such as dunking a target suffering from fire damage in a lake, etc.), simply end the damage immediately.
+. *Taunt.* Make a Deception or Charm Mind attack against a target that can hear or see you. On a pierce, the target must attack you on their next turn, if they reasonably can. A deflect has the same effect as a pierce for non-sapient creatures, but is otherwise considered a miss. This action has no effect on characters with a higher Mind value than your chosen skill.
+.. "If they reasonably can" means that, if they were intending to attack and can target you in a single turn without putting themself in undue harm, they will do so. For instance, this effect cannot force a character to:
+... Enter a damaging effect they are aware of.
+... Trigger hostile reactions they are aware of.
+... Waste all of their actions on movement to get into range.
+... Attack anyone at all if they were not intending to do so.
+... Otherwise act in a silly manner or contrary to their own interests.
+... The target _may_ do any of those things, but they are not forced to.

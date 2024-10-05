@@ -1,0 +1,37 @@
+=== Magic Points
+
+In order to cast a spell, you must expend magic points (MP) equal to its cost (listed in the spell's description). Many spells allow you to spend more MP in order to heighten its effects, denoted as a "+" or a range. In most cases, you may not spend more MP at once than your relevant Magic skill's fifth value or your S/5, whichever is lower. Some spells may specifically note that they bypass normal MP restrictions, in which case you may spend as much MP as you wish.
+
+For instance, if you were casting a Planetary spell, your Soul was 41, and your Planetary Magic skill was 54, you would only be able to spend a maximum of 8 MP on that spell, even if you have more MP available.
+
+Traits and mutations do not require MP to cast.
+
+==== Restoring MP
+
+MP regenerates while you rest. You regain all of your MP after completing a full rest, and regain MP based on the following table otherwise:
+
+[width=50%]
+[cols="1,1"]
+|===
+| Soul|MP per 10 min. resting
+
+| 0-14 |0
+| 15-39 |1
+| 40-69 |2
+| 70+ |3
+
+|===
+
+==== Casting from Hit Points
+
+You may cast a spell using HP instead of MP, at a one-to-one ratio. HP spent in this way counts as MP for the purposes of any restrictions on the maximum amount of MP you may spend at once.
+
+It is possible to spend some MP and some HP to cast a spell. For instance, a spell with an MP cost of 4 could be cast by spending 1 MP and 3 HP if desired.
+
+If you cast a spell by spending HP, increase your Drained status by the HP spent. HP spent to cast spells is untyped damage that cannot be reduced or prevented in any way.
+
+==== Interruptions
+
+A spell is interrupted when you stop casting it before completing the full casting time. Some spells may state specific additional circumstances that could cause a spell to be interrupted, often involving failing to Sustain the Spell.
+
+If a spell is interrupted, it does not take effect or its effects immediately end. The MP spent is still expended.

@@ -1,0 +1,87 @@
+=== Weaponry
+
+Weapons come in four categories: one- and two-handed melee and ranged weapons. These categories correspond to the Weapons skill used to attack.
+
+Weapons have the following properties:
+
+*Range.* The effective range of the weapon.
+
+. Melee weapons typically have a reach of "melee" unless they are exceptionally long (spears, pikes, etc.). A range of "melee" allows you to target yourself as well as any valid target within the weapon's listed reach, or any adjacent square if it doesn't list one.
+.. If you have a higher melee reach than the weapon's (usually through a spell), you may use your own melee reach instead.
+. Ranged weapons list two values for range: normal range and maximum range. Attacking a target within the normal range incurs no penalty, and attacking beyond the maximum range is impossible. Every instance of the normal range beyond the first, up to the maximum range, incurs a cumulative -5 threshold penalty.
+.. For instance, a handgun has a range of 40/160. Attacking a target up to 40 feet away would incur no penalty. Attacking a target 41 to 80 feet away would incur a -5 penalty, 81 to 120 would be -10, and 121 to 160 would be -15. Further distances would be impossible.
+
+*Target.* Some weapons target an area instead of a single thing, or can only be used on specific types of targets. Most weapons simply target 1 thing, be it creature or object. Special types of target include:
+
+. *Burst.* Bursts target a spherical volume with a radius in ft. equal to the Burst size, so a Burst 5 would create a 10 ft. diameter sphere within range.
+. *Blast.* Blasts target a cubical volume with the center of one side adjacent to the character creating the blast. The length of each side is equal to the Blast size, so a Blast 15 would create a cube 15 ft. on a side adjacent to the character.
+.. A Blast never targets the character creating it.
+. *Aura.* Auras target a spherical volume around the character creating the aura. The radius of the sphere is equal to the Aura size, so an Aura 20 would target any character within 20 ft. of the character creating the aura.
+.. An Aura usually does not target the character creating it, but they may generally choose to include themselves in the Aura if they desire.
+. *Cone.* Cones target a conical volume, with a base angle of 90 degrees. The length of the cone is equal to the Cone size, so a Cone 30 would create a cone with 30 ft. sides.
+.. A Cone never targets the character creating it.
+. *Line.* Lines target a ray with length equal to the Line size. The origin of the ray is the character creating the line, so a Line 50 would create a 50 ft. long ray from the character creating the line.
+.. A Line never targets the character creating it.
+
+*Damage.* Damage is listed along with its type.
+
+*Hands.* The number of hands required to use the weapon effectively. You must hold the weapon with at least the required number of hands in order to attack with it.
+
+Some weapons have other special properties:
+
+*Lethal.* This weapon is unusually deadly. Damage dice are doubled on a Critical hit as if it were a Brutal hit.
+
+*Puncture.* This weapon is designed to pierce armor. Reduce the DR and Hardness from the target's armor against attacks from this weapon, up to the Puncture value.
+
+*Reload.* This weapon takes a nontrivial amount of time to reload. You must spend a number of Utility Actions equal to the reload value between each attack. These actions do not need to be consecutive.
+
+*Slow.* You may only make a maximum of one attack with this weapon per round, even if you have more available actions.
+
+*Sweep.* An attack with this weapon can be made against two targets adjacent to each other with the same roll. Designate one target as the primary target and resolve the attack normally. The second target receives a +10 DB against the attack and only takes half damage.
+
+*Versatile.* Some weapons can be switched between multiple damage types as the wielder desires. The Versatile entry lists the possible damage types. For instance, "Versatile p/s" indicates the weapon can be switched between piercing and slashing damage at will. Changing the damage type does not require an action.
+
+==== One-handed Melee Weapons
+
+[cols="20,15,15,15,20"]
+|===
+| Weapon|Damage|Range|Target|Other Properties
+
+| Unarmed (1h.)|1 b |Melee|1|-
+| Knife|1d4 s |Melee|1|Versatile p/s
+| Club / Baton|1d6 b |Melee|1|-
+| Spear (1h.)|1d6 p |Melee 10|1|-
+| Sword (1h.)|1d6 s |Melee|1|Versatile p/s
+|===
+
+==== Two-handed Melee Weapons
+
+[cols="20,15,15,15,20"]
+|===
+| Weapon|Damage|Range|Target|Other Properties
+| Unarmed (2h.)|1 b |Melee|1|Sweep
+| Sledgehammer|1d10 b |Melee|1|-
+| Spear (2h.)|2d6 p |Melee 10|1|-
+| Sword (2h.)|2d6 s |Melee|1|Sweep
+|===
+
+==== One-handed Ranged Weapons
+[cols="20,15,15,15,20"]
+|===
+| Weapon|Damage|Range|Target|Other Properties
+| Thrown Object (1h.)|Varies, up to 1d4 |B / B*5|1|-
+| Handgun|1d8 p |40/160|1|-
+|===
+
+==== Two-handed Ranged Weapons
+[cols="20,15,15,15,20"]
+|===
+| Weapon|Damage|Range|Target|Other Properties
+| Thrown Object (2h.)|Varies, up to 2d4 |B / B*3|1|-
+| Rifle (hunting)|2d8 p |300/900|1|Slow
+| Rifle (semi-auto)|2d8 p |200/800|1|-
+| Rifle (automatic)|2d8 p |200/600|1|Sweep
+| Rifle (sniper)|2d12 p |1000/5000|1|Slow, Reload 1
+| LMG|3d8 p |100/400|Burst 5|Lethal
+| Railgun|3d12 p |-|Line 200|Lethal, Puncture 10
+|===

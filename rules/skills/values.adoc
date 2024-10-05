@@ -1,0 +1,9 @@
+=== Skill Values
+
+The overall value of a skill is its threshold, and is influenced by several factors:
+
+. (Base) The base threshold for a skill is its associated core attribute's fifth value, or the highest of the fifth values for skills with more associated attributes.
+. (Rank) Ranks in a skill may be allocated during character creation or upon level up. A skill may have between 0 and 100 ranks.
+. (Feat) Traits, mutations, or features may provide a bonus to a skill.
+. (Item) Certain worn or carried items may provide a bonus to a skill.
+. (Temp) Temporary effects may provide a bonus or a penalty to a skill.

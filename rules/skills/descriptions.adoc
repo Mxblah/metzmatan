@@ -1,0 +1,47 @@
+=== Skill Descriptions
+
+The following table is a quick reference for all available skills. todo: Later, each skill will have a more in-depth section.
+
+[cols="20,10,70"]
+|===
+| Skill|Attributes|Description
+
+| Weapons (Melee)|Body|Ability to strike and deal damage with melee weapons, such as blades, fists, and heavy objects. Physical combat skill.
+| Weapons (Ranged)|Body|Ability to aim and deal damage with ranged weapons, such as bows, guns, and thrown objects. Physical combat skill.
+| Celestial Magic|Soul|Affinity for lacre-based magic. Includes knowledge and ability to actually use it. Magical combat skill.
+| Planetary Magic|Soul|Affinity for ichor-based magic. Includes knowledge and ability to actually use it. Magical combat skill.
+
+| Lucidity|Soul|Ability to control dreams, both one's own and others'. Secondary magical skill, often associated with Planetary Magic.
+| Occult|Soul|Affinity for esoteric magic and the supernatural generally. Includes knowledge and abilities that complement lacre or ichor. Secondary magical skill, often associated with Celestial Magic.
+| Acrobatics|Body|Ability to move one's Body with speed and precision. Balancing, dodging, and the like. Secondary physical skill.
+| Athletics|Body|Ability to move one's Body with power and endurance. Sprinting, jumping, and combat maneuvers. Secondary physical skill.
+
+| Charm|Body, Mind|Ability to persuade others.
+| Crafting|Body, Mind|Ability to create and repair things. Art, furniture, armor, or more.
+| Deception|Mind|Ability to lie and convince others of falsehoods.
+| Disguise|Body, Mind|Ability to create and wear disguises. Imitation, costume design, performance, and the like.
+
+| Electronics|Mind|Knowledge of and ability to repair and make use of electronic devices, including computers.
+| Engineering|Mind|Usually includes a specialty in a specific discipline. Knowledge of design and implementation in a specific problem space.
+| History|Mind|May include a specialty in a specific discipline. Knowledge of past events and their applicability to the future.
+| Insight|Mind|Ability to empathize with and understand others. Can be useful in discerning lies.
+
+| Intimidation|Body, Mind|Ability to scare others into doing what you want.
+| Life Sciences|Mind|Knowledge of biological and related sciences. Often useful for understanding details of living creatures.
+| Mechanics|Body, Mind|Knowledge of and ability to repair and make use of mechanical devices, including many machines.
+| Medicine|Mind|Knowledge of healthcare and ability to treat injuries. Useful in healing others or oneself.
+
+| Navigation|Mind|Ability to maintain direction and avoid getting lost.
+| Perception|Body, Mind|Ability to notice details, process sensory information quickly, and avoid surprise. Often used for initiative.
+| Piloting|Body, Mind|Always includes a specialty in a specific class of vehicle. Knowledge of and ability to control vehicles, including planes, trains, and automobiles.
+| Physical Sciences|Mind|Knowledge of physics and related sciences. Often useful for understanding details of non-living phenomena.
+
+| Social|Mind|Ability to integrate into and understand a group. Includes knowledge of rumors, social structures, and the like.
+| Stealth|Body|Ability to hide and stay undetected.
+| Swim|Body|Ability to float in and cross bodies of water or other liquids.
+| Survival|Body, Mind|Knowledge of the wilderness and ability to maintain oneself outside of traditional civilization.
+
+| Thievery|Body|Ability to manipulate objects with fine precision. Includes lockpicking, stealing, and disarming delicate mechanisms.
+| Tracking|Mind|Ability to locate and follow others.
+
+|===

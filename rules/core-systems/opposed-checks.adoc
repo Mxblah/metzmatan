@@ -1,0 +1,12 @@
+=== Opposed Checks
+
+In some cases, instead of a simple success / failure binary, a check is attempted against another character. Examples of this may include attempting to lie (Deception vs Insight), attempting to hide (Stealth vs Perception), or attempting certain combat maneuvers (varies). To roll an opposed check, follow the steps below:
+
+. Determine the appropriate skills for both characters. They do not have to be the same skill; as noted above, they often are not. Some actions list specific skills to be used in opposed checks, but others are up to GM discretion.
+. Both characters roll against their own thresholds, taking into account all the normal bonuses and penalties of the situation.
+. Subtract each character's roll from their threshold to get a Result Factor. The RF will be positive if the character succeeded or negative if they failed.
+. Compare the RFs. The character with a higher RF wins the contest, though if they failed their check overall, there may be an additional complication.
+.. If both RFs are identical, the character with the higher adjusted threshold value wins.
+.. If both RFs and threshold values are identical, the more active character wins.
+... For instance, the attacker would win in combat, the hider would win in stealth, the liar would win in deception, and so on.
+.. If the more active character cannot be determined, the GM decides.

@@ -1,0 +1,5 @@
+=== Rounding and Fifth Values
+
+Many systems in this game require division and may produce decimal numbers. Always round down when dealing with decimals, unless otherwise instructed.
+
+Many character attributes or skills are divided by 5 (known as a "fifth value") in various circumstances, often when applying the value as a bonus to some other value. This is notated as `<value>/5`.

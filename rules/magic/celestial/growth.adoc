@@ -1,0 +1,121 @@
+==== Growth
+:hardbreaks-option:
+
+The Growth realm focuses on living things. A practitioner of Growth can seal wounds and cure diseases, but can also transform a weak ally into a hulking behemoth, direct plants and mold creatures to their will, and cause living flesh to leap off bones. Growth is strongly connected to lacre itself, as the substance seems to encourage human bodies to strive for perfection. As such, Growth also allows for the user to transform their own Body.
+
+===== Optimized Organs
+
+_Trait_
+
+Lacre has permeated deeper into your Body, mutating your organs to improve their efficiency. You a Trait bonus to maximum HP equal to your level. This bonus increases as you gain future levels.
+
+===== Urgent Heal
+
+_Spell - Life Sciences or Medicine 20, Celestial Magic 30
+1 MP
+1 M / instant
+Melee / 1 willing or unconscious creature_
+
+In an instant, you seal the target's wounds, restoring their life force at the cost of your own. Restore 2d4 HP to the target. Increase your Drained status by 1d6.
+
+===== Heal
+
+_Spell - 2 Growth / Life Sciences or Medicine 30, Celestial Magic 50
+1+ MP
+1+ minutes / instant
+Melee / 1 willing or unconscious creature_
+
+You force lacre out of your bloodstream and into your hands, shining silver light from your palms as you work to heal the target's injuries. The effects of this spell depend on the following table:
+
+[cols="10,20,20,50"]
+|===
+| MP|HP restored|Cast time|Other Effects
+| 1-9 | Xd4 | 1 minute / MP | -
+| 10-19 | Xd6 | 5 minutes / MP | -
+| 20-29 | Xd8 | 10 minutes / MP | Reduce the target's Wounded status by 1. This spell cannot reduce Wounded below 1.
+| 30-39 | Xd10 | 30 minutes / MP | As above, and remove Dissociated, Exhausted, and Stupefied.
+| 40+ | full heal | 24 hours | As above, and reattach or regrow one severed or destroyed body part.
+|===
+
+In all cases, increase your Drained status by the amount of MP spent. If you spend 30 or more MP, you immediately gain Unconscious after casting the spell. If you spend 40 or more MP, you cannot be awakened until you have completed a full rest.
+
+The target does not make any death saving throws or take ongoing bleed damage while you are casting this spell.
+
+You may spend as much HP as you want when casting this spell, bypassing normal MP restrictions. You must still adhere to normal MP restrictions for any MP spent.
+
+===== Restoration
+
+_Spell - 3 Growth / Life Sciences or Medicine 50, Celestial Magic 60
+8-16 MP
+1 hour / instant
+Melee / 1 willing or unconscious creature_
+
+By channeling life energy through your lacre blood, you can cleanse the target of various afflictions.
+
+Remove one of the target's statuses, diseases, or similar afflictions and increase your Drained status by 1d6 times the status's, disease's, or affliction's level. You cannot remove Drained, Paralyzed, Petrified, or Wounded.
+
+If you spend 8 more MP, you can remove Paralyzed or Petrified as well, and you may reduce Wounded by 1. Double the casting time and the Drained you gain for removing these statuses. Wounded may not be reduced below 1 by this spell.
+
+When you start to cast this spell, you automatically know the level of the targeted affliction. If you interrupt casting this spell, you do not increase Drained.
+
+===== Direct Plants
+
+_Spell - Life Sciences or Survival 20
+1+ MP
+1 minute / 10 minutes
+Melee / 1 plant_
+
+A plant you touch is infused with lacre and grows rapidly as you direct it. The extent of its growth depends on the MP spent. You may either direct a single stem, branch, vine, or similar up to a distance of 5*X ft., which does not need to be in a straight line, or grow the entire plant or a portion of the plant by an amount of new growth that must fit within a Blast X volume, keeping roughly to its original proportions. In either case, the plant grows to its new size throughout the entire duration, breaking or circumventing minor barriers in its way.
+
+If you spend at least 2 MP, you are dimly aware of the plant's senses while touching any portion of it.
+
+If you spend at least 4 MP, you may use any of your own senses from any portion of the plant while touching any portion of it.
+
+===== Sculpt Body
+
+_Spell - 1 Growth / Disguise 50
+2-5 MP
+X minutes / 1 hour
+Melee / 1 willing human_
+
+At your touch, the target's Body changes. You may change the target's physical appearance, as long as they retain the same species, general size, and general Body arrangement. This does not affect any clothing or equipment the target is wearing, and dramatic changes to their Body may damage or destroy such equipment as you cast the spell.
+
+You may spend 2 additional MP in order to change the target's size as well, allowing you to produce essentially any reasonably possible human form.
+
+If you are attempting to mimic a specific person, spend 1 additional MP, make a Disguise check, and record the RF. Any creature attempting a Perception check to determine if the target is authentic receives a bonus (if you failed) or penalty (if you succeeded) to their threshold equal to the RF. You may only mimic a specific person if you have a photograph or other likeness, or if you know them well. Simply seeing a creature once is not sufficient to replicate their appearance. Additionally, you can only replicate features you know about, even with a reference. This limitation can be a giveaway even with a successful Disguise check.
+
+As long as you have a reference or know the person well, the disguise stands up to casual scrutiny without issue. Only creatures that are suspicious of the target make Perception checks against your Disguise RF.
+
+All changes to the target revert over one minute, starting at the end of the spell's duration. You may choose to end the spell early if you are touching the target, reverting the changes over the same one minute.
+
+If your Celestial Magic skill is at least 70, the duration is instead 4 hours, and if it is at least 90, the duration is 8 hours.
+
+If your Celestial Magic skill is at least 120, you may choose to spend 7 additional MP and material components of fresh meat, bone, and the like of equivalent weight to the target. If you do, increase the casting time to X hours. That casting of _Sculpt Body_ counts as a Rite and the duration is increased to Permanent.
+
+===== Natural Weapons
+_Spell - 1 Growth / any Weapons 30
+1+ MP
+1 M / X minutes
+Melee / 1 willing human_
+
+At your touch, the target's Body changes, shifting into a form more suitable for killing. Choose a damage type from: bludgeoning, piercing, or slashing. The target's unarmed attacks now deal 1d6 damage of that type (1d8 for two-handed attacks). The target cannot use their hands to hold items or for tasks requiring manual dexterity until the spell ends.
+
+You may choose to end the spell early if you are touching the target.
+
+For every 3 MP spent beyond the initial 1, the damage increases by 1d6 / 1d8. If you spend at least 10 MP, the duration is increased to X hours.
+
+===== Mass Heal
+
+_Mutation - 4 Growth, "Heal" / Life Sciences 40 or Medicine 40, Celestial Magic 60_
+
+You have learned to pass life energy between multiple targets when restoring vitality. You gain the _Mass Heal_ mutation ability.
+
+[.underline]#Mass Heal#
+
+_Active - 1 M / instant
+Blast 15 / any number of creatures
+-_
+
+Cast _Heal_. You may target any number of creatures within range, including yourself, instead of _Heal's_ normal target, distributing the restored HP from the spell among them however you like. If you spend 40 or more MP on _Heal_, you may fully restore the HP of all creatures within the area, but you may only restore one severed or destroyed body part per target.
+
+Targets must stay in the area for a percentage of the full duration equal to the number of HP restored to them divided by the total number of HP restored. For instance, if you were restoring 10 HP total - 1 to one target and 9 to another - the first target would need to stay in the area for 10% of the total duration and could then leave. Then, the second target would need to stay in the area for the remaining 90% of the duration.

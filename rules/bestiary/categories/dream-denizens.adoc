@@ -1,0 +1,29 @@
+==== Dream Denizens
+:hardbreaks-option:
+
+Dream denizens are creatures that originate from the dreamlands. Both the shallow dreamlands (the dreams of sleeping mortals) and the true dreamlands (the dreams of sleeping gods) are capable of spawning such creatures, though typically creatures originating in the shallow dreamlands lack the power to leave them. Dream denizens are sustained by planetary magic and need not follow ordinary physical laws, so they often have fantastical or unnatural forms.
+
+===== Acocitl
+
+todo
+
+===== Archivist
+
+4 | _Dream denizen, Humanoid_
+HP 31 / 15 MP / AP 0 / AB 0 / DB 15
+B 23 / M 51 / S 36
+Size 1 / Speed 30
+Weakness 3/fire
+Planetary Magic 76, Lucidity 71, Occult 52, History 51, Insight 49
+_Mysterious stooped figures cloaked in scraps of torn fabric, responsible for maintaining storehouses of knowledge found in certain strange dreams. Capable of casting planetary magic via their connection to the Gate. Usually passive, if a little creepy, archivists will relentlessly attack those who disturb their libraries._
+
+- *Tear Page* | 1 M | Melee / 1 creature | 71 / 2d6 s, plus Blinded until the end of the target's next turn on a pierce.
+- *Hissing Rebuke* | 1 M | Blast 15 / all creatures | 76 Mind / 1d10 sonic, plus Frightened 1 on a pierce.
+- *Refocus* | 2 U | The archivist recovers 1 MP.
+
+- *Quick Barrier* | The archivist may cast _Barrier_ without spending any actions on its first turn of combat. This casting of _Barrier_ costs 4 less MP than it normally would.
+
+- *Spell list*
+. *Mobility:* _Translocate_ (only within its library)
+. *Nightmares:* _Lacerate_, _Darken_, _Paralyze_
+. *Protection:* _Barrier_, _Lock_, _Golden Restoration_
