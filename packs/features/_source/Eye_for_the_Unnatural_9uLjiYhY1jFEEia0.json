@@ -3,7 +3,7 @@
   "type": "trait",
   "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "system": {
-    "description": "<p>You have an uncanny knack for spotting supernatural entities. Aberrations, lacre-blooded creatures, demons, and other unnatural creatures feel "off" to you, and you can automatically tell that something isn't quite right nearby even if they are disguised or invisible. Additionally, add your S/5 to Perception checks to detect or identify such creatures. You may choose to disable this trait for specific creatures you know well, such as any lacre-blooded party members you may have.</p><p>If you gain any Celestial feature, you lose all benefits of this trait. Instead, you sense <em>yourself</em> as slightly wrong in the same way. This sensation cannot be disabled.</p>",
+    "description": "<p>You have an uncanny knack for spotting supernatural entities. Aberrations, lacre-blooded creatures, demons, and other unnatural creatures feel \"off\" to you, and you can automatically tell that something isn't quite right nearby even if they are disguised or invisible. Additionally, add your S/5 to Perception checks to detect or identify such creatures. You may choose to disable this trait for specific creatures you know well, such as any lacre-blooded party members you may have.</p><p>If you gain any Celestial feature, you lose all benefits of this trait. Instead, you sense <em>yourself</em> as slightly wrong in the same way. This sensation cannot be disabled.</p>",
     "effects": "",
     "realm": "Calling",
     "prerequisites": "exactly 0 Celestial",
