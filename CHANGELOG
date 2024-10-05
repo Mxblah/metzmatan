@@ -5,6 +5,10 @@
 
 ## Changes in version 0.1.3
 
+### New Features
+
+- Critical and Brutal Hits now properly apply the increased damage.
+
 ### Rule Changes
 
 - Removed Critical Hit and Fumble tables, instead using simpler damage increase rules.

@@ -15,6 +15,7 @@
 - [X] armor isActive toggle from the actor Items section
 - [X] armor automatically enforces only one active item per slot
 - [X] "Refill all armor" button
+- [X] crits actually do things besides have extra text
 - [ ] Spell MP cost when cast
 - [ ] Spell scaling with MP spent (choose MP to use)
 - [.] Inline rollables for spells, mutations, etc.
@@ -31,7 +32,6 @@
 - [ ] Untyped and unknown damage types
 - [ ] organize item lists on sheet into grids for consistency
 - [ ] Sort items in lists on sheet (alphabetically?)
-- [ ] crits actually do things besides have extra text
 - [ ] secondary attacks cannot crit
 - [ ] Speed types, senses
 - [ ] Rest buttons

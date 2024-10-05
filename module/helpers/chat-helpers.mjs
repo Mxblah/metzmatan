@@ -14,7 +14,7 @@ async function _onRollDamage(event) {
     const data = target.dataset
 
     // Resolve the roll
-    const rollResult = await newDamageRoll(data.parentUuid, data.identifier)
+    const rollResult = await newDamageRoll(data.parentUuid, data.identifier, data.critResult)
     // console.debug(rollResult)
 
     // Render the roll
@@ -33,5 +33,7 @@ async function _onApplyDamage(event) {
     const actor = await getSelectedToken()
 
     // Then, apply the damage
-    applyDamage(actor, data.totalDamage, data.damageType, data.hitResult)
+    if (null != actor) {
+        applyDamage(actor, data.totalDamage, data.damageType, data.hitResult)
+    }
 }
