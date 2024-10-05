@@ -1,0 +1,11 @@
+=== Size
+
+A character's size category represents the space they take up in combat. Each increase in size category corresponds to 5 additional feet (or 1 additional square) on the side of a cubic volume. Characters rarely take up their entire cube - it is simply an abstraction for combat and estimation purposes.
+
+A regular human is size category 1 and takes up a 5x5x5 ft cube in combat (1 cubic square). A larger character with size category 2 takes up a 10x10x10 ft cube (4 squares on the ground or 8 cubes total), and so on. The smallest size category is 0, which indicates characters small enough to occupy negligible space by human standards: rats, birds, bugs, and the like.
+
+Characters may typically pass through the spaces of other characters during combat movement if they are allies, if one character is unable to act, if they have size categories that differ by at least 2, or if one character has size category 0. Movement that passes through the space of a non-ally character may trigger reactions, and is halved if both characters have size categories greater than 0.
+
+Size categories that are non-integers are rounded down for combat squares occupied (minimum 1), but not for other purposes.
+
+. For instance, a character with size category 0.5 still occupies one square, not a quarter, and movement through its square is still halved.

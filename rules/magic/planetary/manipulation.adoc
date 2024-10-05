@@ -1,0 +1,49 @@
+==== Manipulation
+:hardbreaks-option:
+
+Manipulation encompasses a variety of powerful techniques to shape the dreamworlds and reality alike. Manipulation practitioners can transmute materials, move objects remotely, and even create entirely new structures. Manipulation is one of the key techniques used in dreams, as it allows the dreamer to shape the world to their whims. It is less powerful in reality, but a strong metzmatan connection still allows for incredible flexibility.
+
+==== Telekinesis
+
+_Spell - Planetary Magic 40
+0+ MP
+1 M / Sustained
+100 / 1 object or collection of objects_
+
+You manipulate a remote object as if it were right next to you. If the target is small and lightweight enough to be easily carried or manipulated with one hand (for example, a handful of pebbles, a doorknob, a key, etc.), you may cast this spell for 0 MP. Otherwise, you may manipulate an object up to X * 100 lbs. You must be able to see the object to cast this spell, but you do not have to see it to Sustain the Spell. If the object is ever out of range, the spell immediately ends.
+
+You may move, throw, lift, levitate, rearrange, or otherwise interact with the object as if you were using your hands. You may not throw or levitate an object heavier than you could comfortably throw on your own, or half of X * 100 lbs, whichever is greater.
+
+You may use this spell to perform tasks that require manual dexterity, such as unlocking a door or retrieving an item from a container, but you must be able to see the object with reasonable clarity while performing such tasks.
+
+When you cast the spell, and again when you Sustain the Spell, you may either manipulate the object while keeping it in place or move the object up to 30 - 5*X ft (minimum 5 ft). If you do not Sustain the Spell on your turn, the spell ends.
+
+===== Shape Environment
+
+_Spell - 1 Manipulation / Lucidity 50, Crafting 20
+1+ MP
+1 minute / X minutes
+Blast X*5 / Natural terrain within range_
+
+You shape the nearby terrain, causing new features to sprout and old ones to wither away. You can make moderate changes to the environment within range, such as leveling or sloping the ground, raising or lowering terrain, forming stairs or handholds, creating or removing holes and passages, and the like. You may make one such change when you cast the spell and each time you spend 1 minute to Sustain the Spell throughout the duration. When the spell ends, all changes you made become permanent. You must stay adjacent to or within the spell's area for the full duration, or the spell is interrupted. If the spell is interrupted before its full duration elapses, the terrain snaps back to its original shape.
+
+You may not create or destroy material, and this spell cannot remove material from the area (though you may do so manually, if desired). Creatures within the area while you are shaping the terrain may fall prone, take damage, or even become trapped, depending on the changes you make and their reactions to those changes.
+
+This spell cannot affect man-made structures in any way, including by eroding their natural foundations.
+
+===== Transmute Material
+
+_Spell - Lucidity 40, Physical Sciences 20, Crafting 20
+1+ MP
+X minutes / Permanent
+Blast X (maximum Blast 5) / 1 unattended object_
+
+You change the material of an object within range. The target object must fit entirely within the area and must reasonably be a single object. For instance, a bag of ball bearings is not a single object, but a cell phone is (even though it is made of many components).
+
+You may spend 1 minute of the casting time to transmute all components made of a particular category of material the object contains (for instance, plastic, stone, metal, glass, etc.) into either a specific material of that type (for instance, lead into gold) or into a generic material of a different type (for instance, granite into "metal"). You must reasonably know a material exists in the object in order to transmute it, though you don't need to know the precise details.
+
+You may choose a unique specific material for each specific material in a category, if desired (for instance, if the object contains both lead and gold, you may transmute them in the same minute to copper and silver respectively). However, if you transmute to a generic material, this distinction is lost (for instance, if the object contains both granite and slate, you may transmute them both to "metal," but you may not transmute that "metal" separately into lead and gold - only one specific material).
+
+If you end the spell with any portions of the target still as a generic material, roll a Crafting or Physical Sciences check (your choice). On a success, the GM decides which specific material it becomes when the spell completes. On a failure, the material explodes in an emanation 5, dealing 1d10 fire damage and destroying that portion of the object.
+
+Magical objects cannot be targeted by this spell.

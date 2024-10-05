@@ -1,0 +1,11 @@
+=== Critical Hits and Fumbles
+
+Critical hits and Fumbles apply in combat primarily, but may be used in other checks if desired or specified in the description of those checks (such as Dying). If the critical rules are used outside of combat, do not roll on the tables; instead, either follow the guidelines given in the check description or (if no such guidelines exist) simply consider a Critical a particularly effective success and a Fumble a particularly problematic failure.
+
+. If the PT is above 100, the attack automatically pierces. This is considered a Brutal hit. When rolling damage, double the amount of dice rolled. Brutal hits are considered Critical hits for the purpose of effects that trigger on Critical hits.
+.. For instance, if your damage formula was `2d6 + 1d8 + 4`, you would instead roll `4d6 + 2d8 + 4`.
+.. Alternatively, you may instead double the entire damage value. This is a variant rule and results in slightly stronger Brutal hits.
+. If the attack roll is 001 or doubles (11, 22, etc.) _and_ pierces, the attack is a Critical hit. When rolling damage, add one extra die of the largest size in the roll.
+.. For instance, if your damage formula was `2d6 + 1d8 + 4`, you would instead roll `2d6 + 2d8 + 4`.
+. If the attack roll is 100 (000) or doubles (11, 22, etc.) _and_ misses, the attack is a Fumble. There is no default special effect on a Fumble, but many attacks, spells, or abilities specify effects that take place on a Fumble.
+. If the DT is below 0, the attack automatically misses. This is considered a Brutal fumble. Brutal fumbles are considered Fumbles for the purpose of effects that trigger on Fumbles.

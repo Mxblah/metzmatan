@@ -1,0 +1,102 @@
+==== Protection
+:hardbreaks-option:
+
+One of the earliest recorded uses of a metzmatan was to defend its bearer from demonic intrusion in dreams. This long and storied history of defense leaves the Protection realm with a strong legacy and many powerful spells. A practitioner of Protection can produce barriers to defend themselves and their allies, lock doors or even areas of space, and repel aberrations hailing from dreams or nightmares. Powerful Protection priests are always in high demand among mundane ritualists and true practitioners alike.
+
+===== Ironclad Psyche
+
+_Trait_
+
+You are entirely immune to dreamwalking attempts with a focus weaker than one of your possessions, even if you are not under the effects of a defensive ritual. If you have at least 4 Protection features, any humans sleeping in the same room as you share this effect, as long as you are asleep. If you have at least 6 Protection features, the effect covers the entire building, and you (only you) are also immune to dreamwalking attempts with a focus weaker than a part of your body.
+
+This feature has no effect if you sleep without a solid, opaque roof over your head.
+
+===== Barrier
+
+_Spell - Lucidity 30 or Planetary Magic 40
+2+ MP
+1 M / 10 minutes
+Melee / 1 human_
+
+Create a barrier of magical force to protect the target. You create magical armor occupying the target's Overshield slot. For every 2 MP spent, the barrier gains 5 AP and 15 AB. The barrier has DR 1/all except void and gains an additional 1 DR for every 4 MP spent past the first 2.
+
+If the barrier is unbroken, you can Sustain the Spell to restore 1 AP to the barrier. If the barrier is broken, you can instead spend three consecutive Utility actions to restore 1 AP to the barrier, repairing it. You must be within Melee range of the barrier in order to restore its AP.
+
+===== Reinforce Object
+
+_Spell - Crafting 35
+1+ MP
+1 M / 10 * X minutes
+Blast 5 * X / 1 unattended object_
+
+By infusing an object with power, you can make it near-impervious to harm. Choose one object that fits entirely within the spell's range. For the duration, the object gains 20 AB, 10 AP, and DR 2/physical, per MP spent. Additionally, the object cannot be nondestructively disassembled, disabled, turned off, or otherwise prevented from executing any of its functions, unless a requirement not affected by the spell is removed (for instance, if a machine is affected but its power cord is not, and the cord is cut or unplugged).
+
+The object additionally becomes extremely difficult to move, requiring an Athletics check at a -40 penalty to do so at half of normal speed. Worn armor or clothing becomes near-impossible to move in, reducing the creature's speed to 5 and imposing a -20 * X DB penalty (maximum -100). Carried items are dropped if possible; otherwise, they impose the same penalties as armor.
+
+You may cast this spell on an attended object if the object's attendant is willing. You may end this spell early as long as you are touching the affected object.
+
+You may spend 7 additional MP (which does not count towards X), 1 additional hour of cast time, and material components of equal value to the object to be protected. If you do so, that casting of _Reinforce Object_ counts as a Rite and the duration is extended to Permanent.
+
+===== Lock
+
+_Spell - 1 Protection / Crafting 45
+1+ MP
+1 M / 10 * X minutes
+Melee / 1 openable object_
+
+With a touch, you seal shut the target, perhaps permanently. You may target any object with a lock, any object that is a lock, or any object that is capable of opening and might reasonably be lockable, even if it currently does not have a lock. For instance, a normal door, a padlock, and a cardboard box are all valid targets for this spell.
+
+The object becomes closed and impossible to open normally. Any Thievery or Athletics checks to pick or force open the object take a -10 * X penalty, and deal X/2 bludgeoning damage to any tools used on failed attempts. The object gains Hardness 4/physical for the duration.
+
+You may spend 7 additional MP (which does not count towards X), 1 additional hour of cast time, and material components of equal value to a lock of similar quality to your spell's Thievery penalty. If you do so, that casting of _Lock_ counts as  Rite and the duration is extended to Permanent.
+
+===== Reinforcing Pact
+
+_Mutation - 2 Protection / Lucidity 50_
+
+The strength of your metzmatan bond manifests physically, creating a constant barrier to shield you from harm. You gain permanent Trait armor in the Undershield slot with 10 AB and 10 AP. If your Planetary Magic skill is at least 70, the bonuses increase to 15 each. If your Planetary Magic skill is at least 90, the bonuses increase to 20 each. You gain the _Reinforce Undershield_ mutation ability:
+
+[.underline]#Reinforce Undershield#
+
+_Active - 1 U / instant
+Self / Self
+-_
+
+Restore 1 AP to your active Undershield armor, if it is unbroken. If it is broken, extend the casting time to 10 minutes and restore its AP to full.
+
+===== Golden Restoration
+
+_Spell - 2 Protection / Planetary Magic 30, Medicine 30
+1+ MP
+1 M / X minutes
+Melee / 1 creature_
+
+Your metzmatan shines with golden light as the target's wounds begin to close. Restore 1d6 HP to the target. Increase your Drained status by 1d6. You can Sustain the Spell once a minute for up to X minutes, restoring 1d4 HP and increasing your Drained status by 1 each time you do so.
+
+===== Repel Aberrations
+
+_Spell - 3 Protection / Lucidity 50
+2+ MP
+10 * X minutes / X/2 days
+Self / Aura 5 * X or Line 10 * X_
+
+You trace glowing symbols onto the ground that slowly fade over time, repelling monsters from nightmares. Make a Lucidity check and record the RF. Any aberrations or dream denizens that attempt to enter or cross through the area must make a Soul check with a bonus (if you failed) or penalty (if you succeeded) to their threshold equal to your RF. On a failure, they cannot enter the area, gain Frightened 1, and cannot try again for 1 hour. On a critical failure, they cannot try again until the spell ends.
+
+This spell also protects against attacks from targeted creatures in the same way as the creatures themselves - a creature attempting to attack through or into the area makes the same check. However, it does not protect against a creature simply picking up something heavy and throwing that object through or into the area.
+
+You may invert this effect to use as part of a summoning Rite, calling the creature into the aura and attempting to trap them inside. This works the same way as above, except that targeted creatures cannot leave the area instead.
+
+===== Dispel Magic
+
+_Spell - 4 Protection / Planetary Magic 70
+5+ MP
+1 minute / instant
+Melee / 1 magical effect_
+
+With a flare of power from your metzmatan, nearby magic is undone. Make a Mind or Soul spell attack (your choice) against the effect's creator, or against the effect itself if there is no obvious creator. If the effect does not have a creator or an obvious Mind or Soul value, treat it as having 20 + 10 * its level of the relevant attribute. You take a -20 penalty to the threshold if the targeted effect was created by or contains lacre.
+
+You may spend additional MP to gain a +5 bonus to the threshold for each MP spent past the spell's base cost.
+
+On a pierce, the effect ends. On a deflect, the effect is temporarily suppressed for X - 4 rounds. On a miss, you cannot attempt to dispel the same effect again for the next day. On a Fumble, you cannot attempt to dispel the same effect again for the next year.
+
+If your Planetary Magic skill is at least 120, you may bypass normal MP restrictions.

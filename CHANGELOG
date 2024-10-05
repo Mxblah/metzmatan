@@ -1,15 +1,23 @@
-# Metzmatan's Mark v0.1.2
+# Metzmatan's Mark v0.1.3
 
-- Manifest URL (this specific version): <https://raw.githubusercontent.com/Mxblah/metzmatan/v0.1.2/system.json>
-- System download URL: <https://github.com/Mxblah/metzmatan/releases/download/v0.1.2/metzmatan-v0.1.2.zip>
+- Manifest URL (this specific version): <https://raw.githubusercontent.com/Mxblah/metzmatan/v0.1.3/system.json>
+- System download URL: <https://github.com/Mxblah/metzmatan/releases/download/v0.1.3/metzmatan-v0.1.3.zip>
 
-## Changes in version 0.1.2
+## Changes in version 0.1.3
 
 ### New Features
 
-- Add "Repair All Armor" button to Actor sheets
-- Enforce only one active armor item per slot when toggling isActive
+- Critical and Brutal Hits now properly apply the increased damage.
+
+### Rule Changes
+
+- Removed Critical Hit and Fumble tables, instead using simpler damage increase rules.
+- Standardized and clarified many phrases.
+- Added short Skill descriptions.
+- Added several new monsters.
+- Many, many smaller tweaks all across the rulebook.
 
 ### Technical
 
-- Enhance release process automation
+- Converted rulebook to asciidoc
+- Added automatic rulebook pdf generation to release process

@@ -1,3 +1,4 @@
+import { getDOSContentFromResult } from "./degree-of-success.mjs"
 import { parseBonus } from "./effects.mjs"
 
 export async function getTargetDefense(defense) {
@@ -57,7 +58,7 @@ export async function getSelectedToken() {
     return selectedDocuments[0].actor
 }
 
-export async function newDamageRoll(actorUUID, itemID) {
+export async function newDamageRoll(actorUUID, itemID, critResult) {
     // Get the data we need to work with
     // console.debug(actorUUID)
     // console.debug(itemID)
@@ -66,7 +67,8 @@ export async function newDamageRoll(actorUUID, itemID) {
 
     // Find the damage formula and resolve it
     const processedBonus = parseBonus(actor, item.system.damage.parsedDiceBonus)
-    const parsedRollData = `${item.system.damage.diceFormula} + ${processedBonus}`
+    const modifiedDiceFormula = await _modifyCriticalDiceFormula(item.system.damage.diceFormula, critResult)
+    const parsedRollData = `${modifiedDiceFormula} + ${processedBonus}`
     const roll = new Roll(parsedRollData, actor.getRollData())
 
     // Generate the ChatMessageData object and the roll's HTML, but don't send it to chat just yet; instead, return the data for further processing
@@ -86,6 +88,40 @@ export async function newDamageRoll(actorUUID, itemID) {
     }
 }
 
+async function _modifyCriticalDiceFormula(formula, critResult) {
+    if (! ['brutal-hit', 'critical-hit'].includes(critResult) ) {
+        // Not a critical hit, so nothing to do
+        return formula
+    } else {
+
+        if (critResult === 'critical-hit') {
+            // Split the formula on things that aren't numbers or the letter "d"
+            let splitFormula = formula.split(/[^\dd]+/)
+
+            // Crits add 1 die of the largest size, so we need to find it
+            let largestDieSize = 0
+            for (let diceElement of splitFormula) {
+                const currentDieSize = Number(diceElement.split('d').pop())
+                if (currentDieSize >= largestDieSize) {
+                    largestDieSize = currentDieSize
+                }
+            }
+
+            // Then, add the extra die via a single-instance replace
+            function replacer(match, p1, p2) {
+                return `${1 + Number(p1)}${p2}`
+            }
+            return formula.replace(new RegExp(`(\\d+)(d${largestDieSize})`), replacer)
+        } else {
+            // Assume it's a brutal hit, so double every diceElement
+            function replacer(match, p1, p2) {
+                return `${2 * Number(p1)}${p2}`
+            }
+            return formula.replace(/(\d+)(d\d+)/g, replacer)
+        }
+    }
+}
+
 export async function renderRollToChat(chatData, rollHTML, dosResult, data) {
     // console.debug('Rendering new roll with the following objects:')
     // console.debug([chatData, rollHTML, dosResult, data])
@@ -102,6 +138,8 @@ export async function renderRollToChat(chatData, rollHTML, dosResult, data) {
     // Add degree of success if applicable
     if (null != dosResult && null != dosResult.content && dosResult.content != "") {
         chatData.content += dosResult.content
+    } else if (data.rollType === 'damage') {
+        chatData.flavor += await getDOSContentFromResult(dosResult.hitResult, dosResult.critResult, null, true)
     }
 
     // Add damage roll buttons if this is an attack roll

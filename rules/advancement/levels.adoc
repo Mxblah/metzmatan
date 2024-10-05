@@ -1,0 +1,10 @@
+=== Levels
+
+A character advances through increasing their level. All characters start at level 1 and the maximum level is 20. When leveling up, a character gains various improvements to their core attributes and skills, additional HP, and additional features granted by their magic realms.
+
+==== Experience
+
+todo: not yet implemented
+
+==== Milestones
+Alternatively, the GM may simply decide when the characters level up, usually at a narratively appropriate point such as the end of a challenging adventure.

@@ -337,7 +337,7 @@ export class MzMaActorSheet extends ActorSheet {
                 if (data.removeSystem === 'true') {
                     // This is sort of dumb, but the explanation is that we use @system. when parsing bonuses and for dynamic AEs, but Rolls automatically add the system. for attribute keys
                     // So we just remove it here, if it's present
-                    parsedRollData = data.roll.replace(/@system\./, '@')
+                    parsedRollData = data.roll.replace(/@system\./g, '@')
                 }
             }
 

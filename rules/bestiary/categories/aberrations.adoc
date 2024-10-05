@@ -1,0 +1,25 @@
+==== Aberrations
+:hardbreaks-option:
+
+Aberrations are supernatural creatures that have their origins on Earth. They are not ordinary but corrupted creatures; this is simply their default state. Aberrations may have originally been created or altered by magic, lacre, or any number of supernatural events, but now they are simply another species - though one that cannot be considered "natural" in any sense of the word. Aberrations usually abide by normal physical laws, though they may be imbued with enough magic to "bend the rules" a little.
+
+===== Ghoul
+
+4 | _Aberration, Humanoid_
+HP 46 / AP 8 / AB 24 / DB 8
+B 48 / M 30 / S 22
+Size 1.5 / Speed 40, Climb 20 / Low-light vision
+Hardness 4 piercing
+Acrobatics 60, Athletics 75, Perception 55, Tracking 60
+_Fast, strong ambush predators, ghouls are drawn to the scent of blood, though they hate the smell of burning florals, particularly nettles. They are smart enough to target weaker members of a group, carrying them off to devour in private. Ghouls resemble lanky humans with long, sharp fingers and teeth and clammy, pale skin. They are typically around seven feet tall._
+
+- *Claw* | 1 M | Melee / 1-2 creatures | 76 / 2d6 s, Sweep, plus _Quick Grab_ on a pierce
+- *Frenzied Bite* | 1 M | Melee / 1 creature | 72 / 1d8 p, plus 1d4 ongoing bleed
+- *Devour* | 1 M | Melee / 1 Grabbed creature | 72 / 2d8 p, plus 1d6 ongoing bleed. The ghoul recovers AP equal to half the damage dealt
+
+- *Quick Grab* | * | The ghoul may immediately attempt to Grapple the primary target. It must still Sustain the grab on future turns as normal.
+
+- *Ghoulish Climb* | The ghoul's Climb speed also applies to ceilings.
+- *Keen Nose* | The ghoul gains a +20 bonus to Perception and Tracking checks relating to scent.
+- *Repelled by Nettles* | The ghoul is Sickened 1 while it can smell burning nettles. It is also Off-guard while within 20 ft of the source.
+- *Quick Carry* | The ghoul may move up to its full speed on a pierce when carrying a creature of size category 1 or less that it has Grabbed, or half its speed on a deflect or miss (but not a Fumble).

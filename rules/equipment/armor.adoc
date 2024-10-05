@@ -1,0 +1,41 @@
+=== Armor
+
+Armor adds to your Armor Bonus when properly worn and not broken. All armor has its own hit points (called Armor Points) that are depleted when deflecting attacks. When AP runs out, the armor is broken and no longer offers its benefits. This doesn't mean it's destroyed, though; you can repair physical armor with the Crafting skill and some time. Magical armor usually requires one of the Magic skills and some MP to repair, but it works in a similar manner. Only if armor is purposefully destroyed after it's broken is it actually gone for good.
+
+Some armor offers additional benefits beyond just the armor bonus, such as:
+
+*Damage Resistance.* Armor with a DR value reduces damage of the listed types by the listed value. This reduction applies whether the attack deflects or pierces. Damage reduced to zero by DR still counts as a hit or deflect for the purposes of other effects, but simply deals no damage.
+
+*Hardness.* Armor with a Hardness value ignores damage of the listed types less than or equal to its hardness value. Damage greater than the value is applied normally, without any reduction.
+
+*Deflect effect.* Some armor activates special effects on a deflected attack. See the individual armor for more details. Almost all armor with a deflect effect is magical.
+
+*Carryover Protection.* Armor with this trait absorbs the damage of the attack that breaks it, instead of allowing the excess damage to carry over to you as normal. The maximum damage absorbed is equal to the armor's maximum AP; any damage beyond that amount is applied normally.
+
+==== Clothing slot armor
+
+[cols="30,20,20,30"]
+|===
+| Armor|AB|AP|Other Properties
+
+| Clothing (regular)|0|1|-
+| Clothing (padded)|10|5|-
+| Clothing (reinforced)|15|10|Hardness 1/b
+| Bulletproof Vest (Fiber)|20|15|DR 1/p,s
+| Bulletproof Vest (Plate)|25|20|DR 3/p, 1/s
+4+^| *todo: More armor in other slots*
+|===
+
+==== Armor Slots
+
+There are five slots that armor can occupy: Natural, Undershield, Clothing, Item, and Overshield. The armor on the table above all occupies the Clothing slot, indicating that it is worn as traditional armor, covering the character to provide physical protection. The Item slot contains items that may grant additional armor bonuses, but are not necessarily worn. Gear such as physical shields or magical artifacts may fit into that slot. The Overshield slot encompasses magical effects, such as the Barrier spell or similar. The Undershield slot is similar, with its source also usually being magical effects, but these usually come from traits or mutations and are more passive than Overshield armor. Finally, the Natural slot refers to scales, hide, thick fur, or other natural defenses. Typically, humans do not possess natural armor unless affected by a spell; this slot is more commonly seen on monsters.
+
+It is also possible to also gain AB not tied to any armor through traits or mutations; this is always effective and stacks with all armor, including other features. However, if you have 0 AP, this extra AB will do no good.
+
+You may wear as many pieces of armor as would reasonably be possible, but only one per slot may have any effect. You get to decide which armor per slot is active whenever you add or remove armor, and you can typically change it out of combat with a minute of rearranging. When calculating AB, add up the numbers from all active pieces of armor (including any traits or effects, if applicable).
+
+Although AB is combined, AP is not. When taking damage to AP, apply it in the following order: *Overshield, Item, Clothing, Undershield, Natural* (and finally, HP if any damage still remains).
+
+Similarly, apply DR, Hardness, and other properties only from the "outermost" slot. If a slot's armor is broken, it no longer provides its AB to the total. You cannot move pieces of armor within a slot during combat to "swap in" a non-broken piece of armor, but you may do so outside of combat by spending a minute to rearrange.
+
+For instance, if you were wearing Clothing (padded) and a Bulletproof Vest (Fiber), you could choose only one of the two armors to be effective since they both occupy the Clothing slot. If you then added the _Barrier_ spell, you could have a total of 35 AB (20 from the Bulletproof Vest and 15 from the _Barrier_) and 15 + 5 AP, split between the two slots. If you deflected 7 bludgeoning damage in this setup, the _Barrier_ would apply its DR and reduce the damage to 6, absorb 5 damage and break, and the remaining 1 damage would be applied to the Bulletproof Vest, leaving you with 14 AP and 20 AB. If the damage were instead piercing, the Bulletproof Vest would apply its DR as well (only once the _Barrier_ broke), canceling the last point of damage and leaving you with 15 AP and 20 AB.

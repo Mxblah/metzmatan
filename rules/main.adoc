@@ -1,0 +1,92 @@
+= Metzmatan's Mark
+A d100-based TTRPG system by Shaun Burriss
+:doctype: book
+:revnumber: v0.1.3
+:toc:
+:toclevels: 3
+
+== Core Systems
+
+include::core-systems/rounding.adoc[]
+
+include::core-systems/the-noble-d100.adoc[]
+
+include::core-systems/combat.adoc[]
+
+include::core-systems/skill-challenges.adoc[]
+
+include::core-systems/opposed-checks.adoc[]
+
+== Advancement
+
+include::advancement/character-creation.adoc[]
+
+include::advancement/levels.adoc[]
+
+include::advancement/leveling-up.adoc[]
+
+== Backgrounds
+
+include::backgrounds/backgrounds.adoc[]
+
+== Combat
+
+include::combat/combat-flow.adoc[]
+
+include::combat/making-an-attack.adoc[]
+
+include::combat/other-defenses.adoc[]
+
+include::combat/criticals-fumbles.adoc[]
+
+include::combat/combat-maneuvers.adoc[]
+
+include::combat/movement.adoc[]
+
+include::combat/size.adoc[]
+
+include::combat/damage.adoc[]
+
+include::combat/resting-recovery.adoc[]
+
+== Skills
+
+include::skills/intro.adoc[]
+
+include::skills/values.adoc[]
+
+include::skills/descriptions.adoc[]
+
+== Equipment
+
+include::equipment/intro.adoc[]
+
+include::equipment/armor.adoc[]
+
+include::equipment/weaponry.adoc[]
+
+== Magic
+
+include::magic/intro.adoc[]
+
+include::magic/mp.adoc[]
+
+include::magic/realms.adoc[]
+
+include::magic/description-how-to.adoc[]
+
+include::magic/realm-includes.adoc[]
+
+== Statuses
+
+include::statuses/intro.adoc[]
+
+include::statuses/glossary.adoc[]
+
+== Bestiary
+
+include::bestiary/intro.adoc[]
+
+include::bestiary/how-to-read.adoc[]
+
+include::bestiary/monster-includes.adoc[]

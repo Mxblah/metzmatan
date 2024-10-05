@@ -1,0 +1,48 @@
+=== Character Creation
+
+. First, determine your character's core attributes: Body (B), Mind (M), and Soul (S).
+.. Roll 3d10+10 for each, recording the number in order.
+.. Also during this step, divide each core attribute by 5 and round down to get the "fifth value" for that attribute.
+... For instance, a Body score of 24 would have a fifth value of 4, denoted as B/5 = 4.
+. Apply starting bonuses to your core attributes
+.. Add 10 to one core attribute of your choice and 5 to another.
+. Determine your derived stats.
+.. Hit points (HP) are equal to B/5 + 1d6.
+.. Magic points (MP) are equal to (M + S)/5 - 4.
+... The minimum value of MP is 0. You cannot have negative MP.
+... Note that this operation adds M and S before applying rounding, so values of M 22 and S 24, for instance, would result in an MP score of 5, not 4.
+.. Dodge Bonus (DB) is equal to B/5 - 4.
+... You can have a negative Dodge Bonus if your Body is below 20.
+.. Determine your Speed on the following table:
+
++
+[cols="1,1"]
+[width=50%]
+|===
+| Body|Speed (ft.)
+
+| 1-14
+| 20
+
+| 15-39
+| 25
+
+| 40-69
+| 30
+
+| 70+
+| 35
+|===
+
+. Determine base skill thresholds
+.. Each skill has one or two core attributes associated with it. Skills with one associated attribute have a base threshold of the attribute's fifth value.
+.. Skills with two associated attributes have a base threshold of the higher fifth value between the two attributes.
+... For instance, if your B/5 was 6 and your M/5 was 4, your Charm skill's base threshold would be 6.
+. Apply starting bonuses to your skills
+.. Apply the bonus ranks from your background's listed skills.
+.. Apply the following ranks to any skills of your choice: 50, 50, 40, 40, 30, 30, 20, 20, 10, 10.
+... You may not apply more than one bonus to any individual skill, and you may not allocate more than 50 total ranks to any individual skill.
+... For instance, if your background gave you 20 ranks in Weapons (1h. ranged), you could apply 30 ranks in this step for a total of 50 ranks, but you could not apply 40 ranks or more, as that would be more than 50 ranks total.
+. Gain one trait or mutation from any non-core realm for which you meet the prerequisites.
+. Gain one spell from that same realm.
+. Gain any traits or mutations from the core realms for which you now meet the prerequisites.

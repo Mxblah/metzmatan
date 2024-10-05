@@ -8,3 +8,7 @@ LOG
 MANIFEST*
 
 node_modules
+
+*.pdf
+
+.vscode/*

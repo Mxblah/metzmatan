@@ -1,0 +1,22 @@
+==== Corrupted
+:hardbreaks-option:
+
+Corrupted creatures are those that were once human. Now, thanks to an influx of magic or supernatural influence, they are not. It is occasionally possible to turn a corrupted creature back into a human, but the process is extremely difficult and often unique to the individual creature, if it is even possible at all. In most cases, these creatures are unable to ever return; many believe it's kinder to just put them to rest. Corrupted creatures usually follow ordinary physical laws, at least aside from the magic that changed them.
+
+===== Zombie
+
+1 | _Corrupted, Humanoid, Undead_
+HP 16 / AB 0 / DB -10
+B 20 / M 5 / S 15
+Size 1 / Speed 20
+Occult 30, Athletics 45
+_Bloated corpses returned to unlife by unholy magic. The revival process only restores the Body, leaving the Mind beyond repair, so they are easily controlled by instinct, suggestion, or magic._
+
+- *Claw* | 1 M | Melee / 1 creature or object | 60 / 1d6 slashing
+- *Bite* | 1 M | Melee / 1 creature | 55 / 1d8 p, plus _Zombie Bite_
+
+- *Zombie Bite* | * | 55 secondary Body / P: Target is Sickened 2
+
+===== Bell-head
+
+todo

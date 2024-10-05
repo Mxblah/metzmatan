@@ -1,0 +1,4 @@
+[#core-combat]
+=== Combat
+
+See <<_combat>> for details.

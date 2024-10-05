@@ -1,0 +1,20 @@
+=== Making an Attack
+
+. The starting threshold is the character's relevant attack skill with the weapon or magic being used. Any permanent bonuses from items, mutations, features, etc. are already factored into the skill.
+.. If a spell says to "make a spell attack," it indicates to use the Celestial Magic or Planetary Magic skill, depending on which type the spell is.
+. Add bonuses to the threshold for any non-permanent buffs, circumstances, consumables, etc. (if any).
+. Subtract any penalties from the threshold for any non-permanent debuffs, circumstances, effects, etc. (if any).
+. Subtract the target's Dodge Bonus (DB). This is the Deflect Threshold (DT).
+. Subtract the target's Armor Bonus (AB). This is the Pierce Threshold (PT).
+.. If the target's armor is broken or the target is unarmored, skip this step. The PT is then the same as the DT.
+. Roll a d100 and compare the result to both thresholds.
+.. If the result is above the DT, the attack misses.
+.. If the result is equal to or below the DT but is above the PT, the attack deflects.
+.. If the result is equal to or below the PT, the attack pierces.
+. If the attack deflects or pierces, roll the relevant damage and apply relevant effects.
+.. (A spell will often have certain effects listed as "on deflect" or "on pierce")
+. Apply the target's relevant Damage Resistance, Hardness, Weakness, etc. for the attack's damage type (if applicable).
+.. This is usually granted through armor, so skip applying values granted by broken armor.
+. If the attack deflected, apply damage to the target's armor.
+. If the attack pierced, apply damage to the target.
+

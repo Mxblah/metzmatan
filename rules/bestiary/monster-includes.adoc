@@ -1,0 +1,9 @@
+=== Monster Details
+
+include::categories/aberrations.adoc[]
+
+include::categories/corrupted.adoc[]
+
+include::categories/dream-denizens.adoc[]
+
+include::categories/lacre-bloods.adoc[]

@@ -42,19 +42,37 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Prereqs: ruby
+      - name: Configure ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3'
+          # Setting this to true should automatically install deps, but it seems to break 'require'?
+          bundler-cache: false
+
+      # ruby dependencies (I should figure out how to fix bundler-cache later)
+      - name: Install dependencies
+        run: bundle install
+
       # Build all compendium packs
       - name: Build compendium packs
         run: npm run build:pack
 
+      # Build rulebook pdf
+      - name: Build rulebook pdf
+        run: npm run build:rules
+
       # Build the release zip
       - name: Create release zip
-        run: zip ${{ env.ZIP_NAME }} -r * --exclude "packs/*/_source/*" --exclude "scripts/*" --exclude "node_modules/*" --exclude ".github/*" --exclude "package*" --exclude "todo.md"
+        run: zip ${{ env.ZIP_NAME }} -r * --exclude "packs/*/_source/*" --exclude "rules/*" --exclude "scripts/*" --exclude "node_modules/*" --exclude ".github/*" --exclude "package*" --exclude "Gemfile*" --exclude "todo.md"
 
       # Perform the actual GH release
       - name: Release new version (GitHub)
         uses: softprops/action-gh-release@v2
         with:
-          files: ${{ env.ZIP_NAME }}
+          files: |
+            ${{ env.ZIP_NAME }}
+            rules/*.pdf
           body_path: CHANGELOG
           draft: false # set to true for dry-run/testing
           append_body: true
@@ -64,6 +82,6 @@ jobs:
       - name: Release new version (Foundry)
         env:
           FOUNDRY_API_KEY: ${{ secrets.FOUNDRY_API_KEY }}
-          FOUNDRY_PUBLISH_MODE: 'DRYRUN' # not quite ready for full automated releases yet
+          FOUNDRY_PUBLISH_MODE: 'PUBLISH' # set to anything other than 'PUBLISH' to disable automatic releases
           GH_TAG: ${{ env.TAG_NAME }}
         run: npm run publish

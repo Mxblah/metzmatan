@@ -2,6 +2,7 @@
     "scripts": {
         "build:pack": "node ./scripts/build-packs.mjs",
         "build:unpack": "node ./scripts/extract-packs.mjs",
+        "build:rules": "ruby ./scripts/build-rules.rb",
         "publish": "node ./scripts/publish-foundry-release.mjs"
     },
     "devDependencies": {

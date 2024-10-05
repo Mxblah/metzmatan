@@ -71,7 +71,7 @@ export async function getDOS(roll, defenseMap) {
     return toReturn
 }
 
-export async function getDOSContentFromResult(hitResult, critResult, defenseValue) {
+export async function getDOSContentFromResult(hitResult, critResult, defenseValue, isForFlavor) {
     // Little helper function to prepare HTML content from the raw results
     const startingTag = `<p class="hit-roll roll-${hitResult} align-center">`
     const endingTag = '</p>'
@@ -81,6 +81,16 @@ export async function getDOSContentFromResult(hitResult, critResult, defenseValu
     }
     const prettyCritResult = game.i18n.localize(`ROLLS.crits.${critResult}`)
 
+    // Alternate styling for flavor text
+    if (null != isForFlavor && isForFlavor === true) {
+        if (critResult === "") {
+            return ""
+        } else {
+            return ` (${prettyCritResult})`
+        }
+    }
+
+    // Normal styling for content
     if (hitResult === "") {
         return `${startingTag}<b>${prettyCritResult}</b>${endingTag}`
     } else {

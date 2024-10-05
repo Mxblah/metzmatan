@@ -1,0 +1,5 @@
+=== Ichor and Lacre
+
+There are two main systems of magic: Planetary (ichor-based) and Celestial (lacre-based). Planetary magic relies on a connection to the planet and life upon it, and is typically more focused on rituals, buffs, defenses, and passive effects. Celestial magic relies on a connection to distant stars, and is typically more focused on offense, active effects, mutations, and enhancements.
+
+A character can use both planetary and celestial magic, combining their strengths to great effect. However, the two types of magic do not get along well. A character may not put more than 30 ranks into both Planetary and Celestial Magic; only one of the two skills may have more.

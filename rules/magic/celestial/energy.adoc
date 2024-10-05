@@ -1,0 +1,69 @@
+==== Energy
+:hardbreaks-option:
+
+The Energy realm channels power, in all its varied forms, into destruction and movement. Practitioners of Energy can harness heat to generate flames or lightning, force wind to buoy them into the air, or otherwise blow things up with terrifying efficiency. Energy is one of the flashiest Celestial realms, as it has a strong connection to the nuclear processes powering the stars that make this art possible at all.
+
+===== Energized Blood
+
+_Trait_
+
+Your blood resonates with a specific kind of energy. Gain resistance to one of the following damage types equal to your level: electricity, fire, cold, corrosive, sonic. All other Energy features that refer to your Energy damage type ("Energy damage") refer to this chosen type of damage.
+
+You gain a subtle visible tell relating to your Energy damage type. You might occasionally drop sparks from your fingers for fire, your hair might crackle with static for electricity, your skin might be cool to the touch for cold, and so on.
+
+===== Project Energy
+
+_Spell - 1 Energy
+2+ MP
+1 M / instant
+30/90 / 1 target_
+
+Fire a blast of energy at a distant foe. Make a spell attack against the target, dealing Xd8 Energy damage.
+
+If you spend 3 or more MP and the primary attack does not miss, additionally make a secondary Body spell attack, dealing X/2 d6 ongoing Energy damage on a pierce or X/2 d6 Energy damage on a deflect. On a Critical Hit, this damage increases to X/2 d8.
+
+===== Detonation
+
+_Spell - 3 Energy / Celestial Magic 50
+4+ MP
+1 M / instant
+200 / Burst 20_
+
+A concentrated ball of explosive power forms on your palm, which you then hurl at a distant point. Make a spell attack against any targets within the area, dealing 6d6 Energy damage. For every 2 MP spent past the first 4, you may either increase the damage by 2d6 or increase the Burst size by 5.
+
+===== Immolate
+
+_Spell - 3 Energy / Celestial Magic 55
+4 MP
+1M / instant
+25/75 / 1 creature or object_
+
+With a snap of your fingers, Energy consumes your target's form. Make a spell attack against the target. On a pierce, deal 3d8 ongoing Energy damage. On a deflect, deal 3d8 Energy damage. On a Critical Hit, the target is additionally Stunned 1.
+
+===== Energized Jump
+
+_Spell - 1 Energy / Acrobatics or Athletics 20
+1 MP
+1 U / instant
+Self / Self_
+
+You leap upwards with a burst of extreme speed. Quadruple your jump distance, to a minimum of up to 20 feet vertically (2-3 stories), or up to 60 feet horizontally with a running start.
+
+This spell does not prevent fall damage.
+
+===== Energized Flight
+
+_Spell - 4 Energy / Acrobatics 50, Celestial Magic 60
+2+ MP
+1 U / X-1 rounds
+Self / Self_
+
+You rise unsteadily into the air on currents of wind directed by your Energy type. Gain a fly speed equal to your speed or 5 * your Acrobatics fifth value, whichever is higher, for X-1 rounds, and you may immediately move 10 ft as part of this action.
+
+You cannot carry significantly more than your normal load (for instance, a person) while flying.
+
+Take a -5 penalty to your DB while you are flying with this spell.
+
+Make a secondary Body spell attack against any creature that ends its turn adjacent to you while this spell is active, dealing 1d6 Energy damage.
+
+If your Celestial Magic skill is at least 90, the duration of this spell is extended to X-1 minutes and the Energy damage dealt increases to 1d10.

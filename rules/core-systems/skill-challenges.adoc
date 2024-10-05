@@ -1,0 +1,44 @@
+=== Skill Challenges
+
+Rolling a skill check is very similar to the basic check outlined above.
+
+. The starting threshold is the character's relevant skill. Any permanent bonuses are already factored into this skill.
+. Add or subtract from the threshold based on the challenge's difficulty:
+
++
+[cols="17,17,66"]
+|===
+| Difficulty|Modifier|Description
+
+| Very Easy
+| +20
+| A task that an average adult could do without much difficulty
+
+| Easy
+| +10
+| A task that an average adult could do while paying close attention
+
+| Normal
+| 0
+| A task that an average, trained adult could do fairly consistently
+
+| Hard
+| -10
+| A task that a trained adult would find challenging
+
+| Very Hard
+| -20
+| A task that a trained adult would find very difficult
+
+| Extreme
+| -40
+| A task that even a highly trained adult would find nearly impossible
+|===
+
+.. Most challenges should be Normal and trivial tasks should be automatic successes instead of rolls. The GM may apply different modifiers for challenges with varying levels of difficulty.
+.. Additionally, tasks without time pressure or without a fail state (for instance, where the characters can retry over and over until they succeed) can be ruled an automatic success. Though if the time passed is important, a roll may still determine how long it takes.
+.. Keep in mind that, in this system, an average adult human has B, M, S around 20, an exceptional talent may have up to 50 of an attribute, and a trained professional in a skill may have around 50 ranks in it.
+
+. Add bonuses to the threshold for any non-permanent buffs, circumstances, consumables, etc. (if any).
+. Subtract any penalties from the threshold for any non-permanent debuffs, circumstances, effects, etc. (if any).
+. Roll a d100. If the result is below the threshold, the check succeeds. If the result is above the threshold, the check fails.
