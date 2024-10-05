@@ -89,10 +89,4 @@ include::bestiary/intro.adoc[]
 
 include::bestiary/how-to-read.adoc[]
 
-include::bestiary/aberrations.adoc[]
-
-include::bestiary/corrupted.adoc[]
-
-include::bestiary/dream-denizens.adoc[]
-
-include::bestiary/lacre-bloods.adoc[]
+include::bestiary/monster-includes.adoc[]

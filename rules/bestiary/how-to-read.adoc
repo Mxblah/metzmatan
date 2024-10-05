@@ -3,6 +3,8 @@
 
 The following example stat block describes every possible field a monster may have. Most monsters are less complicated and only possess a subset of the listed fields.
 
+==== Example Monster
+
 ===== Monster Name
 <level> | _<monster categories>_
 HP / MP / AP / AB / DB
