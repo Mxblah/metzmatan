@@ -1,0 +1,36 @@
+==== Acrobatics
+
+Ability to move one's Body with speed and precision. Balancing, dodging, and the like. Secondary physical skill.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Navigate uneven pavement
+
+|Simple (+50)
+|Avoid tripping on roots or other debris, somersaults
+
+|Ordinary (+25)
+|Balance on a board or beam, cartwheels
+
+|Straightforward (+10)
+|Squeeze into small opening
+
+|Normal (0)
+|Quickly walk or run across shifting sand or gravel, balance on smooth ice
+
+|Hard (-10)
+|Squeeze into opening narrower than shoulders, walk on a tightrope
+
+|Expert (-25)
+|Maneuver on a frictionless surface, squeeze into space barely fitting head
+
+|Extreme (-50)
+|Balance on fishing line
+
+|Heroic (-75 or more)
+|Leap between falling fragments in the air
+
+|===

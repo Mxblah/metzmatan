@@ -1,0 +1,6 @@
+// Just a sub-doc to capture all the include statements for the various skills
+
+include::descriptions/acrobatics.adoc[]
+include::descriptions/athletics.adoc[]
+
+include::descriptions/swim.adoc[]

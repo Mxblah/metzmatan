@@ -1,0 +1,36 @@
+==== Acrobatics
+
+Ability to move one's Body with power and endurance. Sprinting, jumping, and combat maneuvers. Secondary physical skill.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Climb a ladder, spend the day walking
+
+|Simple (+50)
+|Climb a tree or latticed/knotted rope, run a mile
+
+|Ordinary (+25)
+|Climb a typical rope, tear fabric
+
+|Straightforward (+10)
+|Climb an uneven wall, break sturdy glass
+
+|Normal (0)
+|Force open an ordinary door
+
+|Hard (-10)
+|Climb a mountain or sheer surface with some handholds, force open a sturdy door
+
+|Expert (-25)
+|Climb a ceiling, break chains or small metal objects
+
+|Extreme (-50)
+|Scale a smooth surface, force open a sturdy metal door
+
+|Heroic (-75 or more)
+|Puncture sturdy metal plates, force open a security door
+
+|===

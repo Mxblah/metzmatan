@@ -1,41 +1,54 @@
 === Skill Challenges
 
-Rolling a skill check is very similar to the basic check outlined above.
+Rolling a skill check is very similar to the basic check outlined in <<#_the_noble_d100>> above.
 
 . The starting threshold is the character's relevant skill. Any permanent bonuses are already factored into this skill.
-. Add or subtract from the threshold based on the challenge's difficulty:
+. Add or subtract from the threshold based on the challenge's difficulty. Each skill's description section (see <<#_skills>>) contains example challenges at various levels of difficulty. However, the GM can reference the table below for general advice applicable to all skills:
 
 +
 [cols="17,17,66"]
 |===
 | Difficulty|Modifier|Description
 
-| Very Easy
-| +20
-| A task that an average adult could do without much difficulty
+| Trivial
+| +75 or more
+| Almost anyone could succeed without much difficulty.
 
-| Easy
+| Simple
+| +50
+| A trained adult would almost never fail, and an untrained adult would have a decent chance of success.
+
+| Ordinary
+| +25
+| A trained adult would be very likely to succeed, and an untrained adult would still have a chance of success.
+
+| Straightforward
 | +10
-| A task that an average adult could do while paying close attention
+| A trained adult would be likely to succeed, and an untrained adult would have a low chance of success.
 
 | Normal
 | 0
-| A task that an average, trained adult could do fairly consistently
+| A trained adult would find the task challenging but possible, and an untrained adult would still have a very slim chance of success.
 
 | Hard
 | -10
-| A task that a trained adult would find challenging
+| A trained adult would be more likely to fail than succeed, and an untrained adult would find the task essentially impossible.
 
-| Very Hard
-| -20
-| A task that a trained adult would find very difficult
+| Expert
+| -25
+| A trained adult would struggle to succeed. A prepared master would find the task challenging but possible.
 
 | Extreme
-| -40
-| A task that even a highly trained adult would find nearly impossible
+| -50
+| A trained adult would have a very slim chance of success. A prepared master would still be more likely to fail than succeed.
+
+| Heroic
+| -75 or more
+| Essentially impossible without magic, powerful equipment, or supernatural skills.
 |===
 
-.. Most challenges should be Normal and trivial tasks should be automatic successes instead of rolls. The GM may apply different modifiers for challenges with varying levels of difficulty.
+.. Most challenges should have threshold modifiers between -50 and +50, though the GM may apply any desired modifier. Keep in mind that many trivial or impossible tasks should be automatic successes or failures instead of rolls.
+... Threshold modifiers may be considered similar to a "Difficulty Class" for the challenge, for those familiar with roll-over systems.
 .. Additionally, tasks without time pressure or without a fail state (for instance, where the characters can retry over and over until they succeed) can be ruled an automatic success. Though if the time passed is important, a roll may still determine how long it takes.
 .. Keep in mind that, in this system, an average adult human has B, M, S around 20, an exceptional talent may have up to 50 of an attribute, and a trained professional in a skill may have around 50 ranks in it.
 

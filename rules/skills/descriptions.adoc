@@ -1,6 +1,6 @@
 === Skill Descriptions
 
-The following table is a quick reference for all available skills. todo: Later, each skill will have a more in-depth section.
+The following table is a quick reference for all available skills. In-depth sections for each skill follow below the table.
 
 [cols="20,10,70"]
 |===
