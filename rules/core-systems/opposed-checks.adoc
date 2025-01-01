@@ -8,5 +8,12 @@ In some cases, instead of a simple success / failure binary, a check is attempte
 . Compare the RFs. The character with a higher RF wins the contest, though if they failed their check overall, there may be an additional complication.
 .. If both RFs are identical, the character with the higher adjusted threshold value wins.
 .. If both RFs and threshold values are identical, the more active character wins.
-... For instance, the attacker would win in combat, the hider would win in stealth, the liar would win in deception, and so on.
+... For instance, the attacker would win in combat, the searcher would win in stealth, the liar would win in deception, and so on.
 .. If the more active character cannot be determined, the GM decides.
+
+==== Active/Passive
+
+. In some circumstances, it may be the case that only one character involved in an opposed check is aware they are participating. Perhaps a character is sneaking (Stealth) past the outskirts of a party, attempting to pickpocket an unaware target (Thievery), or attempting to blend in at the same party (Disguise or Social).
+. If this is the case, where there is a defined target to make it an opposed check but the target is not actively participating, you may have the passive character "take a 50" on their check, making their RF equal to their threshold minus 50.
+. From there, use the same steps as above to compare the RFs and determine the winner.
+.. When using this rule, the passive character always counts as "less active" for tiebreak purposes above.

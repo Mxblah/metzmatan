@@ -1,0 +1,5 @@
+==== Disguise
+
+Ability to create and wear disguises. Imitation, costume design, performance, and the like.
+
+(Disguise is nearly always used as part of an opposed check, so no example tasks are presented here.)

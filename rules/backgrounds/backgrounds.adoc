@@ -1,16 +1,16 @@
-Choose one background for your character, which grants +20% to six chosen skills. You may instead choose to create your own background by choosing six skills to gain additional training in. The only restrictions are that a maximum of only one Weapons skill may be chosen, and neither Magic skill may be trained from a background.
+Choose one background for your character, which grants +20% to six chosen skills and a starting wealth formula. You may instead choose to create your own background by choosing six skills to gain additional training in, and taking 10+2d10 (or less) for your starting Wealth. The only restrictions are that a maximum of only one Weapons skill may be chosen, and neither Magic skill may be trained from a background.
 
-[cols="1,1,1,1,1,1,1"]
+[cols="1,1,1,1,1,1,1,1"]
 |===
-| Background 6+^|Skill bonuses (all +20%)
+| Background 6+^|Skill bonuses (all +20%)|Wealth
 
-| Athlete|Athletics|Acrobatics or Swim 4+|(choose 4 of (Weapons (1h. melee) or Weapons (2h. melee)), Life Sciences, Medicine, Piloting, Social, Stealth)
+| Athlete|Athletics|Acrobatics or Swim 4+|(choose 4 of (Weapons (1h. melee) or Weapons (2h. melee)), Life Sciences, Medicine, Piloting, Social, Stealth)|10+2d10
 
-| Mail Carrier|Navigation|Perception|Social 3+|(choose 3 of Crafting, Electronics, History, Insight, or Mechanics)
+| Mail Carrier|Navigation|Perception|Social 3+|(choose 3 of Crafting, Electronics, History, Insight, or Mechanics)|10+1d10
 
-| Police Officer|Weapons (1h. ranged)|Athletics|Electronics or Social|Medicine|Perception|Piloting (car)
+| Police Officer|Weapons (1h. ranged)|Athletics|Electronics or Social|Medicine|Perception|Piloting (car)|10+2d10
 
-| Student|Insight|Perception|Social 3+|(choose 3 of Occult, Engineering, History, Life Sciences, Physical Sciences)
+| Student|Insight|Perception|Social 3+|(choose 3 of Occult, Engineering, History, Life Sciences, Physical Sciences)|2d10
 
-| todo: 6+^|more backgrounds coming later!
+| todo: 7+^|more backgrounds coming later!
 |===

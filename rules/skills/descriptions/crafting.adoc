@@ -1,0 +1,36 @@
+==== Crafting
+
+Ability to create and repair things. Art, furniture, armor, or more.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Perform basic maintenance or repairs on typical mundane objects
+
+|Simple (+50)
+|Perform basic maintenance or repairs on complex or magical objects
+
+|Ordinary (+25)
+|Create small or simple objects or art
+
+|Straightforward (+10)
+|Decipher the workings of a small or simple object
+
+|Normal (0)
+|Create fine or complex objects or art
+
+|Hard (-10)
+|Decipher the workings of a complex object
+
+|Expert (-25)
+|Decipher the workings of a magical object, create a magical object or art
+
+|Extreme (-50)
+|Create masterwork objects or art
+
+|Heroic (-75 or more)
+|Create masterwork magical artifacts
+
+|===

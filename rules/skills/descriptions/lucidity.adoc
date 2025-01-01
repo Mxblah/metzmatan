@@ -1,0 +1,36 @@
+==== Lucidity
+
+Ability to control dreams, both one's own and others'. Secondary magical skill, often associated with Planetary Magic.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Have a normal good night's sleep
+
+|Simple (+50)
+|Become lucid in own dream when prompted
+
+|Ordinary (+25)
+|Manifest small dreamscape changes in one's own dream
+
+|Straightforward (+10)
+|Manifest changes to the self or moderate dreamscape changes in one's own dream
+
+|Normal (0)
+|Manifest large-scale changes in one's own dream
+
+|Hard (-10)
+|Manifest small dreamscape changes in another's dream
+
+|Expert (-25)
+|Manifest small dreamscape changes in an aware opponent's dream
+
+|Extreme (-50)
+|Manifest changes to the self or moderate dreamscape changes in an aware opponent's dream
+
+|Heroic (-75 or more)
+|Manifest large-scale changes in an aware opponent's dream
+
+|===

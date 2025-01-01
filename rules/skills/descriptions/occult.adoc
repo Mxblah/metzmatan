@@ -1,0 +1,36 @@
+==== Occult
+
+Affinity for esoteric magic and the supernatural generally. Includes knowledge and abilities that complement lacre or ichor. Secondary magical skill, often associated with Celestial Magic.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Assist in a rite as a secondary participant
+
+|Simple (+50)
+|Perform a simple rite as the primary caster
+
+|Ordinary (+25)
+|Resist mental strain from typical artifacts
+
+|Straightforward (+10)
+|Recall basic or broad supernatural knowledge
+
+|Normal (0)
+|Decipher esoteric writing, determine esoteric language
+
+|Hard (-10)
+|Comprehend a typical unknown rite or spell, recall specific supernatural knowledge
+
+|Expert (-25)
+|Prepare and cast a previously-unknown rite or spell
+
+|Extreme (-50)
+|Discern magical intent without extensive study
+
+|Heroic (-75 or more)
+|Craft new rites or spells
+
+|===

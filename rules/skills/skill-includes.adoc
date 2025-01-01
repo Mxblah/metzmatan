@@ -1,6 +1,20 @@
 // Just a sub-doc to capture all the include statements for the various skills
 
+include::descriptions/lucidity.adoc[]
+
+include::descriptions/occult.adoc[]
+
 include::descriptions/acrobatics.adoc[]
+
 include::descriptions/athletics.adoc[]
+
+include::descriptions/charm.adoc[]
+
+include::descriptions/crafting.adoc[]
+
+include::descriptions/deception.adoc[]
+
+include::descriptions/disguise.adoc[]
+
 
 include::descriptions/swim.adoc[]

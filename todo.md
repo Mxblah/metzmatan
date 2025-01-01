@@ -24,6 +24,8 @@
 - [ ] Add custom status effects to CONFIG.statusEffects
 - [ ] Improve the Build / release process for compendia (reduce churn, auto-clean, standardize / remove unneeded fields?)
 - [ ] More compendium entries
+- [ ] Add Wealth fields for actors and items
+- [ ] Add Wealth entries for existing example items
 
 ### 0.3.0 hopefuls
 
@@ -41,6 +43,7 @@
 - [ ] Ongoing damage integration
 - [ ] Better inline rollables (integrate with targeting system, allow attribute references)
 - [ ] Monster categories on sheets
+- [ ] Handle Wealth checks for purchase/selling/etc. of items
 
 ### 0.4.0 hopefuls
 

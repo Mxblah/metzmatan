@@ -1,0 +1,52 @@
+=== Wealth
+
+Wealth is an abstract measurement of a character's income, savings, assets, connections, and generally how easily they are able to acquire material goods. All player characters and items have a Wealth rank rather than specific amounts of currency. Your starting Wealth is determined at character creation (see <<#_character_creation>>) and may increase or decrease over the course of play. Both your raw Wealth rank and your Wealth/5 (W/5) are important when purchasing items.
+
+Items purchased with Wealth are assumed to be legal, generally available, and without any particular barriers to acquisition. For instance, you could purchase a candy bar, a knife, a motorcycle, or a house with Wealth, but you could not purchase a bundle of illegal narcotics, a private island, or a vial of smallpox without further effort, potentially involving skill challenges or adventures. You may still be able to use Wealth to purchase those things after further effort, but may not do so directly.
+
+==== Buying Things with Wealth
+
+When purchasing an item with Wealth, first check its rank compared to your own. Determine if:
+
+. The item's rank is _less_ than your W/5
+. The item's rank is _more_ than your W/5, but _less_ than your Wealth
+. The item's rank is _more_ than your Wealth, but the item's fifth value is _less_ than your Wealth
+. The item's fifth value is _more_ than your Wealth
+
+===== The Item's Rank is _Less_ than your W/5
+
+. Congratulations! The item costs a trivial amount compared to your Wealth, and is thus free.
+. You may simply acquire any (reasonable) amount of such items without issue. The GM should complain if you are being unreasonable, and may reduce your Wealth if you purchase too many such items.
+
+===== The Item's Rank is _More_ than your W/5, but _Less_ than your Wealth
+
+. You may purchase the item without issue, but your Wealth might decrease after doing so.
+. Make a Wealth check with a penalty to the threshold equal to the item's rank and a bonus to the threshold equal to your W/5.
+.. (Equivalently, a penalty to the threshold equal to the difference between the item's rank and your W/5.)
+.. For instance, if you had 40 Wealth and chose to purchase an item with Wealth rank 10, you would subtract 10 and add 8 for a total threshold of 38.
+. If you succeed the check, your Wealth remains the same.
+. If you fail, your Wealth decreases by the item's fifth value (minimum 1).
+
+===== The Item's Rank is _More_ than your Wealth, but the Item's Fifth Value is _Less_ than your Wealth
+
+. You might be able to purchase the item, and your Wealth will definitely decrease if you do so.
+. Make a Wealth check with a penalty to the threshold equal to the item's fifth value.
+.. For instance, if you had 40 Wealth and chose to purchase an item with Wealth rank 50, you would subtract 10 for a total threshold of 30.
+. If you succeed, you purchase the item and your Wealth decreases by the item's fifth value (minimum 1).
+. If you fail, you cannot attempt to purchase this item again until your Wealth increases.
+.. At the GM's discretion, if you are attempting to purchase the item in a risky way or making too many purchase attempts, your Wealth may decrease by up to the item's fifth value regardless.
+... The GM should warn you if this is a possibility before you make the Wealth check.
+
+===== The Item's Fifth Value is _More_ than your Wealth
+
+. You cannot purchase the item.
+
+==== Increasing or Decreasing Wealth During Play
+
+Wealth increases when characters level up (see <<#_leveling_up>>).
+
+Beyond that, retrieving and selling treasure, acquiring new connections or assets, changing jobs, or any number of other events may increase a character's Wealth. Generally, roll 1d10 and add it to the character's Wealth in such cases.
+
+Similarly, losing assets or connections, suffering burglary, getting fired, or any number of other events may decrease a character's Wealth. Generally, roll 1d10 and subtract it from the character's Wealth in such cases.
+
+Wealth cannot be higher than 100 or lower than 0 at any point.

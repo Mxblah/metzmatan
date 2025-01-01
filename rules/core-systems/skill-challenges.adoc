@@ -6,7 +6,7 @@ Rolling a skill check is very similar to the basic check outlined in <<#_the_nob
 . Add or subtract from the threshold based on the challenge's difficulty. Each skill's description section (see <<#_skills>>) contains example challenges at various levels of difficulty. However, the GM can reference the table below for general advice applicable to all skills:
 
 +
-[cols="17,17,66"]
+[cols="20,17,63"]
 |===
 | Difficulty|Modifier|Description
 
