@@ -1,0 +1,36 @@
+==== Thievery
+
+Ability to manipulate objects with fine precision. Includes lockpicking, stealing, and disarming delicate mechanisms.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Steal an item from an unattended container
+
+|Simple (+50)
+|Pick or bypass a shoddy lock
+
+|Ordinary (+25)
+|Pick a simple lock
+
+|Straightforward (+10)
+|Avoid triggering a simple trap
+
+|Normal (0)
+|Pick a typical lock, disable a simple trap, avoid triggering a typical trap
+
+|Hard (-10)
+|Pick a good quality lock, disable a typical trap
+
+|Expert (-25)
+|Pick a complex lock, avoid triggering or disable a complex trap
+
+|Extreme (-50)
+|Pick a masterwork or magical lock, avoid triggering or disable a masterwork or magical trap
+
+|Heroic (-75 or more)
+|Sabotage or rework masterwork or magical traps
+
+|===

@@ -32,4 +32,22 @@ include::descriptions/mechanics.adoc[]
 
 include::descriptions/medicine.adoc[]
 
+include::descriptions/navigation.adoc[]
+
+include::descriptions/perception.adoc[]
+
+include::descriptions/piloting.adoc[]
+
+include::descriptions/physical-sciences.adoc[]
+
+include::descriptions/social.adoc[]
+
+include::descriptions/stealth.adoc[]
+
+include::descriptions/survival.adoc[]
+
 include::descriptions/swim.adoc[]
+
+include::descriptions/thievery.adoc[]
+
+include::descriptions/tracking.adoc[]

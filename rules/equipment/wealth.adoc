@@ -16,7 +16,7 @@ When purchasing an item with Wealth, first check its rank compared to your own. 
 ===== The Item's Rank is _Less_ than your W/5
 
 . Congratulations! The item costs a trivial amount compared to your Wealth, and is thus free.
-. You may simply acquire any (reasonable) amount of such items without issue. The GM should complain if you are being unreasonable, and may reduce your Wealth if you purchase too many such items.
+. You may purchase any (reasonable) amount of such items without issue. The GM should intervene if you are being unreasonable, and may reduce your Wealth if you purchase too many such items.
 
 ===== The Item's Rank is _More_ than your W/5, but _Less_ than your Wealth
 

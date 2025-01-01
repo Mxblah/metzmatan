@@ -55,3 +55,13 @@ Rolling a skill check is very similar to the basic check outlined in <<#_the_nob
 . Add bonuses to the threshold for any non-permanent buffs, circumstances, consumables, etc. (if any).
 . Subtract any penalties from the threshold for any non-permanent debuffs, circumstances, effects, etc. (if any).
 . Roll a d100. If the result is below the threshold, the check succeeds. If the result is above the threshold, the check fails.
+
+==== Variant Rules: Result Factor instead of Threshold Modifiers
+
+. Sometimes, a character may be attempting a general challenge and may have different chances to succeed against multiple possible outcomes. Alternatively, the very existence of certain outcomes may be secret.
+.. For instance, searching a room (Perception) for clues that are hidden with various levels of difficulty, or attempting to diagnose multiple injuries or curses (Medicine or Occult).
+. In these cases, instead of adding a threshold modifier as described in the table above, simply roll as normal and determine the Result Factor as described in <<#_opposed_checks>>.
+. Then, compare the Result Factor to the the _opposite_ of the threshold modifier from the table above. A higher RF than the modifier is a success; a lower RF is a failure.
+.. For instance, a character may be attempting to diagnose another character's illnesses, which are (unknown to the first character) typical, unusual, and magical in nature. The <<#_medicine>> table provides modifiers of Ordinary (+25), Normal (0), and Expert (-25) for these.
+.. If the RF of the challenge is +14, the character would identify the Ordinary and Normal illnesses (as -25 and 0 are both less than +14), but would fail to identify the Expert illness (as +25 is more than +14).
+. This method may be used to entirely replace the threshold modifier system, if desired; simply treat the suggested modifiers as the opposite of the required RF to achieve a certain outcome.

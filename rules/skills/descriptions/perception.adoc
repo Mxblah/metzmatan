@@ -1,0 +1,36 @@
+==== Perception
+
+Ability to notice details, process sensory information quickly, and avoid surprise. Often used for initiative.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Identify an object in plain sight at a moderate distance
+
+|Simple (+50)
+|Identify an object in plain sight at a long distance or in dim light
+
+|Ordinary (+25)
+|Find simply hidden items, spot objects from afar or in dim light, initiative roll when ambushing
+
+|Straightforward (+10)
+|Identify or track individuals in a moderate crowd
+
+|Normal (0)
+|Find typical hidden items, typical initiative roll
+
+|Hard (-10)
+|Spot objects or creatures at night, spot individuals in a large crowd, detect pursuers
+
+|Expert (-25)
+|Spot small and well-hidden items, initiative roll when ambushed
+
+|Extreme (-50)
+|Disbelieve illusions, detect invisible items or creatures
+
+|Heroic (-75 or more)
+|Spot magically concealed items
+
+|===
