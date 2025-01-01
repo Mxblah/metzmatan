@@ -16,5 +16,20 @@ include::descriptions/deception.adoc[]
 
 include::descriptions/disguise.adoc[]
 
+include::descriptions/electronics.adoc[]
+
+include::descriptions/engineering.adoc[]
+
+include::descriptions/history.adoc[]
+
+include::descriptions/insight.adoc[]
+
+include::descriptions/intimidation.adoc[]
+
+include::descriptions/life-sciences.adoc[]
+
+include::descriptions/mechanics.adoc[]
+
+include::descriptions/medicine.adoc[]
 
 include::descriptions/swim.adoc[]

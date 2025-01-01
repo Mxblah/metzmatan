@@ -1,0 +1,5 @@
+==== Engineering
+
+Usually includes a specialty in a specific discipline. Knowledge of design and implementation in a specific problem space.
+
+(As a general knowledge / science field, reference the general table in <<#_skill_challenges>>)

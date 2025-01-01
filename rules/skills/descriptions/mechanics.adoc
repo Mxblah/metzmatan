@@ -1,0 +1,36 @@
+==== Mechanics
+
+Knowledge of and ability to repair and make use of mechanical devices, including many machines.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Use or maintain a simple mechanical device
+
+|Simple (+50)
+|Perform maintenance or repairs on typical machines or vehicles
+
+|Ordinary (+25)
+|Operate or maintain nonstandard machines
+
+|Straightforward (+10)
+|Determine functionality of standard but unknown devices
+
+|Normal (0)
+|Override or modify simple devices with appropriate tools
+
+|Hard (-10)
+|Decipher or repair complex devices
+
+|Expert (-25)
+|Override or modify complex devices
+
+|Extreme (-50)
+|Decipher magical devices
+
+|Heroic (-75 or more)
+|Override or modify magical electronic devices
+
+|===

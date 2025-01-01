@@ -1,0 +1,36 @@
+==== Medicine
+
+Knowledge of healthcare and ability to treat injuries. Useful in healing others or oneself.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Use typical first-aid supplies for minor injuries
+
+|Simple (+50)
+|Apply injections or other simple medical procedures, diagnose common injuries or illnesses
+
+|Ordinary (+25)
+|Diagnose typical injuries or illnesses
+
+|Straightforward (+10)
+|Stabilize an injured person, treat common injuries or illnesses
+
+|Normal (0)
+|Diagnose unusual injuries or illnesses, stabilize a dying person
+
+|Hard (-10)
+|Perform complex medical procedures
+
+|Expert (-25)
+|Perform major surgery, diagnose unusual magical injuries or illnesses
+
+|Extreme (-50)
+|Perform simple magical procedures or complex healing rites
+
+|Heroic (-75 or more)
+|Remove curses, get insurance to pay for something on the first try
+
+|===

@@ -1,0 +1,36 @@
+==== Electronics
+
+Knowledge of and ability to repair and make use of electronic devices, including computers.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Use or maintain a computer or other consumer electronic device
+
+|Simple (+50)
+|Perform assembly, maintenance, or repairs on typical electronic devices
+
+|Ordinary (+25)
+|Operate or maintain industrial or nonstandard electronic devices
+
+|Straightforward (+10)
+|Write computer programs, determine functionality of simple devices or programs
+
+|Normal (0)
+|Override or hack simple electronic devices with appropriate tools
+
+|Hard (-10)
+|Decipher or repair complex devices or programs
+
+|Expert (-25)
+|Override or hack complex electronic devices
+
+|Extreme (-50)
+|Decipher magical electronic devices
+
+|Heroic (-75 or more)
+|Override or hack magical electronic devices
+
+|===
