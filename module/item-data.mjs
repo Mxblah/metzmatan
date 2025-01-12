@@ -5,7 +5,8 @@ export class ItemDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         return {
             description: new HTMLField({ required: true, blank: true, initial: "", label: "ITEMS.description" }),
-            effects: new StringField({ blank: true, initial: "", label: "ITEMS.effects" })
+            effects: new StringField({ blank: true, initial: "", label: "ITEMS.effects" }),
+            wealth: new NumberField({ required: false, integer: true, initial: 0, min: 0, label: "ATTRIBUTES.wealth" })
         }
     }
 }

@@ -21,6 +21,14 @@
   flex: 0;
 }
 
+.flex10 {
+  flex: 0.10;
+}
+
+.flex20 {
+  flex: 0.20;
+}
+
 .flex30 {
   flex: 0.30;
 }
@@ -31,6 +39,10 @@
 
 .flexlarge {
   flex: 2;
+}
+
+.flex-text-center {
+  text-align: center;
 }
 
 /* alignment classes */

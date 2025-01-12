@@ -4,6 +4,15 @@
             <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
             <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'PLACEHOLDERS.itemName'}}"></h1>
         </div>
-        {{!-- There's not really anything shared between items that's important enough to go in the header --}}
+
+        {{!-- Wealth rank, and maybe more later --}}
+        <div class="resources grid grid-3col">
+            <div class="resource flexrow flex-group-center">
+                <label for="system.wealth" class="resource-label">{{localize "ATTRIBUTES.wealth"}}</label>
+                <div class="resource-content flexrow flex-center flex-between align-vertical-center">
+                    <input type="text" name="system.wealth" value="{{system.wealth}}" data-dtype="Number"/>
+                </div>
+            </div>
+        </div>
     </div>
 </header>

@@ -1,3 +1,8 @@
+<ol class="items-header flexrow flex-text-center">
+    <label for="system.wealth" class="resource-label align-vertical-center align-left rollable flex10 flexrow" data-roll="@wealth - d100" data-label="{{localize 'ATTRIBUTES.wealth'}}">{{localize 'ATTRIBUTES.wealth'}}</label>
+    <input class="flex10 align-vertical-center" type="text" name="system.wealth" value="{{system.wealth}}" data-dtype="Number"/>
+</ol>
+
 <ol class="items-list">
     {{#each items as |section id|}}
     <li class="items-header flexrow" data-item-type="{{section.type}}">
