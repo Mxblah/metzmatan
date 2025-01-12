@@ -25,8 +25,8 @@
 - [ ] Improve the Build / release process for compendia (reduce churn, auto-clean, standardize / remove unneeded fields?)
 - [ ] More compendium entries
 - [X] Add Wealth fields for actors and items
-- [ ] Fix the pack/unpack scripts that have mysteriously stopped working
-- [ ] Add Wealth entries for existing example items, once the compendium scripts are fixed
+- [X] Fix the pack/unpack scripts that have mysteriously stopped working
+- [X] Add Wealth entries for existing example items, once the compendium scripts are fixed
 
 ### 0.3.0 hopefuls
 

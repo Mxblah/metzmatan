@@ -11,5 +11,6 @@ for (let i = 0; i < packFolders.length; i++) {
     console.log(`Processing ${folder.name}`)
     const packSource = path.join('packs', folder.name, '_source')
     const packDB = path.join('packs', folder.name)
+    // Will fail with "LEVEL_ITERATOR_NOT_OPEN" if game is running / compendia are locked. Return to Foundry setup before running.
     await extractPack(packDB, packSource, { log: true })
 }
