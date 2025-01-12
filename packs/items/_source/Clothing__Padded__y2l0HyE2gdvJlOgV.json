@@ -19,7 +19,8 @@
       "armorBonus": 15,
       "damageResistance": "",
       "hardness": ""
-    }
+    },
+    "wealth": 1
   },
   "effects": [],
   "folder": "rsJIP732KnIBEtdb",
@@ -33,9 +34,9 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "metzmatan",
-    "systemVersion": "0.1.1",
+    "systemVersion": "0.1.4",
     "createdTime": 1726270563926,
-    "modifiedTime": 1726270563926,
+    "modifiedTime": 1736708158522,
     "lastModifiedBy": "mN9FcG0y0rOGIcyn"
   },
   "_id": "y2l0HyE2gdvJlOgV",

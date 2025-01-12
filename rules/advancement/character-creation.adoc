@@ -34,15 +34,16 @@
 | 35
 |===
 
-. Determine base skill thresholds
+. Determine base skill thresholds.
 .. Each skill has one or two core attributes associated with it. Skills with one associated attribute have a base threshold of the attribute's fifth value.
 .. Skills with two associated attributes have a base threshold of the higher fifth value between the two attributes.
 ... For instance, if your B/5 was 6 and your M/5 was 4, your Charm skill's base threshold would be 6.
-. Apply starting bonuses to your skills
+. Apply starting bonuses to your skills.
 .. Apply the bonus ranks from your background's listed skills.
 .. Apply the following ranks to any skills of your choice: 50, 50, 40, 40, 30, 30, 20, 20, 10, 10.
 ... You may not apply more than one bonus to any individual skill, and you may not allocate more than 50 total ranks to any individual skill.
 ... For instance, if your background gave you 20 ranks in Weapons (1h. ranged), you could apply 30 ranks in this step for a total of 50 ranks, but you could not apply 40 ranks or more, as that would be more than 50 ranks total.
+. Apply the starting Wealth bonus from your background.
 . Gain one trait or mutation from any non-core realm for which you meet the prerequisites.
 . Gain one spell from that same realm.
 . Gain any traits or mutations from the core realms for which you now meet the prerequisites.

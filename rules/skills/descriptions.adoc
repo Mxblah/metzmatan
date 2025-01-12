@@ -1,6 +1,6 @@
 === Skill Descriptions
 
-The following table is a quick reference for all available skills. todo: Later, each skill will have a more in-depth section.
+The following table is a quick reference for all available skills. In-depth sections for each skill (except the primary combat skills) follow below the table.
 
 [cols="20,10,70"]
 |===
@@ -38,8 +38,8 @@ The following table is a quick reference for all available skills. todo: Later, 
 
 | Social|Mind|Ability to integrate into and understand a group. Includes knowledge of rumors, social structures, and the like.
 | Stealth|Body|Ability to hide and stay undetected.
-| Swim|Body|Ability to float in and cross bodies of water or other liquids.
 | Survival|Body, Mind|Knowledge of the wilderness and ability to maintain oneself outside of traditional civilization.
+| Swim|Body|Ability to float in and cross bodies of water or other liquids.
 
 | Thievery|Body|Ability to manipulate objects with fine precision. Includes lockpicking, stealing, and disarming delicate mechanisms.
 | Tracking|Mind|Ability to locate and follow others.

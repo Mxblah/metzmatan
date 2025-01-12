@@ -1,0 +1,38 @@
+==== Piloting
+
+Always includes a specialty in a specific class of vehicle. Knowledge of and ability to control vehicles, including planes, trains, and automobiles.
+
+In general, Piloting is a trained-only skill. Characters with no ranks in Piloting for a specific class of vehicle usually cannot perform more than the bare minimum of basic or emergency maneuvers with that vehicle.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Identify an ordinary vehicle, turn on and off
+
+|Simple (+50)
+|Perform typical operations with a specific vehicle
+
+|Ordinary (+25)
+|Identify a specific type or model of vehicle, perform untrained emergency operations
+
+|Straightforward (+10)
+|Perform complex or unusual operations
+
+|Normal (0)
+|Typical evasive or in-combat maneuvering, determine capabilities of unknown vehicle
+
+|Hard (-10)
+|Push vehicle to its limits, determine capabilities of exotic vehicle
+
+|Expert (-25)
+|Perform typical operations with vehicle outside of specialty
+
+|Extreme (-50)
+|Perform complex operations with vehicle outside of specialty, perform typical operations with exotic vehicle outside of specialty
+
+|Heroic (-75 or more)
+|Perform operations with magical vehicles outside of specialty
+
+|===

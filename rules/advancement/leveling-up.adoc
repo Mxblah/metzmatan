@@ -22,6 +22,10 @@ After increasing your core attributes, you gain 50 skill ranks that may be used 
 
 As with core attribute ranks, you may not "bank" skill ranks for later levels; you must spend them all immediately upon leveling up.
 
+==== Wealth
+
+Every other level (2, 4, 8, 10, and so on), roll 1d10 and add the result to your Wealth. If the result would cause your Wealth to rise above 100, your Wealth becomes 100 instead.
+
 ==== Spells, Traits, and Mutations
 
 Gain one trait or mutation from any non-core realm for which you meet the prerequisites.

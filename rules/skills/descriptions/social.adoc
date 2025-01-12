@@ -1,0 +1,36 @@
+==== Social
+
+Ability to integrate into and understand a group. Includes knowledge of rumors, social structures, and the like.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Learn of popular rumor
+
+|Simple (+50)
+|Recall broad knowledge of government and society
+
+|Ordinary (+25)
+|Learn of common rumor, obtain general knowledge of common groups
+
+|Straightforward (+10)
+|Fit in with a moderately different social group to your own, recall specific knowledge of government and society
+
+|Normal (0)
+|Learn of obscure rumor, obtain general knowledge of obscure groups
+
+|Hard (-10)
+|Fit in with significantly different social group to your own, learn of common secrets
+
+|Expert (-25)
+|Obtain specific knowledge of common or obscure groups, obtain general knowledge of secret groups
+
+|Extreme (-50)
+|Learn of well-protected secrets, obtain specific knowledge of secret groups
+
+|Heroic (-75 or more)
+|Learn critical secrets, gain access to secret groups
+
+|===

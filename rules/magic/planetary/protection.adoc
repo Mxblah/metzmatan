@@ -7,7 +7,7 @@ One of the earliest recorded uses of a metzmatan was to defend its bearer from d
 
 _Trait_
 
-You are entirely immune to dreamwalking attempts with a focus weaker than one of your possessions, even if you are not under the effects of a defensive ritual. If you have at least 4 Protection features, any humans sleeping in the same room as you share this effect, as long as you are asleep. If you have at least 6 Protection features, the effect covers the entire building, and you (only you) are also immune to dreamwalking attempts with a focus weaker than a part of your body.
+You are entirely immune to dreamwalking attempts with a focus weaker than one of your possessions, even if you are not under the effects of a defensive rite. If you have at least 4 Protection features, any humans sleeping in the same room as you share this effect, as long as you are asleep. If you have at least 6 Protection features, the effect covers the entire building, and you (only you) are also immune to dreamwalking attempts with a focus weaker than a part of your body.
 
 This feature has no effect if you sleep without a solid, opaque roof over your head.
 

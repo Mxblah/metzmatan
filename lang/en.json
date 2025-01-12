@@ -116,7 +116,9 @@
             "mp": "MP Cost",
             "cooldown": "Recharge time",
             "defense": "Targeted Defense"
-        }
+        },
+
+        "wealth": "Wealth"
     },
 
     "SKILLS": {

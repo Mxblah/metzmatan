@@ -1,0 +1,36 @@
+==== Navigation
+
+Ability to maintain direction and avoid getting lost.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Comfortably navigate a typical city with a phone or GPS, tell cardinal directions
+
+|Simple (+50)
+|Navigate with a map, correlate position with a map
+
+|Ordinary (+25)
+|Navigate unaided in a typical forest or city
+
+|Straightforward (+10)
+|Navigate with a map through a relatively featureless or complex location
+
+|Normal (0)
+|Explore a maze or simple labyrinth
+
+|Hard (-10)
+|Explore a labyrinth or complex maze
+
+|Expert (-25)
+|Navigate unaided through a featureless or complex location
+
+|Extreme (-50)
+|Navigate empty space or a constantly mutating location
+
+|Heroic (-75 or more)
+|Explore a shifting or dreamscape labyrinth
+
+|===

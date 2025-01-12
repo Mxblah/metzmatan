@@ -1,0 +1,36 @@
+==== Swim
+
+Ability to float in and cross bodies of water or other liquids.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Swimming pool shallow enough to stand in
+
+|Simple (+50)
+|Typical swimming pool
+
+|Ordinary (+25)
+|Calm lake or similar still water
+
+|Straightforward (+10)
+|Typical river or similar flowing water
+
+|Normal (0)
+|Fast river, choppy lake
+
+|Hard (-10)
+|River rapids, stormy lake, deep ocean
+
+|Expert (-25)
+|Powerful or tricky rapids, stormy ocean
+
+|Extreme (-50)
+|Whirlpool, hurricane
+
+|Heroic (-75 or more)
+|Up a strong waterfall, devastating storm
+
+|===

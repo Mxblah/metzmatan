@@ -1,0 +1,36 @@
+==== Survival
+
+Knowledge of the wilderness and ability to maintain oneself outside of traditional civilization.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Identify common plants or animals
+
+|Simple (+50)
+|Survive in gentle forest or around typical lake
+
+|Ordinary (+25)
+|Identify specific plants or animals, survive in typical forest
+
+|Straightforward (+10)
+|Survive in grasslands or hills
+
+|Normal (0)
+|Identify unusual or obscure plants or animals
+
+|Hard (-10)
+|Survive in mountains or tundra
+
+|Expert (-25)
+|Survive in desert, identify exotic or mythical plants or animals
+
+|Extreme (-50)
+|Survive in wastelands, determine properties of unknown or magical plants or animals
+
+|Heroic (-75 or more)
+|Survive in actively harmful terrain
+
+|===

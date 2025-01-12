@@ -1,0 +1,36 @@
+==== Tracking
+
+Ability to locate and follow others.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Follow fresh tracks in mud or similar surfaces
+
+|Simple (+50)
+|Detect path of a large group on a path or trail
+
+|Ordinary (+25)
+|Detect tracks of large animals in a forest or similar
+
+|Straightforward (+10)
+|Tail an unaware target through a city or similar
+
+|Normal (0)
+|Follow tracks of individual people, tail a moderately cautious target
+
+|Hard (-10)
+|Detect tracks of small animals, detect tracks of larger animals or people after rain
+
+|Expert (-25)
+|Detect tracks of tiny animals, tail an aware target
+
+|Extreme (-50)
+|Detect tracks on bare rock or similar surfaces
+
+|Heroic (-75 or more)
+|Detect old tracks through a shifting desert, follow magical signatures
+
+|===

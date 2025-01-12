@@ -1,0 +1,5 @@
+==== Physical Sciences
+
+Knowledge of physics and related sciences. Often useful for understanding details of non-living phenomena.
+
+(As a general knowledge / science field, reference the general table in <<#_skill_challenges>>)

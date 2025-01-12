@@ -22,7 +22,8 @@
       "hands": 1,
       "range": "Melee",
       "target": "1 creature"
-    }
+    },
+    "wealth": 4
   },
   "effects": [],
   "sort": 0,
@@ -36,9 +37,9 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "metzmatan",
-    "systemVersion": "0.1.1",
+    "systemVersion": "0.1.4",
     "createdTime": 1726270453045,
-    "modifiedTime": 1726270453045,
+    "modifiedTime": 1736708139799,
     "lastModifiedBy": "mN9FcG0y0rOGIcyn"
   },
   "_key": "!items!nzmND5i6h0fUgkMB"

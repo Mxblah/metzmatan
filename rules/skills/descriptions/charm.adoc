@@ -1,0 +1,36 @@
+==== Charm
+
+Ability to persuade others.
+
+[cols="20,80"]
+|===
+|Modifier|Example task
+
+|Trivial (+75 or more)
+|Convince a friend to do a small favor
+
+|Simple (+50)
+|Convince a neutral stranger to do a small favor
+
+|Ordinary (+25)
+|Perform with a proficient skill
+
+|Straightforward (+10)
+|Make a favorable and memorable impression
+
+|Normal (0)
+|Convince someone to do a moderate favor, improve standing with a typical person or group
+
+|Hard (-10)
+|Convince an unfriendly individual to do a small favor, improve standing with an unfriendly person or group
+
+|Expert (-25)
+|Convince a neutral stranger to do a large favor
+
+|Extreme (-50)
+|Convince a hostile individual to do a small favor, improve standing with a hostile person or group
+
+|Heroic (-75 or more)
+|Convince a hostile individual to do a moderate or large favor
+
+|===

@@ -97,7 +97,7 @@ Self / Self_
 
 A ghostly duplicate of your eye emerges from your real one, allowing you to see from afar. You create an actual-size duplicate of your oracular eye in the space in front of you. This sensor can fly, is tangible, and is invisible aside from a tiny black dot for the pupil. You can move the sensor up to your speed with a Utility Action. You can switch your vision from your actual eyes to the sensor, or vice versa, with a Main Action.
 
-The sensor can pass through gaps as small as an eyeball, but cannot phase through solid objects. It is difficult to spot, with a +20 bonus to Stealth checks to hide, but can be targeted and destroyed. The sensor has 1 HP, 0 AB / AP, and uses your DB and other defenses. If the sensor is destroyed, the spell ends and you are Blinded in your oracular eye until your next long rest. You may end the spell early at any time with a single Utility action.
+The sensor can pass through gaps as small as an eyeball, but cannot phase through solid objects. It is difficult to spot, with a +20 bonus to Stealth checks to hide, but can be targeted and destroyed. The sensor has 1 HP, 0 AB / AP, and uses your DB and other defenses. If the sensor is destroyed, the spell ends and you are Blinded in your oracular eye until your next full rest. You may end the spell early at any time with a single Utility action.
 
 You may anchor the eye to a moving object or creature within 10 ft of it that you can see through the eye (for instance, a car, a person, or an airplane) in order to have it automatically move along with the object. You may still move the sensor relative to the object as normal.
 

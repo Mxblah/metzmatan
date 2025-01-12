@@ -1,0 +1,5 @@
+==== Stealth
+
+Ability to hide and stay undetected.
+
+(Stealth is nearly always used as part of an opposed check, so no example tasks are presented here.)

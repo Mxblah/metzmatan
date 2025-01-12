@@ -20,7 +20,8 @@
       "armorBonus": 25,
       "damageResistance": "3/p, 1/s",
       "hardness": ""
-    }
+    },
+    "wealth": 3
   },
   "effects": [],
   "ownership": {
@@ -33,9 +34,9 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "metzmatan",
-    "systemVersion": "0.1.1",
+    "systemVersion": "0.1.4",
     "createdTime": 1726270664053,
-    "modifiedTime": 1726270664053,
+    "modifiedTime": 1736709660942,
     "lastModifiedBy": "mN9FcG0y0rOGIcyn"
   },
   "_id": "yCy2QpFzTS6M4VzH",

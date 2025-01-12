@@ -260,7 +260,7 @@ class CharacterDataModel extends foundry.abstract.TypeDataModel {
     }
 }
 
-// PC-specific extension of the main class, such as biography and the like
+// PC-specific extension of the main class
 export class PlayerCharacterDataModel extends CharacterDataModel {
     static defineSchema() {
         return {
@@ -268,7 +268,8 @@ export class PlayerCharacterDataModel extends CharacterDataModel {
 
             background: new SchemaField({
                 // todo: nothing here yet, but maybe soon!
-            })
+            }),
+            wealth: new NumberField({ required: true, integer: true, initial: 0, min: 0, max: 100, label: "ATTRIBUTES.wealth" })
         }
     }
 }
